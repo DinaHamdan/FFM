@@ -1,7 +1,103 @@
-*{
+* {
     margin: 0;
 
 }
-body{
 
+/* body {} */
+
+#accueil {
+
+    background-image: url(photo-accueil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+
+}
+
+#logo-1 {
+    width: 8em;
+    height: 7em;
+
+}
+
+#FFM {
+    margin-top: 3em;
+    margin-left: 7em;
+    -webkit-text-stroke: 1px #f3660062;
+    font-weight: 300;
+    font-size: 2.5em;
+    font-family: "Kantumruy Pro", sans-serif;
+    color: #f36600;
+    text-shadow:
+        3px 3px 0 #000,
+        1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+}
+
+
+#Title-description {
+    -webkit-text-stroke: 1px #f36600;
+    font-weight: 300;
+    margin-top: 1em;
+    margin-left: 12em;
+    font-size: 1.5em;
+    font-family: "Kantumruy Pro", sans-serif;
+    color: #f3660062;
+    text-shadow:
+        3px 3px 0 #000,
+        1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+}
+
+.arrow {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 55em;
+}
+
+#logo-arrow {
+    border: 1px solid red;
+    width: 5em;
+    height: 5em;
+
+}
+
+@media screen and (min-width:800px) {}
+
+@media screen and (min-width:1020px) {
+
+    #accueil {}
+
+    #logo-1 {
+        width: 15em;
+        height: 10em;
+
+    }
+
+    #FFM {}
+
+    #Title-description {}
+
+    .arrow {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        margin-top: 55em;
+    }
+
+    #logo-arrow {
+        border: 1px solid red;
+        width: 5em;
+        height: 5em;
+
+    }
 }
