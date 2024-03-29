@@ -1,0 +1,118 @@
+Idée 1
+
+Site Web pour Fire from Mars une association à but non lucratif qui fait des spectacles de feu et des spectacles de rue - des jams tous les mardis à la major Marseille
+
+// Section présentation aesthetique
+-Mettre des vidéos en arrière Plan? Photos
+
+.....Sticky Menu......FFM(.....Calendrier....Nos Spectales/Agrès....Contact...Adhésion
+//Section Qui sommes nous 
+Présenter l'association  - but objectif - fondé quelle année - Adhésion - Fire jams+ lien page facebook
+Boutton Artistes: Redirection Pages Présenter les artists => des images qui changent - Fiches pour présenter les artistes- Nom agrés etc
+Boutton Agrés: Présenter les agrés => photos des artistes en train d'utiliser les agrés
+Boutton d'adhesion: Redirection pour s'adhérer - Pourquoi adhérer? Télécharger Bulletin d'adhésion 
+
+// Section Calendrier
+Boutton redirection Consulter l'agenda Calendrier pour les spectacles avec les dates résérvés 
+
+// Section Contact
+Boutton  redirection pour contacter et envoyer un message - demander Nom - Prénom - Objectif du contact - mail - téléphone - FAQ + Fiche technique: ce qui est fourni ou pas - ce qui est demandé etc
+1- Contact pour les clients demandeurs de spectacles de feu
+2- Contact par les artistes
+
+
+// Section Actualité - Convention de Jongle en Zik - Boutton devenir bénévole
+
+// Section Réferences ou evenments passés 
+
+// Footer Liens pour autres pages: Instagram - Facebook - Vidéos Youtube? - boutton haut de la page
+
+// Mes remarques comme artistes/utilisatrice
+Manque d'ergonomie- pas de possibilité de changer les dates (à vérifier)- accéder au calendrier - etc 
+Le tout début présentation d'adhésion < moins importants que les spectacles 
+Beaucoup de répétions
+Pas de liens pour eventails lumineux - pas de lien pour eventails - pas de lien pour monocycle Bolas 
+Pas le même nombre de photos partout
+Nos adhérents parlent de nous - juste deux témoignage pas très pertinent
+Footer n'est pas clair
+Couleur bleu foncé pas ouf - Couleur à changer - les borders oranges à changer 
+Photo qui bougent pas très logique/beau
+
+
+Motion des photos en ralenti (cracheur de feu)
+Rubrique pour les vidéos
+
+
+// Côté Backend 
+Base de donnés pour les utilisateurs (les artists et les admins) pour changer les dates de conventions et de prestations - pour changer les photos sur le site
+Base de donnés pour les autres associations dans d'autres Villes pour rentrer leur dates de spectacles
+
+
+
+// Inspiration de ce site 
+https://cercle-de-feu.com/calendrier/
+
+
+// Personas:
+Les artistes
+
+// Yohan l'artiste et le responsable de FFM
+Age:40
+Gender:Homme
+Children: Non?
+Occupation: Professeur d'école et artiste de feu
+Education: Master
+Income:je ne sais pas
+Location: Marseille
+Quote:?
+Influencers: d'autres artists de feu/Leader de groupe
+Sources of info: facebook/internet
+Goals: Prendre soin de l'asso et des adhérents, communication clair entre les adhérents/artistes
+Values: Bienveillance acceuillir 
+Frustrations: Beaucoup de responsabilité pas assez de temps
+Aspirations: Pouvoir répartir des tâches à d'autres gens et mieux communiquer avec les clients--> Fiche techniques et demande de devis
+
+// Coline l'artiste et coordinatrice de FFM
+Age:24 ans
+Gender: femme
+Children: Non
+Occupation: Thérapeute érgonome et artiste de feu
+Education: Master
+Income:je ne sais pas
+Location: Marseille
+Quote: ?
+Influencers: artistes de feu
+Sources of info: Instagram/youtube/facebook
+Goals:Mettre tout le monde à l'aise, communication clair, organiser et suivre les règles
+Values: Ordre organisation humain
+Frustrations: Beaucoup de reponsabilité entre le travail et l'asso, 
+Aspirations: Avoir une meilleur gestion du site, les ressources (agrés et matériels) et autonomie 
+
+// Jongle en Zik
+Base de donnéss pour gérer l'évenements 
+Basse de données pour gérer les bénévoles
+Organisateurs
+Bénévoles
+Artistes
+Musiciens
+
+
+Les clients
+
+// Paul qui demande un devis pour un spectacle de feu 
+Age: 50
+Gender: Homme
+Children: 3
+Occupation: travail dans la mairie
+Education: licence
+Income:50 000/ans
+Location: Bouches du Rhône
+Quote: ?
+Influencers: ?
+Sources of info: Télévision
+Goals: Embaucher l'asso pour un spectacle de feu pour un évenements spéciales (Noel-Paques- festival Ete, etc..)
+Values:
+Frustrations: pas de calendrier - pas de devis - pas de tarifs ou de propositions de spectacles en formats - manque d'info sur spectacles passé - manque d'info sur materiel fourni
+Aspirations:
+
+
