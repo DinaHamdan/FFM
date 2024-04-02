@@ -12,12 +12,14 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    border: 1px solid red;
+
 
 
 }
 
 #logo-1 {
-    width: 8em;
+    width: 10em;
     height: 7em;
 
 }
@@ -29,31 +31,20 @@
     font-weight: 300;
     font-size: 2.5em;
     font-family: "Kantumruy Pro", sans-serif;
-    color: #f36600;
-    text-shadow:
-        3px 3px 0 #000,
-        1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    color: #ffa743;
+
 
 }
 
 
 #Title-description {
-    -webkit-text-stroke: 1px #f36600;
+    -webkit-text-stroke: 1px #f3660062;
     font-weight: 300;
     margin-top: 1em;
     margin-left: 12em;
     font-size: 1.5em;
     font-family: "Kantumruy Pro", sans-serif;
-    color: #f3660062;
-    text-shadow:
-        3px 3px 0 #000,
-        1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    color: #ffa743;
 
 }
 
@@ -61,17 +52,110 @@
 
     display: flex;
     justify-content: center;
-    margin-top: 55em;
+    margin-top: 50em;
 }
 
 #logo-arrow {
     border: 1px solid red;
+    width: 3em;
+    height: 3em;
+
+}
+
+#logo-2 {
+    margin-top: 2em;
     width: 5em;
+    height: 4em;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Jura", sans-serif;
+    background-color: #130F0F;
+    color: white;
+    font-size: 1.1em;
+}
+
+#menu-bar ul {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    list-style-type: none;
+
+}
+
+#menu-bar li {
+    margin-top: 4em;
+    align-items: center;
+}
+
+#ffm-man {
+    margin-top: -2em;
+    width: 4em;
     height: 5em;
 
 }
 
-@media screen and (min-width:800px) {}
+#about-us {
+    font-family: "Jura", sans-serif;
+}
+
+#team {
+
+    text-align: center;
+    margin: 4em 0 2em 0;
+    font-weight: 500;
+}
+
+#about-us p {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 4em;
+
+}
+
+#discoverArtist {
+
+    text-align: center;
+    margin: 4em 0 1em 0;
+    font-weight: 500;
+}
+
+
+#artistes {
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: 10em;
+    text-align: center;
+    border: 1px solid red;
+    width: 8em;
+    height: 1.5em;
+    background-image: linear-gradient(#E19F3C, #FB7616, #FE6B00);
+    border-radius: 3em;
+    color: #130F0F;
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width:600px) {
+    #FFM {
+        margin-top: 5em;
+        margin-left: 15em;
+        font-size: 2em;
+    }
+
+    #Title-description {
+        margin-left: 13em;
+        font-size: 2em;
+    }
+
+    .arrow {
+        margin-top: 46em;
+    }
+}
 
 @media screen and (min-width:1020px) {
 
@@ -83,15 +167,22 @@
 
     }
 
-    #FFM {}
+    #FFM {
+        margin-top: 1em;
+        margin-left: 12.5em;
+        font-size: 7em;
+    }
 
-    #Title-description {}
+    #Title-description {
+        margin-left: 22.5em;
+        font-size: 4em;
+    }
 
     .arrow {
         border: 1px solid red;
         display: flex;
         justify-content: center;
-        margin-top: 55em;
+        margin-top: 35em;
     }
 
     #logo-arrow {
@@ -100,4 +191,5 @@
         height: 5em;
 
     }
+
 }
