@@ -7,16 +7,23 @@
 
 #accueil {
 
-    background-image: url(photo-accueil.jpg);
+    background-image: url(../img/photo-accueil.jpg);
     background-size: cover;
+
     background-repeat: no-repeat;
     background-position: center;
-
     border: 1px solid red;
 
 
 
 }
+
+/* Styliser la photo background en dur */
+/* #image-accueil{
+    width: 500px;
+    height:600px;
+
+} */
 
 #logo-1 {
     width: 10em;
@@ -129,7 +136,7 @@ header {
     display: inline-block;
     font-size: 1.5em;
     text-decoration: none;
-    margin-left: 10em;
+    margin-left: 7.7em;
     text-align: center;
     border: 1px solid red;
     width: 8em;
@@ -139,6 +146,70 @@ header {
     color: #130F0F;
     margin-bottom: 2em;
 }
+
+#fire-jam {
+    background-image: url(../img/fire-jam-cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+
+}
+
+
+#fire-jam p {
+    color: white;
+    font-size: 1.1em;
+
+}
+
+#P1 {
+    display: inline-block;
+    margin-top: 5em;
+}
+
+#P1-1 {
+    margin-left: 2em;
+}
+
+#P2 {
+    display: inline-block;
+
+    margin: 12em 2em 0em 20em;
+}
+
+#P2-1 {
+    display: inline-block;
+
+    margin-left: 19em;
+}
+
+#P2-2 {
+    display: inline-block;
+
+    margin-left: 20em;
+}
+
+#P2-3 {
+    display: inline-block;
+    margin-left: 20em;
+}
+
+#adhesion {
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: 7.7em;
+    text-align: center;
+    border: 1px solid red;
+    width: 8em;
+    height: 1.5em;
+    background-image: linear-gradient(#E19F3C, #FB7616, #FE6B00);
+    border-radius: 3em;
+    color: #130F0F;
+    margin-top: 5em;
+}
+
 
 @media screen and (min-width:600px) {
     #FFM {
