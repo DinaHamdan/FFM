@@ -3,16 +3,19 @@
 
 }
 
-/* body {} */
+body {
+    font-family: "jura", sans-serif;
+
+}
 
 #accueil {
 
-    background-image: url(../img/photo-accueil.jpg);
-    background-size: cover;
+    background-image: url(../img/photo-accueil-780.avif);
+    /* background-size: cover; */
+    height: 100%;
 
     background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid red;
+    background-position: center border: 1px solid red;
 
 
 
@@ -26,17 +29,17 @@
 } */
 
 #logo-1 {
-    width: 10em;
-    height: 7em;
+    width: 8em;
+    height: 6em;
 
 }
 
 #FFM {
-    margin-top: 3em;
-    margin-left: 7em;
+    margin-top: 1em;
+    margin-left: 11em;
     -webkit-text-stroke: 1px #f3660062;
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: "Kantumruy Pro", sans-serif;
     color: #ffa743;
 
@@ -48,8 +51,8 @@
     -webkit-text-stroke: 1px #f3660062;
     font-weight: 300;
     margin-top: 1em;
-    margin-left: 12em;
-    font-size: 1.5em;
+    margin-left: 21em;
+    font-size: 1.2em;
     font-family: "Kantumruy Pro", sans-serif;
     color: #ffa743;
 
@@ -59,7 +62,7 @@
 
     display: flex;
     justify-content: center;
-    margin-top: 50em;
+    margin-top: 17em;
 }
 
 #logo-arrow {
@@ -79,7 +82,6 @@
 header {
     display: flex;
     justify-content: space-between;
-    font-family: "Jura", sans-serif;
     background-color: #130F0F;
     color: white;
     font-size: 1.1em;
@@ -106,9 +108,7 @@ header {
 
 }
 
-#about-us {
-    font-family: "Jura", sans-serif;
-}
+
 
 #title-team {
 
@@ -118,10 +118,16 @@ header {
 }
 
 #about-us p {
+    font-size: large;
     text-align: justify;
     text-justify: inter-word;
     padding: 0 4em;
 
+}
+
+#about-us span {
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 #discoverArtist {
@@ -215,7 +221,7 @@ header {
 }
 
 #actualite {
-    font-family: "jura", sans-serif;
+
     background-color: #130F0F;
     color: #943AAB;
 }
@@ -263,6 +269,14 @@ header {
     color: #130F0F;
     margin-top: 1.5em;
 }
+
+#contact-us {
+    background-image: url(/img/fire-background.jpg);
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
 
 @media screen and (min-width:600px) {
     #FFM {
