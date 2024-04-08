@@ -10,12 +10,10 @@ body {
 
 #accueil {
 
-    background-image: url(../img/photo-accueil-780.avif);
-    /* background-size: cover; */
-    height: 100%;
-
+    background-image: url(../img/photo-accueil-780-900.avif);
     background-repeat: no-repeat;
-    background-position: center border: 1px solid red;
+    background-position: center;
+    
 
 
 
@@ -29,17 +27,18 @@ body {
 } */
 
 #logo-1 {
-    width: 8em;
-    height: 6em;
+    width: 6em;
+    height: 4em;
+    margin-bottom: 8em;
 
 }
 
 #FFM {
-    margin-top: 1em;
-    margin-left: 11em;
+    margin-top: -1em;
+    margin-left: 10em;
     -webkit-text-stroke: 1px #f3660062;
     font-weight: 300;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: "Kantumruy Pro", sans-serif;
     color: #ffa743;
 
@@ -51,8 +50,8 @@ body {
     -webkit-text-stroke: 1px #f3660062;
     font-weight: 300;
     margin-top: 1em;
-    margin-left: 21em;
-    font-size: 1.2em;
+    margin-left: 18em;
+    font-size: 0.9em;
     font-family: "Kantumruy Pro", sans-serif;
     color: #ffa743;
 
@@ -62,7 +61,7 @@ body {
 
     display: flex;
     justify-content: center;
-    margin-top: 17em;
+    margin-top: 25em;
 }
 
 #logo-arrow {
@@ -142,7 +141,7 @@ header {
     display: inline-block;
     font-size: 1.5em;
     text-decoration: none;
-    margin-left: 7.7em;
+    margin-left: 5em;
     text-align: center;
     border: 1px solid red;
     width: 8em;
@@ -209,7 +208,7 @@ header {
     display: inline-block;
     font-size: 1.5em;
     text-decoration: none;
-    margin-left: 7.7em;
+    margin-left: 5em;
     text-align: center;
     border: 1px solid red;
     width: 8em;
@@ -259,7 +258,7 @@ header {
     font-size: 1.5em;
     font-weight: 450;
     text-decoration: none;
-    margin-left: 6.5em;
+    margin-left: 4em;
     text-align: center;
     border: 1px solid red;
     width: 10em;
@@ -279,6 +278,16 @@ header {
 
 
 @media screen and (min-width:600px) {
+    #accueil {
+
+        background-image: url(../img/photo-accueil-2000.avif);
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+
+    }
+
     #FFM {
         margin-top: 5em;
         margin-left: 15em;
@@ -297,7 +306,15 @@ header {
 
 @media screen and (min-width:1020px) {
 
-    #accueil {}
+    #accueil {
+
+        background-image: url(../img/photo-accueil.avif);
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+
+    }
 
     #logo-1 {
         width: 15em;
