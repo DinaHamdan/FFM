@@ -71,12 +71,7 @@ body {
 
 }
 
-#logo-2 {
-    margin-top: 2em;
-    width: 5em;
-    height: 4em;
 
-}
 
 header {
     display: flex;
@@ -84,6 +79,12 @@ header {
     background-color: #130F0F;
     color: white;
     font-size: 1.1em;
+}
+#logo-2 {
+    margin-top: 2em;
+    width: 5em;
+    height: 4em;
+
 }
 
 #menu-bar ul {
