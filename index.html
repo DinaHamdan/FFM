@@ -34,8 +34,10 @@
     </section>
     <header>
         <img id="logo-2" src="/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
-        <nav id="menu-bar">
-            <ul>
+        <img id="logo3" src="/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
+
+        <nav id="menuBar">
+            <ul class="menu">
                 <li><a href=""></a>FFM</li>
                 <li><a href=""></a>Artistes</li>
                 <li><a href=""></a>Evènements</li>
@@ -63,7 +65,9 @@
 
             </p>
             <h2 id="discoverArtist"> Découvrez Nos</h2>
-            <a href="" id="artistes">Artistes/Agrès</a>
+            <div id="center">
+                <a href="" id="artistes">Artistes/Agrès</a>
+            </div>
         </div>
         <div id="fire-jam">
             <p id="P1">Fire Jam</p>
@@ -76,8 +80,9 @@
             <p id="P3">Ouvert à tous</p>
             <p id="P3-1"> Venez </p>
             <p id="P3-2">comme vous êtes</p>
-            <a href="" id="adhesion">Adhésion</a>
-
+            <div id="center">
+                <a href="" id="adhesion">Adhésion</a>
+            </div>
         </div>
 
     </section>
@@ -94,7 +99,9 @@
             <p id="p-actu">Edition POI</p>
             <p>À malmort du</p>
             <p>Comtat -84</p>
-            <a id="event-button" href="">Voir l'évènement</a>
+            <div id="center">
+                <a id="event-button" href="">Voir l'évènement</a>
+            </div>
         </div>
     </section>
     <section id="contact-us">
@@ -123,5 +130,13 @@
 
     </section>
 </body>
+<script>
+    let mybutton = document.getElementById("logo3");
+    mybutton.addEventListener('click', () => {
+        mybutton.style.display = "none";
+        document.getElementById("menuBar").style.display = "flex";
+        console.log("patate");
+    });
+</script>
 
 </html>
