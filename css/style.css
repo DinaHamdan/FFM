@@ -273,6 +273,7 @@ header {
 }
 
 #event-button {
+    padding-top: 10px;
     display: inline-block;
     font-size: 1.5em;
     font-weight: 450;
@@ -289,12 +290,24 @@ header {
 }
 
 #contact-us {
-    background-image: url(/img/fire-background.jpg);
+    background-image: url(../img/fire-background-780-900.avif);
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    flex-direction: row;
-    color: white;
+
+    height: 500px;
 }
 
+#presta {
+
+    background-color: #130F0F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    height: 10em;
+
+}
 
 @media screen and (min-width:600px) {
     #accueil {

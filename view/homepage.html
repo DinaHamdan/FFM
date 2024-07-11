@@ -34,16 +34,17 @@
     </section>
     <header>
         <img id="logo-2" src="/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
-        <img id="logo3" src="/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
+        <img id="logo3" class="hamburger" src="/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
 
         <nav id="menuBar">
             <ul class="menu">
-                <li><a href=""></a>FFM</li>
-                <li><a href=""></a>Artistes</li>
-                <li><a href=""></a>Evènements</li>
-                <li><a href=""></a>Contact</li>
+                <li><a class="menuItem" href=""></a>FFM</li>
+                <li><a class="menuItem" href=""></a>Artistes</li>
+                <li><a class="menuItem" href=""></a>Evènements</li>
+                <li><a class="menuItem" href=""></a>Contact</li>
                 <li><img id="ffm-man" src="/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
             </ul>
+
 
         </nav>
     </header>
@@ -107,7 +108,7 @@
         </div>
     </section>
     <section id="contact-us">
-        <div>
+        <div id="presta">
             <div>
                 <h2>Nos préstations</h2>
                 <p>Envie de vous</p>
@@ -136,7 +137,7 @@
     let mybutton = document.getElementById("logo3");
     mybutton.addEventListener('click', () => {
         mybutton.style.display = "none";
-        document.getElementById("menuBar").style.display = "flex";
+        document.getElementById("menuBar").style.display = "block";
         console.log("patate");
     });
 </script>
