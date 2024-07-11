@@ -2,28 +2,37 @@ USE `FFM-DHA`;
 
 INSERT INTO role(id, code, label) VALUES
      (1, 'ADM','Admin')
-    ,(2, 'ADH', 'Adherant')
-    ,(3, 'USE', 'Adherant')
+    ,(2, 'MOD', 'Moderator')
+    ,(3, 'MEM', 'Member')
+    ,(4, 'VIS', 'Visitor')
    
 ;
 
-
-
-INSERT INTO adherant(id, email, pass, passClear, description, idRole, avatar, avatar_filename) VALUES
-      (1, 'dd', 'dd', 'dd', 'Hello I am your admin', 1, 'NA', 'NA')
-     ,(2, 'ff', 'ff', 'ff', 'Hello I am a user', 2, 'NA', 'NA')
+INSERT INTO member( idRole, email, pass, passClear, firstName, lastName, phoneNumber, avatar, avatar_filename) VALUES
+      ( 1, 'dina', '$2y$10$a72xSXL5bHr/E0AOeAt2P.Scq3TUkr.zUfsIfKPo3WEXSx1e8GAaG', 'test', 'Dina','Hamdan',  123, 'NA', 'NA')
 ;
 
-INSERT INTO discussion(id, textContent, idUtilisateur, illustration, illustration_filename, date_time_column) VALUES
-     (1, 'blablablablablabla', 1, 'NA', 'NA','24-06-19 09:56:15')
-    
+INSERT INTO typeAgre( name, label, description) VALUES
+     ('Poi', 'POI', 'Bolas' )
+      ,( 'Staff', 'STF', 'NA' )
+        ,( 'Dragon Staff', 'DS', 'NA' )
+           ,( 'Rope Dart', 'RD', 'NA' )
+          ,( 'Hula Hoop', 'HH', 'Cerceau' )
+           ,( 'Juggling Balls', 'JB', 'Balles' )
+           ,('Clubs', 'CL','Massue')
+             ,('Diabolo', 'DIA','NA')
+               ,('Mini Staff', 'MSTF','Bâtons de feu')
+                 ,('Fire Hands', 'FH','Mains de feu')
+                   ,('Nunchuks', 'NUN','Nunchuku')
+                    ,('Fans', 'FA','Eventail')
+                     ,('Monocycle', 'MO','NA')
+                      ,('Whip', 'WH','Fouet')
+                         ,('Torches', 'TOR','NA')
+                         ,('Charcoal', 'CHAR','Charbon')
 ;
 
-INSERT INTO commentaire(id, phrase, idUtilisateur, idArticle, date_time_column) VALUES
-     (1, 'blabla', 2, 1,'24-06-19 09:56:15' )
-    
-;
-INSERT INTO putLike(id, idUtilisateur, idArticle, date_time_column) VALUES
-     (1, 2, 1,'24-06-19 09:56:15' )
+INSERT INTO memberTypeAgre(idMember, idTypeAgre) VALUES
+     (1, 1)
+        ,(1, 4)
     
 ;
