@@ -23,12 +23,25 @@
 
         <nav id="menuBar">
             <ul class="menu">
-                <li><a class="menuItem" href="">FFM</a></li>
-                <li><a class="menuItem" href="">Artistes</a></li>
-                <li><a class="menuItem" href="">Evènements</a></li>
-                <li><a class="menuItem" href="">Contact</a></li>
-                <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
-                <li><img id="ffm-man" src="/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
+                <?php
+                if ($args['session']['user'] != null) { ?>
+                    <li><a class="menuItem" href="">FFM</a></li>
+                    <li><a class="menuItem" href="">Artistes</a></li>
+                    <li><a class="menuItem" href="">Evènements</a></li>
+                    <li><a class="menuItem" href="">Contact</a></li>
+                    <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
+                    <li><a class="menuItem" href='/ctrl/forum/forum-display.php'>Forum</a></li>
+                    <div>
+                        <li><img id="ffm-man" src="/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
+                        <li><a href='/ctrl/logout.php'>Logout</a></li>
+                    </div>
+                <?php } else { ?>
+                    <li><a class="menuItem" href="">FFM</a></li>
+                    <li><a class="menuItem" href="">Artistes</a></li>
+                    <li><a class="menuItem" href="">Evènements</a></li>
+                    <li><a class="menuItem" href="">Contact</a></li>
+                    <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
+                <?php } ?>
             </ul>
 
 

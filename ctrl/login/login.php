@@ -3,8 +3,8 @@
 
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
-/* require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/user.php';
- */
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/user.php';
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
 
@@ -28,7 +28,7 @@ class Login extends Ctrl
             if (password_verify($password, $user['pass'])) {
                 $_SESSION['user'] = $user;
 
-                header('Location: ' . '/ctrl/forum.php');
+                header('Location: ' . '/ctrl/forum/forum-display.php');
                 exit;
             } else {
                 $_SESSION['msg']['incorrect'] = [];
