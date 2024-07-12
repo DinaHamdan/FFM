@@ -31,6 +31,9 @@
                     <li><a class="menuItem" href="">Contact</a></li>
                     <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
                     <li><a class="menuItem" href='/ctrl/forum/forum-display.php'>Forum</a></li>
+                    <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
+                        <li><a class="menuItem" href="/ctrl/registration/registration-display.php">Inscription</a></li>
+                    <?php  } ?>
                     <div>
                         <li><img id="ffm-man" src="/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
                         <li><a href='/ctrl/logout.php'>Logout</a></li>

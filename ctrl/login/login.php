@@ -3,7 +3,7 @@
 
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/user.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php';
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
@@ -21,7 +21,7 @@ class Login extends Ctrl
         $password = $userInfo['pass'];
 
         // List all user components using their email as id
-        $user = LibUser::getUser($userInfo['email']);
+        $user = LibUser::getMember($userInfo['email']);
         // var_dump($user);
         if ($user != null) {
 

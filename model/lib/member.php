@@ -16,7 +16,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
 class LibUser
 {
     // List User role
-    static function getUserRole(): array
+    static function getMemberRole(): array
     {
         $query = 'SELECT role.id, role.label';
         $query .= ' FROM role';
@@ -24,12 +24,12 @@ class LibUser
 
         // - Exécute la requête
         $successOrFailure = $statement->execute();
-        $userRole = $statement->fetchAll(PDO::FETCH_ASSOC);
-        return $userRole;
+        $memberRole = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $memberRole;
     }
 
     //List user with email only
-    static function getUser(string $email): ?array
+    static function getMember(string $email): ?array
     {
         $query = 'SELECT member.id, member.email, member.pass, role.id AS idRole, role.code AS codeRole, role.label as roleLabel';
         $query .= ' FROM member ';
@@ -46,5 +46,20 @@ class LibUser
             $user = null;
         };
         return $user;
+    }
+    //Create a user
+    static function createMember(string $email, string $password, string $passClear, string $idRole): bool
+    {
+        $query = 'INSERT INTO member ( email, pass, passClear, idRole) VALUES ( :email, :pass, :passClear, :idRole)';
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':email', $email);
+        $statement->bindParam(':pass', $password);
+        $statement->bindParam(':passClear', $passClear);
+        $statement->bindParam(':idRole', $idRole);
+
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
     }
 }

@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
 /* require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/post.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/user.php'; */
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php'; */
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
