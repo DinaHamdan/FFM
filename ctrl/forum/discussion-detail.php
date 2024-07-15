@@ -1,35 +1,38 @@
 <?php
+
+
+
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/discussion.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php';
-
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
-
-class Forum extends Ctrl
+class DiscussionDetail extends Ctrl
 {
     function do(): void
     {
         $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::MEMBER || Role::ADMIN);
-        $listDiscussion = LibDiscussion::getAllDiscussion();
-        $_SESSION['listDiscussion'] = $listDiscussion;
-        //var_dump($listPost);
-        // var_dump($_SESSION['user']); 
+
+        $idDiscussion = $_GET['id'];
+        $discussion = LibDiscussion::getDiscussion($idDiscussion);
+        $_SESSION['discussion'] = $discussion;
     }
 
     function renderView(): void
     {
         $args = $this->viewArgs;
+
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/header.php';
-        include $_SERVER['DOCUMENT_ROOT'] . '/view/forum/forum-display.php';
+        include $_SERVER['DOCUMENT_ROOT'] . '/view/forum/discussion-detail.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
+
+
     function getPageTitle(): string
     {
-        return 'Forum!';
+        return 'Discussion details';
     }
 }
 
-$ctrl = new Forum();
+$ctrl = new DiscussionDetail();
 $ctrl->execute();

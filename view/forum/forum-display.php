@@ -1,6 +1,5 @@
 <main>
 
-    <h2>Welcome to Forum</h2>
 
     <form id="write-post" action="/ctrl/forum/create-discussion.php" method="post" enctype="multipart/form-data">
 
@@ -26,6 +25,20 @@
 
 
     </form>
+
+    <div id="all-discussion-container">
+
+        <?php foreach ($args['session']['listDiscussion'] as $args['session']['discussion']) { ?>
+            <p>Title</p>
+            <h4 id="discussion-title"><?= $args['session']['discussion']['title'] ?> </h4>
+            <p>Content</p>
+            <p> <?= $args['session']['discussion']['content'] ?></p>
+            <a href="/ctrl/forum/discussion-detail.php?id=<?= ($args['session']['discussion']['id']) ?>">Enter</a>
+        <?php } ?>
+
+    </div>
+
+
 
 
 </main>

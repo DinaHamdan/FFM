@@ -9,6 +9,6 @@ class Type
     //List des types d'images accepté
     // const LIST_ACCEPTED_FILE_TYPE = [MY_IMG_PNG, MY_IMG_JPG];
 
-    //Size of accepted images
-    const FILE_MAX_SIZE = 10;
+    //Size of accepted images 10MB
+    const FILE_MAX_SIZE =  10485760;
 }
