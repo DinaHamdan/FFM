@@ -2,21 +2,21 @@
 
     <h2>Welcome to Forum</h2>
 
-    <form id="write-post" action="/ctrl/post/create-post.php" method="post" enctype="multipart/form-data">
+    <form id="write-post" action="/ctrl/forum/create-discussion.php" method="post" enctype="multipart/form-data">
 
         <!-- Write blog-->
         <label for="discussion-title">Article title</label>
         <input type="text" id="discussion-title" name="discussion-title">
 
-        <label for="create-discussion">Write Article here</label>
-        <textarea id="blog-text-area" name="create-discussion" id="createPost"></textarea>
+        <label for="discussion-content">Write Article here</label>
+        <textarea id="discussion-content" name="discussion-content"></textarea>
 
 
         <!-- Blog photo -->
 
-        <div id="blog-photo-container">
-            <label for="blogPhoto">Blog Image</label>
-            <input type="file" id="blogPhoto" name="blogPhoto">
+        <div id="discussion-photo-container">
+            <label for="discussionPhoto">Phoyo</label>
+            <input type="file" id="discussionPhoto" name="discussionPhoto">
         </div>
 
         <div class="center-button">

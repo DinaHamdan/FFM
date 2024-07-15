@@ -157,8 +157,8 @@ CREATE TABLE discussion(
   ,title varchar(50) NOT NULL
   ,content varchar(2000) NOT NULL
   ,idMember bigint(20) NOT NULL
-  ,illustration longblob NOT NULL
-  ,illustration_filename varchar(255) NOT NULL
+  ,illustration longblob 
+  ,illustration_filename varchar(255) 
   ,date_time_column timestamp(6) NOT NULL
 )
 ;
