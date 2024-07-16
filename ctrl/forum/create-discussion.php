@@ -13,7 +13,8 @@ class CreateDiscussion extends Ctrl
     function do(): void
     {
         $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::MEMBER || Role::ADMIN);
+        $isGranted = $this->hasRole(Role::MEMBER);
+        $isGranted = $this->hasRole(Role::ADMIN);
 
         // Read blog contententered by user
         //Post content from formulaire
@@ -21,7 +22,7 @@ class CreateDiscussion extends Ctrl
         $discussionContent = htmlspecialchars($_POST['discussion-content']);
 
         //Get user Id from session
-        $userId = $_SESSION['user']['id'];
+        $idMember = $_SESSION['user']['id'];
         // echo ($_SESSION['user']);
 
 
@@ -115,7 +116,7 @@ class CreateDiscussion extends Ctrl
         }
 
         //Create Post
-        $isSuccess = LibDiscussion::createDiscussion($discussionTitle, $discussionContent, $userId, $binaryFile, $nameFile, $dateTime);
+        $isSuccess = LibDiscussion::createDiscussion($discussionTitle, $discussionContent, $idMember, $binaryFile, $nameFile, $dateTime);
         //Create a directory to save uploaded photos
 
         $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/upload/';

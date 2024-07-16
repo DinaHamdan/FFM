@@ -11,8 +11,12 @@ class DiscussionDetail extends Ctrl
     function do(): void
     {
         $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::MEMBER || Role::ADMIN);
-
+        $isGranted = $this->hasRole(Role::MEMBER);
+        $isGranted = $this->hasRole(Role::ADMIN);
+        /* 
+        if (!$isGranted) {
+            header('Location: ' . '/ctrl/forum/forum-display.php');
+        } */
         $idDiscussion = $_GET['id'];
         $discussion = LibDiscussion::getDiscussion($idDiscussion);
         $_SESSION['discussion'] = $discussion;

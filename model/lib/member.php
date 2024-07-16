@@ -67,14 +67,13 @@ class LibMember
     {
 
         $query = 'UPDATE  member SET firstName = :firstName , lastName = :lastName , phoneNumber = :phoneNumber, avatar = :avatar, avatar_filename = :avatar_filename WHERE id= :id';
-
         $statement = libDb::connect()->prepare($query);
 
         $statement->bindParam(':firstName', $fname);
         $statement->bindParam(':lastName', $lname);
         $statement->bindParam(':phoneNumber', $phoneNumber);
-        $statement->bindParam(':avatar', $binaryFile);
-        $statement->bindParam(':avatar_filename', $nameFile);
+        $statement->bindParam(':avatar', $binaryFile, PDO::PARAM_LOB);
+        $statement->bindParam(':avatar_filename', $nameFile, PDO::PARAM_STR);
         $statement->bindParam(':id', $idMember);
 
         // - Exécute la requête

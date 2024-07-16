@@ -16,6 +16,11 @@
                 <div id="user-container">
 
                     <div id="comment-content">
+                        <p>Posted by</p>
+                        <p><?= $args['session']['discussion']['comment']['memberInfo']['firstName'] ?></p>
+                        <p><?= $args['session']['discussion']['comment']['memberInfo']['lastName'] ?></p>
+                        <img src="data:image/png;base64,<?= base64_encode($args['session']['discussion']['comment']['memberInfo']['avatar']) ?>" alt="member-avatar">
+                        <p>content</p>
                         <p><?= $args['session']['discussion']['comment']['content'] ?></p>
                     </div>
                 </div>

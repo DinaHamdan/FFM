@@ -93,7 +93,7 @@ class CreateProfile extends Ctrl
 
 
         // Ajoute un flash-message
-        $_SESSION['msg']['info'][] = 'La discussion a été posté';
+        $_SESSION['msg']['info'][] = 'Le profile a été complété';
 
         $binaryFile = fopen($fileTmpName, 'rb');
         $nameFile = basename($fileName);

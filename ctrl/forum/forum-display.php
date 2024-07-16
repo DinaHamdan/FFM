@@ -11,7 +11,8 @@ class Forum extends Ctrl
     function do(): void
     {
         $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::MEMBER || Role::ADMIN);
+        $isGranted = $this->hasRole(Role::MEMBER);
+        $isGranted = $this->hasRole(Role::ADMIN);
         $listDiscussion = LibDiscussion::getAllDiscussion();
         $_SESSION['listDiscussion'] = $listDiscussion;
         //var_dump($listPost);

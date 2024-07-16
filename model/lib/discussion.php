@@ -89,26 +89,40 @@ class LibDiscussion
     //List comment added to get all posts function
     static function listComment(string $idDiscussion): array
     {
-        $query = 'SELECT comment.id, comment.content, comment.idDiscussion, comment.idMember, comment.date_time_column';
+        $query = 'SELECT comment.id, comment.content, comment.idMember, comment.idDiscussion, comment.idMember, comment.date_time_column';
         $query .= ' FROM comment ';
-        $query .= 'WHERE comment.idDiscussion = :id';
+        $query .= ' WHERE comment.idDiscussion = :id';
 
         $statement = libDb::connect()->prepare($query);
         $statement->bindParam(':id', $idDiscussion);
         // - Exécute la requête
         $successOrFailure = $statement->execute();
         $listComment = $statement->fetchAll(PDO::FETCH_ASSOC);
-        return $listComment;
-        /*         // Add a column with formatted data
+        /*         return $listComment;
+ */
+        // Add a column with formatted data
         $listCommentWithAdditionalInfo = [];
         foreach ($listComment as $comment) {
             $comment['time'] = date('Y-m-d h:i:s', strtotime($comment['date_time_column']));
-
             //Add user avatar for each comment
-            $comment['userAvatar'] = LibPost::getAvatar($comment['idUtilisateur']);
+            $comment['memberInfo'] = LibDiscussion::getMemberInfo($comment['idMember']);
+
             $listCommentWithAdditionalInfo[] = $comment;
         }
 
-        return $listCommentWithAdditionalInfo; */
+        return $listCommentWithAdditionalInfo;
+    }
+
+    static function getMemberInfo(string $idMember): array
+    {
+        $query = 'SELECT member.firstName, member.lastName, member.avatar, member.avatar_filename';
+        $query .= ' FROM member ';
+        $query .= ' WHERE member.id = :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idMember);
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $memberInfo = $statement->fetch(PDO::FETCH_ASSOC);
+        return $memberInfo;
     }
 }
