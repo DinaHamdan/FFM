@@ -34,7 +34,7 @@ class Create extends Ctrl
 
 
 
-        $isSuccess = LibUser::createMember($user['email'], $user['passHash'], $user['passClear'], $user['idRole']);
+        $isSuccess = LibMember::createMember($user['email'], $user['passHash'], $user['passClear'], $user['idRole']);
         // Ajoute un flash-message a garder?
         if ($isSuccess) {
             $_SESSION['msg']['info'][] = 'Your profile has been created successfully.';

@@ -11,7 +11,7 @@ INSERT INTO role(id, code, label) VALUES
 INSERT INTO member( idRole, email, pass, passClear, firstName, lastName, phoneNumber, avatar, avatar_filename) VALUES
       ( 1, 'dina', '$2y$10$a72xSXL5bHr/E0AOeAt2P.Scq3TUkr.zUfsIfKPo3WEXSx1e8GAaG', 'test', 'Dina','Hamdan',  123, 'NA', 'NA')
 ;
-
+-- test for table of type of agre
 INSERT INTO typeAgre( name, label, description) VALUES
      ('Poi', 'POI', 'Bolas' )
       ,( 'Staff', 'STF', 'NA' )

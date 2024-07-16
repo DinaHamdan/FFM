@@ -3,27 +3,28 @@
 
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/discussion.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/imgType.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
 
-class CreateDiscussion extends Ctrl
+class CreateProfile extends Ctrl
 {
     function do(): void
     {
         $isLogged = $this->isUserLogged();
-        /*         $isGranted = $this->hasRole(Role::ADMIN);  */
         $isGranted = $this->hasRole(Role::MEMBER);
 
 
-        // Read blog contententered by user
-        //Post content from formulaire
-        $discussionTitle = htmlspecialchars($_POST['discussion-title']);
-        $discussionContent = htmlspecialchars($_POST['discussion-content']);
+        //Gather data entered by user 
+        $user = [];
+        $user['fname'] = htmlspecialchars($_POST['firstName']);
+        $user['lname'] = htmlspecialchars($_POST['lastName']);
+        $user['phoneNumber'] = htmlspecialchars($_POST['phoneNumber']);
+
 
         //Get user Id from session
-        $userId = $_SESSION['user']['id'];
+        $idMember = $_SESSION['user']['id'];
         // echo ($_SESSION['user']);
 
 
@@ -40,12 +41,12 @@ class CreateDiscussion extends Ctrl
         $listAcceptedFileTypes = [$png, $jpg];
 
         //Read information seized in the create a blog form
-        $fileName = $_FILES['discussionPhoto']['name'];
-        $fileSize = $_FILES['discussionPhoto']['size'];
+        $fileName = $_FILES['avatar']['name'];
+        $fileSize = $_FILES['avatar']['size'];
 
         //
-        $fileTmpName  = $_FILES['discussionPhoto']['tmp_name'];
-        $fileType = $_FILES['discussionPhoto']['type'];
+        $fileTmpName  = $_FILES['avatar']['tmp_name'];
+        $fileType = $_FILES['avatar']['type'];
 
 
 
@@ -73,8 +74,8 @@ class CreateDiscussion extends Ctrl
         if ($hasErrors) {
             echo 'has errors.';
             // Redirect towards the form to correct the photo upload
-            /*      header('Location: ' . '/ctrl/forum/forum-display.php');
-            exit(); */
+            header('Location: ' . '/ctrl/profile/create-profile.php');
+            exit();
         }
 
         // Resize the photo
@@ -102,14 +103,10 @@ class CreateDiscussion extends Ctrl
         echo 'this is the file name' . $fileName;
         echo 'this is the file size' . $fileSize;
 
+        //Complete Profile 
+        $isSuccess =  LibMember::completeProfile($idMember, $user['fname'], $user['lname'],  $user['phoneNumber'], $binaryFile, $nameFile);
 
-        $dateTime = date('Y-m-d h:i:s');
-        // ("Y-m-d h:i:s")
-
-        //Create Post
-        $isSuccess = LibDiscussion::createDiscussion($discussionTitle, $discussionContent, $userId, $binaryFile, $nameFile, $dateTime);
         //Create a directory to save uploaded photos
-
         $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/upload/';
         // Copy the image file into the photo directory
         $uploadPath = $uploadDirectory . basename($fileName);
@@ -121,8 +118,7 @@ class CreateDiscussion extends Ctrl
         $args = $this->viewArgs;
         //add redirection
 
-        /*         header('Location: ' . '/ctrl/forum/forum-display.php');
- */
+        header('Location: ' . '/ctrl/forum/forum-display.php');
     }
 
 
@@ -132,5 +128,5 @@ class CreateDiscussion extends Ctrl
     }
 }
 
-$ctrl = new CreateDiscussion();
+$ctrl = new CreateProfile();
 $ctrl->execute();

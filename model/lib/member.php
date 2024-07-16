@@ -13,7 +13,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
  * @return boolean sucess or failure
  * @return array array of object
  * */
-class LibUser
+class LibMember
 {
     // List User role
     static function getMemberRole(): array
@@ -47,7 +47,7 @@ class LibUser
         };
         return $user;
     }
-    //Create a user
+    //Create a Member
     static function createMember(string $email, string $password, string $passClear, string $idRole): bool
     {
         $query = 'INSERT INTO member ( email, pass, passClear, idRole) VALUES ( :email, :pass, :passClear, :idRole)';
@@ -57,6 +57,25 @@ class LibUser
         $statement->bindParam(':pass', $password);
         $statement->bindParam(':passClear', $passClear);
         $statement->bindParam(':idRole', $idRole);
+
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+
+    //Complete Member profile
+    static function completeProfile(string $idMember, string $lname, string $fname, string $phoneNumber, $binaryFile, $nameFile): bool
+    {
+
+        $query = 'UPDATE  member SET firstName = :firstName , lastName = :lastName , phoneNumber = :phoneNumber, avatar = :avatar, avatar_filename = :avatar_filename WHERE id= :id';
+
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':firstName', $fname);
+        $statement->bindParam(':lastName', $lname);
+        $statement->bindParam(':phoneNumber', $phoneNumber);
+        $statement->bindParam(':avatar', $binaryFile);
+        $statement->bindParam(':avatar_filename', $nameFile);
+        $statement->bindParam(':id', $idMember);
 
         // - Exécute la requête
         $isSuccess = $statement->execute();

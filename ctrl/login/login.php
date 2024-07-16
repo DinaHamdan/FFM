@@ -21,7 +21,7 @@ class Login extends Ctrl
         $password = $userInfo['pass'];
 
         // List all user components using their email as id
-        $user = LibUser::getMember($userInfo['email']);
+        $user = LibMember::getMember($userInfo['email']);
         // var_dump($user);
         if ($user != null) {
 
