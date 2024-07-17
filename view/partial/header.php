@@ -26,7 +26,7 @@
                 <?php
                 /* Check if user session is not null to show the forum */
                 if ($args['session']['user'] != null) { ?>
-                    <li><a class="menuItem" href="">FFM</a></li>
+                    <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
                     <li><a class="menuItem" href="">Artistes</a></li>
                     <li><a class="menuItem" href="">Evènements</a></li>
                     <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
@@ -41,7 +41,7 @@
                         <li><a href='/ctrl/logout.php'>Logout</a></li>
                     </div>
                 <?php } else { ?>
-                    <li><a class="menuItem" href="">FFM</a></li>
+                    <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
                     <li><a class="menuItem" href="">Artistes</a></li>
                     <li><a class="menuItem" href="">Evènements</a></li>
                     <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
@@ -53,4 +53,30 @@
         </nav>
 
     </header>
+    <div id="listWarning">
+        <?php if (!empty($args['session']['msg']['incorrect'])) { ?>
+
+            <div class="info">
+
+                <?php foreach ($args['session']['msg']['incorrect'] as $inco) { ?>
+                    <p><?= $inco ?></p>
+                <?php } ?>
+
+            </div>
+        <?php } ?>
+
+        <?php if (!empty($args['session']['msg']['unexisting'])) { ?>
+
+            <div class="error">
+
+                <?php foreach ($args['session']['msg']['unexisting'] as $unexisting) { ?>
+                    <p><?= $unexisting ?></p>
+                <?php } ?>
+
+            </div>
+        <?php } ?>
+    </div>
+    <?php unset($_SESSION['msg']) ?>
+
+    </div>
     <h1><?= $args['pageTitle'] ?></h1>
