@@ -44,15 +44,6 @@ CREATE TABLE memberTypeAgre(
 )
 ;
 
-CREATE TABLE visitor(
-   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
-  ,idRole bigint(20) NOT NULL
-  ,email varchar(50) NOT NULL
-  ,firstName varchar(50) NOT NULL
-  ,lastName varchar(50) NOT NULL
-  ,phoneNumner bigint(100) NOT NULL
-)
-;
 
 CREATE TABLE artist(
    id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
@@ -79,12 +70,25 @@ CREATE TABLE artistTypeAgre(
 
 )
 ;
+/* CREATE TABLE visitor(
+   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
+  ,idRole bigint(20) NOT NULL
+  ,email varchar(50) NOT NULL
+  ,firstName varchar(50) NOT NULL
+  ,lastName varchar(50) NOT NULL
+  ,phoneNumner bigint(100) NOT NULL
+)
+; */
 
 CREATE TABLE contactMessage(
    id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
   ,type varchar(50) NOT NULL
+  ,idRole bigint(20) NOT NULL
+  ,email varchar(50) NOT NULL
+  ,firstName varchar(50) NOT NULL
+  ,lastName varchar(50) NOT NULL
+  ,phoneNumber bigint(100) NOT NULL
   ,content varchar(2000) NOT NULL
-  ,idVisitor bigint(20) NOT NULL
   ,date_time_column timestamp(6) NOT NULL
 )
 ;

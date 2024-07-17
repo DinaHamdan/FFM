@@ -80,4 +80,22 @@ class LibMember
         $isSuccess = $statement->execute();
         return $isSuccess;
     }
+    //Create contact message 
+    static function CreateContactMessage($messageType, $idRole, $firstName, $lastName, $email, $phoneNumber, $messageContent, $dateTime): bool
+    {
+        $query = 'INSERT INTO contactMessage ( type, idRole, firstName, lastName, email, phoneNumber, content, date_time_column) VALUES ( :type, :idRole, :firstName, :lastName, :email, :phoneNumber, :content, :date_time_column)';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':type', $messageType);
+        $statement->bindParam(':idRole', $idRole);
+        $statement->bindParam(':firstName', $firstName);
+        $statement->bindParam(':lastName', $lastName);
+        $statement->bindParam(':email', $email);
+        $statement->bindParam(':phoneNumber', $phoneNumber);
+        $statement->bindParam(':content', $messageContent);
+        $statement->bindParam(':date_time_column', $dateTime);
+
+
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
 }

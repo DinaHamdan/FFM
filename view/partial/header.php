@@ -24,13 +24,15 @@
         <nav id="menuBar">
             <ul class="menu">
                 <?php
+                /* Check if user session is not null to show the forum */
                 if ($args['session']['user'] != null) { ?>
                     <li><a class="menuItem" href="">FFM</a></li>
                     <li><a class="menuItem" href="">Artistes</a></li>
                     <li><a class="menuItem" href="">Evènements</a></li>
-                    <li><a class="menuItem" href="">Contact</a></li>
+                    <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
                     <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
                     <li><a class="menuItem" href='/ctrl/forum/forum-display.php'>Forum</a></li>
+                    <!-- Check if the user is an admin -->
                     <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
                         <li><a class="menuItem" href="/ctrl/registration/registration-display.php">Inscription</a></li>
                     <?php  } ?>
@@ -42,7 +44,7 @@
                     <li><a class="menuItem" href="">FFM</a></li>
                     <li><a class="menuItem" href="">Artistes</a></li>
                     <li><a class="menuItem" href="">Evènements</a></li>
-                    <li><a class="menuItem" href="">Contact</a></li>
+                    <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
                     <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
                 <?php } ?>
             </ul>
