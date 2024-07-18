@@ -62,10 +62,10 @@ class CreateDiscussion extends Ctrl
         }
         if (true) {
             echo 'all good';
-            /*      if ($fileSize > $acceptedFilesize) {
+            if ($fileSize > $acceptedFilesize) {
                 echo 'photo too big';
                 $_SESSION['msg']['error'][] = 'Le taille de la photo est trop grand';
-            } */
+            }
         }
 
         $hasErrors = !empty($_SESSION['msg']['error']);

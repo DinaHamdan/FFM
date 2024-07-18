@@ -49,7 +49,7 @@
             <p id="P3-1"> Venez </p>
             <p id="P3-2">comme vous êtes</p>
             <div id="center">
-                <a href="" id="adhesion">Adhésion</a>
+                <a href='/ctrl/adhesion/adhesion-display.php' id="adhesion">Adhésion</a>
             </div>
         </div>
 
@@ -69,7 +69,7 @@
                 <p>À malmort du</p>
                 <p>Comtat -84</p>
                 <div id="center">
-                    <a id="event-button" href="">Voir l'évènement</a>
+                    <a id="event-button" href='/ctrl/evenement/event-display.php'>Voir l'évènement</a>
                 </div>
             </div>
         </div>

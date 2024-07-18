@@ -81,7 +81,7 @@ class LibMember
         return $isSuccess;
     }
     //Create contact message 
-    static function CreateContactMessage($messageType, $idRole, $firstName, $lastName, $email, $phoneNumber, $messageContent, $dateTime): bool
+    static function CreateContactMessage(string $messageType, string $idRole, string $firstName, string $lastName, string $email, string $phoneNumber, string $messageContent, string $dateTime): bool
     {
         $query = 'INSERT INTO contactMessage ( type, idRole, firstName, lastName, email, phoneNumber, content, date_time_column) VALUES ( :type, :idRole, :firstName, :lastName, :email, :phoneNumber, :content, :date_time_column)';
         $statement = libDb::connect()->prepare($query);
@@ -92,6 +92,40 @@ class LibMember
         $statement->bindParam(':email', $email);
         $statement->bindParam(':phoneNumber', $phoneNumber);
         $statement->bindParam(':content', $messageContent);
+        $statement->bindParam(':date_time_column', $dateTime);
+
+
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+
+    //List type of juggling props
+    static function getTypeAgre(): array
+    {
+        $query = 'SELECT typeAgre.id, typeAgre.name, typeAgre.label, typeAgre.description';
+        $query .= ' FROM typeAgre';
+        $statement = libDb::connect()->prepare($query);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $typeAgre = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $typeAgre;
+    }
+
+
+    //Create contact message 
+    static function CreateAdhesion(string $firstName, string $lastName, string $email, string $phoneNumber, string  $agreType, string $talents, string $authorization, string $dateTime): bool
+    {
+        $query = 'INSERT INTO adhesion ( firstName, lastName, email, phoneNumber, typeAgre, talents, authorization, date_time_column) VALUES (  :firstName, :lastName, :email, :phoneNumber, :typeAgre, :talents, :authorization, :date_time_column)';
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':firstName', $firstName);
+        $statement->bindParam(':lastName', $lastName);
+        $statement->bindParam(':email', $email);
+        $statement->bindParam(':phoneNumber', $phoneNumber);
+        $statement->bindParam(':typeAgre', $agreType);
+        $statement->bindParam(':talents', $talents);
+        $statement->bindParam(':authorization', $authorization);
         $statement->bindParam(':date_time_column', $dateTime);
 
 
