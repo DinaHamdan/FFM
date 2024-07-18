@@ -14,7 +14,7 @@
         <!-- Blog photo -->
 
         <div id="discussion-photo-container">
-            <label for="discussionPhoto">Phoyo</label>
+            <label for="discussionPhoto">Photo</label>
             <input type="file" id="discussionPhoto" name="discussionPhoto">
         </div>
 

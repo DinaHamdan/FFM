@@ -1,13 +1,13 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/agre.php';
 
 
 class AdhereDisplay extends Ctrl
 {
     function do(): void
     {
-        $_SESSION['typeAgre'] = LibMember::getTypeAgre();
+        $_SESSION['typeAgre'] = LibAgre::getTypeAgre();
     }
     function renderView(): void
     {

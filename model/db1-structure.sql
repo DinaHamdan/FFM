@@ -81,15 +81,15 @@ CREATE TABLE artistTypeAgre(
 
 )
 ;
-/* CREATE TABLE visitor(
-   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
-  ,idRole bigint(20) NOT NULL
-  ,email varchar(50) NOT NULL
-  ,firstName varchar(50) NOT NULL
-  ,lastName varchar(50) NOT NULL
-  ,phoneNumner bigint(100) NOT NULL
-)
-; */
+-- CREATE TABLE visitor(
+   --id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
+ -- ,idRole bigint(20) NOT NULL
+  --,email varchar(50) NOT NULL
+  --,firstName varchar(50) NOT NULL
+ -- ,lastName varchar(50) NOT NULL
+ -- ,phoneNumner bigint(100) NOT NULL
+--)
+--;
 
 CREATE TABLE contactMessage(
    id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
@@ -122,22 +122,28 @@ CREATE TABLE volunteerForm(
 ;
 
 
+CREATE TABLE category(
+   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
+   ,name varchar(50) NOT NULL
+   
+); 
 
 CREATE TABLE photoAgre(
    id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
-  ,title varchar(50) NOT NULL
-  ,label varchar(50) NOT NULL
+  ,typeAgre  varchar(50) NOT NULL
+  ,idCategory  bigint(20) NOT NULL
+  ,idTypeAgre bigint(20) NOT NULL
   ,illustration longblob NOT NULL
   ,illustration_filename varchar(255) NOT NULL
 
 )
 ;
-CREATE TABLE typeAgrePhoto(
-  idAgre bigint(20) NOT NULL
-  ,idPhoto bigint(50) NOT NULL
+-- CREATE TABLE typeAgrePhoto(
+  --idAgre bigint(20) NOT NULL
+  --,idPhoto bigint(50) NOT NULL
 
-)
-;
+--)
+-- ; 
 CREATE TABLE convention(
    id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
   ,title varchar(50) NOT NULL
@@ -205,11 +211,11 @@ ALTER TABLE memberTypeAgre
     ,ADD CONSTRAINT `fk_memberTypeAgre_typeAgre` FOREIGN KEY(idTypeAgre) REFERENCES typeAgre(id)
 ;
 
-ALTER TABLE visitor
-   ADD CONSTRAINT `u_visitor_email` UNIQUE(email)
-   ,ADD CONSTRAINT `fk_visitor_role` FOREIGN KEY(idRole) REFERENCES role(id)
-;
-
+--ALTER TABLE visitor
+  -- ADD CONSTRAINT `u_visitor_email` UNIQUE(email)
+  -- ,ADD CONSTRAINT `fk_visitor_role` FOREIGN KEY(idRole) REFERENCES role(id)
+--;
+ 
 ALTER TABLE photoArtist
    ADD CONSTRAINT `fk_photoArtist_artist` FOREIGN KEY(idArtist) REFERENCES artist(id)
 ;
@@ -217,17 +223,23 @@ ALTER TABLE artistTypeAgre
    ADD CONSTRAINT `fk_artistTypeAgre_artist` FOREIGN KEY(idArtist) REFERENCES artist(id)
     ,ADD CONSTRAINT `fk_artistTypeAgre_typeAgre` FOREIGN KEY(idTypeAgre) REFERENCES typeAgre(id)
 ;
-ALTER TABLE contactMessage
-   ADD CONSTRAINT `fk_contactMessage_visitor` FOREIGN KEY(idVisitor) REFERENCES visitor(id)
-;
+-- ALTER TABLE contactMessage
+  -- ADD CONSTRAINT `fk_contactMessage_visitor` FOREIGN KEY(idVisitor) REFERENCES visitor(id)
+--;
 ALTER TABLE volunteerForm
    ADD CONSTRAINT `fk_formBenevole_volunteer` FOREIGN KEY(idVolunteer) REFERENCES volunteer(id)
 ;
 
 
-ALTER TABLE typeAgrePhoto
-   ADD CONSTRAINT `fk_typeAgrePhoto_typeAgre` FOREIGN KEY(idAgre) REFERENCES typeAgre(id)
-    ,ADD CONSTRAINT `fk_typeAgrePhoto_photoAgre` FOREIGN KEY(idPhoto) REFERENCES photoAgre(id)
+-- ALTER TABLE typeAgrePhoto
+   -- ADD CONSTRAINT `fk_typeAgrePhoto_typeAgre` FOREIGN KEY(idAgre) REFERENCES typeAgre(id)
+    -- ,ADD CONSTRAINT `fk_typeAgrePhoto_photoAgre` FOREIGN KEY(idPhoto) REFERENCES photoAgre(id)
+-- ;
+ 
+
+ ALTER TABLE photoAgre
+   ADD CONSTRAINT `fk_photoAgre_typeAgre` FOREIGN KEY(idTypeAgre) REFERENCES typeAgre(id)
+    ,ADD CONSTRAINT `fk_photoAgre_category` FOREIGN KEY(idCategory) REFERENCES category(id)
 ;
 
 ALTER TABLE conventionPhoto

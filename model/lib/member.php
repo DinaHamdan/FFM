@@ -99,7 +99,7 @@ class LibMember
         return $isSuccess;
     }
 
-    //List type of juggling props
+    /*     //List type of juggling props
     static function getTypeAgre(): array
     {
         $query = 'SELECT typeAgre.id, typeAgre.name, typeAgre.label, typeAgre.description';
@@ -112,7 +112,7 @@ class LibMember
         return $typeAgre;
     }
 
-
+ */
     //Create contact message 
     static function CreateAdhesion(string $firstName, string $lastName, string $email, string $phoneNumber, string  $agreType, string $talents, string $authorization, string $dateTime): bool
     {

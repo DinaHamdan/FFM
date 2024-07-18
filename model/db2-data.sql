@@ -36,3 +36,9 @@ INSERT INTO memberTypeAgre(idMember, idTypeAgre) VALUES
         ,(1, 4)
     
 ;
+
+INSERT INTO category(name)VALUES
+('Fire')
+,('LED')
+,('DayProp')
+;

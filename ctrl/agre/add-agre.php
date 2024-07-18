@@ -8,22 +8,54 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/model/imgType.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
 
-class CreateDiscussion extends Ctrl
+class AddAgrePhoto extends Ctrl
 {
     function do(): void
     {
         $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::MEMBER);
         $isGranted = $this->hasRole(Role::ADMIN);
 
-        // Read blog contententered by user
-        //Post content from formulaire
-        $discussionTitle = htmlspecialchars($_POST['discussion-title']);
-        $discussionContent = htmlspecialchars($_POST['discussion-content']);
+        if (isset($_FILES['files'])) {
+            $errors = [];
+            $uploadedFiles = [];
+            $uploadPath = 'uploads/'; // Specify the directory to store the uploaded files
+            $fileNames = $_FILES['agrePhoto']['name'];
+            $fileSizes = $_FILES['agrePhoto']['size'];
+            $fileTmps = $_FILES['agrePhoto']['tmp_name'];
+            $fileTypes = $_FILES['agrePhoto']['type'];
+            foreach ($fileNames as $key => $name) {
+                $fileSize = $fileSizes[$key];
+                $fileTmp = $fileTmps[$key];
+                $fileType = $fileTypes[$key];
+                // Validate and process each uploaded file
+                // Add your validation logic here
+                // Generate a unique filename to avoid conflicts
+                $fileName = uniqid() . '_' . $name;
+                // Move the uploaded file to the specified directory
+                $destination = $uploadPath . $fileName;
+                if (move_uploaded_file($fileTmp, $destination)) {
+                    $uploadedFiles[] = $destination;
+                } else {
+                    $errors[] = "Failed to upload {$name}";
+                }
+            }
+            if (!empty($errors)) {
+                // Handle errors encountered during the upload process
+                foreach ($errors as $error) {
+                    echo $error . "<br>";
+                }
+            }
+            if (!empty($uploadedFiles)) {
+                // File upload succeeded
+                // Perform further operations or display success message
+                foreach ($uploadedFiles as $file) {
+                    echo "File uploaded: " . $file . "<br>";
+                }
+            }
+        }
 
-        //Get user Id from session
-        $idMember = $_SESSION['user']['id'];
-        // echo ($_SESSION['user']);
+
+        foreach ($_POST['agreType'] as $agre[]);
 
 
         //Initier une session  d'un objet msg avec info et erreur comme objet
@@ -38,14 +70,11 @@ class CreateDiscussion extends Ctrl
 
         $listAcceptedFileTypes = [$png, $jpg, $null];
 
-        //Read information seized in the forum
-        $fileName = $_FILES['discussionPhoto']['name'];
-        $fileSize = $_FILES['discussionPhoto']['size'];
-
-        //
-        $fileTmpName  = $_FILES['discussionPhoto']['tmp_name'];
-        $fileType = $_FILES['discussionPhoto']['type'];
-
+        //Read information seized in the create a blog form
+        $fileNames = $_FILES['agrePhoto']['name'];
+        $fileSizes = $_FILES['agrePhoto']['size'];
+        $fileTmps = $_FILES['agrePhoto']['tmp_name'];
+        $fileTypes = $_FILES['agrePhoto']['type'];
 
 
         $acceptedFilesize = Type::FILE_MAX_SIZE;
@@ -140,5 +169,5 @@ class CreateDiscussion extends Ctrl
     }
 }
 
-$ctrl = new CreateDiscussion();
+$ctrl = new AddAgrePhoto();
 $ctrl->execute();
