@@ -17,8 +17,8 @@
             <select name="agreType" id="">
 
                 <?php foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
-                    <option value="<?= $args['session']['agre']['id'] ?>"><?= $args['session']['agre']['name'] ?></option>
 
+                    <option value="<?= $args['session']['agre']['id'] ?>"><?= $args['session']['agre']['name'] ?></option>
                 <?php } ?>
             </select>
             <label for="agrePhoto">Ajouter des photos d'agrès</label>

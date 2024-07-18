@@ -42,4 +42,19 @@ class LibAgre
         $category = $statement->fetchAll(PDO::FETCH_ASSOC);
         return $category;
     }
+
+    //Add photos to agre table
+    static function AddAgrePhoto($idCategory, $idTypeAgre, $binaryFile, $nameFile): bool
+    {
+        $query = 'INSERT INTO photoAgre( idCategory, idTypeAgre, illustration, illustration_filename) VALUES ( :idCategory, :idTypeAgre, :illustration, :illustration_filename)';
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':idTypeAgre', $idTypeAgre);
+        $statement->bindParam(':idCategory', $idCategory);
+        $statement->bindParam(':illustration', $binaryFile, PDO::PARAM_LOB);
+        $statement->bindParam(':illustration_filename', $nameFile, PDO::PARAM_STR);
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
 }
