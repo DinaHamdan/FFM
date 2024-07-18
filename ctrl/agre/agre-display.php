@@ -1,11 +1,13 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/agre.php';
 
 
 class AgreDisplay extends Ctrl
 {
     function do(): void
     {
+        $_SESSION['listPhotoAgre'] = LibAgre::getAllAgrePhoto();
     }
     function renderView(): void
     {

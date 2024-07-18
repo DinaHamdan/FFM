@@ -57,4 +57,17 @@ class LibAgre
         $isSuccess = $statement->execute();
         return $isSuccess;
     }
+
+
+    //Add photos to agre table
+    static function getAllAgrePhoto(): array
+    {
+        $query = 'SELECT photoAgre.id, photoAgre.idTypeAgre, photoAgre.idCategory, photoAgre.illustration';
+        $query .= ' FROM photoAgre ';
+        $statement = libDb::connect()->prepare($query);
+        $successOrFailure = $statement->execute();
+        $listPhotoAgre = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        return $listPhotoAgre;
+    }
 }
