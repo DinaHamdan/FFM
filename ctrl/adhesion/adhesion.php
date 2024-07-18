@@ -23,8 +23,7 @@ class CreateAdhesion extends Ctrl
         $adherent['email'] = htmlspecialchars($_POST['visitorEmail']);
         $adherent['phoneNumber'] = htmlspecialchars($_POST['visitorPhoneNumber']);
 
-
-        /*   if (!empty($_POST['agreType'])) { */
+        //Post the type of agre as an array so i can implode it to string 
         foreach ($_POST['agreType'] as $agre[]);
 
         $adherent['agreType'] = implode(',', $agre);
