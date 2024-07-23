@@ -17,8 +17,8 @@ class AddAgrePhoto extends Ctrl
 
         //Read information entered by admin
 
-        $idTypeagre = $_POST['agreType'];
-        $idCategory = $_POST['category'];
+        $idTypeagre = htmlspecialchars($_POST['agreType']);
+        $idCategory = htmlspecialchars($_POST['category']);
 
 
         $fileNames = $_FILES['agrePhoto']['name'];

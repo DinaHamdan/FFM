@@ -11,6 +11,13 @@ INSERT INTO role(id, code, label) VALUES
 INSERT INTO member( idRole, email, pass, passClear, firstName, lastName, phoneNumber, avatar, avatar_filename) VALUES
       ( 1, 'dina', '$2y$10$a72xSXL5bHr/E0AOeAt2P.Scq3TUkr.zUfsIfKPo3WEXSx1e8GAaG', 'test', 'Dina','Hamdan',  123, 'NA', 'NA')
 ;
+
+INSERT INTO category(name)VALUES
+('Fire')
+,('LED')
+,('DayProp')
+;
+--TILL HERE
 -- test for table of type of agre
 INSERT INTO typeAgre( name, label, description) VALUES
      ('Poi', 'POI', 'Bolas' )
@@ -37,8 +44,37 @@ INSERT INTO memberTypeAgre(idMember, idTypeAgre) VALUES
     
 ;
 
-INSERT INTO category(name)VALUES
-('Fire')
-,('LED')
-,('DayProp')
-;
+
+/* INSERT INTO photoAgreGallerieFeu ( nameAgre, idTypeAgre, idCategory, illustration, illustration_filename) VALUES
+     ('Poi', 1, 1, 'NA' ,'NA'  )
+      ,( 'Staff', 2 ,1, 'NA','NA' )
+        ,( 'Dragon Staff', 3 ,1, 'NA','NA'  )
+           ,( 'Rope Dart', 4 ,1, 'NA','NA'  )
+          ,( 'Hula Hoop', 5 ,1, 'NA','NA'  )
+           ,( 'Juggling Balls', 6 ,1, 'NA','NA'  )
+           ,('Clubs', 7 ,1, 'NA','NA' )
+             ,('Diabolo', 8 ,1, 'NA','NA' )
+               ,('Mini Staff', 9 ,1, 'NA','NA' )
+                 ,('Fire Hands', 10 ,1, 'NA','NA' )
+                   ,('Nunchuks', 11 ,1, 'NA','NA' )
+                    ,('Fans', 12 ,1, 'NA','NA' )
+                     ,('Monocycle', 13 ,1, 'NA','NA' )
+                      ,('Whip', 14 ,1, 'NA','NA' )
+                         ,('Torches', 15 ,1, 'NA','NA' )
+                         ,('Charcoal', 16 ,1, 'NA','NA' )
+
+INSERT INTO photoAgreGallerieLED ( nameAgre, idTypeAgre, idCategory, illustration, illustration_filename) VALUES
+     ('Poi', 1, 2, 'NA' ,'NA'  )
+      ,( 'Staff', 2 , 2, 'NA','NA' )
+        ,( 'Dragon Staff', 3 , 2, 'NA','NA'  )
+           ,( 'Rope Dart', 4 , 2, 'NA','NA'  )
+          ,( 'Hula Hoop', 5 , 2, 'NA','NA'  )
+           ,( 'Juggling Balls', 6 ,2, 'NA','NA'  )
+           ,('Clubs', 7 ,2, 'NA','NA' )
+             ,('Diabolo', 8 ,2, 'NA','NA' )
+               ,('Mini Staff', 9 ,2, 'NA','NA' )
+                   ,('Nunchuks', 11 , 2, 'NA','NA' )
+                    ,('Fans', 12 , 2, 'NA','NA' )
+                     ,('Monocycle', 13 ,2, 'NA','NA' )
+                      ,('Whip', 14 ,2, 'NA','NA' )
+                */

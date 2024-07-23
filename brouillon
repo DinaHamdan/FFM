@@ -1,0 +1,84 @@
+<main>
+    <a href="/ctrl/agre/add-agre-display.php">Ajouter des photos d'agrés</a>
+
+    <?php
+    foreach ($args['session']['listPhotoAgre'] as $args['session']['photoAgre']) { ?>
+        <img id="agre-photo" src="data:image/png;base64,<?= base64_encode($args['session']['photoAgre']['illustration']) ?>" alt="photo d'un agré">
+    <?php } ?>
+
+
+
+    <?php
+
+    foreach ($args['session']['listPhotoCatAgre'] as $args['session']['photoCatAgre']) { ?>
+        <h2><?= $args['session']['photoCatAgre']['category'] ?> </h2>
+        <h2><?= $args['session']['photoCatAgre']['type'] ?> </h2>
+    <?php } ?>
+</main>
+
+<?php
+
+foreach ($args['session']['listPhotoFire'] as $args['session']['photoFire']) { ?>
+
+    <h2><?= $args['session']['photoFire']['name'] ?> </h2>
+<?php } ?>
+
+
+<?php
+
+foreach ($args['session']['listPhotoLED'] as $args['session']['photoLED']) { ?>
+
+    <h2><?= $args['session']['photoLED']['name'] ?> </h2>
+<?php } ?>
+
+<?php
+
+foreach ($args['session']['listCategory'] as $args['session']['category']) { ?>
+
+    <h2><?= $args['session']['category']['name'] ?> </h2>
+<?php } ?>
+
+
+//
+<h2>Agrès Feu</h2>
+<?php
+
+foreach ($args['session']['listPhotoFire'] as $args['session']['photoFire']) { ?>
+    <div>
+        <h2><?= $args['session']['photoFire']['agreName'] ?> </h2>
+        <a href=" "><img id="agre-photo" src="data:image/png;base64,<?= base64_encode($args['session']['photoFire']['illustration']) ?>" alt="photo d'un agré"></a>
+    </div>
+<?php } ?>
+
+<h2> Agrès LED</h2>
+
+<?php
+foreach ($args['session']['listPhotoLED'] as $args['session']['photoLED']) { ?>
+
+    <h2><?= $args['session']['photoLED']['agreName'] ?> </h2>
+    <img id="agre-photo" src="data:image/png;base64,<?= base64_encode($args['session']['listPhotoLED'][0]['illustration']) ?>" alt="photo d'un agré">
+
+<?php } ?>
+
+
+//List type of juggling props
+static function getTypeAgre(): array
+{
+$query = 'SELECT typeAgre.id, typeAgre.name, typeAgre.label, typeAgre.description, photoAgre.id, photoAgre.illustration, photoAgre.illustration_filename';
+$query .= ' FROM typeAgre';
+$query .= ' JOIN photoAgre ON typeAgre.id = photoAgre.idTypeAgre ';
+
+$statement = libDb::connect()->prepare($query);
+// - Exécute la requête
+$successOrFailure = $statement->execute();
+$typeAgre = $statement->fetchAll(PDO::FETCH_ASSOC);
+return $typeAgre;
+/* // Add a column with formatted data
+$listAgrephoto = [];
+foreach ($typeAgre as $agre) {
+$agre['photo'] = $agre['illustration'][0];
+$agre['photo_filename'] = $agre['illustration_filename'][0];
+$listAgrephoto[] = $agre;
+}
+return $listAgrephoto; */
+}
