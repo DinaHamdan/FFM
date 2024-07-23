@@ -96,6 +96,40 @@ class LibAgre
         }
         return $listAgreTypeCategoryWithFormattedInfo; */
     }
+
+    static function addAgreCategoryFeu($idAgre, $idCategoryFire): bool
+    {
+        $query = 'INSERT INTO typeAgreCategory( idAgre, idCategory) VALUES ( :idAgre, :idCategory)';
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':idAgre', $idAgre);
+        $statement->bindParam(':idCategory', $idCategoryFire);
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+    static function addAgreCategoryLED($idAgre, $idCategoryLED): bool
+    {
+        $query = 'INSERT INTO typeAgreCategory( idAgre, idCategory) VALUES ( :idAgre, :idCategory)';
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':idAgre', $idAgre);
+        $statement->bindParam(':idCategory', $idCategoryLED);
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+    static function addAgreCategoryDayProp($idAgre, $idCategoryDayProp): bool
+    {
+        $query = 'INSERT INTO typeAgreCategory( idAgre, idCategory) VALUES ( :idAgre, :idCategory)';
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':idAgre', $idAgre);
+        $statement->bindParam(':idCategory', $idCategoryDayProp);
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
 }
 /*     //Get all photos from the fire gallerie
     static function getAgrePhotoFeu(): array

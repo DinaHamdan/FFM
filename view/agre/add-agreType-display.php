@@ -44,7 +44,7 @@
 
                         <tr>
                             <td>
-                                <input name="idAgre[]" type="hidden" value="<?= $args['session']['agreTypeCategory']['id'] ?> ">
+                                <input name="listIdAgre[]" type="hidden" value="<?= $args['session']['agreTypeCategory']['id'] ?> ">
                                 <?= $args['session']['agreTypeCategory']['id'] ?>
                             </td>
                             <td><?= $args['session']['agreTypeCategory']['name'] ?> </td>
@@ -56,7 +56,7 @@
                                     Non
                                 <?php } else { ?>
                                     Oui
-                                    <input name="idCategoryFire[]" type="hidden" value="1">
+                                    <input name="listIdCategoryFire[]" type="hidden" value="1">
                                 <?php } ?>
                             </td>
                             <td>
@@ -67,7 +67,7 @@
                                     Non
                                 <?php } else { ?>
                                     Oui
-                                    <input name="idCategoryLED[]" type="hidden" value="2">
+                                    <input name="listIdCategoryLED[]" type="hidden" value="2">
                                 <?php } ?>
                             </td>
                             <td>
@@ -78,7 +78,7 @@
                                     Non
                                 <?php } else { ?>
                                     Oui
-                                    <input name="idCategoryDayProp[]" type="hidden" value="3">
+                                    <input name="listIdCategoryDayProp[]" type="hidden" value="3">
                                 <?php } ?>
                             </td>
 

@@ -23,12 +23,21 @@ class AddAgreType extends Ctrl
 
         $nameTypeAgre = htmlspecialchars($_POST['name']);
         $labelTypeAgre = htmlspecialchars($_POST['label']);
-        /*         $descriptionTypeagre = htmlspecialchars($_POST['description']);
- */
+
 
         //add an agre Type
 
         $isSuccess = LibAgre::AddAgreType($nameTypeAgre, $labelTypeAgre, $categoryTypeAgre['category']);
+
+        foreach ($_POST['listIdAgre'] as $idAgre[]) {
+            foreach ($_POST['listIdCategoryFire'] as $idCategoryFire[]);
+            foreach ($_POST['listIdCategoryLED'] as $idCategoryLED[]);
+            foreach ($_POST['listIdCategoryDayProp'] as $idCategoryDayProp[]);
+
+            $isSuccess = LibAgre::addAgreCategoryFeu($idAgre, $idCategoryFire);
+            $isSuccess = LibAgre::addAgreCategoryLED($idAgre, $idCategoryLED);
+            $isSuccess = LibAgre::addAgreCategoryDayProp($idAgre, $idCategoryDayProp);
+        };
     }
 
 
