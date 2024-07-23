@@ -29,40 +29,44 @@
     </form>
 
 
-    <a href="/ctrl/agre/agreTypeCategory-display.php">Agre Type Category</a>
 
 
     <div>
-        <?php
-        foreach ($args['session']['listAgreTypeCategory'] as $args['session']['agreTypeCategory']) { ?>
-
-            <table border="1">
+        <table border="1">
+            <thead>
                 <th>Agre Id</th>
                 <th>Agre Name</th>
-                <th>Agre Category Fire</th>
-                <th>Agre Category LED</th>
-                <th>Agre Category Day Prop</th>
-                <tr>
-                    <td>
-                        <input type="hidden" value="$args['session']['agreTypeCategory']['id']">
-                        <?= $args['session']['agreTypeCategory']['id'] ?>
-                    </td>
-                    <td><?= $args['session']['agreTypeCategory']['name'] ?> </td>
-                    <td>
-                        <input type="hidden" value="$args['session']['agreTypeCategory']['category'][0]">
-                        <?= $args['session']['agreTypeCategory']['category'][0] ?>
-                    </td>
-                    <td>
-                        <input type="hidden" value="$args['session']['agreTypeCategory']['category'][2]">
-                        <?= $args['session']['agreTypeCategory']['category'][2] ?>
-                    </td>
-                    <td> <input type="hidden" value="$args['session']['agreTypeCategory']['category'][4]">
-                        <?= $args['session']['agreTypeCategory']['category'][4] ?> </td>
+                <th>Id catégorie feu</th>
+                <th>Id catégorie lumineux</th>
+                <th>Id categorie agré Jour</th>
+            </thead>
+            <tbody>
+                <?php foreach ($args['session']['listAgreTypeCategory'] as $args['session']['agreTypeCategory']) { ?>
 
 
-                </tr>
-            </table>
-        <?php } ?>
+                    <tr>
+                        <td>
+                            <input type="hidden" value="$args['session']['agreTypeCategory']['id']">
+                            <?= $args['session']['agreTypeCategory']['id'] ?>
+                        </td>
+                        <td><?= $args['session']['agreTypeCategory']['name'] ?> </td>
+                        <td>
+                            <input type="hidden" value="$args['session']['agreTypeCategory']['category'][0]">
+                            <?= $args['session']['agreTypeCategory']['category'][0] ?>
+                        </td>
+                        <td>
+                            <input type="hidden" value="$args['session']['agreTypeCategory']['category'][2]">
+                            <?= $args['session']['agreTypeCategory']['category'][2] ?>
+                        </td>
+                        <td> <input type="hidden" value="$args['session']['agreTypeCategory']['category'][4]">
+                            <?= $args['session']['agreTypeCategory']['category'][4] ?> </td>
+
+
+                    </tr>
+                <?php } ?>
+
+            </tbody>
+        </table>
 
     </div>
 

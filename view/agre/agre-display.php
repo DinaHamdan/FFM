@@ -1,5 +1,6 @@
 <main>
-    <a href="/ctrl/agre/add-agre-display.php">Ajouter des photos d'agrés</a>
+    <div> <a href="/ctrl/agre/add-agre-display.php">Ajouter des photos d'agrés</a>
+    </div>
     <a href="/ctrl/agre/add-agreType-display.php">Ajouter type d'agrés</a>
 
     <h2> Agrès Feu</h2>
