@@ -28,16 +28,15 @@ class AddAgreType extends Ctrl
         //add an agre Type
 
         $isSuccess = LibAgre::AddAgreType($nameTypeAgre, $labelTypeAgre, $categoryTypeAgre['category']);
+        //get Agre id 
+        $getAgre = LibAgre::getIdType($nameTypeAgre);
 
-        foreach ($_POST['listIdAgre'] as $idAgre[]) {
-            foreach ($_POST['listIdCategoryFire'] as $idCategoryFire[]);
-            foreach ($_POST['listIdCategoryLED'] as $idCategoryLED[]);
-            foreach ($_POST['listIdCategoryDayProp'] as $idCategoryDayProp[]);
+        $idAgre = $getAgre[0]['id'];
+        foreach ($_POST['category'] as $category) {
 
-            $isSuccess = LibAgre::addAgreCategoryFeu($idAgre, $idCategoryFire);
-            $isSuccess = LibAgre::addAgreCategoryLED($idAgre, $idCategoryLED);
-            $isSuccess = LibAgre::addAgreCategoryDayProp($idAgre, $idCategoryDayProp);
-        };
+
+            $isAdded = LibAgre::addAgreCategory($idAgre, $category);
+        }
     }
 
 

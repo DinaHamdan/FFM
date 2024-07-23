@@ -228,8 +228,8 @@ ALTER TABLE volunteerForm
 
 
  ALTER TABLE typeAgreCategory
-    ADD CONSTRAINT `fk_typeAgrePhotoCategory_typeAgre` FOREIGN KEY(idAgre) REFERENCES typeAgre(id)
-    ,ADD CONSTRAINT `fk_typeAgrePhotoCategory_category` FOREIGN KEY(idCategory) REFERENCES category(id)
+    ADD CONSTRAINT `fk_typeAgreCategory_typeAgre` FOREIGN KEY(idAgre) REFERENCES typeAgre(id)
+    ,ADD CONSTRAINT `fk_typeAgreCategory_category` FOREIGN KEY(idCategory) REFERENCES category(id)
  ;
  
 
