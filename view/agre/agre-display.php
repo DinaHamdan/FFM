@@ -8,9 +8,10 @@
     foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
 
         <div>
-            <a href=" "> <img src=" " alt="">la </a>
+
 
             <h3><?= $args['session']['agre']['name'] ?></h3>
+            <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agre']['id'] ?>" "> <img src=" " alt="">la </a>
         </div>
     <?php } ?>
     <h2>Agrès LED</h2>
@@ -18,9 +19,10 @@
     foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
 
         <div>
-            <a href=" "> <img src=" " alt="">la </a>
+
 
             <h3><?= $args['session']['agre']['name'] ?></h3>
+            <a href=" /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agre']['id'] ?>" "> <img src=" " alt="">la </a>
         </div>
     <?php } ?>
 </main>

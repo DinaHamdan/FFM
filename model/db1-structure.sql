@@ -238,14 +238,6 @@ ALTER TABLE volunteerForm
     ,ADD CONSTRAINT `fk_photoAgre_category` FOREIGN KEY(idCategory) REFERENCES category(id)
 ;
 
- -- ALTER TABLE photoAgreGallerieFeu
- --  ADD CONSTRAINT `fk_photoAgreGallerieFeu_typeAgre` FOREIGN KEY(idTypeAgre) REFERENCES typeAgre(id)
-   -- ,ADD CONSTRAINT `fk_photoAgreGallerieFeu_category` FOREIGN KEY(idCategory) REFERENCES category(id)
---;
--- ALTER TABLE photoAgreGallerieLED
-  -- ADD CONSTRAINT `fk_photoAgreGallerieLED_typeAgre` FOREIGN KEY(idTypeAgre) REFERENCES typeAgre(id)
-   -- ,ADD CONSTRAINT `fk_photoAgreGallerieLED_category` FOREIGN KEY(idCategory) REFERENCES category(id)
---;
 
 
 ALTER TABLE conventionPhoto

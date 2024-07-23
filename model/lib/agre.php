@@ -118,4 +118,34 @@ class LibAgre
         }
         return $listAgreTypeCategoryWithFormattedInfo; */
     }
+
+    static function getAgrePhoto($idTypeAgre, $idCategory): array
+    {
+        $query = ' SELECT photoAgre.id, photoAgre.illustration, photoAgre.illustration_filename';
+        $query .= ' FROM photoAgre';
+        $query .= ' WHERE photoAgre.idTypeAgre = :idTypeAgre AND photoAgre.idCategory = :idCategory';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':idTypeAgre', $idTypeAgre);
+        $statement->bindParam(':idCategory', $idCategory);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $listPhotoAgre = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        return $listPhotoAgre;
+    }
+
+    static function chooseMainPhoto($idPhotoAgre, $isMain): bool
+
+    {
+        $query = ' UPDATE photoAgre SET isMain = :isMain ';
+        $query .= 'WHERE photoAgre.id = :idPhotoAgre ';
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':idPhotoAgre', $idPhotoAgre);
+        $statement->bindParam(':isMain', $isMain);
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
 }
