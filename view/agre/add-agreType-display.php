@@ -26,48 +26,69 @@
         <button class="submit" type="submit">valider</button>
 
 
+
+
+
+        <div>
+            <table border="1">
+                <thead>
+                    <th>Agre Id</th>
+                    <th>Agre Name</th>
+                    <th>Catégorie feu</th>
+                    <th>Catégorie lumineux</th>
+                    <th>Categorie agré Jour</th>
+                </thead>
+                <tbody>
+                    <?php foreach ($args['session']['listAgreTypeCategory'] as $args['session']['agreTypeCategory']) { ?>
+
+
+                        <tr>
+                            <td>
+                                <input name="idAgre[]" type="hidden" value="<?= $args['session']['agreTypeCategory']['id'] ?> ">
+                                <?= $args['session']['agreTypeCategory']['id'] ?>
+                            </td>
+                            <td><?= $args['session']['agreTypeCategory']['name'] ?> </td>
+                            <td>
+
+
+                                <?php
+                                if (!($args['session']['agreTypeCategory']['category'][0])) { ?>
+                                    Non
+                                <?php } else { ?>
+                                    Oui
+                                    <input name="idCategoryFire[]" type="hidden" value="1">
+                                <?php } ?>
+                            </td>
+                            <td>
+
+
+                                <?php
+                                if (empty($args['session']['agreTypeCategory']['category'][2])) { ?>
+                                    Non
+                                <?php } else { ?>
+                                    Oui
+                                    <input name="idCategoryLED[]" type="hidden" value="2">
+                                <?php } ?>
+                            </td>
+                            <td>
+
+
+                                <?php
+                                if (empty($args['session']['agreTypeCategory']['category'][4])) { ?>
+                                    Non
+                                <?php } else { ?>
+                                    Oui
+                                    <input name="idCategoryDayProp[]" type="hidden" value="3">
+                                <?php } ?>
+                            </td>
+
+
+                        </tr>
+                    <?php } ?>
+
+                </tbody>
+            </table>
+
+        </div>
     </form>
-
-
-
-
-    <div>
-        <table border="1">
-            <thead>
-                <th>Agre Id</th>
-                <th>Agre Name</th>
-                <th>Id catégorie feu</th>
-                <th>Id catégorie lumineux</th>
-                <th>Id categorie agré Jour</th>
-            </thead>
-            <tbody>
-                <?php foreach ($args['session']['listAgreTypeCategory'] as $args['session']['agreTypeCategory']) { ?>
-
-
-                    <tr>
-                        <td>
-                            <input type="hidden" value="$args['session']['agreTypeCategory']['id']">
-                            <?= $args['session']['agreTypeCategory']['id'] ?>
-                        </td>
-                        <td><?= $args['session']['agreTypeCategory']['name'] ?> </td>
-                        <td>
-                            <input type="hidden" value="$args['session']['agreTypeCategory']['category'][0]">
-                            <?= $args['session']['agreTypeCategory']['category'][0] ?>
-                        </td>
-                        <td>
-                            <input type="hidden" value="$args['session']['agreTypeCategory']['category'][2]">
-                            <?= $args['session']['agreTypeCategory']['category'][2] ?>
-                        </td>
-                        <td> <input type="hidden" value="$args['session']['agreTypeCategory']['category'][4]">
-                            <?= $args['session']['agreTypeCategory']['category'][4] ?> </td>
-
-
-                    </tr>
-                <?php } ?>
-
-            </tbody>
-        </table>
-
-    </div>
-
 </main>

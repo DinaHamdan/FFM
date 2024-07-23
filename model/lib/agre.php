@@ -80,7 +80,21 @@ class LibAgre
         // - Exécute la requête
         $successOrFailure = $statement->execute();
         $listAgreTypeCategory = $statement->fetchAll(PDO::FETCH_ASSOC);
+        /* 
+        if (empty($listAgreTypeCategory['category'][2])) {
+            ($listAgreTypeCategory['category'][2]) == 'NA';
+        };
+ */
         return $listAgreTypeCategory;
+
+        /* 
+        $listAgreTypeCategoryWithFormattedInfo = [];
+        foreach ($listAgreTypeCategory as $agreTypeCategory) {
+            $agreTypeCategory['cat'] = explode(',', $agreTypeCategory['category']);
+
+            $listAgreTypeCategoryWithFormattedInfo[] = $agreTypeCategory;
+        }
+        return $listAgreTypeCategoryWithFormattedInfo; */
     }
 }
 /*     //Get all photos from the fire gallerie
