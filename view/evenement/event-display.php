@@ -1,4 +1,7 @@
 <main>
+    <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
+        <a href="/ctrl/evenement/update-event-display.php">Modifier l'évenement</a>
+    <?php  } ?>
 
     <div id="poster-container">
         <img src="" alt="">

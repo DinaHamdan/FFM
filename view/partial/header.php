@@ -28,7 +28,7 @@
                 if ($args['session']['user'] != null) { ?>
                     <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
                     <li><a class="menuItem" href='/ctrl/agre/agre-display.php'>Agrès</a></li>
-                    <li><a class="menuItem" href="">Evènements</a></li>
+                    <li><a class="menuItem" href='/ctrl/evenement/event-display.php'>Evénement</a></li>
                     <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
                     <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
                     <li><a class="menuItem" href='/ctrl/forum/forum-display.php'>Forum</a></li>
@@ -43,7 +43,7 @@
                 <?php } else { ?>
                     <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
                     <li><a class="menuItem" href='/ctrl/agre/agre-display.php'>Agrès</a></li>
-                    <li><a class="menuItem" href="">Evènements</a></li>
+                    <li><a class="menuItem" href='/ctrl/evenement/event-display.php'>Evénement</a></li>
                     <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
                     <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
                 <?php } ?>

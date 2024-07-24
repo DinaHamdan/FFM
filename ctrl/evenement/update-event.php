@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
-class EventDisplay extends Ctrl
+class UpdateEvent extends Ctrl
 {
     function do(): void
     {
@@ -11,14 +11,14 @@ class EventDisplay extends Ctrl
         $args = $this->viewArgs;
 
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/header.php';
-        include $_SERVER['DOCUMENT_ROOT'] . '/view/evenement/event-display.php';
+        include $_SERVER['DOCUMENT_ROOT'] . '/view/evenement/update-event-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
     function getPageTitle(): string
     {
-        return 'Jongle En Zik';
+        return 'Modifier l événement';
     }
 }
 
-$ctrl = new EventDisplay();
+$ctrl = new UpdateEvent();
 $ctrl->execute();
