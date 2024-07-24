@@ -191,4 +191,13 @@ class LibAgre
         $isSuccess = $statement->execute();
         return $isSuccess;
     }
+
+    static function deleteAgrePhoto(string $idPhotoAgre): bool
+    {
+        $query = 'DELETE FROM photoAgre WHERE photoAgre.id= :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idPhotoAgre);
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
 }
