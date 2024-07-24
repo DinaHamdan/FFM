@@ -144,13 +144,19 @@ CREATE TABLE volunteerForm(
 
 CREATE TABLE convention(
    id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
-  ,title varchar(50) NOT NULL
-  ,adress varchar(200) NOT NULL
+  ,firstDate varchar(50) NOT NULL
+  ,firstDateContent varchar(500) NOT NULL
+  ,secondDate varchar(50) NOT NULL
+  ,secondDateContent varchar(500) NOT NULL
+  ,thirdDate varchar(50) NOT NULL
+  ,thridDateContent varchar(500) NOT NULL
+  ,address varchar(200) NOT NULL
   ,description varchar(200) NOT NULL
-  ,date bigint(100) NOT NULL
+  ,cost varchar(200) NOT NULL
   ,poster longblob NOT NULL
   ,poster_filename varchar(255) NOT NULL
-
+  ,programPhoto longblob NOT NULL
+  ,programPhoto_filename varchar(255) NOT NULL
 
 )
 ;
