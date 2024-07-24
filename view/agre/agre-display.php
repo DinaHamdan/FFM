@@ -5,24 +5,24 @@
 
     <h2> Agrès Feu</h2>
     <?php
-    foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
+    foreach ($args['session']['typeAgreFeu'] as $args['session']['agreFeu']) { ?>
 
         <div>
 
 
-            <h3><?= $args['session']['agre']['name'] ?></h3>
-            <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agre']['id'] ?>" "> <img src=" data:image/png;base64,<?= base64_encode($args['session']['agre']['illustration']) ?>" alt="">la </a>
+            <h3><?= $args['session']['agreFeu']['agreName'] ?></h3>
+            <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>" "> <img src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt="">la </a>
         </div>
     <?php } ?>
     <h2>Agrès LED</h2>
     <?php
-    foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
+    foreach ($args['session']['typeAgreLED'] as $args['session']['agreLED']) { ?>
 
         <div>
 
 
-            <h3><?= $args['session']['agre']['name'] ?></h3>
-            <a href=" /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agre']['id'] ?>" "> <img src=" data:image/png;base64,<?= base64_encode($args['session']['agre']['illustration']) ?>" alt="">la </a>
+            <h3><?= $args['session']['agreLED']['agreName'] ?></h3>
+            <a href=" /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['idAgre'] ?>" "> <img src=" data:image/png;base64,<?= base64_encode($args['session']['agreLED']['illustration']) ?>" alt="">la </a>
         </div>
     <?php } ?>
 </main>

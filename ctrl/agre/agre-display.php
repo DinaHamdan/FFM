@@ -7,8 +7,18 @@ class AgreDisplay extends Ctrl
 {
     function do(): void
     {
+
+        /*  $idCategoryFeu = 1;
+        $_SESSION['typeAgreFeu'] = LibAgre::getGallerieTypeAgre($idCategoryFeu);
+        $idCategoryLED = 2;
+        $_SESSION['typeAgreLED'] = LibAgre::getGallerieTypeAgre($idCategoryLED); */
+
+
         $isMain = 'true';
-        $_SESSION['typeAgre'] = LibAgre::getTypeAgre($isMain);
+        $idCategoryFeu = 1;
+        $_SESSION['typeAgreFeu'] = LibAgre::getGallerieTypeAgre($idCategoryFeu, $isMain);
+        $idCategoryLED = 2;
+        $_SESSION['typeAgreLED'] = LibAgre::getGallerieTypeAgre($idCategoryLED, $isMain);
     }
     function renderView(): void
     {

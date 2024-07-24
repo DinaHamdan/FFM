@@ -1,6 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
-/* require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php'; */
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php';
 
 
 class Homepage extends Ctrl

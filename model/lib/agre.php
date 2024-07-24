@@ -15,15 +15,55 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
  * */
 class LibAgre
 {
-
     //List type of juggling props
-    static function getTypeAgre($isMain): array
+    static function getTypeAgre(): array
     {
-        $query = 'SELECT typeAgre.id, typeAgre.name, typeAgre.label, photoAgre.illustration';
+        $query = 'SELECT typeAgre.id, typeAgre.name, typeAgre.label';
         $query .= ' FROM typeAgre';
-        $query .= ' JOIN photoAgre ON typeAgre.id = photoAgre.idTypeAgre ';
-        $query .= ' WHERE photoAgre.isMain = :isMain';
         $statement = libDb::connect()->prepare($query);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $typeAgre = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $typeAgre;
+    }
+
+    /*     static function getGallerieTypeAgre($idCategory): array
+    {
+        $query = 'SELECT typeAgre.id AS idAgre, typeAgre.name AS agreName, typeAgre.label, category.id, category.name AS categoryName, typeAgreCategory.idAgre, typeAgreCategory.idCategory ';
+        $query .= ' FROM typeAgre';
+        $query .= ' JOIN typeAgreCategory ON typeAgre.id = typeAgreCategory.idAgre ';
+        $query .= ' JOIN category ON category.id = typeAgreCategory.idCategory ';
+        $query .= ' AND category.id = :idCategory ';
+
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':idCategory', $idCategory);
+
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $typeAgre = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $typeAgre;
+    } */
+
+    // THIS ONE
+    //List type of juggling props
+    static function getGallerieTypeAgre($idCategory, $isMain): array
+    {
+        $query = 'SELECT typeAgre.id, typeAgre.name AS agreName, typeAgre.label, category.id, category.name AS categoryName, typeAgreCategory.idAgre, typeAgreCategory.idCategory, photoAgre.illustration ';
+        $query .= ' FROM typeAgre';
+        $query .= ' JOIN typeAgreCategory ON typeAgre.id = typeAgreCategory.idAgre ';
+        $query .= ' JOIN category ON category.id = typeAgreCategory.idCategory ';
+        $query .= ' AND category.id = :idCategory ';
+        $query .= ' JOIN photoAgre ON photoAgre.idTypeAgre = typeAgre.id ';
+        $query .= ' AND photoAgre.idCategory = :idCategory ';
+        $query .= ' WHERE photoAgre.isMain = :isMain';
+
+        $statement = libDb::connect()->prepare($query);
+
+
+        $statement->bindParam(':idCategory', $idCategory);
         $statement->bindParam(':isMain', $isMain);
 
         // - Exécute la requête
