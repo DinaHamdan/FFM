@@ -164,7 +164,7 @@ class LibAgre
 
     static function getAgrePhoto($idTypeAgre, $idCategory): array
     {
-        $query = ' SELECT photoAgre.id, photoAgre.illustration, photoAgre.illustration_filename';
+        $query = ' SELECT photoAgre.id, photoAgre.idTypeAgre, photoAgre.idCategory, photoAgre.isMain, photoAgre.illustration, photoAgre.illustration_filename';
         $query .= ' FROM photoAgre';
         $query .= ' WHERE photoAgre.idTypeAgre = :idTypeAgre AND photoAgre.idCategory = :idCategory';
         $statement = libDb::connect()->prepare($query);
@@ -182,7 +182,7 @@ class LibAgre
 
     {
         $query = ' UPDATE photoAgre SET isMain = :isMain ';
-        $query .= 'WHERE photoAgre.id = :idPhotoAgre ';
+        $query .= ' WHERE photoAgre.id = :idPhotoAgre ';
         $statement = libDb::connect()->prepare($query);
 
         $statement->bindParam(':idPhotoAgre', $idPhotoAgre);
@@ -199,5 +199,35 @@ class LibAgre
         $statement->bindParam(':id', $idPhotoAgre);
         $isSuccess = $statement->execute();
         return $isSuccess;
+    }
+
+    static function removeMainPhoto($idMainPhotoAgre, $isNotMain): bool
+
+    {
+        $query = ' UPDATE photoAgre SET isMain = :isNotMain ';
+        $query .= ' WHERE photoAgre.id = :idMainPhotoAgre ';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':idMainPhotoAgre', $idMainPhotoAgre);
+        $statement->bindParam(':isNotMain', $isNotMain);
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+
+    static function checkMainPhoto($idPhotoTypeAgre, $idPhotoCategory, $isMain): array
+
+    {
+        $query = ' SELECT photoAgre.id, photoAgre.idTypeAgre, photoAgre.idCategory';
+        $query .= ' FROM photoAgre';
+        $query .= ' WHERE photoAgre.isMain = :isMain AND photoAgre.idTypeAgre = :idPhotoTypeAgre AND photoAgre.idCategory = :idPhotoCategory ';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':idPhotoTypeAgre', $idPhotoTypeAgre);
+        $statement->bindParam(':idPhotoCategory', $idPhotoCategory);
+        $statement->bindParam(':isMain', $isMain);
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $listMainPhoto = $statement->fetch(PDO::FETCH_ASSOC);
+
+        return $listMainPhoto;
     }
 }

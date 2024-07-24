@@ -13,8 +13,15 @@ class ChooseMainPhoto extends Ctrl
     function do(): void
     {
         $isMain = 'true';
-        $idPhotoAgre = $_POST['mainPhoto'];
+        $isNotMain = '';
+        $idPhotoAgre = htmlspecialchars($_POST['mainPhoto']);
+        $idPhotoTypeAgre = htmlspecialchars($_POST['typeAgreOfPhoto']);
+        $idPhotoCategory = htmlspecialchars($_POST['categoryOfPhoto']);
+        $mainPhoto = LibAgre::checkMainPhoto($idPhotoTypeAgre, $idPhotoCategory, $isMain);
 
+        $idMainPhotoAgre = $mainPhoto['id'];
+
+        LibAgre::removeMainPhoto($idMainPhotoAgre, $isNotMain);
         LibAgre::chooseMainPhoto($idPhotoAgre, $isMain);
     }
 
