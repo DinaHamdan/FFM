@@ -11,7 +11,7 @@
 
 
             <h3><?= $args['session']['agre']['name'] ?></h3>
-            <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agre']['id'] ?>" "> <img src=" " alt="">la </a>
+            <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agre']['id'] ?>" "> <img src=" data:image/png;base64,<?= base64_encode($args['session']['agre']['illustration']) ?>" alt="">la </a>
         </div>
     <?php } ?>
     <h2>Agrès LED</h2>
@@ -22,7 +22,7 @@
 
 
             <h3><?= $args['session']['agre']['name'] ?></h3>
-            <a href=" /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agre']['id'] ?>" "> <img src=" " alt="">la </a>
+            <a href=" /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agre']['id'] ?>" "> <img src=" data:image/png;base64,<?= base64_encode($args['session']['agre']['illustration']) ?>" alt="">la </a>
         </div>
     <?php } ?>
 </main>

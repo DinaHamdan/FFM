@@ -17,11 +17,14 @@ class LibAgre
 {
 
     //List type of juggling props
-    static function getTypeAgre(): array
+    static function getTypeAgre($isMain): array
     {
-        $query = 'SELECT typeAgre.id, typeAgre.name, typeAgre.label';
+        $query = 'SELECT typeAgre.id, typeAgre.name, typeAgre.label, photoAgre.illustration';
         $query .= ' FROM typeAgre';
+        $query .= ' JOIN photoAgre ON typeAgre.id = photoAgre.idTypeAgre ';
+        $query .= ' WHERE photoAgre.isMain = :isMain';
         $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':isMain', $isMain);
 
         // - Exécute la requête
         $successOrFailure = $statement->execute();

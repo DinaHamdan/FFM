@@ -7,7 +7,8 @@ class AgreDisplay extends Ctrl
 {
     function do(): void
     {
-        $_SESSION['typeAgre'] = LibAgre::getTypeAgre();
+        $isMain = 'true';
+        $_SESSION['typeAgre'] = LibAgre::getTypeAgre($isMain);
     }
     function renderView(): void
     {
