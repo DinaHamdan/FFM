@@ -164,8 +164,9 @@ class LibAgre
 
     static function getAgrePhoto($idTypeAgre, $idCategory): array
     {
-        $query = ' SELECT photoAgre.id, photoAgre.idTypeAgre, photoAgre.idCategory, photoAgre.isMain, photoAgre.illustration, photoAgre.illustration_filename';
+        $query = ' SELECT typeAgre.name AS agreName, photoAgre.id, photoAgre.idTypeAgre, photoAgre.idCategory, photoAgre.isMain, photoAgre.illustration, photoAgre.illustration_filename';
         $query .= ' FROM photoAgre';
+        $query .= ' JOIN typeAgre ON typeAgre.id = :idTypeAgre';
         $query .= ' WHERE photoAgre.idTypeAgre = :idTypeAgre AND photoAgre.idCategory = :idCategory';
         $statement = libDb::connect()->prepare($query);
         $statement->bindParam(':idTypeAgre', $idTypeAgre);

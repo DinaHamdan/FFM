@@ -12,6 +12,14 @@ class DisplayAgrePhotoLED extends Ctrl
 {
     function do(): void
     {
+        $isLogged = $this->isUserLogged();
+        $isGranted = $this->hasRole(Role::ADMIN);
+        $isGranted = $this->hasRole(Role::ADMIN);
+        if ($isGranted) {
+            $_SESSION['user']['codeRole'] == "ADM";
+        } else {
+            $_SESSION['user']['codeRole'] = [];
+
         $idCategory = 2;
         $idAgre = $_GET['id'];
         $_SESSION['listAgrePhoto'] = LibAgre::getAgrePhoto($idAgre, $idCategory);

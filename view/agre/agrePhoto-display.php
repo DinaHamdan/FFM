@@ -3,7 +3,6 @@
 
     <?php
     foreach ($args['session']['listAgrePhoto'] as $args['session']['agrePhoto']) { ?>
-
         <img src="data:image/png;base64,<?= base64_encode($args['session']['agrePhoto']['illustration']) ?>" alt="photo d'agrés">
 
         <?php if ($args['session']['user']['codeRole'] == 'ADM') { ?>
