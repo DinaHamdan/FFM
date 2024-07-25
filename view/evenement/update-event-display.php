@@ -14,8 +14,8 @@
 
         <!-- Update event content-->
         <div>
-            <label for="convetionCost">Modifier tarif</label>
-            <textarea id="" name="convetionCost"></textarea>
+            <label for="conventionCost">Modifier tarif</label>
+            <textarea id="" name="conventionCost"></textarea>
         </div>
 
         <div>

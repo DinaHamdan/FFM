@@ -145,13 +145,13 @@ CREATE TABLE volunteerForm(
 CREATE TABLE convention(
    id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
   ,firstDate varchar(50) NOT NULL
-  ,firstDateContent varchar(500) NOT NULL
+  ,firstDateContent varchar(2000) NOT NULL
   ,secondDate varchar(50) NOT NULL
-  ,secondDateContent varchar(500) NOT NULL
+  ,secondDateContent varchar(2000) NOT NULL
   ,thirdDate varchar(50) NOT NULL
-  ,thridDateContent varchar(500) NOT NULL
+  ,thridDateContent varchar(2000) NOT NULL
   ,address varchar(200) NOT NULL
-  ,description varchar(200) NOT NULL
+  ,description varchar(2000) NOT NULL
   ,cost varchar(200) NOT NULL
   ,poster longblob NOT NULL
   ,poster_filename varchar(255) NOT NULL
@@ -161,20 +161,7 @@ CREATE TABLE convention(
 )
 ;
 
-CREATE TABLE photoConvention(
-   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
-  ,title varchar(50) NOT NULL
-  ,illustration longblob NOT NULL
-  ,illustration_filename varchar(255) NOT NULL
 
-)
-;
-CREATE TABLE conventionPhoto(
-  idConvention bigint(20) NOT NULL
-  ,idPhoto bigint(50) NOT NULL
-
-)
-;
 
 
 CREATE TABLE discussion(

@@ -19,7 +19,7 @@ class DisplayAgrePhotoLED extends Ctrl
             $_SESSION['user']['codeRole'] == "ADM";
         } else {
             $_SESSION['user']['codeRole'] = [];
-
+        }
         $idCategory = 2;
         $idAgre = $_GET['id'];
         $_SESSION['listAgrePhoto'] = LibAgre::getAgrePhoto($idAgre, $idCategory);
