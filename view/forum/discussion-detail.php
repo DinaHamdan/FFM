@@ -11,7 +11,7 @@
 
 
         <?php if (($args['session']['user']['codeRole']) == 'ADM') { ?>
-            <a href="/ctrl/delete-discussion.php?id=<?= $args['session']['discussion']['id'] ?>">Enlever Discussion</a>
+            <a href="/ctrl/forum/delete-discussion.php?id=<?= $args['session']['discussion']['id'] ?>">Enlever Discussion</a>
         <?php } ?>
 
         <p>Comments</p>
@@ -30,7 +30,7 @@
                         <p><?= $args['session']['discussion']['comment']['content'] ?></p>
 
                         <?php if (($args['session']['user']['codeRole']) == 'ADM') { ?>
-                            <a href="/ctrl/delete-comment.php?id=<?= $args['session']['discussion']['comment']['id'] ?>">Enlever commentaire</a>
+                            <a href="/ctrl/forum/delete-comment.php?id=<?= $args['session']['discussion']['comment']['id'] ?>">Enlever commentaire</a>
                         <?php } ?>
                     </div>
                 </div>

@@ -125,4 +125,32 @@ class LibDiscussion
         $memberInfo = $statement->fetch(PDO::FETCH_ASSOC);
         return $memberInfo;
     }
+    //Delete one or several comments related to a discussion
+    static function deleteComments(string $idDiscussion): bool
+    {
+        $query = 'DELETE FROM comment WHERE comment.idDiscussion= :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idDiscussion);
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+
+    //Delete one specific comment
+    static function deleteComment(string $idComment): bool
+    {
+        $query = 'DELETE FROM comment WHERE id = :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idComment);
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+    //Delete discussion
+    static function deleteDiscussion(string $idDisussion): bool
+    {
+        $query = 'DELETE FROM discussion WHERE  id = :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idDisussion);
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
 }
