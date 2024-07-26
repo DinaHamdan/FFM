@@ -6,29 +6,38 @@
     <div id="poster-container">
         <img src="" alt="">
     </div>
-    <div>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia nemo eius, dicta aliquam ut natus similique ea blanditiis esse neque est quaerat omnis distinctio magnam libero eligendi optio at fugit?</p>
-    </div>
+
 
     <div>
         <h2>Programme </h2>
 
         <div>
-            <!-- Les BR vont être enlevés après -->
-            <p> Vendredi <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, consequatur delectus fugiat quam iste, ullam distinctio obcaecati error voluptas tempora illo accusantium sunt labore libero nobis fuga, voluptates vero commodi!</p>
-            <p>Samedi <br>
-                Quos sed temporibus accusamus harum, consequuntur animi. Sed obcaecati atque quasi corrupti? Unde sit commodi tenetur nam eum similique beatae a quidem. Dolorem quas magni minima id saepe sed temporibus?</p>
-            <p>Dimanche <br>Autem, voluptatem. Reiciendis vero sunt animi sapiente itaque doloribus corporis fugiat facere ipsam, ullam aliquid at iusto a magni autem illum deleniti magnam officiis libero quidem minus, hic nisi? Aut!</p>
+            <img src=" data:image/png;base64,<?= base64_encode($args['session']['convention']['poster']) ?>" alt="photo-poster">
+            <img src=" data:image/png;base64,<?= base64_encode($args['session']['convention']['programPhoto']) ?>" alt="photo-program">
+
+            <h4><?= $args['session']['convention']['cost'] ?></h4>
+            <h3><?= $args['session']['convention']['firstDate'] ?></h3>
+            <p> <?= $args['session']['convention']['firstDateContent'] ?></p>
+            <h3><?= $args['session']['convention']['secondDate'] ?></h3>
+
+            <p>
+                <?= $args['session']['convention']['secondDateContent'] ?></p>
+            <h3><?= $args['session']['convention']['thirdDate'] ?></h3>
+
+            <p <?= $args['session']['convention']['thirdDateContent'] ?></p>
 
         </div>
+
+        <p> <?= $args['session']['convention']['description'] ?></p>
+
         <div>
             <a href="">Réserver ma place</a>
             <a href="/ctrl/evenement/volunteer-display.php">Devenir Bénévole</a>
         </div>
 
         <div>
-            <p>Où chemin de Saint Félix 84570 Malmort du Comtat </p>
-            <p>Lien Google Maps</p>
+            <?= $args['session']['convention']['address'] ?>
+            <a href="">Lien de google maps</a>
         </div>
     </div>
 

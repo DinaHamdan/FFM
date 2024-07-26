@@ -1,5 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/event.php';
+
 
 class EventDisplay extends Ctrl
 {
@@ -13,6 +15,9 @@ class EventDisplay extends Ctrl
         } else {
             $_SESSION['user']['codeRole'] = [];
         }
+
+        $conventionInfo = LibEvent::getEvent();
+        $_SESSION['convention'] = $conventionInfo;
     }
     function renderView(): void
     {

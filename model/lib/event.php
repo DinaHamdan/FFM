@@ -43,4 +43,14 @@ class LibEvent
         $isSuccess = $statement->execute();
         return $isSuccess;
     }
+
+    static function getEvent(): array
+    {
+        $query = ' SELECT convention.firstDate, convention.secondDate, convention.thirdDate, convention.firstDateContent, convention.secondDateContent, convention.thirdDateContent, convention.description, convention.cost, convention.address, convention.poster, convention.poster_filename, convention.programPhoto, convention.programPhoto_filename';
+        $query .= ' FROM convention';
+        $statement = libDb::connect()->prepare($query);
+        $successOrFailure = $statement->execute();
+        $conventionInfo = $statement->fetch(PDO::FETCH_ASSOC);
+        return $conventionInfo;
+    }
 }

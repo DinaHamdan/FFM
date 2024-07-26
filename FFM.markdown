@@ -1,0 +1,334 @@
+### Cahiers des charges Fire From Mars 02-07-24
+
+Présentation de l’association : 
+Fire From mars, une association à but non-lucratif, de jongleurs pour les arts de cirque et la jonglerie enflammée.
+
+### Secteur d’activité :
+Promouvoir les arts de la jonglerie auprès d’un grand public, production de spectacles et le partage de l’enseignement de la pratique de jongle entre jongleurs (débutant, amateur et pro).
+
+### Produits :
+Prestation de jonglage pour des clients.
+Fire jam, chaque semaine les jongleurs se réunissent (souvent les mardis) à la cathédrale la major pour jongler, s’entraider, s’entraîner a faire du feu, initier des débutants aux arts de la jonglerie.
+Organisation et réalisation d’un convention de jonglage, Jongle En Zik.
+
+### Cibles : 
+Jongleurs, membres actifs, clients de prestations, bénévoles et clients des conventions.
+Personas: Voir fichier de personas.
+
+
+Expression de besoin :
+Refont de leur site web, améliorer la navigation du site, ajouter des fonctionnalités.
+Faciliter la communication pour les clients de l’association. Faciliter l’organisation des prestations, des conventions, du recrutement des bénévoles pour les conventions, et l’adhésion des membres actifs pour l’association.
+Faciliter la communication entre les membres actifs.
+Faciliter la gestion des galléries de photos, d’événements.
+
+### Pages: 
+Menu bar  Onglet Acceuil – Onglet Agrès - Onglet Evénements -   Onglet Contact – Onglet Login – Onglet Forum caché avant Login – Onglet BackOffice Admin caché avant Login
+
+Page d’acceuil  présenter le groupe, Présenter les activités proposé et événements passés.
+Page Login/Enregistrement
+Page agrès + artistes(bonus) – Gallérie des photos 
+Page présentation de l’association ( pourquoi devenir adhérant? ) + formulaire d’adhésion
+Page d’événement  de Jongle En Zik – acheter billet – devenir bénévole
+Page d’événements passés + filtres (Bonus)
+Page contact – formulaire de contact/demander un devis + FAQ (Bonus)
+Footer
+Page Forum discussion (pour adhérant)
+BackOffice : Page Admin * CRUD 
+
+### Fonctionnalités :
+
+### Priorités
+Gallérie de photos: visualiser les événements, les agrès. Etc..
+Visualiser Jongle En Zik (convention de jonglage): devenir bénévole, acheter les billets, voir la carte.
+Formulaire de contact pour les gens qui ont des questions, et pour clients qui demandent un devis.
+Formulaire d’inscription de membres actifs.
+Formulaire d’inscription de bénévoles pour les conventions.
+Formulaire de Login.
+Forum de discussion pour les adhérants.
+
+Back office CRUD :
+Ajouter des photos 
+Enlever des photos 
+Modifier/Ajouter/Modifier la description d’un événement
+Enlever des Messages du forum
+
+Base de données messages de contact.
+Base de données membres actifs.
+Base de données bénévoles.
+Base de données agrès.
+Base de données événements.
+Garder HelloAsso pour le paiement.
+
+Admin peut ajouter les membres, interface ajout de membre, ajout de mail et de mot de passe qui peut être modifié plus tard.
+
+Bonus :
+FAQ
+Base de données artistes
+Dark/Light theme
+Calendrier
+Base de données événements (filtrer par thème ou agrès)
+
+
+Temps de réalisation :
+2 mois, début 2-07-24- fin 20-09-24 (50 jours pour réaliser).
+
+Planning :
+02-07-24
+* Étude de l'expression de besoin (un résumé du projet au format texte)
+* Établissement du cahier des charges (fonctionnalités, rôles)
+* Mise en place d'un planning (anticiper toujours sur 80% du temps prévu)
+* Maquettage - Charte graphique (formulaire à changer).
+* Maquettage - arborescence de site 
+
+ 
+
+* Maquettage - Maquettage statique
+* Maquettage - Zoning / wireframe 
+* Maquettage - Maquettage dynamique 
+* Conception BDD - Dictionnaire de données, MCD,MLD, MPD 
+* BD structure SQL – BD data SQL
+* Réalisation (code versionné avec git).
+* Livraison et déploiement (mode d'emploi).
+
+### Budget :
+Non-existant
+
+### Contraintes :
+Temps
+Maintenance
+
+
+ 
+ 
+### Lundi 08-07-24
+
+Conception BDD - Dictionnaire de données, MCD,MLD, MPD
+BDD Agrès
+BDD Membres actifs
+BDD Messages de contact
+BDD Convention 
+BDD Forum
+BDD  bénévoles (la plus compliqués)
+Bonus: BDD Artistes- BDD évenements passés
+
+    • Dictionnaire de données FFM :
+Entités: Role – Membre –  Client – Bénévole - Photo – Discussion – Commentaire – Message
+Attribus : Nom – Prénom – Email – Password – Avatar - 
+Relations: Possède – Publier – Ecrire – Lire - 
+
+    • BDD Agrès : 
+Entité: Photo – type d’agré
+Attribus : Description – Date – Photographe etc..
+Relation: Possède
+
+Une photo peut posséder un ou plusieurs type d’agré
+Un type d’agré possède  peut posséder un ou plusieurs photo
+
+Une photo peut posséde au minimum 1 type d’agré et au max 1 type d’agré.
+Un type d’agré possède au minimum 0 photo au max N photo
+
+    • Bonus BDD Artiste:
+Entité: Photo – Type d’agré – Artiste 
+Attribus : Nom – Prénom – Email – Telephone - Date – Photogaphe -
+Relation: Possède
+
+Un type d’agré peut posséder un ou plusieurs Artistes  
+Un type d’agré possède au minimum 0 Artistes au maximum N Artistes
+
+Un artiste peut possèder un ou plusieurs type d’agré, un nom, un prenom, un email, un numero de telephone
+Un artiste possède au minimum 1 Type d’agrè au Max N Type d’agrè
+
+    • BDD Membres actifs:
+Entité: Photo – Type d’agré – Membre -  Role
+Attribus : Nom – Prénom – Email – Telephone – Avatar - Date – Photographe -
+Relation: Possède
+ 
+Un membre possède un role.
+Un Role est possèdé par au mininmum 0 au max N utilisteur
+Un Membre possède  au mininmum 1 Role au maximum 1 Role.
+
+Un type d’agré peut posséder un ou plusieurs Membres 
+Un type d’agré possède au minimum 0 Membres au maximum N Membres
+
+Un Membre peut possèder un ou plusieurs type d’agré, un nom, un prenom, un email, un numero de telephone
+Un Membre possède au minimum 0 Type d’agrè au Max N Type d’agrè
+
+    • BDD Messages de contact:
+Entité: Message - Utilisateur–
+Attribus : Nom – Prénom – Email – Telephone - Date – Contenu text
+Relation: Ecrire – Possède 
+Un utilisateur peut écrire un ou plusieurs Message de contact.
+Un utilisatier peut écrire au min 0 au max N messages.
+Un message de contact peut posséder un utilisateur, une date, un contenu
+Un message possède au min 1 utilisateur au maximum 1 utilisateur
+       
+    • BDD Convention:
+Entité: Evenement- Photos
+Attribus : Titre – date - adresse – description – poster - 
+Relation:  Possède 
+
+Un Evenement de convention peut posséder un titre, une description , une date , une adresse, un poster, des photos 
+Un événement(convention) posséde au mininum 1 photo au max N photos
+
+    • BDD Forum:
+Entité: Discussion – Auteur – Lecteur
+Attribus: titre – contenu – date - 
+Relation: Publier – Lire – Répondre – Possède
+
+Un Utilisateur peut publier une discussion, qui a un titre et un contenu et un date et une heure, Un utilisateur peut lire une discussion, peut répondre à une discussion. *
+
+Un utilisateur peut publieur au minimum 0 discussion et au maximum N discussion
+Une discussion est publié au minmum par 1 utilisateur et au maximum par 1 utilisateur.
+
+Une discussion possède au min 1 auteur et au max 1 auteur.
+Une disccusion possède au min 0 au max  N réponse.
+
+    • BDD  bénévoles (la plus compliqués):
+
+Entité: Utilisateur – formulaire - 
+Attribus : Nom – Prénom – Email – Telephone – contenu -réponses
+Relation:   Remplit
+
+Un utilisateur remplit au min 0 au maximum N formulaire de bénévolat
+Un formulaire est remplit pas au minimum 1 et au maximum 1 utilisateur
+
+    • BDD événments passés:
+Entité: Evenement- Photos
+Attribus : Titre – date - adresse – description – poster - 
+Relation:  Possède 
+
+Un Evenement de convention peut posséder un titre, une description , une date , une adresse, un poster, des photos 
+Un événement(convention) posséde au mininum 0 photo au max N photos
+
+
+## base de données, rappels sur le vocabulaire
+
+1. **Dictionnaire de données** : brainstorming sur l' existant, extraire un max d'info (noms communs et des verbes)
+
+2. **MCD** (Modèle Conceptuel de Données) : Entité, Attribut, Relation, et Cardinalités (min-max) de la Relation. objectif : communiquer avec des non-informaticiens
+
+3. **MLD** (Modèle logiques de données) objectif : traduire les Entités et leurs Relations à l'aide uniquement de Tables, de Colonnes, de Clés Primaires (PK) et de clés Etrangères (FK)
+la traduction est 'mécanique',  à l'aide des **'2  phrases à retenir'** selon le type de relation :
+ -> relation de type **1-N** : la **clé primaire** de la Table 'du côté de N' est référencée par une **clé étrangère** dans la Table 'du côté de 1'.
+ -> relation de type **N-N** : une nouvelle Table doit être créée (ça s'appelle une **Table d'Association**) qui référence les clés primaires des 2 Tables de part et d'autre de la Relation par des clés étrangères.
+
+4. **MPD** (Modèle Physique de Données) : utiliser SQL pour créer les Tables avec leurs Colonnes, et les Clés Etrangères qui pointent vers les clés Primaires. Choisir aussi le type des Colonnes.
+
+
+
+### 10-07-24
+
+NB: BDD agre + photos agrès : admin needs a list déroulante to able to pick the kind of agre while uploading the photos
+Upload photos
+Type d’agré liste : staff-hoop-poi-nunchucks-etc etc
+
+Finished db-structure
+
+### 11-07-24
+started db-data
+changed db-structure and MCD MLD
+
+### 12-07-24
+add attributes to membertypeagre table
+typeAgrephoto – conventionPhoto
+ajouter interface pour ajouter des type d’agré
+détailler  fonctionnalité pour le planning diagramm gantt
+
+
+### Vendredi
+Login + inscription
+Interface inscription
+Logout
+redirection towards forum
+
+
+### Lundi 15
+presentation
+Créer discussion et commentaire interface forum
+DONE Need to add avatar de l’utilisateur et le temps pour les commentaires
+
+
+
+### Mardi
+DONE formulaire modifier Profil- avatar + number
+ DONE + avatar de l’utilisateur pour les commentaires
+
+### Mercredi
+ DONE contact
+DONE Formulaire adhésion
+Formulaire benevole Not done
+
+### Jeudi
+Formulaire bénévole
+Visualiser gallerie photos agrès PAS FINI
+
+### Vendredi 
+Visualiser gallerie photos convention PAS FAIT
+
+### Lundi 22 
+A faire : 
+Visualiser gallerie photos agrès 
+Formulaire bénévole
+
+Ce qui était prévu:
+interface modifier les gallerie ajouter les photos
+
+notes discussion
+association NN entre categorie et type agre au min 1 au max N categorie
+
+column on table imageAgre is main = true or false
+Select for each categry list type agre JOIN photo where is main = true
+
+Ce que j’ai fait : repris la structure de la bdd le MCD et le MLD
+### Mardi 23
+WHAT IS DONE : Add agre, show agre table, make connection with category
+ DONE ajouter les photos + choisir la photo d’Interface des galleries (need to remove is main when another one is checked).
+
+
+### Mercredi 24
+Finaliser tout ca – LIMITE de temps sur fonctionnalités
+
+ DONE Interface gallerie modifier la fonction select photos
+Remove photo
+Remove isMain when another photo is checked
+
+
+
+
+
+### Jeudi 25
+
+DONE Need to fix user and coderole undefined array
+ DONE update database
+CRUD convention  
+
+update function SET bla bla
+### Vendredi 26 
+READ SELECT AND SHOW into html
+CRUD forum
+Delete discussions and comments
+
+
+### Reste à faire :
+Read Formulaire Bénévole
+
+Poster discussion sans photo
+BackOffice formulaires
+Maquette 
+commencer HTML CSS 
+
+Vendredi 26
+deploiment + HTML + CSS
+
+Lundi 29
+Commencer rapport 
+Coding fonctionnalité
+
+Mardu 30
+fonctionnalité + HTML + CSS
+
+
+
+
+
