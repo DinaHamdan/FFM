@@ -1,10 +1,13 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/event.php';
 
 class UpdateEventDisplay extends Ctrl
 {
     function do(): void
     {
+        $conventionInfo = LibEvent::getEvent();
+        $_SESSION['convention'] = $conventionInfo;
     }
     function renderView(): void
     {

@@ -296,16 +296,15 @@ Remove isMain when another photo is checked
 
 
 
-
 ### Jeudi 25
 
 DONE Need to fix user and coderole undefined array
  DONE update database
-CRUD convention  
+DONE CRUD convention  update function SET bla bla
 
-update function SET bla bla
-### Vendredi 26 
-READ SELECT AND SHOW into html
+
+### Vendredi 26
+DONE SELECT AND convention into html
 CRUD forum
 Delete discussions and comments
 
@@ -315,19 +314,18 @@ Read Formulaire Bénévole
 
 Poster discussion sans photo
 BackOffice formulaires
+
+
+### Lundi 29
 Maquette 
 commencer HTML CSS 
-
-Vendredi 26
 deploiment + HTML + CSS
 
-Lundi 29
 Commencer rapport 
-Coding fonctionnalité
+Coding reste de fonctionnalité
 
-Mardu 30
-fonctionnalité + HTML + CSS
-
+### Mardi 30
+HTML + CSS
 
 
 

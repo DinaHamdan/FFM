@@ -8,6 +8,12 @@
         <p> <?= $args['session']['discussion']['content'] ?></p>
         <img id="discussion-image" src="data:image/png;base64,<?= base64_encode($args['session']['discussion']['illustration']) ?>" alt="discussion-image">
         <p>Published : <?= $args['session']['discussion']['time'] ?></p>
+
+
+        <?php if (($args['session']['user']['codeRole']) == 'ADM') { ?>
+            <a href="/ctrl/delete-discussion.php?id=<?= $args['session']['discussion']['id'] ?>">Enlever Discussion</a>
+        <?php } ?>
+
         <p>Comments</p>
 
         <?php foreach ($args['session']['discussion']['comments'] as $args['session']['discussion']['comment']) { ?>
@@ -22,6 +28,10 @@
                         <img src="data:image/png;base64,<?= base64_encode($args['session']['discussion']['comment']['memberInfo']['avatar']) ?>" alt="member-avatar">
                         <p>content</p>
                         <p><?= $args['session']['discussion']['comment']['content'] ?></p>
+
+                        <?php if (($args['session']['user']['codeRole']) == 'ADM') { ?>
+                            <a href="/ctrl/delete-comment.php?id=<?= $args['session']['discussion']['comment']['id'] ?>">Enlever commentaire</a>
+                        <?php } ?>
                     </div>
                 </div>
             <?php } ?>
