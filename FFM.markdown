@@ -305,8 +305,7 @@ DONE CRUD convention  update function SET bla bla
 
 ### Vendredi 26
 DONE SELECT AND convention into html
-CRUD forum
-Delete discussions and comments
+DONE Forum Delete discussions and comments
 
 
 ### Reste à faire :

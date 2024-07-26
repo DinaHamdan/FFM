@@ -1,7 +1,7 @@
 <main>
 
 
-    <form id="write-post" action="/ctrl/forum/create-discussion.php" method="post" enctype="multipart/form-data">
+    <form id="" action="/ctrl/forum/create-discussion.php" method="post" enctype="multipart/form-data">
 
         <!-- Write blog-->
         <label for="discussion-title">Article title</label>
@@ -10,15 +10,16 @@
         <label for="discussion-content">Write Article here</label>
         <textarea id="discussion-content" name="discussion-content"></textarea>
 
-
-        <!-- Blog photo -->
+    </form>
+    <!-- Blog photo -->
+    <form id="" action="/ctrl/forum/add-photo-discussion.php" method="post" enctype="multipart/form-data">
 
         <div id="discussion-photo-container">
             <label for="discussionPhoto">Photo</label>
             <input type="file" id="discussionPhoto" name="discussionPhoto">
         </div>
 
-        <div class="center-button">
+        <div>
             <button class="submit" type="submit">Submit</button>
 
         </div>
