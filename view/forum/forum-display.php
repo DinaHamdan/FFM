@@ -10,9 +10,7 @@
         <label for="discussion-content">Write Article here</label>
         <textarea id="discussion-content" name="discussion-content"></textarea>
 
-    </form>
-    <!-- Blog photo -->
-    <form id="" action="/ctrl/forum/add-photo-discussion.php" method="post" enctype="multipart/form-data">
+        <!-- Blog photo -->
 
         <div id="discussion-photo-container">
             <label for="discussionPhoto">Photo</label>

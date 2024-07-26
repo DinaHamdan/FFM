@@ -306,12 +306,12 @@ DONE CRUD convention  update function SET bla bla
 ### Vendredi 26
 DONE SELECT AND convention into html
 DONE Forum Delete discussions and comments
+DONE Poster discussion sans photo
 
 
 ### Reste à faire :
 Read Formulaire Bénévole
 
-Poster discussion sans photo
 BackOffice formulaires
 
 

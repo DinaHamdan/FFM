@@ -15,9 +15,24 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
 class LibDiscussion
 {
     //Create a post
-    static function createDiscussion(string $discussionTitle, string $discussionContent, string $UserId,  $binaryFile, $nameFile, $dateTime): bool
+    static function createDiscussionNoPhoto(string $discussionTitle, string $discussionContent, string $UserId,  $dateTime): bool
+    {
+        $query = 'INSERT INTO discussion( title, content, idMember, date_time_column) VALUES ( :title, :content, :idMember, :date_time_column)';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':title', $discussionTitle);
+        $statement->bindParam(':content', $discussionContent);
+        $statement->bindParam(':idMember', $UserId);
+        $statement->bindParam(':date_time_column', $dateTime);
+
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+    //Create a post
+    static function createDiscussionWithPhoto(string $discussionTitle, string $discussionContent, string $UserId,  $binaryFile, $nameFile, $dateTime): bool
     {
         $query = 'INSERT INTO discussion( title, content, idMember, illustration, illustration_filename, date_time_column) VALUES ( :title, :content, :idMember, :illustration, :illustration_filename, :date_time_column)';
+
         $statement = libDb::connect()->prepare($query);
         $statement->bindParam(':title', $discussionTitle);
         $statement->bindParam(':content', $discussionContent);
@@ -30,7 +45,6 @@ class LibDiscussion
         $isSuccess = $statement->execute();
         return $isSuccess;
     }
-
     //List all posts
     static function getAllDiscussion(): array
     {

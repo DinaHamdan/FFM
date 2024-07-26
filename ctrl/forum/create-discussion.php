@@ -31,7 +31,6 @@ class CreateDiscussion extends Ctrl
         $_SESSION['msg']['error'] = [];
 
 
-
         $png = Type::MY_IMG_PNG;
         $jpg = Type::MY_IMG_JPG;
         $null = Type::NULL;
@@ -45,85 +44,87 @@ class CreateDiscussion extends Ctrl
         //
         $fileTmpName  = $_FILES['discussionPhoto']['tmp_name'];
         $fileType = $_FILES['discussionPhoto']['type'];
-
-
-
-        $acceptedFilesize = Type::FILE_MAX_SIZE;
-
-
-        // Put in place several tests on the the uploaded photo to check if it has the right file type
-        $isSupportedFileType = in_array($fileType, $listAcceptedFileTypes);
-
-        if (!$isSupportedFileType) {
-            echo 'is not accepted files';
-
-            // Add a flash message
-            $_SESSION['msg']['error'][] = 'Les seuls formats de fichier acceptés sont : ' . implode(',', $listAcceptedFileTypes);
-        }
-        if (true) {
-            echo 'all good';
-            if ($fileSize > $acceptedFilesize) {
-                echo 'photo too big';
-                $_SESSION['msg']['error'][] = 'Le taille de la photo est trop grand';
-            }
-        }
-
-        $hasErrors = !empty($_SESSION['msg']['error']);
-        if ($hasErrors) {
-            echo 'has errors.';
-            // Redirect towards the form to correct the photo upload
-            header('Location: ' . '/ctrl/forum/forum-display.php');
-            exit();
-        }
-
-        // Resize the photo
-        // WARN! sudo apt install php-gd
-        // $imgOriginal;
-
-        if ($fileType == $png) {
-            $imgOriginal = imagecreatefrompng($fileTmpName);
-        }
-        if ($fileType == $jpg) {
-            $imgOriginal = imagecreatefromjpeg($fileTmpName);
-        }
-
-        $img = imagescale($imgOriginal, 200);
-        imagepng($img, $fileTmpName);
-
-
-
-
-        // Ajoute un flash-message
-        $_SESSION['msg']['info'][] = 'La discussion a été posté';
-
-        //open binary image file and rb to make sure it's read by all operating systems
-        $binaryFile = fopen($fileTmpName, 'rb');
-        $nameFile = basename($fileName);
-
-        echo 'this is the temporary file name' . $fileTmpName;
-        echo 'this is the file type' . $fileType;
-        echo 'this is the file name' . $fileName;
-        echo 'this is the file size' . $fileSize;
-        /*         echo 'this is imgorginal' . $imgOriginal;
- */
         $dateTime = date('Y-m-d h:i:s');
-        // ("Y-m-d h:i:s")
-        if ($fileType == $null) {
-            // $imgOriginal = imageCreateFromAny($fileTmpName);
+        // Keeping this for the format of the date and time ("Y-m-d h:i:s")
 
-            $binaryFile = 'NA';
-            $nameFile = 'NA';
+        //If image file is empty create discussion with no photo
+        if (($_FILES['discussionPhoto']['name'] == "")) {
+            $isSuccess = LibDiscussion::createDiscussionNoPhoto($discussionTitle, $discussionContent, $idMember,  $dateTime);
+            $_SESSION['msg']['info'][] = 'La discussion a été posté';
+
+            //If file photo is not empty create discussion with photo
+        } else {
+            $acceptedFilesize = Type::FILE_MAX_SIZE;
+
+
+            // Put in place several tests on the the uploaded photo to check if it has the right file type
+            $isSupportedFileType = in_array($fileType, $listAcceptedFileTypes);
+
+            if (!$isSupportedFileType) {
+                echo 'is not accepted files';
+
+                // Add a flash message
+                $_SESSION['msg']['error'][] = 'Les seuls formats de fichier acceptés sont : ' . implode(',', $listAcceptedFileTypes);
+            }
+            if (true) {
+                echo 'all good';
+                if ($fileSize > $acceptedFilesize) {
+                    echo 'photo too big';
+                    $_SESSION['msg']['error'][] = 'Le taille de la photo est trop grand';
+                }
+            }
+
+            $hasErrors = !empty($_SESSION['msg']['error']);
+            if ($hasErrors) {
+                echo 'has errors.';
+                // Redirect towards the form to correct the photo upload
+                header('Location: ' . '/ctrl/forum/forum-display.php');
+                exit();
+            }
+
+            // Resize the photo
+            // WARN! sudo apt install php-gd
+            // $imgOriginal;
+
+            if ($fileType == $png) {
+                $imgOriginal = imagecreatefrompng($fileTmpName);
+            }
+            if ($fileType == $jpg) {
+                $imgOriginal = imagecreatefromjpeg($fileTmpName);
+            }
+
+            $img = imagescale($imgOriginal, 200);
+            imagepng($img, $fileTmpName);
+
+
+            // Ajoute un flash-message
+            $_SESSION['msg']['info'][] = 'La discussion a été posté';
+
+            //open binary image file and rb to make sure it's read by all operating systems
+            $binaryFile = fopen($fileTmpName, 'rb');
+            $nameFile = basename($fileName);
+
+
+
+            if ($fileType == $null) {
+                // $imgOriginal = imageCreateFromAny($fileTmpName);
+
+                $binaryFile = 'NA';
+                $nameFile = 'NA';
+            }
+
+            //Create Post
+            $isSuccess = LibDiscussion::createDiscussionWithPhoto($discussionTitle, $discussionContent, $idMember, $binaryFile, $nameFile, $dateTime);
+            //Create a directory to save uploaded photos
+
+            $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/upload/';
+            // Copy the image file into the photo directory
+            $uploadPath = $uploadDirectory . basename($fileName);
+            $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
         }
-
-        //Create Post
-        $isSuccess = LibDiscussion::createDiscussion($discussionTitle, $discussionContent, $idMember, $binaryFile, $nameFile, $dateTime);
-        //Create a directory to save uploaded photos
-
-        $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/upload/';
-        // Copy the image file into the photo directory
-        $uploadPath = $uploadDirectory . basename($fileName);
-        $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
     }
+
+
 
     function renderView(): void
     {
