@@ -36,6 +36,26 @@
                 </div>
             <?php } ?>
             </div>
+
+
+            <!-- Add a condtion to check if profile is complete -->
+            <!-- Need to add a function at Login to check if profile fname last name and avatar are empty or not  -->
+            <!--         //   <?php if (!empty($args['session']['user']['fName'])) { ?>
+
+                <form action="/ctrl/forum/create-comment.php" method="post">
+                    <input type="hidden" name="hidden_discussion_id" value="<?= ($args['session']['discussion']['id']) ?>">
+                    <textarea name="content" placeholder="Votre commentaire" required></textarea>
+                    <button type="submit">Commenter</button>
+                </form>
+            <?php } else { ?>
+                <p><a href="/profile/create-profile.php">Completez votre profile </a> pour commenter.</p>
+            <?php } ?> -->
+
+            <!--  -->
+
+
+            <!-- Formulaire de commentaire -->
+
             <?php if (($args['session']['user']['codeRole']) == 'MEM' || 'ADM') { ?>
                 <div id="leave-comment-container">
                     <!-- Form to submit comment -->

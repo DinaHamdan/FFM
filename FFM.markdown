@@ -313,7 +313,10 @@ DONE Poster discussion sans photo
 Read Formulaire Bénévole
 
 BackOffice formulaires
-
+Add a condtion to check if profile is complete
+Need to add a function at Login to check if profile fname last name and avatar are empty or not
+Show members
+Remove Members
 
 ### Lundi 29
 Maquette 
