@@ -1,0 +1,103 @@
+#contact-us {
+    background-image: url(../../asset/img/fire-background-780-900.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+
+    #performance {
+        padding: 10px;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color: white;
+        height: 10em;
+        width: 100%;
+        font-size: 0.5em;
+
+
+        #contact-button {
+            display: inline-block;
+            font-size: 1.5em;
+            text-decoration: none;
+            text-align: center;
+            width: 8em;
+            height: 1.5em;
+            background-image: linear-gradient(to right, #1D6D9A, #EECC68);
+            border-radius: 3em;
+            color: #130F0F;
+            margin: 1.5em 0 2em 0;
+        }
+    }
+}
+
+#event {
+    padding: 20px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*     gap: 20px;
+ */
+    color: white;
+    height: 10em;
+    width: 100%;
+    font-size: 0.5em;
+
+
+    #event-photo-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        .event-photo {
+            width: 30%;
+            height: 80%;
+        }
+
+    }
+}
+
+#street {
+    background-image: url(../../asset/img/bg-fire-breathing-780x650.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+
+    #street-art {
+        padding: 20px;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        height: 10em;
+        width: 100%;
+        font-size: 0.5em;
+
+        #street-art-photo-container {
+            display: flex;
+            gap: 20px;
+
+
+            .street-art-photo {
+                width: 30%;
+                height: 80%;
+            }
+        }
+    }
+}
+
+
+
+/*# sourceMappingURL=actualite.css.map */

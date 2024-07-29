@@ -1,0 +1,41 @@
+#social-media {
+    background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    #social-media-photo-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .social-media-photo {
+            border-radius: 30px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+#footer {
+    padding: 20px;
+    background-color: #000000;
+    height: 70px;
+    color: white;
+    font-size: 1em;
+
+    #footer-container {
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+
+        .ffm-logo {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

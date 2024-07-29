@@ -53,23 +53,4 @@
   color: #130F0F;
   margin-top: 1.5em;
   margin-bottom: 2em;
-}
-
-#contact-us {
-  background-image: url(../img/fire-background-780-900.avif);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  height: 500px;
-}
-
-#presta {
-  background-color: #130F0F;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: white;
-  height: 10em;
-}
-
-/*# sourceMappingURL=event.css.map */
+}/*# sourceMappingURL=event.css.map */

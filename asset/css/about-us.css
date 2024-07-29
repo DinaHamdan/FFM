@@ -53,40 +53,40 @@
   font-size: 1.1em;
 }
 
-#P1 {
+#paragraph-one {
   display: inline-block;
   margin-top: 5em;
 }
 
-#P1-1 {
+#paragraph-one-one {
   margin-left: 2em;
 }
 
-#P2 {
+#Pparagraph-one-two {
   display: inline-block;
   margin: 10em 1em 0em 18em;
 }
 
-#P2-1 {
+#paragraph-two-one {
   display: inline-block;
   margin-left: 18.5em;
 }
 
-#P2-2 {
+#paragraph-two-two {
   display: inline-block;
   margin-left: 18em;
 }
 
-#P2-3 {
+#paragraph-two-three {
   display: inline-block;
   margin-left: 18.5em;
 }
 
-#P3 {
+#paragraph-three {
   margin-top: 1em;
 }
 
-#adhesion {
+#adhesion-button {
   display: inline-block;
   font-size: 1.5em;
   text-decoration: none;

@@ -5,7 +5,7 @@
         <!-- Mettre la photo du background en dur -->
         <!-- <img id="image-accueil" src="/img/photo-accueil -cropped.jpg" alt=""> -->
         <!-- Big Logo -->
-        <img id="logo-1" src="/asset/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
+        <img id="full-logo" src="/asset/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
         <!-- Title -->
         <h1 id="FFM">Fire From Mars</h1>
         <h2 id="Title-description">Jonglerie enflammée</h2>
@@ -38,18 +38,18 @@
             </div>
         </div>
         <div id="fire-jam">
-            <p id="P1">Fire Jam</p>
-            <p id="P1-1"> à la cathédrale</p>
-            <p id="P1-2">la Major</p>
-            <p id="P2">Tous les</p>
-            <p id="P2-1">mardis soir </p>
-            <p id="P2-2">De 20h à</p>
-            <p id="P2-3"> Minuit</p>
-            <p id="P3">Ouvert à tous</p>
-            <p id="P3-1"> Venez </p>
-            <p id="P3-2">comme vous êtes</p>
+            <p id="paragraph-one">Fire Jam</p>
+            <p id="paragraph-one-one"> à la cathédrale</p>
+            <p id="paragraph-one-one-two">la Major</p>
+            <p id="paragraph-two">Tous les</p>
+            <p id="paragraph-two-one">mardis soir </p>
+            <p id="paragraph-two-two">De 20h à</p>
+            <p id="paragraph-two-three"> Minuit</p>
+            <p id="paragraph-three">Ouvert à tous</p>
+            <p id="paragraph-three-one"> Venez </p>
+            <p id="paragraph-three-two">comme vous êtes</p>
             <div id="center">
-                <a href='/ctrl/adhesion/adhesion-display.php' id="adhesion">Adhésion</a>
+                <a href='/ctrl/adhesion/adhesion-display.php' id="adhesion-button">Adhésion</a>
             </div>
         </div>
 
@@ -75,27 +75,53 @@
         </div>
     </section>
     <section id="contact-us">
-        <div id="presta">
+        <article id="performance">
             <div>
                 <h2>Nos préstations</h2>
                 <p>Envie de vous</p>
                 <p>renseigner ou de</p>
                 <p>demander un devis?</p>
-
-
             </div>
             <div> <a id="contact-button" href="">Contactez-nous</a></div>
+        </article>
+
+    </section>
+
+    <section id="event">
+        <div>
+            <h3>EVENMENTIEL</h3>
+            <p>Trouvez votre artiste de feu pour enflammer vos événements et financer notre association.</p>
+        </div>
+        <div id="event-photo-container">
+            <img class="event-photo" src="/asset/img/main-feu.avif" alt="fire-hands-photo">
+            <img class="event-photo" src="/asset/img/nunchuku.avif" alt="fire-nunchuku-photo">
         </div>
     </section>
-    <section id="evenment">
-        <div></div>
-        <div></div>
-    </section>
-    <section id="street-art">
-        <div></div>
-        <div></div>
 
+
+    <section id="street">
+        <article id="street-art">
+            <div id="street-art-photo-container">
+                <img class="street-art-photo" src="/asset/img/street-art.avif" alt="">
+                <img class="street-art-photo" src="/asset/img/street-art-two.avif" alt="">
+            </div>
+            <div>
+                <h3>STREET ART</h3>
+                <p>Initiez vous à l'art de la jonglerie, les mardis soirs au pied de la cathédrale la Major.</p>
+            </div>
+        </article>
     </section>
+    <article id="social-media">
+        <img src="/asset/img/FFM-logo-300x205.png" alt="">
+        <div id="social-media-photo-container">
+            <img class="social-media-photo" src="/asset/img/instagram-fotor-bg-remover-20240326164247.png" alt="">
+            <img class="social-media-photo" src="/asset/img/youtube-fotor-bg-remover-20240326164342.png" alt="">
+            <img class="social-media-photo" src="/asset/img/facebook-fotor-bg-remover-20240326164437.png" alt="">
+        </div>
+    </article>
     <section id="footer">
-
+        <div id="footer-container">
+            <img class="ffm-logo" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="">
+            <p>2023 FireFromMars © Tous droits réservés </p>
+        </div>
     </section>

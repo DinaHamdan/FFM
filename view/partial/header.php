@@ -18,8 +18,8 @@
 
 <body>
     <header>
-        <img id="logo-2" src="/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
-        <img id="logo3" class="hamburger" src="/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
+        <img id="full-logo-small" src="/asset/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
+        <img id="logo" class="hamburger" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
 
         <nav id="menuBar">
             <ul class="menu">
@@ -37,7 +37,7 @@
                         <li><a class="menuItem" href="/ctrl/registration/registration-display.php">Inscription</a></li>
                     <?php  } ?>
                     <div>
-                        <li><a href="/ctrl/profile/profile-display.php"><img id="ffm-man" src="/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></a></li>
+                        <li><a href="/ctrl/profile/profile-display.php"><img id="ffm-man" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></a></li>
                         <li><a href='/ctrl/logout.php'>Logout</a></li>
                     </div>
                 <?php } else { ?>
