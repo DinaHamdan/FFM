@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
-class EventDisplay extends Ctrl
+class VolunteerFormDisplay extends Ctrl
 {
     function do(): void
     {
@@ -20,5 +20,5 @@ class EventDisplay extends Ctrl
     }
 }
 
-$ctrl = new EventDisplay();
+$ctrl = new VolunteerFormDisplay();
 $ctrl->execute();
