@@ -32,7 +32,7 @@
 
         <div>
             <a href="">Réserver ma place</a>
-            <a href="/ctrl/evenement/volunteer-display.php">Devenir Bénévole</a>
+            <a href="/ctrl/evenement/volunteer-form-display.php">Devenir Bénévole</a>
         </div>
 
         <div>

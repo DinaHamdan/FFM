@@ -309,22 +309,25 @@ DONE Forum Delete discussions and comments
 DONE Poster discussion sans photo
 
 
-### Reste à faire :
+### TO DO :
 Read Formulaire Bénévole
-
-BackOffice formulaires
+BackOffice formulaires 
 Add a condtion to check if profile is complete
-Need to add a function at Login to check if profile fname last name and avatar are empty or not
+Need to add a function at Login to check if profile fname last name and avatar are empty or not  
 Show members
 Remove Members
+Commencer rapport 
+Deploiment
 
 ### Lundi 29
 Maquette 
 commencer HTML CSS 
-deploiment + HTML + CSS
-
-Commencer rapport 
 Coding reste de fonctionnalité
+To do :
+Redo all pages – split them to different sass style pages
+Finish page d’acceuil CSS
+Code function read volunteer form INSERT INTO bdd
+  
 
 ### Mardi 30
 HTML + CSS

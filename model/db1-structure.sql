@@ -131,13 +131,27 @@ CREATE TABLE volunteer (
 ;
 
 CREATE TABLE volunteerForm(
-   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
-  ,content varchar(10000) NOT NULL
-  ,idVolunteer bigint(20) NOT NULL
+   idVolunteer bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
+  ,firstName varchar(20) NOT NULL
+  ,lastName varchar(20) NOT NULL
+  ,birthday date NOT NULL
+  ,phoneNumber bigint(20) NOT NULL
+  ,email varchar(20) NOT NULL
+  ,dateArrival date NOT NULL
+  ,dateDepart date NOT NULL
+  ,dayOptions varchar(100) NOT NULL
+  ,timeOptions varchar(100) NOT NULL
+  ,workOptions varchar(500) NOT NULL 
+  ,extraWorkInfo varchar(200) NOT NULL
+  ,diplomePSC1 varchar(100) NOT NULL
+  ,transport varchar(50) NOT NULL
+  ,lodging varchar(50) NOT NULL
+  ,performance varchar(50) NOT NULL
+  ,foodRestrictions varchar(200) NOT NULL
+  ,otherInfo varchar(200) NOT NULL
   ,date_time_column timestamp(6) NOT NULL
 )
 ;
-
 
 
 
@@ -216,7 +230,7 @@ ALTER TABLE artistTypeAgre
 ;
 
 ALTER TABLE volunteerForm
-   ADD CONSTRAINT `fk_formBenevole_volunteer` FOREIGN KEY(idVolunteer) REFERENCES volunteer(id)
+   ADD CONSTRAINT `fk_volunteerForm_volunteer` FOREIGN KEY(idVolunteer) REFERENCES volunteer(id)
 ;
 
 
