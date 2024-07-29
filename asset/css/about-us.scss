@@ -1,0 +1,114 @@
+#title-team {
+
+    text-align: center;
+    margin: 4em 0 2em 0;
+    font-weight: 500;
+}
+
+#about-us p {
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0 4em;
+
+}
+
+#about-us span {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#discoverArtist {
+
+    text-align: center;
+    margin: 4em 0 1em 0;
+    font-weight: 500;
+}
+
+#center {
+
+    display: flex;
+    justify-content: center;
+}
+
+#artistes {
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+
+    text-align: center;
+    border: 1px solid red;
+    width: 8em;
+    height: 1.5em;
+    background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
+    border-radius: 3em;
+    color: #130F0F;
+    margin-bottom: 2em;
+}
+
+#fire-jam {
+    background-image: url(../img/fire-jam-cropped.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+
+#fire-jam p {
+    color: white;
+    font-size: 1.1em;
+
+}
+
+#P1 {
+    display: inline-block;
+    margin-top: 5em;
+}
+
+#P1-1 {
+    margin-left: 2em;
+}
+
+#P2 {
+    display: inline-block;
+
+    margin: 10em 1em 0em 18em;
+}
+
+#P2-1 {
+    display: inline-block;
+
+    margin-left: 18.5em;
+}
+
+#P2-2 {
+    display: inline-block;
+
+    margin-left: 18em;
+}
+
+#P2-3 {
+    display: inline-block;
+    margin-left: 18.5em;
+}
+
+#P3 {
+    margin-top: 1em;
+}
+
+#adhesion {
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid red;
+    width: 8em;
+    height: 1.5em;
+    background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
+    border-radius: 3em;
+    color: #130F0F;
+    margin: 1.5em 0 2em 0;
+
+}

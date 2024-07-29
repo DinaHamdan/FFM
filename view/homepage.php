@@ -5,13 +5,13 @@
         <!-- Mettre la photo du background en dur -->
         <!-- <img id="image-accueil" src="/img/photo-accueil -cropped.jpg" alt=""> -->
         <!-- Big Logo -->
-        <img id="logo-1" src="/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
+        <img id="logo-1" src="/asset/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
         <!-- Title -->
         <h1 id="FFM">Fire From Mars</h1>
         <h2 id="Title-description">Jonglerie enflammée</h2>
         <!-- Arrow logo to scroll down need to add script after -->
         <div class="arrow">
-            <img id="logo-arrow" src="/img/fleche-droite.png" alt="logo-arrow">
+            <img id="logo-arrow" src="/asset/img/fleche-droite.png" alt="logo-arrow">
         </div>
     </section>
 
@@ -58,7 +58,7 @@
         <div id="center2">
             <div>
                 <h2 id="title-actu-1">Actualité</h2>
-                <img id="poster-img" src="/img/Jongle-en-Zik-2024.png" alt="Poster-Jongle-en-Zik">
+                <img id="poster-img" src="/asset/img/Jongle-en-Zik-2024.png" alt="Poster-Jongle-en-Zik">
             </div>
             <div>
                 <h2 id="title-actu-2">Actualité</h2>

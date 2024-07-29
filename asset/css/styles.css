@@ -1,0 +1,341 @@
+#accueil {
+  background-image: url(../../asset/img/photo-accueil-780-900.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Styliser la photo background en dur */
+/* #image-accueil{
+    width: 500px;
+    height:600px;
+
+} */
+#logo-1 {
+  width: 6em;
+  height: 4em;
+  margin-bottom: 8em;
+}
+
+#FFM {
+  margin-top: -1em;
+  margin-left: 10em;
+  -webkit-text-stroke: 1px rgba(243, 102, 0, 0.3843137255);
+  font-weight: 300;
+  font-size: 1.5em;
+  font-family: "Kantumruy Pro", sans-serif;
+  color: #ffa743;
+}
+
+#Title-description {
+  -webkit-text-stroke: 1px rgba(243, 102, 0, 0.3843137255);
+  font-weight: 300;
+  margin-top: 1em;
+  margin-left: 18em;
+  font-size: 0.9em;
+  font-family: "Kantumruy Pro", sans-serif;
+  color: #ffa743;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 25em;
+}
+
+#logo-arrow {
+  border: 1px solid red;
+  width: 3em;
+  height: 3em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #130F0F;
+  color: white;
+  font-size: 1.1em;
+}
+
+#logo-2 {
+  margin: 1em;
+  width: 5em;
+  height: 4em;
+}
+
+#logo3 {
+  margin: 1.5em 0 0 10em;
+  width: 5em;
+  height: 3.5em;
+}
+
+.menuColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  list-style-type: none;
+}
+
+#menuBar ul {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  #accueil {
+    background-image: url(../../asset/img/photo-accueil-2000.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #FFM {
+    margin-top: 5em;
+    margin-left: 15em;
+    font-size: 2em;
+  }
+  #Title-description {
+    margin-left: 13em;
+    font-size: 2em;
+  }
+  .arrow {
+    margin-top: 46em;
+  }
+  #menuBar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    list-style-type: none;
+  }
+  #menuBar li {
+    margin-top: 4em;
+    align-items: center;
+  }
+  #ffm-man {
+    margin-top: -2em;
+    width: 4em;
+    height: 5em;
+  }
+  #logo3 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #accueil {
+    background-image: url(../../asset/img/photo-accueil.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  #logo-1 {
+    width: 15em;
+    height: 10em;
+  }
+  #FFM {
+    margin-top: 1em;
+    margin-left: 12.5em;
+    font-size: 7em;
+  }
+  #Title-description {
+    margin-left: 22.5em;
+    font-size: 4em;
+  }
+  .arrow {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    margin-top: 35em;
+  }
+  #logo-arrow {
+    border: 1px solid red;
+    width: 5em;
+    height: 5em;
+  }
+}
+#title-team {
+  text-align: center;
+  margin: 4em 0 2em 0;
+  font-weight: 500;
+}
+
+#about-us p {
+  font-size: large;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 4em;
+}
+
+#about-us span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#discoverArtist {
+  text-align: center;
+  margin: 4em 0 1em 0;
+  font-weight: 500;
+}
+
+#center {
+  display: flex;
+  justify-content: center;
+}
+
+#artistes {
+  display: inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid red;
+  width: 8em;
+  height: 1.5em;
+  background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
+  border-radius: 3em;
+  color: #130F0F;
+  margin-bottom: 2em;
+}
+
+#fire-jam {
+  background-image: url(../img/fire-jam-cropped.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fire-jam p {
+  color: white;
+  font-size: 1.1em;
+}
+
+#P1 {
+  display: inline-block;
+  margin-top: 5em;
+}
+
+#P1-1 {
+  margin-left: 2em;
+}
+
+#P2 {
+  display: inline-block;
+  margin: 10em 1em 0em 18em;
+}
+
+#P2-1 {
+  display: inline-block;
+  margin-left: 18.5em;
+}
+
+#P2-2 {
+  display: inline-block;
+  margin-left: 18em;
+}
+
+#P2-3 {
+  display: inline-block;
+  margin-left: 18.5em;
+}
+
+#P3 {
+  margin-top: 1em;
+}
+
+#adhesion {
+  display: inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid red;
+  width: 8em;
+  height: 1.5em;
+  background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
+  border-radius: 3em;
+  color: #130F0F;
+  margin: 1.5em 0 2em 0;
+}
+
+#actualite {
+  background-color: #130F0F;
+  color: #943AAB;
+}
+
+#center2 {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+#title-actu-1 {
+  text-align: center;
+  padding: 1em;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+#poster-img {
+  border: 1px solid red;
+  display: block;
+  margin: auto;
+  width: 70%;
+}
+
+#title-actu-2 {
+  display: none;
+}
+
+#actualite p {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#p-actu {
+  padding: 1em;
+}
+
+#event-button {
+  padding-top: 10px;
+  display: inline-block;
+  font-size: 1.5em;
+  font-weight: 450;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid red;
+  width: 10em;
+  height: 2em;
+  background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
+  border-radius: 3em;
+  color: #130F0F;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+}
+
+#contact-us {
+  background-image: url(../img/fire-background-780-900.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  height: 500px;
+}
+
+#presta {
+  background-color: #130F0F;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  height: 10em;
+}
+
+
+/* @use 'footer.scss';
+@use 'welcome-page.scss';
+@use 'login-page.scss';
+@use 'inscription-page.scss';
+@use 'forum-page.scss';
+ */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "jura", sans-serif;
+}/*# sourceMappingURL=styles.css.map */
