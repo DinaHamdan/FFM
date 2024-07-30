@@ -6,6 +6,20 @@
     align-items: center;
     gap: 40px;
 
+    #flash-message-footer {
+        #info-message {
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+        }
+
+        #error-message {
+            font-size: 2em;
+            color: white;
+            font-weight: bold;
+        }
+    }
+
     #social-media-logo {
         height: 150px;
     }
@@ -24,17 +38,7 @@
     }
 }
 
-#flash-message-footer {
-    #info-message {
-        color: white;
-        font-weight: bold;
-    }
 
-    #error-message {
-        color: white;
-        font-weight: bold;
-    }
-}
 
 #footer {
     padding: 20px;

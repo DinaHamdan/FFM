@@ -15,8 +15,11 @@ class AddAgrePhoto extends Ctrl
         $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
 
-        //Read information entered by admin
+        //Initier une session  d'un objet msg avec info et erreur comme objet
+        $_SESSION['msg']['info'] = [];
+        $_SESSION['msg']['error'] = [];
 
+        //Read information entered by admin
         $idTypeagre = htmlspecialchars($_POST['agreType']);
         $idCategory = htmlspecialchars($_POST['category']);
 
@@ -35,17 +38,11 @@ class AddAgrePhoto extends Ctrl
 
 
 
-            //Initier une session  d'un objet msg avec info et erreur comme objet
-            $_SESSION['msg']['info'] = [];
-            $_SESSION['msg']['error'] = [];
-
-
 
             $png = Type::MY_IMG_PNG;
             $jpg = Type::MY_IMG_JPG;
-            $null = Type::NULL;
 
-            $listAcceptedFileTypes = [$png, $jpg, $null];
+            $listAcceptedFileTypes = [$png, $jpg];
 
             $acceptedFilesize = Type::FILE_MAX_SIZE;
 
@@ -55,23 +52,19 @@ class AddAgrePhoto extends Ctrl
 
             if (!$isSupportedFileType) {
                 echo 'is not accepted files';
-
                 // Add a flash message
                 $_SESSION['msg']['error'][] = 'Les seuls formats de fichier acceptés sont : ' . implode(',', $listAcceptedFileTypes);
             }
             if (true) {
-                echo 'all good';
                 if ($fileSize > $acceptedFilesize) {
-                    echo 'photo too big';
-                    $_SESSION['msg']['error'][] = 'Le taille de la photo est trop grand';
+                    $_SESSION['msg']['error'][] = 'La taille de la photo est trop grand';
                 }
             }
 
             $hasErrors = !empty($_SESSION['msg']['error']);
             if ($hasErrors) {
-                echo 'has errors.';
                 // Redirect towards the form to correct the photo upload
-                header('Location: ' . '/ctrl/forum/forum-display.php');
+                header('Location: ' . '/ctrl/agre/add-agre-display.php');
                 exit();
             }
 
@@ -89,32 +82,17 @@ class AddAgrePhoto extends Ctrl
             $img = imagescale($imgOriginal, 200);
             imagepng($img, $fileTmpName);
 
-
-
-
             // Ajoute un flash-message
-            $_SESSION['msg']['info'][] = 'La photo a été posté';
+            $_SESSION['msg']['info'][] = 'La photo a été ajouté';
 
             //open binary image file and rb to make sure it's read by all operating systems
             $binaryFile = fopen($fileTmpName, 'rb');
             $nameFile = basename($fileName);
 
-            echo 'this is the temporary file name' . $fileTmpName;
-            echo 'this is the file type' . $fileType;
-            echo 'this is the file name' . $fileName;
-            echo 'this is the file size' . $fileSize;
-            /*         echo 'this is imgorginal' . $imgOriginal;
- */
             $dateTime = date('Y-m-d h:i:s');
             // ("Y-m-d h:i:s")
-            if ($fileType == $null) {
-                // $imgOriginal = imageCreateFromAny($fileTmpName);
 
-                $binaryFile = 'NA';
-                $nameFile = 'NA';
-            }
-
-            //Create Post
+            //Add photo
             $isSuccess = LibAgre::AddAgrePhoto($idCategory, $idTypeagre, $binaryFile, $nameFile, $dateTime);
             //Create a directory to save uploaded photos
 

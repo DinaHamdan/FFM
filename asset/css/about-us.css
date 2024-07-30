@@ -1,38 +1,32 @@
-#title-team {
+#about-us #title-team {
   text-align: center;
   margin: 4em 0 2em 0;
   font-weight: 500;
 }
-
-#about-us p {
+#about-us #about-us p {
   font-size: large;
   text-align: justify;
   text-justify: inter-word;
   padding: 0 1em;
 }
-
-#about-us span {
+#about-us #about-us span {
   text-transform: uppercase;
   font-weight: 600;
 }
-
-#discoverArtist {
+#about-us #discoverArtist {
   text-align: center;
   margin: 4em 0 1em 0;
   font-weight: 500;
 }
-
-#center {
+#about-us .center-button {
   display: flex;
   justify-content: center;
 }
-
-#artistes {
+#about-us .center-button #artistes {
   display: inline-block;
   font-size: 1.5em;
   text-decoration: none;
   text-align: center;
-  border: 1px solid red;
   width: 8em;
   height: 1.5em;
   background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
@@ -40,46 +34,55 @@
   color: #130F0F;
   margin-bottom: 2em;
 }
-
-#fire-jam {
+#about-us #fire-jam {
   background-image: url(../img/fire-jam-cropped.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-#fire-jam p {
+#about-us #fire-jam p {
   color: white;
   font-size: 1em;
 }
-
-#paragraph-one {
+#about-us #fire-jam #paragraph-one {
   display: inline-block;
   margin-top: 2em;
+  margin-right: 18em;
 }
-
-#paragraph-one-one {
-  margin-left: 2em;
+#about-us #fire-jam #paragraph-one-one {
+  margin-right: 15em;
 }
-
-#paragraph-one-two {
-  margin-left: 1em;
+#about-us #fire-jam #paragraph-one-two {
+  margin-right: 18em;
 }
-
-#paragraph-two {
-  margin: 15em 0em 0em 15em;
+#about-us #fire-jam #paragraph-two {
+  margin: 25em 0em 0em 15em;
 }
-
-#paragraph-two-one {
+#about-us #fire-jam #paragraph-two-one {
   display: inline-block;
   margin-left: 16em;
 }
-
-#paragraph-two-two {
-  margin-left: 15em;
+#about-us #fire-jam #paragraph-two-two {
+  margin-left: 17em;
 }
-
-#adhesion-button {
+#about-us #fire-jam #paragraph-three {
+  margin-right: 16em;
+}
+#about-us #fire-jam #paragraph-three-one {
+  margin-right: 17em;
+}
+#about-us #fire-jam #paragraph-three-two {
+  margin-right: 16em;
+}
+#about-us #fire-jam .center-button {
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+}
+#about-us #fire-jam .center-button #adhesion-button {
   display: inline-block;
   font-size: 1.5em;
   text-decoration: none;
@@ -89,5 +92,62 @@
   background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
   border-radius: 3em;
   color: #130F0F;
-  margin: 1.5em 0 2em 0;
+  margin: 3em 0 2em 0;
+}
+
+@media screen and (min-width: 600px) {
+  #about-us {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+  }
+  #about-us #fire-team {
+    width: 50%;
+    padding: 1em;
+  }
+  #about-us #fire-team .center-button {
+    border: 1px solid red;
+  }
+  #about-us #fire-team .center-button #artistes {
+    margin: 2em 0 2em 0;
+  }
+  #about-us #fire-jam {
+    width: 50%;
+  }
+  #about-us #fire-jam #paragraph-one {
+    display: inline-block;
+    margin-top: 2em;
+  }
+  #about-us #fire-jam #paragraph-one-one {
+    margin-left: 2em;
+  }
+  #about-us #fire-jam #paragraph-one-two {
+    margin-left: 1em;
+  }
+  #about-us #fire-jam #paragraph-two {
+    margin: 15em 0em 0em 15em;
+  }
+  #about-us #fire-jam #paragraph-two-one {
+    display: inline-block;
+    margin-left: 16em;
+  }
+  #about-us #fire-jam #paragraph-two-two {
+    margin-left: 15em;
+  }
+  #about-us #fire-jam .center-button #adhesion-button {
+    margin: 9em 0 2em 0;
+  }
+}
+@media screen and (min-width: 900px) {
+  #about-us #fire-jam #fire-jam-paragraph-container {
+    padding: 2em;
+  }
+  #about-us #fire-jam .center-button #adhesion-button {
+    margin: 5em 0 2em 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #about-us #fire-jam .center-button #adhesion-button {
+    margin: 2em 0 3em 0;
+  }
 }/*# sourceMappingURL=about-us.css.map */

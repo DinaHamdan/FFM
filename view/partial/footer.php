@@ -1,5 +1,27 @@
 <footer>
     <article id="social-media">
+        <div id="flash-message-footer">
+            <?php if (!empty($args['session']['msg']['info'])) { ?>
+
+                <div class="info">
+                    <?php foreach ($args['session']['msg']['info'] as $info) { ?>
+                        <p id="info-message"> <?= $info ?></p>
+                    <?php } ?>
+
+                </div>
+            <?php } ?>
+
+            <?php if (!empty($args['session']['msg']['error'])) { ?>
+
+                <div class="error">
+                    <?php foreach ($args['session']['msg']['error'] as $error) { ?>
+                        <p id="error-message"> <?= $error ?> </p>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+        </div>
+
+        <?php unset($_SESSION['msg']) ?>
         <img id="social-media-logo" src="/asset/img/FFM-logo-300x205.png" alt="Fire-From-Mars-logo">
         <div id="social-media-photo-container">
             <img class="social-media-photo" src="/asset/img/instagram-fotor-bg-remover-20240326164247.png" alt="">
@@ -8,28 +30,7 @@
         </div>
     </article>
 
-    <div id="flash-message-footer">
-        <?php if (!empty($args['session']['msg']['info'])) { ?>
 
-            <div class="info">
-                <?php foreach ($args['session']['msg']['info'] as $info) { ?>
-                    <p id="info-message"> <?= $info ?></p>
-                <?php } ?>
-
-            </div>
-        <?php } ?>
-
-        <?php if (!empty($args['session']['msg']['error'])) { ?>
-
-            <div class="error">
-                <?php foreach ($args['session']['msg']['error'] as $error) { ?>
-                    <p id="error-message"> <?= $error ?> </p>
-                <?php } ?>
-            </div>
-        <?php } ?>
-    </div>
-
-    <?php unset($_SESSION['msg']) ?>
 
     <section id="footer">
         <div id="footer-container">

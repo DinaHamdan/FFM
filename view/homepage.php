@@ -14,8 +14,9 @@
             <img id="logo-arrow" src="/asset/img/fleche-droite.png" alt="logo-arrow">
         </div>
     </section>
-
     <section id="about-us">
+        <!--         <div id="desktop-about-us-fire-jam-container">
+ -->
         <div id="fire-team">
             <h2 id="title-team">La Fire Team</h2>
             <p>
@@ -33,25 +34,29 @@
 
             </p>
             <h2 id="discoverArtist"> Découvrez Nos</h2>
-            <div id="center">
-                <a href="" id="artistes">Artistes/Agrès</a>
-            </div>
-        </div>
-        <div id="fire-jam">
-            <p id="paragraph-one">Fire Jam</p>
-            <p id="paragraph-one-one"> à la cathédrale</p>
-            <p id="paragraph-one-two">la Major</p>
-            <p id="paragraph-two">Tous les</p>
-            <p id="paragraph-two-one">mardis soir </p>
-            <p id="paragraph-two-two">De 20h à Minuit</p>
-            <p id="paragraph-three">Ouvert à tous</p>
-            <p id="paragraph-three-one"> Venez </p>
-            <p id="paragraph-three-two">comme vous êtes</p>
-            <div id="center">
-                <a href='/ctrl/adhesion/adhesion-display.php' id="adhesion-button">Adhésion</a>
+            <div class="center-button">
+                <a href="" id="artistes">Agrès</a>
             </div>
         </div>
 
+        <div id="fire-jam">
+            <div id="fire-jam-paragraph-container">
+                <p id="paragraph-one">Fire Jam</p>
+                <p id="paragraph-one-one"> à la cathédrale</p>
+                <p id="paragraph-one-two">la Major</p>
+                <p id="paragraph-two">Tous les</p>
+                <p id="paragraph-two-one">mardis soir </p>
+                <p id="paragraph-two-two">De 20h à Minuit</p>
+                <p id="paragraph-three">Ouvert à tous</p>
+                <p id="paragraph-three-one"> Venez </p>
+                <p id="paragraph-three-two">comme vous êtes</p>
+            </div>
+            <div class="center-button">
+                <a href='/ctrl/adhesion/adhesion-display.php' id="adhesion-button">Adhésion</a>
+            </div>
+        </div>
+        <!--         </div>
+ -->
     </section>
     <section id="actualite">
         <div id="actualite-container">
