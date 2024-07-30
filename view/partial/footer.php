@@ -1,6 +1,6 @@
 <footer>
     <article id="social-media">
-        <img src="/asset/img/FFM-logo-300x205.png" alt="">
+        <img id="social-media-logo" src="/asset/img/FFM-logo-300x205.png" alt="Fire-From-Mars-logo">
         <div id="social-media-photo-container">
             <img class="social-media-photo" src="/asset/img/instagram-fotor-bg-remover-20240326164247.png" alt="">
             <img class="social-media-photo" src="/asset/img/youtube-fotor-bg-remover-20240326164342.png" alt="">
@@ -8,26 +8,23 @@
         </div>
     </article>
 
-    <div id="listMessage">
+    <div id="flash-message-footer">
         <?php if (!empty($args['session']['msg']['info'])) { ?>
 
             <div class="info">
-                <ul>
-                    <?php foreach ($args['session']['msg']['info'] as $info) { ?>
-                        <li><?= $info ?></li>
-                    <?php } ?>
-                </ul>
+                <?php foreach ($args['session']['msg']['info'] as $info) { ?>
+                    <p id="info-message"> <?= $info ?></p>
+                <?php } ?>
+
             </div>
         <?php } ?>
 
         <?php if (!empty($args['session']['msg']['error'])) { ?>
 
             <div class="error">
-                <ul>
-                    <?php foreach ($args['session']['msg']['error'] as $error) { ?>
-                        <li><?= $error ?></li>
-                    <?php } ?>
-                </ul>
+                <?php foreach ($args['session']['msg']['error'] as $error) { ?>
+                    <p id="error-message"> <?= $error ?> </p>
+                <?php } ?>
             </div>
         <?php } ?>
     </div>
@@ -44,6 +41,7 @@
 
 </body>
 <script>
+    /* I might remove this logo 3 changed id*/
     let mybutton = document.getElementById("logo3");
     mybutton.addEventListener('click', () => {
         mybutton.style.display = "none";

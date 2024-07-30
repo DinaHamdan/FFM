@@ -6,10 +6,14 @@
   align-items: center;
   gap: 40px;
 }
+#social-media #social-media-logo {
+  height: 150px;
+}
 #social-media #social-media-photo-container {
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  margin-bottom: 20px;
 }
 #social-media #social-media-photo-container .social-media-photo {
   border-radius: 30px;
@@ -17,18 +21,30 @@
   height: 30px;
 }
 
+#flash-message-footer #info-message {
+  color: white;
+  font-weight: bold;
+}
+#flash-message-footer #error-message {
+  color: white;
+  font-weight: bold;
+}
+
 #footer {
   padding: 20px;
   background-color: #000000;
   height: 70px;
   color: white;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 #footer #footer-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
+}
+#footer #footer-container p {
+  margin: auto;
 }
 #footer #footer-container .ffm-logo {
   width: 50px;
