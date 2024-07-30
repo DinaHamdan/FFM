@@ -54,23 +54,23 @@
 
     </section>
     <section id="actualite">
-        <div id="center2">
+        <div id="actualite-container">
             <div>
-                <h2 id="title-actu-1">Actualité</h2>
+                <h2 id="first-title-actualite">Actualité</h2>
                 <img id="poster-img" src="/asset/img/Jongle-en-Zik-2024.png" alt="Poster-Jongle-en-Zik">
             </div>
-            <div>
-                <h2 id="title-actu-2">Actualité</h2>
-                <p>Jongle en Zik</p>
-                <p>du 25 au 27</p>
-                <p>Octobre 2024</p>
-                <p id="p-actu">Edition POI</p>
-                <p>À malmort du</p>
-                <p>Comtat -84</p>
-                <div id="center">
-                    <a id="event-button" href='/ctrl/evenement/event-display.php'>Voir l'évènement</a>
-                </div>
+
+            <h2 id="second-title-actualite">Actualité</h2>
+            <p>Jongle en Zik</p>
+            <p>du 25 au 27</p>
+            <p>Octobre 2024</p>
+            <p id="p-actualite">Edition POI</p>
+            <p>À malmort du</p>
+            <p>Comtat -84</p>
+            <div id="button-container">
+                <a id="event-button" href='/ctrl/evenement/event-display.php'>Voir l'évènement</a>
             </div>
+
         </div>
     </section>
     <section id="contact-us">

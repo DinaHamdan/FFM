@@ -1,56 +1,64 @@
 #actualite {
   background-color: #130F0F;
   color: #943AAB;
-}
 
-#center2 {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-}
 
-#title-actu-1 {
-  text-align: center;
-  padding: 1em;
-  font-weight: 400;
-  font-size: 3em;
-}
+  #actualite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*     text-align: center;
+     font-size: 5em;
+    font-weight: 600;
+    text-transform: uppercase; */
 
-#poster-img {
-  border: 1px solid red;
-  display: block;
-  margin: auto;
-  width: 70%;
-}
+    #first-title-actualite {
+      text-align: center;
+      padding: 1em;
+      font-weight: 400;
+      font-size: 3em;
+    }
 
-#title-actu-2 {
-  display: none;
-}
+    #poster-img {
+      display: block;
+      margin: auto;
+      width: 70%;
+      margin-bottom: 1em;
+    }
 
-#actualite p {
-  text-align: center;
-  font-size: 2em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
+    #second-title-actualite {
+      display: none;
+    }
 
-#p-actu {
-  padding: 1em;
-}
+    p {
+      text-align: center;
+      font-size: 2em;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
 
-#event-button {
-  padding-top: 10px;
-  display: inline-block;
-  font-size: 1.5em;
-  font-weight: 450;
-  text-decoration: none;
-  text-align: center;
-  border: 1px solid red;
-  width: 10em;
-  height: 2em;
-  background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
-  border-radius: 3em;
-  color: #130F0F;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
+    #p-actualite {
+      padding: 1em;
+    }
+
+    #event-button {
+      padding-top: 10px;
+      display: inline-block;
+      font-size: 1.5em;
+      font-weight: 450;
+      text-decoration: none;
+      text-align: center;
+      //border: 1px solid red;
+      /*   width: 10em;
+  height: 2em; */
+      width: 8em;
+      height: 1.5em;
+      background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
+      border-radius: 3em;
+      color: #130F0F;
+      margin-top: 1.5em;
+      margin-bottom: 2em;
+    }
+  }
 }
