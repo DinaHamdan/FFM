@@ -324,12 +324,16 @@ Maquette
 commencer HTML CSS 
 Coding reste de fonctionnalité
 To do :
-Redo all pages – split them to different sass style pages
-Finish page d’acceuil CSS
-Code function read volunteer form INSERT INTO bdd
-  
+DONE Redo all pages – split them to different sass style pages
+DONE Finish page d’acceuil CSS
+Started Code function read volunteer form INSERT INTO bdd
+
 
 ### Mardi 30
+DONE function read volunteer form INSERT INTO bdd
+Adjust minor details for page d'acceuil - do desktop
+Start html CSS for gallerie agrés
+
 HTML + CSS
 
 

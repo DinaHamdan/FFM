@@ -40,11 +40,10 @@
         <div id="fire-jam">
             <p id="paragraph-one">Fire Jam</p>
             <p id="paragraph-one-one"> à la cathédrale</p>
-            <p id="paragraph-one-one-two">la Major</p>
+            <p id="paragraph-one-two">la Major</p>
             <p id="paragraph-two">Tous les</p>
             <p id="paragraph-two-one">mardis soir </p>
-            <p id="paragraph-two-two">De 20h à</p>
-            <p id="paragraph-two-three"> Minuit</p>
+            <p id="paragraph-two-two">De 20h à Minuit</p>
             <p id="paragraph-three">Ouvert à tous</p>
             <p id="paragraph-three-one"> Venez </p>
             <p id="paragraph-three-two">comme vous êtes</p>

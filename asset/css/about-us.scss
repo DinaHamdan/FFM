@@ -9,7 +9,7 @@
     font-size: large;
     text-align: justify;
     text-justify: inter-word;
-    padding: 0 4em;
+    padding: 0 1em;
 
 }
 
@@ -58,52 +58,45 @@
 
 #fire-jam p {
     color: white;
-    font-size: 1.1em;
+    font-size: 1em;
 
 }
 
 #paragraph-one {
     display: inline-block;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 #paragraph-one-one {
     margin-left: 2em;
 }
 
-#Pparagraph-one-two {
-    display: inline-block;
+#paragraph-one-two {
+    margin-left: 1em;
 
-    margin: 10em 1em 0em 18em;
+}
+
+#paragraph-two {
+    margin: 15em 0em 0em 15em;
 }
 
 #paragraph-two-one {
     display: inline-block;
-
-    margin-left: 18.5em;
+    margin-left: 16em;
 }
 
 #paragraph-two-two {
-    display: inline-block;
-
-    margin-left: 18em;
+    margin-left: 15em;
 }
 
-#paragraph-two-three {
-    display: inline-block;
-    margin-left: 18.5em;
-}
 
-#paragraph-three {
-    margin-top: 1em;
-}
+
 
 #adhesion-button {
     display: inline-block;
     font-size: 1.5em;
     text-decoration: none;
     text-align: center;
-    border: 1px solid red;
     width: 8em;
     height: 1.5em;
     background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
