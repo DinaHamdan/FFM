@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 400px;
 
 
     #performance {
@@ -18,12 +18,12 @@
         color: white;
         height: 10em;
         width: 100%;
-        font-size: 0.5em;
+        font-size: 0.8em;
 
 
         #contact-button {
             display: inline-block;
-            font-size: 1.5em;
+            font-size: 1.2em;
             text-decoration: none;
             text-align: center;
             width: 8em;
@@ -47,7 +47,7 @@
     color: white;
     height: 10em;
     width: 100%;
-    font-size: 0.5em;
+    font-size: 0.8em;
 
 
     #event-photo-container {
@@ -83,16 +83,25 @@
         color: white;
         height: 10em;
         width: 100%;
-        font-size: 0.5em;
+        font-size: 0.8em;
 
         #street-art-photo-container {
             display: flex;
             gap: 20px;
 
-
             .street-art-photo {
                 width: 30%;
                 height: 80%;
+            }
+        }
+
+        #street-art-paragraph {
+            padding: 20px;
+
+            p {
+                display: inline-block;
+                width: 100px;
+
             }
         }
     }

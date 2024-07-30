@@ -305,7 +305,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
 }
 #contact-us #performance {
   padding: 10px;
@@ -317,11 +317,11 @@ header {
   color: white;
   height: 10em;
   width: 100%;
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 #contact-us #performance #contact-button {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: none;
   text-align: center;
   width: 8em;
@@ -343,7 +343,7 @@ header {
   color: white;
   height: 10em;
   width: 100%;
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 #event #event-photo-container {
   display: flex;
@@ -374,7 +374,7 @@ header {
   color: white;
   height: 10em;
   width: 100%;
-  font-size: 0.5em;
+  font-size: 0.8em;
 }
 #street #street-art #street-art-photo-container {
   display: flex;
@@ -383,6 +383,14 @@ header {
 #street #street-art #street-art-photo-container .street-art-photo {
   width: 30%;
   height: 80%;
+}
+#street #street-art #street-art-paragraph {
+  padding: 20px;
+}
+#street #street-art #street-art-paragraph p {
+  display: inline-block;
+  width: 100px;
+  text-justify: auto;
 }
 
 

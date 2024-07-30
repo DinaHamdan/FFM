@@ -104,8 +104,8 @@
                 <img class="street-art-photo" src="/asset/img/street-art.avif" alt="">
                 <img class="street-art-photo" src="/asset/img/street-art-two.avif" alt="">
             </div>
-            <div>
-                <h3>STREET ART</h3>
+            <div id="street-art-paragraph">
+                <h4>STREET ART</h4>
                 <p>Initiez vous à l'art de la jonglerie, les mardis soirs au pied de la cathédrale la Major.</p>
             </div>
         </article>
