@@ -1,5 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/event.php';
 
 class VolunteerFormDisplay extends Ctrl
 {

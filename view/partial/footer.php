@@ -1,4 +1,13 @@
 <footer>
+    <article id="social-media">
+        <img src="/asset/img/FFM-logo-300x205.png" alt="">
+        <div id="social-media-photo-container">
+            <img class="social-media-photo" src="/asset/img/instagram-fotor-bg-remover-20240326164247.png" alt="">
+            <img class="social-media-photo" src="/asset/img/youtube-fotor-bg-remover-20240326164342.png" alt="">
+            <img class="social-media-photo" src="/asset/img/facebook-fotor-bg-remover-20240326164437.png" alt="">
+        </div>
+    </article>
+
     <div id="listMessage">
         <?php if (!empty($args['session']['msg']['info'])) { ?>
 
@@ -24,6 +33,13 @@
     </div>
 
     <?php unset($_SESSION['msg']) ?>
+
+    <section id="footer">
+        <div id="footer-container">
+            <img class="ffm-logo" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="">
+            <p>2023 FireFromMars © Tous droits réservés </p>
+        </div>
+    </section>
 </footer>
 
 </body>

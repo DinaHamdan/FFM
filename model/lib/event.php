@@ -53,4 +53,32 @@ class LibEvent
         $conventionInfo = $statement->fetch(PDO::FETCH_ASSOC);
         return $conventionInfo;
     }
+
+    static function getVolunteerForm($firstName, $lastName, $birthday, $phoneNumber, $email, $dateArrival, $dateDepart, $dayOptions, $timeOptions, $workOptions, $extraWorkInfo, $diplomePSC1, $transport, $lodging, $performance, $foodRestrictions, $otherInfo, $dateTime): bool
+    {
+        $query = ' INSERT INTO volunteerForm (firstName, lastName, birthday, phoneNumber, email, dateArrival, dateDepart, dayOptions, timeOptions, workOptions, extraWorkInfo, diplomePSC1, transport, lodging, performance, foodRestrictions, otherInfo, date_time_column) VALUES (:firstName, :lastName, :birthday, :phoneNumber, :email, :dateArrival, :dateDepart, :dayOptions, :timeOptions, :workOptions, :extraWorkInfo, :diplomePSC1, :transport, :lodging, :performance,:foodRestrictions, :otherInfo, :date_time_column)';
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':firstName', $firstName);
+        $statement->bindParam(':lastName', $lastName);
+        $statement->bindParam(':birthday', $birthday);
+        $statement->bindParam(':phoneNumber', $phoneNumber);
+        $statement->bindParam(':email', $email);
+        $statement->bindParam(':dateArrival', $dateArrival);
+        $statement->bindParam(':dateDepart', $dateDepart);
+        $statement->bindParam(':dayOptions', $dayOptions);
+        $statement->bindParam(':timeOptions', $timeOptions);
+        $statement->bindParam(':workOptions', $workOptions);
+        $statement->bindParam(':extraWorkInfo', $extraWorkInfo);
+        $statement->bindParam(':diplomePSC1', $diplomePSC1);
+        $statement->bindParam(':transport', $transport);
+        $statement->bindParam(':lodging', $lodging);
+        $statement->bindParam(':performance', $performance);
+        $statement->bindParam(':foodRestrictions', $foodRestrictions);
+        $statement->bindParam(':otherInfo', $otherInfo);
+        $statement->bindParam(':date_time_column', $dateTime);
+
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
 }

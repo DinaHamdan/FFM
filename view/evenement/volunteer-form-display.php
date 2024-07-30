@@ -37,13 +37,13 @@
         <!-- Date of arrival-->
         <div>
             <label for="dateArrival">Date prévu d'arrivée</label>
-            <input type="date" name="dateArrival" id="volunteerArrival">
+            <input type="date" name="dateArrival" id="dateArrival">
         </div>
 
         <!-- Date of departure-->
         <div>
             <label for="dateDepart">Date prévu de départ</label>
-            <input type="date" name="dateDepart" id="volunteerDeparture">
+            <input type="date" name="dateDepart" id="dateDepart">
         </div>
 
         <!-- Which part of the event for volunteer work -->
@@ -62,7 +62,7 @@
             <input type="checkbox" name="timeOptions[]" value="afteernoon" id=""><label for="afteernoon">Après-midi</label>
 
             <input type="checkbox" name="timeOptions[]" value="evening" id=""><label for="evening">Soir</label>
-            <input type="checkbox" name="timeOptions[]" value="night" id=""><label for="night">Soir</label>
+            <input type="checkbox" name="timeOptions[]" value="night" id=""><label for="night">Nuit</label>
 
         </div>
 
