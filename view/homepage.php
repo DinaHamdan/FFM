@@ -40,13 +40,17 @@
         </div>
 
         <div id="fire-jam">
-            <div id="fire-jam-paragraph-container">
+            <div id="fire-jam-paragraph-first-container">
                 <p id="paragraph-one">Fire Jam</p>
                 <p id="paragraph-one-one"> à la cathédrale</p>
                 <p id="paragraph-one-two">la Major</p>
+            </div>
+            <div id="fire-jam-paragraph-second-container">
                 <p id="paragraph-two">Tous les</p>
                 <p id="paragraph-two-one">mardis soir </p>
                 <p id="paragraph-two-two">De 20h à Minuit</p>
+            </div>
+            <div id="fire-jam-paragraph-third-container">
                 <p id="paragraph-three">Ouvert à tous</p>
                 <p id="paragraph-three-one"> Venez </p>
                 <p id="paragraph-three-two">comme vous êtes</p>

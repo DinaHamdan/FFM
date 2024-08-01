@@ -150,13 +150,13 @@ header {
   margin: 4em 0 2em 0;
   font-weight: 500;
 }
-#about-us #about-us p {
+#about-us p {
   font-size: large;
   text-align: justify;
   text-justify: inter-word;
   padding: 0 1em;
 }
-#about-us #about-us span {
+#about-us span {
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -189,40 +189,107 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-#about-us #fire-jam p {
   color: white;
   font-size: 1em;
+  /* 
+      p {
+          color: white;
+          font-size: 1em;
+      } */
+  /* 
+      #paragraph-one {
+          display: inline-block;
+          margin-top: 2em;
+          margin-right: 18em;
+      }
+
+      #paragraph-one-one {
+          margin-right: 15em;
+
+      }
+
+      #paragraph-one-two {
+          margin-right: 18em;
+      }
+
+      #paragraph-two {
+          margin: 25em 0em 0em 15em;
+      }
+
+      #paragraph-two-one {
+          display: inline-block;
+          margin-left: 16em;
+      }
+
+      #paragraph-two-two {
+          margin-left: 17em;
+      }
+
+      #paragraph-three {
+          margin-right: 16em;
+      }
+
+      #paragraph-three-one {
+          margin-right: 17em;
+      }
+
+      #paragraph-three-two {
+          margin-right: 16em;
+      } */
 }
-#about-us #fire-jam #paragraph-one {
-  display: inline-block;
-  margin-top: 2em;
-  margin-right: 18em;
+#about-us #fire-jam #fire-jam-paragraph-first-container {
+  margin-left: -6em;
+  margin-top: 3em;
+  width: 70%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-#about-us #fire-jam #paragraph-one-one {
-  margin-right: 15em;
+#about-us #fire-jam #fire-jam-paragraph-first-container #paragraph-one {
+  margin-left: 1em;
 }
-#about-us #fire-jam #paragraph-one-two {
-  margin-right: 18em;
+#about-us #fire-jam #fire-jam-paragraph-first-container #paragraph-one-one {
+  margin-left: 2em;
 }
-#about-us #fire-jam #paragraph-two {
-  margin: 25em 0em 0em 15em;
+#about-us #fire-jam #fire-jam-paragraph-first-container #paragraph-one-two {
+  margin-left: 1em;
 }
-#about-us #fire-jam #paragraph-two-one {
-  display: inline-block;
-  margin-left: 16em;
+#about-us #fire-jam #fire-jam-paragraph-second-container {
+  margin-top: 20em;
+  margin-right: -6em;
+  width: 70%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
-#about-us #fire-jam #paragraph-two-two {
-  margin-left: 17em;
+#about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two {
+  margin-right: 1em;
 }
-#about-us #fire-jam #paragraph-three {
-  margin-right: 16em;
+#about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two-one {
+  margin-right: 2em;
 }
-#about-us #fire-jam #paragraph-three-one {
-  margin-right: 17em;
+#about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two-two {
+  margin-right: 1em;
 }
-#about-us #fire-jam #paragraph-three-two {
-  margin-right: 16em;
+#about-us #fire-jam #fire-jam-paragraph-third-container {
+  margin-top: 3em;
+  margin-left: -6em;
+  width: 70%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#about-us #fire-jam #fire-jam-paragraph-third-container #paragraph-three {
+  margin-left: 1em;
+}
+#about-us #fire-jam #fire-jam-paragraph-third-container #paragraph-three-one {
+  margin-left: 2em;
+}
+#about-us #fire-jam #fire-jam-paragraph-third-container #paragraph-three-two {
+  margin-left: 2em;
 }
 #about-us #fire-jam .center-button {
   display: flex;
@@ -242,15 +309,75 @@ header {
   margin: 3em 0 2em 0;
 }
 
-@media screen and (min-width: 600px) {
+/*  #about-us {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        //justify-content: space-evenly;
+
+
+        #fire-team {
+            width: 50%;
+            padding: 1em;
+
+            .center-button {
+                border: 1px solid red;
+
+                #artistes {
+                    margin: 2em 0 2em 0;
+
+                }
+            }
+
+        }
+
+        #fire-jam {
+            width: 50%;
+ */
+/* 
+            #paragraph-one {
+                display: inline-block;
+                margin-top: 2em;
+            }
+
+            #paragraph-one-one {
+                margin-left: 2em;
+            }
+
+            #paragraph-one-two {
+                margin-left: 1em;
+
+            }
+
+            #paragraph-two {
+                margin: 15em 0em 0em 15em;
+            }
+
+            #paragraph-two-one {
+                display: inline-block;
+                margin-left: 16em;
+            }
+
+            #paragraph-two-two {
+                margin-left: 15em;
+            }
+ */
+/*  .center-button {
+                #adhesion-button {
+                    margin: 9em 0 2em 0;
+                }
+            }
+        }
+    }
+}
+ */
+@media screen and (min-width: 900px) {
   #about-us {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
   }
   #about-us #fire-team {
     width: 50%;
-    padding: 1em;
   }
   #about-us #fire-team .center-button {
     border: 1px solid red;
@@ -258,38 +385,13 @@ header {
   #about-us #fire-team .center-button #artistes {
     margin: 2em 0 2em 0;
   }
-  #about-us #fire-jam {
+  #fire-jam {
     width: 50%;
   }
-  #about-us #fire-jam #paragraph-one {
-    display: inline-block;
-    margin-top: 2em;
-  }
-  #about-us #fire-jam #paragraph-one-one {
-    margin-left: 2em;
-  }
-  #about-us #fire-jam #paragraph-one-two {
-    margin-left: 1em;
-  }
-  #about-us #fire-jam #paragraph-two {
-    margin: 15em 0em 0em 15em;
-  }
-  #about-us #fire-jam #paragraph-two-one {
-    display: inline-block;
-    margin-left: 16em;
-  }
-  #about-us #fire-jam #paragraph-two-two {
-    margin-left: 15em;
-  }
-  #about-us #fire-jam .center-button #adhesion-button {
-    margin: 9em 0 2em 0;
-  }
-}
-@media screen and (min-width: 900px) {
-  #about-us #fire-jam #fire-jam-paragraph-container {
+  #fire-jam #fire-jam-paragraph-container {
     padding: 2em;
   }
-  #about-us #fire-jam .center-button #adhesion-button {
+  #fire-jam .center-button #adhesion-button {
     margin: 5em 0 2em 0;
   }
 }

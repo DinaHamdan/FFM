@@ -309,15 +309,7 @@ DONE Forum Delete discussions and comments
 DONE Poster discussion sans photo
 
 
-### TO DO :
-Read Formulaire Bénévole
-BackOffice formulaires 
-Add a condtion to check if profile is complete
-Need to add a function at Login to check if profile fname last name and avatar are empty or not  
-Show members
-Remove Members
-Commencer rapport 
-Deploiment
+
 
 ### Lundi 29
 Maquette 
@@ -337,5 +329,14 @@ Start html CSS for gallerie agrés
 HTML + CSS
 
 
+### 
 
-
+### TO DO :
+BackOffice formulaires 
+Add a condtion to check if profile is complete
+Need to add a function at Login to check if profile fname last name and avatar are empty or not  
+Show members
+Remove Members
+Commencer rapport 
+Deploiment
+référencement google  + sécurité
