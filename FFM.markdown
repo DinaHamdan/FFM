@@ -333,6 +333,7 @@ HTML + CSS
 
 ### TO DO :
 BackOffice formulaires 
+Fix gallerie links towards photo for one agré
 Add a condtion to check if profile is complete
 Need to add a function at Login to check if profile fname last name and avatar are empty or not  
 Show members

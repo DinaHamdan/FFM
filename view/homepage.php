@@ -35,7 +35,7 @@
             </p>
             <h2 id="discoverArtist"> Découvrez Nos</h2>
             <div class="center-button">
-                <a href="" id="artistes">Agrès</a>
+                <a href="" id="prop-button">Agrès</a>
             </div>
         </div>
 

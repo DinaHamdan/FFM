@@ -22,7 +22,7 @@
   display: flex;
   justify-content: center;
 }
-#about-us .center-button #artistes {
+#about-us .center-button #prop-button {
   display: inline-block;
   font-size: 1.5em;
   text-decoration: none;
@@ -44,57 +44,11 @@
   align-items: center;
   color: white;
   font-size: 1em;
-  /* 
-      p {
-          color: white;
-          font-size: 1em;
-      } */
-  /* 
-      #paragraph-one {
-          display: inline-block;
-          margin-top: 2em;
-          margin-right: 18em;
-      }
-
-      #paragraph-one-one {
-          margin-right: 15em;
-
-      }
-
-      #paragraph-one-two {
-          margin-right: 18em;
-      }
-
-      #paragraph-two {
-          margin: 25em 0em 0em 15em;
-      }
-
-      #paragraph-two-one {
-          display: inline-block;
-          margin-left: 16em;
-      }
-
-      #paragraph-two-two {
-          margin-left: 17em;
-      }
-
-      #paragraph-three {
-          margin-right: 16em;
-      }
-
-      #paragraph-three-one {
-          margin-right: 17em;
-      }
-
-      #paragraph-three-two {
-          margin-right: 16em;
-      } */
 }
 #about-us #fire-jam #fire-jam-paragraph-first-container {
   margin-left: -6em;
   margin-top: 3em;
   width: 70%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -112,7 +66,6 @@
   margin-top: 20em;
   margin-right: -6em;
   width: 70%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -130,7 +83,6 @@
   margin-top: 3em;
   margin-left: -6em;
   width: 70%;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -147,7 +99,6 @@
 #about-us #fire-jam .center-button {
   display: flex;
   justify-content: center;
-  border: 1px solid red;
 }
 #about-us #fire-jam .center-button #adhesion-button {
   display: inline-block;
@@ -162,68 +113,6 @@
   margin: 3em 0 2em 0;
 }
 
-/*  #about-us {
-        border: 1px solid red;
-        display: flex;
-        flex-direction: row;
-        //justify-content: space-evenly;
-
-
-        #fire-team {
-            width: 50%;
-            padding: 1em;
-
-            .center-button {
-                border: 1px solid red;
-
-                #artistes {
-                    margin: 2em 0 2em 0;
-
-                }
-            }
-
-        }
-
-        #fire-jam {
-            width: 50%;
- */
-/* 
-            #paragraph-one {
-                display: inline-block;
-                margin-top: 2em;
-            }
-
-            #paragraph-one-one {
-                margin-left: 2em;
-            }
-
-            #paragraph-one-two {
-                margin-left: 1em;
-
-            }
-
-            #paragraph-two {
-                margin: 15em 0em 0em 15em;
-            }
-
-            #paragraph-two-one {
-                display: inline-block;
-                margin-left: 16em;
-            }
-
-            #paragraph-two-two {
-                margin-left: 15em;
-            }
- */
-/*  .center-button {
-                #adhesion-button {
-                    margin: 9em 0 2em 0;
-                }
-            }
-        }
-    }
-}
- */
 @media screen and (min-width: 900px) {
   #about-us {
     display: flex;
@@ -232,24 +121,21 @@
   #about-us #fire-team {
     width: 50%;
   }
-  #about-us #fire-team .center-button {
-    border: 1px solid red;
+  #about-us #fire-team .center-button #prop-button {
+    margin: 6em 0 2em 0;
   }
-  #about-us #fire-team .center-button #artistes {
-    margin: 2em 0 2em 0;
-  }
-  #fire-jam {
+  #about-us #fire-jam {
     width: 50%;
   }
-  #fire-jam #fire-jam-paragraph-container {
+  #about-us #fire-jam #fire-jam-paragraph-container {
     padding: 2em;
   }
-  #fire-jam .center-button #adhesion-button {
-    margin: 5em 0 2em 0;
+  #about-us #fire-jam .center-button #adhesion-button {
+    margin: 6em 0 2em 0;
   }
 }
 @media screen and (min-width: 1200px) {
   #about-us #fire-jam .center-button #adhesion-button {
-    margin: 2em 0 3em 0;
+    margin: 4em 0 3em 0;
   }
 }/*# sourceMappingURL=about-us.css.map */
