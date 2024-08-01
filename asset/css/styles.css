@@ -305,8 +305,6 @@ header {
 @media screen and (min-width: 1200px) {
   #about-us #fire-jam .center-button #adhesion-button {
     margin: 3em 0 3em 0;
-    /*        margin-bottom: 3em;
-    margin-top: 0; */
   }
 }
 #actualite {
@@ -445,11 +443,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*     gap: 20px;
-  */
+  /*     gap: 20px;*/
   color: white;
   height: 10em;
-  width: 100%;
   font-size: 0.8em;
 }
 #event #event-photo-container {
@@ -459,8 +455,10 @@ header {
   gap: 20px;
 }
 #event #event-photo-container .event-photo {
-  width: 30%;
-  height: 80%;
+  /*        width: 30%;
+  height: 80%; */
+  width: 80px;
+  height: 80px;
 }
 
 #street {
@@ -470,7 +468,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
 }
 #street #street-art {
   padding: 20px;
@@ -480,25 +478,71 @@ header {
   align-items: center;
   color: white;
   height: 10em;
-  width: 100%;
   font-size: 0.8em;
+  width: 100%;
 }
 #street #street-art #street-art-photo-container {
   display: flex;
   gap: 20px;
 }
 #street #street-art #street-art-photo-container .street-art-photo {
-  width: 30%;
-  height: 80%;
+  /*      width: 30%;
+  height: 80%; */
+  width: 80px;
+  height: 80px;
 }
-#street #street-art #street-art-paragraph {
+#street #street-art #street-art-paragraph-container {
   padding: 20px;
 }
-#street #street-art #street-art-paragraph p {
+#street #street-art #street-art-paragraph-container p {
   display: inline-block;
   width: 100px;
 }
 
+@media screen and (min-width: 800px) {
+  #contact-us {
+    background-image: url(../../asset/img/fire-background.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+  }
+  #contact-us #performance {
+    height: 400px;
+    font-size: 1.5em;
+    gap: 2em;
+  }
+  #event {
+    height: 400px;
+    font-size: 1.5em;
+  }
+  #event #event-paragraph-container {
+    margin-left: 2em;
+  }
+  #event #event-photo-container .event-photo {
+    width: 40%;
+    height: 80%;
+  }
+  #street {
+    background-image: url(../../asset/img/bg-fire-breathing.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+  }
+  #street #street-art {
+    height: 400px;
+    font-size: 1.5em;
+  }
+  #street #street-art #street-art-photo-container .street-art-photo {
+    width: 40%;
+    height: 80%;
+  }
+  #street #street-art #street-art-paragraph-container {
+    margin-right: 2em;
+  }
+  #street #street-art #street-art-paragraph-container p {
+    width: 300px;
+  }
+}
 
 #social-media {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);

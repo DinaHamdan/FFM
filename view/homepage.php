@@ -97,7 +97,7 @@
     </section>
 
     <section id="event">
-        <div>
+        <div id="event-paragraph-container">
             <h3>EVENMENTIEL</h3>
             <p>Trouvez votre artiste de feu pour enflammer vos événements et financer notre association.</p>
         </div>
@@ -114,7 +114,7 @@
                 <img class="street-art-photo" src="/asset/img/street-art.avif" alt="">
                 <img class="street-art-photo" src="/asset/img/street-art-two.avif" alt="">
             </div>
-            <div id="street-art-paragraph">
+            <div id="street-art-paragraph-container">
                 <h4>STREET ART</h4>
                 <p>Initiez vous à l'art de la jonglerie, les mardis soirs au pied de la cathédrale la Major.</p>
             </div>

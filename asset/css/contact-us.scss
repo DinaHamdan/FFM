@@ -17,6 +17,7 @@
         gap: 20px;
         color: white;
         height: 10em;
+        //Might remove
         width: 100%;
         font-size: 0.8em;
 
@@ -42,11 +43,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*     gap: 20px;
- */
+    /*     gap: 20px;*/
     color: white;
     height: 10em;
-    width: 100%;
     font-size: 0.8em;
 
 
@@ -57,8 +56,10 @@
         gap: 20px;
 
         .event-photo {
-            width: 30%;
-            height: 80%;
+            /*        width: 30%;
+            height: 80%; */
+            width: 80px;
+            height: 80px;
         }
 
     }
@@ -71,7 +72,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 400px;
 
 
     #street-art {
@@ -82,20 +83,23 @@
         align-items: center;
         color: white;
         height: 10em;
-        width: 100%;
         font-size: 0.8em;
+        //Might remove
+        width: 100%;
 
         #street-art-photo-container {
             display: flex;
             gap: 20px;
 
             .street-art-photo {
-                width: 30%;
-                height: 80%;
+                /*      width: 30%;
+                height: 80%; */
+                width: 80px;
+                height: 80px;
             }
         }
 
-        #street-art-paragraph {
+        #street-art-paragraph-container {
             padding: 20px;
 
             p {
@@ -107,6 +111,67 @@
     }
 }
 
-@media screen and (min-width:900px) {}
+@media screen and (min-width:800px) {
+    #contact-us {
+        background-image: url(../../asset/img/fire-background.avif);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 800px;
+
+        #performance {
+            height: 400px;
+            font-size: 1.5em;
+            gap: 2em;
+        }
+    }
+
+    #event {
+        height: 400px;
+        font-size: 1.5em;
+
+        #event-paragraph-container {
+            margin-left: 2em;
+        }
+
+        #event-photo-container {
+            .event-photo {
+                width: 40%;
+                height: 80%;
+
+            }
+
+        }
+    }
+
+    #street {
+        background-image: url(../../asset/img/bg-fire-breathing.avif);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 800px;
+
+
+        #street-art {
+            height: 400px;
+            font-size: 1.5em;
+
+            #street-art-photo-container {
+
+                .street-art-photo {
+                    width: 40%;
+                    height: 80%;
+                }
+            }
+
+
+            #street-art-paragraph-container {
+                margin-right: 2em;
+
+                p {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
 
 /*# sourceMappingURL=actualite.css.map */
