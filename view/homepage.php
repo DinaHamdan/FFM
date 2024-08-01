@@ -8,7 +8,7 @@
         <img id="full-logo" src="/asset/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
         <!-- Title -->
         <h1 id="FFM">Fire From Mars</h1>
-        <h2 id="Title-description">Jonglerie enflammée</h2>
+        <h2 id="title-description">Jonglerie enflammée</h2>
         <!-- Arrow logo to scroll down need to add script after -->
         <div class="arrow">
             <img id="logo-arrow" src="/asset/img/fleche-droite.png" alt="logo-arrow">

@@ -3,10 +3,6 @@
     background-image: url(../../asset/img/photo-accueil-780-900.avif);
     background-repeat: no-repeat;
     background-position: center;
-
-
-
-
 }
 
 /* Styliser la photo background en dur */
@@ -36,7 +32,7 @@
 }
 
 
-#Title-description {
+#title-description {
     -webkit-text-stroke: 1px #f3660062;
     font-weight: 300;
     margin-top: 1em;
@@ -114,14 +110,19 @@ header {
     }
 
     #FFM {
-        margin-top: 5em;
+        /*         margin-top: 5em;
         margin-left: 15em;
-        font-size: 2em;
+        font-size: 2em; */
+        margin-top: 1em;
+        margin-left: 10em;
+        font-size: 5em;
     }
 
-    #Title-description {
-        margin-left: 13em;
-        font-size: 2em;
+    #title-description {
+        /*         margin-left: 13em;
+        font-size: 2em; */
+        margin-left: 16em;
+        font-size: 4em;
     }
 
     .arrow {
@@ -154,6 +155,7 @@ header {
     }
 }
 
+/* 
 @media screen and (min-width:1020px) {
 
     #accueil {
@@ -178,7 +180,7 @@ header {
         font-size: 7em;
     }
 
-    #Title-description {
+    #title-description {
         margin-left: 22.5em;
         font-size: 4em;
     }
@@ -197,4 +199,4 @@ header {
 
     }
 
-}
+} */
