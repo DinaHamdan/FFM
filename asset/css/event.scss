@@ -20,45 +20,99 @@
       font-size: 3em;
     }
 
-    #poster-img {
+    #first-poster-img {
       display: block;
       margin: auto;
       width: 70%;
       margin-bottom: 1em;
     }
 
-    #second-title-actualite {
+    #second-poster-img {
       display: none;
     }
 
-    p {
-      text-align: center;
-      font-size: 2em;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
+    #second-actualite-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    #p-actualite {
-      padding: 1em;
-    }
+      #second-title-actualite {
+        display: none;
+      }
 
-    #event-button {
-      padding-top: 10px;
-      display: inline-block;
-      font-size: 1.5em;
-      font-weight: 450;
-      text-decoration: none;
-      text-align: center;
-      //border: 1px solid red;
-      /*   width: 10em;
+      p {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      #p-actualite {
+        padding: 1em;
+      }
+
+      #event-button {
+        padding-top: 10px;
+        display: inline-block;
+        font-size: 1.5em;
+        font-weight: 450;
+        text-decoration: none;
+        text-align: center;
+        /*   width: 10em;
   height: 2em; */
-      width: 8em;
-      height: 1.5em;
-      background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
-      border-radius: 3em;
-      color: #130F0F;
-      margin-top: 1.5em;
-      margin-bottom: 2em;
+        width: 8em;
+        height: 1.5em;
+        background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
+        border-radius: 3em;
+        color: #130F0F;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:900px) {
+  #actualite {
+    padding: 5em;
+
+    #actualite-container {
+      display: flex;
+      flex-direction: row;
+
+      #first-poster-img {
+        display: none;
+      }
+
+      #second-poster-img {
+        display: block;
+        margin: auto;
+        width: 70%;
+        margin-bottom: 1em;
+      }
+
+      #first-title-actualite {
+        display: none;
+      }
+
+      #second-actualite-container {
+
+        #second-title-actualite {
+          display: inline-block;
+          padding: 1em;
+          font-weight: 400;
+          font-size: 3em;
+
+        }
+
+        #button-container {
+          #event-button {
+            width: 10em;
+            height: 2em;
+          }
+        }
+      }
     }
   }
 }

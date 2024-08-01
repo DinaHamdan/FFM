@@ -66,20 +66,21 @@
         <div id="actualite-container">
             <div>
                 <h2 id="first-title-actualite">Actualité</h2>
-                <img id="poster-img" src="/asset/img/Jongle-en-Zik-2024.png" alt="Poster-Jongle-en-Zik">
+                <img id="first-poster-img" src="/asset/img/Jongle-en-Zik-2024.png" alt="Poster-Jongle-en-Zik">
+                <img id="second-poster-img" src="/asset/img/post-first-resize-604x854.jpg" alt="Poster-Jongle-en-Zik">
             </div>
-
-            <h2 id="second-title-actualite">Actualité</h2>
-            <p>Jongle en Zik</p>
-            <p>du 25 au 27</p>
-            <p>Octobre 2024</p>
-            <p id="p-actualite">Edition POI</p>
-            <p>À malmort du</p>
-            <p>Comtat -84</p>
-            <div id="button-container">
-                <a id="event-button" href='/ctrl/evenement/event-display.php'>Voir l'évènement</a>
+            <div id="second-actualite-container">
+                <h2 id="second-title-actualite">Actualité</h2>
+                <p>Jongle en Zik</p>
+                <p>du 25 au 27</p>
+                <p>Octobre 2024</p>
+                <p id="p-actualite">Edition POI</p>
+                <p>À malmort du</p>
+                <p>Comtat -84</p>
+                <div id="button-container">
+                    <a id="event-button" href='/ctrl/evenement/event-display.php'>Voir l'évènement</a>
+                </div>
             </div>
-
         </div>
     </section>
     <section id="contact-us">
