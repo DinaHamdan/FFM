@@ -21,6 +21,9 @@
         width: 100%;
         font-size: 0.8em;
 
+        #second-performance-title {
+            display: none;
+        }
 
         #contact-button {
             display: inline-block;
@@ -66,6 +69,7 @@
 }
 
 #street {
+    background-color: #000000;
     background-image: url(../../asset/img/bg-fire-breathing-780x650.avif);
     background-repeat: no-repeat;
     background-position: center;
@@ -113,15 +117,39 @@
 
 @media screen and (min-width:800px) {
     #contact-us {
+        background-color: #000000;
         background-image: url(../../asset/img/fire-background.avif);
         background-repeat: no-repeat;
         background-position: center;
         height: 800px;
+        //
+        width: 100%;
 
         #performance {
             height: 400px;
             font-size: 1.5em;
             gap: 2em;
+
+            #first-performance-title {
+                display: none;
+                /*          font-size: 2em;
+                margin-left: 0;
+                font-weight: 300; */
+            }
+
+            #second-performance-title {
+                display: inline-block;
+                font-size: 2em;
+                margin-left: 0;
+                // margin-top: -2em;
+                font-weight: 300;
+            }
+
+            p {
+                width: 500px;
+            }
+
+
         }
     }
 
@@ -131,12 +159,15 @@
 
         #event-paragraph-container {
             margin-left: 2em;
+            width: 300px;
         }
 
         #event-photo-container {
             .event-photo {
-                width: 40%;
-                height: 80%;
+                width: 300px;
+                height: 300px;
+                /*     width: 40%;
+                height: 80%; */
 
             }
 
@@ -148,6 +179,8 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 800px;
+        //
+        width: 100%;
 
 
         #street-art {
@@ -157,11 +190,13 @@
             #street-art-photo-container {
 
                 .street-art-photo {
-                    width: 40%;
+                    /*      width: 40%;
                     height: 80%;
+ */
+                    width: 400px;
+                    height: 400px;
                 }
             }
-
 
             #street-art-paragraph-container {
                 margin-right: 2em;

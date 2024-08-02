@@ -274,7 +274,7 @@ Formulaire bénévole
 Ce qui était prévu:
 interface modifier les gallerie ajouter les photos
 
-notes discussion
+notes discussion:
 association NN entre categorie et type agre au min 1 au max N categorie
 
 column on table imageAgre is main = true or false

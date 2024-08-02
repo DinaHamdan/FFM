@@ -19,6 +19,9 @@
   width: 100%;
   font-size: 0.8em;
 }
+#contact-us #performance #second-performance-title {
+  display: none;
+}
 #contact-us #performance #contact-button {
   display: inline-block;
   font-size: 1.2em;
@@ -57,6 +60,7 @@
 }
 
 #street {
+  background-color: #000000;
   background-image: url(../../asset/img/bg-fire-breathing-780x650.avif);
   background-repeat: no-repeat;
   background-position: center;
@@ -96,15 +100,32 @@
 
 @media screen and (min-width: 800px) {
   #contact-us {
+    background-color: #000000;
     background-image: url(../../asset/img/fire-background.avif);
     background-repeat: no-repeat;
     background-position: center;
     height: 800px;
+    width: 100%;
   }
   #contact-us #performance {
     height: 400px;
     font-size: 1.5em;
     gap: 2em;
+  }
+  #contact-us #performance #first-performance-title {
+    display: none;
+    /*          font-size: 2em;
+    margin-left: 0;
+    font-weight: 300; */
+  }
+  #contact-us #performance #second-performance-title {
+    display: inline-block;
+    font-size: 2em;
+    margin-left: 0;
+    font-weight: 300;
+  }
+  #contact-us #performance p {
+    width: 500px;
   }
   #event {
     height: 400px;
@@ -112,24 +133,31 @@
   }
   #event #event-paragraph-container {
     margin-left: 2em;
+    width: 300px;
   }
   #event #event-photo-container .event-photo {
-    width: 40%;
-    height: 80%;
+    width: 300px;
+    height: 300px;
+    /*     width: 40%;
+    height: 80%; */
   }
   #street {
     background-image: url(../../asset/img/bg-fire-breathing.avif);
     background-repeat: no-repeat;
     background-position: center;
     height: 800px;
+    width: 100%;
   }
   #street #street-art {
     height: 400px;
     font-size: 1.5em;
   }
   #street #street-art #street-art-photo-container .street-art-photo {
-    width: 40%;
-    height: 80%;
+    /*      width: 40%;
+                       height: 80%;
+    */
+    width: 400px;
+    height: 400px;
   }
   #street #street-art #street-art-paragraph-container {
     margin-right: 2em;

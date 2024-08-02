@@ -7,8 +7,10 @@
         <!-- Big Logo -->
         <img id="full-logo" src="/asset/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
         <!-- Title -->
-        <h1 id="FFM">Fire From Mars</h1>
-        <h2 id="title-description">Jonglerie enflammée</h2>
+        <div id="title-container">
+            <h1 id="FFM">Fire From Mars</h1>
+            <h2 id="title-description">Jonglerie enflammée</h2>
+        </div>
         <!-- Arrow logo to scroll down need to add script after -->
         <div class="arrow">
             <img id="logo-arrow" src="/asset/img/fleche-droite.png" alt="logo-arrow">
@@ -86,7 +88,10 @@
     <section id="contact-us">
         <article id="performance">
             <div>
-                <h2>Nos préstations</h2>
+                <h2 id="second-performance-title">Nos préstations</h2>
+            </div>
+            <div>
+                <h2 id="first-performance-title">Nos préstations</h2>
                 <p>Envie de vous</p>
                 <p>renseigner ou de</p>
                 <p>demander un devis?</p>

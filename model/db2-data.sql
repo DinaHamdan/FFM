@@ -17,6 +17,13 @@ INSERT INTO category(name)VALUES
 ,('LED')
 ,('DayProp')
 ;
+
+
+INSERT INTO memberTypeAgre(idMember, idTypeAgre) VALUES
+     (1, 1)
+        ,(1, 4)
+    
+;
 --TILL HERE
 -- test for table of type of agre
 INSERT INTO typeAgre( name, label, description) VALUES
