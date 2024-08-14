@@ -1,0 +1,51 @@
+#convention {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#convention #convention-first-title {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 1em;
+  font-size: 2em;
+  font-weight: 300;
+}
+#convention #convention-poster-container {
+  border: 1px solid red;
+  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  background-color: black;
+  padding: 1em;
+}
+#convention #convention-poster-container img {
+  width: 50%;
+}
+#convention #convention-title {
+  text-align: center;
+}
+#convention #convention-content {
+  border: 1px solid red;
+}
+#convention #convention-map-container {
+  display: block;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+@media screen and (min-width: 900px) {
+  #convention #convention-poster-container {
+    flex-direction: row;
+  }
+  #convention #convention-poster-container img {
+    width: 30%;
+  }
+  #convention #convention-first-title {
+    font-size: 3em;
+  }
+}/*# sourceMappingURL=convention.css.map */

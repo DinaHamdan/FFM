@@ -341,6 +341,7 @@ Remove Members
 Commencer rapport 
 Deploiment
 référencement google  + sécurité
+Fix user coderole =[] for event page Jongle en Zik
 
 ### Notes 02-08-24
 

@@ -9,7 +9,6 @@ class EventDisplay extends Ctrl
     {
         $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
-        $isGranted = $this->hasRole(Role::ADMIN);
         if ($isGranted) {
             $_SESSION['user']['codeRole'] == "ADM";
         } else {
@@ -27,9 +26,11 @@ class EventDisplay extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/evenement/event-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): string
+    function getPageTitle(): null
     {
-        return 'Jongle En Zik';
+        return null;
+        /*         return 'Jongle En Zik';
+ */
     }
 }
 
