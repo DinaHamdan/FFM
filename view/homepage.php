@@ -89,7 +89,7 @@
             <div>
                 <h2 id="second-performance-title">Nos préstations</h2>
             </div>
-            <div>
+            <div id="performance-container">
                 <h2 id="first-performance-title">Nos préstations</h2>
                 <p>Envie de vous</p>
                 <p>renseigner, </p>

@@ -105,18 +105,11 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 800px;
-    width: 100%;
   }
   #contact-us #performance {
     height: 400px;
     font-size: 1.5em;
     gap: 2em;
-  }
-  #contact-us #performance #first-performance-title {
-    display: none;
-    /*          font-size: 2em;
-    margin-left: 0;
-    font-weight: 300; */
   }
   #contact-us #performance #second-performance-title {
     display: inline-block;
@@ -124,7 +117,16 @@
     margin-left: 0;
     font-weight: 300;
   }
-  #contact-us #performance p {
+  #contact-us #performance #performance-container {
+    width: 220px;
+  }
+  #contact-us #performance #performance-container #first-performance-title {
+    display: none;
+    /*          font-size: 2em;
+    margin-left: 0;
+    font-weight: 300; */
+  }
+  #contact-us #performance #performance-container p {
     width: 500px;
   }
   #event {
