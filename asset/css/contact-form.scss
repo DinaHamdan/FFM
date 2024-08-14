@@ -1,0 +1,205 @@
+#contactTitle {
+    background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+    color: white;
+    padding: 1em;
+    font-weight: 100;
+    font-size: 2em;
+    text-align: center;
+}
+
+#contact-form {
+
+    background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+    #nameContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        gap: 10px;
+
+        label {
+            width: 100px;
+        }
+
+        input {
+            width: 45%;
+            height: 20px;
+            border-radius: 10px;
+        }
+    }
+
+
+    #emailPhoneContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        gap: 10px;
+
+        label {
+            width: 100px;
+        }
+
+        input {
+            width: 45%;
+            height: 20px;
+            border-radius: 10px;
+        }
+    }
+
+    #messageContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        margin: 1em;
+
+
+        #questionChoice {
+            border-radius: 10px;
+            text-align: center;
+            background-color: white;
+            border: none;
+            padding: 0.3em;
+            font-weight: 100;
+
+        }
+
+        #contactMessage {
+            width: 200px;
+            height: 250px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    }
+
+    #validateContact {
+        border-radius: 10px;
+        width: 100px;
+        background-color: white;
+        border: none;
+        padding: 0.2em;
+        font-weight: 100;
+    }
+}
+
+@media screen and (min-width:650px) {
+    #contact-form {
+        #nameContainer {
+            width: 400px;
+
+            label {
+                width: 150px;
+            }
+
+            input {
+                width: 150px;
+                height: 30px;
+                border-radius: 20px;
+
+            }
+        }
+
+        #emailPhoneContainer {
+            width: 400px;
+
+            label {
+                width: 150px;
+            }
+
+            input {
+                width: 150px;
+                height: 30px;
+                border-radius: 20px;
+            }
+        }
+
+
+        #messageContainer {
+            margin: 1em;
+
+            #questionChoice {
+                width: 200px;
+            }
+
+            #contactMessage {
+                border-radius: 20px;
+                width: 450px;
+                height: 300px;
+            }
+        }
+    }
+
+    #validateContact {
+        width: 150px;
+    }
+}
+
+
+@media screen and (min-width:1000px) {
+    #contactTitle {
+        font-weight: 200;
+        font-size: 3em;
+
+    }
+
+    #contact-form {
+        #nameContainer {
+            width: 600px;
+
+            label {
+                width: 200px;
+            }
+
+            input {
+                width: 200px;
+            }
+        }
+
+        #emailPhoneContainer {
+            width: 600px;
+
+            label {
+                width: 200px;
+            }
+
+            input {
+                width: 200px;
+            }
+        }
+
+
+        #messageContainer {
+
+            #questionChoice {
+                // width: 200px;
+            }
+
+            #contactMessage {
+                border-radius: 20px;
+                width: 550px;
+                height: 400px;
+
+            }
+        }
+
+
+        #validateContact {
+            width: 200px;
+            height: 30px;
+            border-radius: 30px;
+        }
+    }
+}

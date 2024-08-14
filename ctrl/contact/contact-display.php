@@ -14,9 +14,11 @@ class ContactDisplay extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/contact-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): string
+    function getPageTitle(): null
     {
-        return 'Page de contact';
+        return null;
+        /*         return 'Page de contact';
+ */
     }
 }
 

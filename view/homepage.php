@@ -26,10 +26,10 @@
                 L’association Fire From Mars est une <span> association à but non lucratif </span> née en 2016, pour
                 promouvoir les
                 arts de la jonglerie de feu
-                à Marseille et ses environs. En complément de l’association Extrême Jonglerie, plus axée sur les arts du
-                cirque sans feu, nous proposons des rassemblements et des initiations au flowart et la jongle enflammée.
+                à Marseille et ses environs. En complément de <span>l’association Extrême Jonglerie</span>, plus axée sur les arts du
+                cirque sans feu, nous proposons des rassemblements et des<span> initiations au flowart et la jongle enflammée.</span>
                 On trouve donc des jongleurs de tous niveaux dans l’association, qui pratiquent en amateur ou de manière
-                professionnelle. Fire From Mars c’est donc avant tout du rassemblement et de la pratique, mais c’est
+                professionnelle.<span> Fire From Mars </span>c’est donc avant tout du rassemblement et de la pratique, mais c’est
                 aussi de la création. Lors de ces rencontres, nos artistes ont monté un spectacle et des mises en scène
                 adaptées à différentes prestations. Nous avons déja eu le plaisir de les présenter lors de plusieurs
                 évènements
@@ -92,17 +92,17 @@
             <div>
                 <h2 id="first-performance-title">Nos préstations</h2>
                 <p>Envie de vous</p>
-                <p>renseigner ou de</p>
+                <p>renseigner, </p>
                 <p>demander un devis?</p>
             </div>
-            <div> <a id="contact-button" href="">Contactez-nous</a></div>
+            <div> <a id="contact-button" href="/ctrl/contact/contact-display.php">Contactez-nous</a></div>
         </article>
 
     </section>
 
     <section id="event">
         <div id="event-paragraph-container">
-            <h3>EVENMENTIEL</h3>
+            <h3>EVENEMENTIEL</h3>
             <p>Trouvez votre artiste de feu pour enflammer vos événements et financer notre association.</p>
         </div>
         <div id="event-photo-container">
