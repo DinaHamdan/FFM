@@ -3,7 +3,7 @@
     </div>
     <a href="/ctrl/agre/add-agreType-display.php">Ajouter type d'agrés</a>
 
-    <h2> Agrès Feu</h2>
+    <h2 id="fire-prop-title"> Agrès Feu</h2>
     <?php
     foreach ($args['session']['typeAgreFeu'] as $args['session']['agreFeu']) { ?>
 

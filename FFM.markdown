@@ -324,14 +324,14 @@ Started Code function read volunteer form INSERT INTO bdd
 ### Mardi 30
 DONE function read volunteer form INSERT INTO bdd
 Adjust minor details for page d'acceuil - do desktop
-Start html CSS for gallerie agrés
 
-HTML + CSS
 
 
 ### 
 
 ### TO DO :
+Start html CSS for gallerie agrés
+HTML + CSS
 BackOffice formulaires 
 Fix gallerie links towards photo for one agré
 Add a condtion to check if profile is complete
@@ -341,3 +341,21 @@ Remove Members
 Commencer rapport 
 Deploiment
 référencement google  + sécurité
+
+### Notes 02-08-24
+
+fire jam: expliquer c'est quoi - mettre synonyme DONE
+ Faire une presentaton complète avec titres même si c'est vide dedans pour avoir la structure finale avec le REAC completement checké
+ travail d'équipe TRELLO GITHUB DRIVE
+
+A faire: 
+ MCD 
+table volontaire a changer
+MCD MLD sur un slide
+agré passer moin temps dessus
+Maquette référentiel - checklist avec tous mettre tout dans la présentation
+ Priorités : diagramm de gantt - un planning pour montrer j'ai fait quoi quand
+
+
+
+ 

@@ -582,6 +582,12 @@ header {
   }
 }
 
+#page-title {
+  font-size: 2em;
+  text-align: center;
+  margin: auto;
+}
+
 #social-media {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   display: flex;

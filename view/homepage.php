@@ -61,8 +61,7 @@
                 <a href='/ctrl/adhesion/adhesion-display.php' id="adhesion-button">Adhésion</a>
             </div>
         </div>
-        <!--         </div>
- -->
+
     </section>
     <section id="actualite">
         <div id="actualite-container">
