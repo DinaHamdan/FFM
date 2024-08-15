@@ -3,9 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
 class LoginDisplay extends Ctrl
 {
-    function do(): void
-    {
-    }
+    function do(): void {}
     function renderView(): void
     {
         $args = $this->viewArgs;
@@ -14,9 +12,10 @@ class LoginDisplay extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/login-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): string
+    function getPageTitle(): null
     {
-        return 'Page de Login';
+        return null;
+        //return 'Page de Login';
     }
 }
 

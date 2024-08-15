@@ -79,6 +79,7 @@
   }
   #adhesion #adhesion-form {
     width: 60%;
+    font-size: 2em;
   }
   #adhesion #adhesion-form #info-container {
     display: flex;

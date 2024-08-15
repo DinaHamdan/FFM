@@ -1055,6 +1055,7 @@ header {
   }
   #adhesion #adhesion-form {
     width: 60%;
+    font-size: 2em;
   }
   #adhesion #adhesion-form #info-container {
     display: flex;
@@ -1062,6 +1063,59 @@ header {
     flex-wrap: wrap;
     gap: 2em;
     justify-content: space-between;
+  }
+}
+#login {
+  background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#login #login-title {
+  margin: 2em;
+}
+#login #login-form {
+  background-color: #000000;
+  border: 1px solid #341701;
+  width: 200px;
+  height: 200px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+}
+#login #login-form input {
+  border-radius: 10px;
+}
+#login #login-form #loginButton {
+  border-radius: 10px;
+  width: 100px;
+  background-color: white;
+  border: none;
+  padding: 0.2em;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 650px) {
+  #login {
+    font-size: 1.5em;
+  }
+  #login #login-form {
+    width: 300px;
+    height: 300px;
+  }
+  #login #login-form input {
+    height: 20px;
+  }
+  #login #login-form #loginButton {
+    border-radius: 10px;
+    width: 150px;
+    font-weight: 100;
   }
 }
 #social-media {
