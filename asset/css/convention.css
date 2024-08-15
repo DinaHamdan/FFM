@@ -114,9 +114,10 @@
   margin-top: 2em;
 }
 #convention #convention-map-container {
-  margin-top: 2em;
+  margin: 2em 0 2em;
   display: flex;
   flex-direction: column;
+  align-items: center;
   display: block;
   background-color: black;
   color: white;
@@ -124,6 +125,10 @@
 }
 #convention #convention-map-container p {
   font-size: 2em;
+}
+#convention #convention-map-container #convention-map {
+  padding: 1em;
+  width: 80%;
 }
 
 @media screen and (min-width: 900px) {
@@ -199,10 +204,12 @@
     justify-content: space-evenly;
   }
   #convention #button-container #reserve-button {
+    padding-top: 20px;
     font-size: 1.5em;
     width: 10em;
   }
   #convention #button-container #volunteer-button {
+    padding-top: 20px;
     font-size: 1.5em;
     width: 10em;
   }

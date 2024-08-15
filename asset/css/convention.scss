@@ -140,9 +140,10 @@
     }
 
     #convention-map-container {
-        margin-top: 2em;
+        margin: 2em 0 2em;
         display: flex;
         flex-direction: column;
+        align-items: center;
         //border: 1px solid red;
         display: block;
         background-color: black;
@@ -151,6 +152,11 @@
 
         p {
             font-size: 2em;
+        }
+
+        #convention-map {
+            padding: 1em;
+            width: 80%;
         }
     }
 }
@@ -253,11 +259,13 @@
             justify-content: space-evenly;
 
             #reserve-button {
+                padding-top: 20px;
                 font-size: 1.5em;
                 width: 10em;
             }
 
             #volunteer-button {
+                padding-top: 20px;
                 font-size: 1.5em;
                 width: 10em;
             }

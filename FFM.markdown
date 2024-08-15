@@ -352,9 +352,11 @@ Maquette référentiel - checklist avec tous mettre tout dans la présentation
 ## Semaine 6  mi-vacances 
 ### Mardi 13-08-24 
 Présentation
+
 ### Mercredi 14-08-24 
 CSS formulaire de contact 
 ajuster CSS page d'acceuil 
+
 ### Jeudi 15-08-24 
 CSS Jongle en Zik
 CSS formulaire adhesion 

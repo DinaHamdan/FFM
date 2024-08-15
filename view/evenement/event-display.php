@@ -46,7 +46,7 @@
         <h3 id="convention-address-title"> Adresse </h3>
         <div id="convention-map-container">
             <p> <?= $args['session']['convention']['address'] ?></p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.471209418771!2d5.16084367585961!3d44.011656229173866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca737337e58ea3%3A0x28d27e168837d5ee!2sSaint-F%C3%A9lix%20S%2C%2084570%20Malemort-du-Comtat!5e0!3m2!1sen!2sfr!4v1723735713018!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="convention-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.471209418771!2d5.16084367585961!3d44.011656229173866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca737337e58ea3%3A0x28d27e168837d5ee!2sSaint-F%C3%A9lix%20S%2C%2084570%20Malemort-du-Comtat!5e0!3m2!1sen!2sfr!4v1723735713018!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </div>
 
