@@ -2,25 +2,31 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: black;
+    text-align: center;
+    color: white;
 
     #convention-first-title {
-        background-color: black;
-        text-align: center;
-        color: white;
+        color: #ffa743;
+        padding-top: 1em;
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+
+    #convention-info {
+        color: #ffa743;
         padding: 1em;
-        font-size: 2em;
-        font-weight: 300;
+        font-size: 1.5em;
+        font-weight: 400;
     }
 
     #convention-poster-container {
-        border: 1px solid red;
         display: block;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
         gap: 1em;
         align-items: center;
-        background-color: black;
         padding: 1em;
 
 
@@ -29,19 +35,123 @@
         }
     }
 
-    #convention-title {
-        text-align: center;
+    #convention-description-container {
+        #convention-photo {
+            display: none;
+        }
+
+        #convention-description {
+            margin-top: 2em;
+            padding: 1.2em;
+            color: #ffa743;
+            font-size: 1.2em;
+            text-align: justify;
+            font-family: "Kanit", sans-serif;
+        }
+    }
+
+
+    #convention-program-title {
+        font-size: 2.5em;
+        font-weight: 400;
+        margin-top: 2em;
     }
 
     #convention-content {
-        border: 1px solid red;
+        margin-top: 0.5em;
+
+
+        .convention-content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            border-radius: 5px;
+            background-image: linear-gradient(#000000, #000000, #341701, #903E02, #FE6B00);
+            margin: 1em;
+            //height: 400px;
+            text-align: justify;
+            padding: 1em;
+
+            h3 {
+                font-size: 2em;
+                padding: 2em;
+            }
+
+            p {
+                font-size: 1em;
+                font-weight: 700;
+
+            }
+
+        }
+    }
+
+    #convention-participation-title {
+        margin-top: 4em;
+        color: white;
+        font-size: 2em;
+    }
+
+    #button-container {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 4em;
+
+        #reserve-button {
+            padding-bottom: 20px;
+            display: inline-block;
+            margin-top: 1.5em;
+            margin-bottom: 2em;
+            font-size: 1.2em;
+            font-weight: 450;
+            text-decoration: none;
+            text-align: center;
+            color: #130F0F;
+            width: 8em;
+            height: 1.5em;
+            background-image: linear-gradient(to right, #1D6D9A, #ffa743);
+            border-radius: 3em;
+
+        }
+
+        #volunteer-button {
+            padding-bottom: 20px;
+            display: inline-block;
+            margin-top: 1.5em;
+            margin-bottom: 2em;
+            font-size: 1.2em;
+            font-weight: 450;
+            text-decoration: none;
+            text-align: center;
+            color: #130F0F;
+            width: 8em;
+            height: 1.5em;
+            background-image: linear-gradient(to right, #1D6D9A, #ffa743);
+            border-radius: 3em;
+
+        }
+    }
+
+    #convention-address-title {
+        font-size: 2.5em;
+        font-weight: 400;
+        margin-top: 2em;
     }
 
     #convention-map-container {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        //border: 1px solid red;
         display: block;
         background-color: black;
         color: white;
         display: flex;
+
+        p {
+            font-size: 2em;
+        }
     }
 }
 
@@ -52,14 +162,125 @@
             flex-direction: row;
 
             img {
-                width: 30%;
+                width: 20%;
             }
         }
 
         #convention-first-title {
 
-            font-size: 3em;
+            font-size: 3.5em;
+            font-weight: 600;
+            color: black;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #ffa743;
+        }
+
+        #convention-info {
+            font-size: 2.7em;
+            color: black;
+            -webkit-text-stroke-width: 3px;
+            -webkit-text-stroke-color: #ffa743;
+        }
+
+
+
+        #convention-description-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 10em;
+
+
+            #convention-photo {
+                display: inline-block;
+                width: 40%;
+                height: 50%;
+            }
+
+            #convention-description {
+                width: 40%;
+                font-size: 1.2em;
+
+
+            }
+        }
+
+        #convention-participation-title {
+            margin-top: 4em;
+            color: white;
+            font-size: 2em;
+        }
+
+        #convention-program-title {
+            font-size: 4em;
 
         }
+
+        #convention-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1em;
+            margin-top: 5em;
+
+            .convention-content-container {
+
+                padding: 2em;
+                width: 20%;
+                height: 400px;
+
+                h3 {
+                    font-size: 2em;
+                    padding: 2em;
+                }
+
+                p {
+                    font-size: 1em;
+                    font-weight: 500;
+                }
+
+            }
+        }
+
+        #convention-participation-title {
+            font-size: 2.7em;
+        }
+
+        #button-container {
+            margin-top: 2em;
+            display: flex;
+            justify-content: space-evenly;
+
+            #reserve-button {
+                font-size: 1.5em;
+                width: 10em;
+            }
+
+            #volunteer-button {
+                font-size: 1.5em;
+                width: 10em;
+            }
+        }
+
+        #convention-address-title {
+            font-size: 4em;
+
+        }
+
+        #convention-map-container {
+            padding: 2em;
+            margin-bottom: 5em;
+            // border: 1px solid green;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-size: 2.5em;
+                width: 50%;
+            }
+        }
     }
+
 }

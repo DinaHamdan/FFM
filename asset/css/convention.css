@@ -2,40 +2,128 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-}
-#convention #convention-first-title {
   background-color: black;
   text-align: center;
   color: white;
+}
+#convention #convention-first-title {
+  color: #ffa743;
+  padding-top: 1em;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+#convention #convention-info {
+  color: #ffa743;
   padding: 1em;
-  font-size: 2em;
-  font-weight: 300;
+  font-size: 1.5em;
+  font-weight: 400;
 }
 #convention #convention-poster-container {
-  border: 1px solid red;
   display: block;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   gap: 1em;
   align-items: center;
-  background-color: black;
   padding: 1em;
 }
 #convention #convention-poster-container img {
   width: 50%;
 }
-#convention #convention-title {
-  text-align: center;
+#convention #convention-description-container #convention-photo {
+  display: none;
+}
+#convention #convention-description-container #convention-description {
+  margin-top: 2em;
+  padding: 1.2em;
+  color: #ffa743;
+  font-size: 1.2em;
+  text-align: justify;
+  font-family: "Kanit", sans-serif;
+}
+#convention #convention-program-title {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-top: 2em;
 }
 #convention #convention-content {
-  border: 1px solid red;
+  margin-top: 0.5em;
+}
+#convention #convention-content .convention-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  background-image: linear-gradient(#000000, #000000, #341701, #903E02, #FE6B00);
+  margin: 1em;
+  text-align: justify;
+  padding: 1em;
+}
+#convention #convention-content .convention-content-container h3 {
+  font-size: 2em;
+  padding: 2em;
+}
+#convention #convention-content .convention-content-container p {
+  font-size: 1em;
+  font-weight: 700;
+}
+#convention #convention-participation-title {
+  margin-top: 4em;
+  color: white;
+  font-size: 2em;
+}
+#convention #button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 4em;
+}
+#convention #button-container #reserve-button {
+  padding-bottom: 20px;
+  display: inline-block;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  font-weight: 450;
+  text-decoration: none;
+  text-align: center;
+  color: #130F0F;
+  width: 8em;
+  height: 1.5em;
+  background-image: linear-gradient(to right, #1D6D9A, #ffa743);
+  border-radius: 3em;
+}
+#convention #button-container #volunteer-button {
+  padding-bottom: 20px;
+  display: inline-block;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  font-weight: 450;
+  text-decoration: none;
+  text-align: center;
+  color: #130F0F;
+  width: 8em;
+  height: 1.5em;
+  background-image: linear-gradient(to right, #1D6D9A, #ffa743);
+  border-radius: 3em;
+}
+#convention #convention-address-title {
+  font-size: 2.5em;
+  font-weight: 400;
+  margin-top: 2em;
 }
 #convention #convention-map-container {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
   display: block;
   background-color: black;
   color: white;
   display: flex;
+}
+#convention #convention-map-container p {
+  font-size: 2em;
 }
 
 @media screen and (min-width: 900px) {
@@ -43,9 +131,93 @@
     flex-direction: row;
   }
   #convention #convention-poster-container img {
-    width: 30%;
+    width: 20%;
   }
   #convention #convention-first-title {
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: black;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ffa743;
+  }
+  #convention #convention-info {
+    font-size: 2.7em;
+    color: black;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ffa743;
+  }
+  #convention #convention-description-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10em;
+  }
+  #convention #convention-description-container #convention-photo {
+    display: inline-block;
+    width: 40%;
+    height: 50%;
+  }
+  #convention #convention-description-container #convention-description {
+    width: 40%;
+    font-size: 1.2em;
+  }
+  #convention #convention-participation-title {
+    margin-top: 4em;
+    color: white;
+    font-size: 2em;
+  }
+  #convention #convention-program-title {
+    font-size: 4em;
+  }
+  #convention #convention-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 5em;
+  }
+  #convention #convention-content .convention-content-container {
+    padding: 2em;
+    width: 20%;
+    height: 400px;
+  }
+  #convention #convention-content .convention-content-container h3 {
+    font-size: 2em;
+    padding: 2em;
+  }
+  #convention #convention-content .convention-content-container p {
+    font-size: 1em;
+    font-weight: 500;
+  }
+  #convention #convention-participation-title {
+    font-size: 2.7em;
+  }
+  #convention #button-container {
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #convention #button-container #reserve-button {
+    font-size: 1.5em;
+    width: 10em;
+  }
+  #convention #button-container #volunteer-button {
+    font-size: 1.5em;
+    width: 10em;
+  }
+  #convention #convention-address-title {
+    font-size: 4em;
+  }
+  #convention #convention-map-container {
+    padding: 2em;
+    margin-bottom: 5em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #convention #convention-map-container p {
+    font-size: 2.5em;
+    width: 50%;
   }
 }/*# sourceMappingURL=convention.css.map */

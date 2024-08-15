@@ -1,4 +1,4 @@
-### Cahiers des charges Fire From Mars 02-07-24
+# Cahiers des charges Fire From Mars 02-07-24
 
 Présentation de l’association : 
 Fire From mars, une association à but non-lucratif, de jongleurs pour les arts de cirque et la jonglerie enflammée.
@@ -72,9 +72,9 @@ Base de données événements (filtrer par thème ou agrès)
 
 Temps de réalisation :
 2 mois, début 2-07-24- fin 20-09-24 (50 jours pour réaliser).
-
-Planning :
-02-07-24
+ # Planning 
+ ## Semaine 1 
+### Mardi 02-07-24
 * Étude de l'expression de besoin (un résumé du projet au format texte)
 * Établissement du cahier des charges (fonctionnalités, rôles)
 * Mise en place d'un planning (anticiper toujours sur 80% du temps prévu)
@@ -100,7 +100,7 @@ Maintenance
 
 
  
- 
+
 ### Lundi 08-07-24
 
 Conception BDD - Dictionnaire de données, MCD,MLD, MPD
@@ -216,7 +216,6 @@ la traduction est 'mécanique',  à l'aide des **'2  phrases à retenir'** selon
 4. **MPD** (Modèle Physique de Données) : utiliser SQL pour créer les Tables avec leurs Colonnes, et les Clés Etrangères qui pointent vers les clés Primaires. Choisir aussi le type des Colonnes.
 
 
-
 ### 10-07-24
 
 NB: BDD agre + photos agrès : admin needs a list déroulante to able to pick the kind of agre while uploading the photos
@@ -242,7 +241,7 @@ Interface inscription
 Logout
 redirection towards forum
 
-
+## Semaine 2
 ### Lundi 15
 presentation
 Créer discussion et commentaire interface forum
@@ -266,6 +265,7 @@ Visualiser gallerie photos agrès PAS FINI
 ### Vendredi 
 Visualiser gallerie photos convention PAS FAIT
 
+## Semaine 3 
 ### Lundi 22 
 A faire : 
 Visualiser gallerie photos agrès 
@@ -310,7 +310,7 @@ DONE Poster discussion sans photo
 
 
 
-
+## Semaine 4 
 ### Lundi 29
 Maquette 
 commencer HTML CSS 
@@ -329,21 +329,9 @@ Adjust minor details for page d'acceuil - do desktop
 
 ### 
 
-### TO DO :
-Start html CSS for gallerie agrés
-HTML + CSS
-BackOffice formulaires 
-Fix gallerie links towards photo for one agré
-Add a condtion to check if profile is complete
-Need to add a function at Login to check if profile fname last name and avatar are empty or not  
-Show members
-Remove Members
-Commencer rapport 
-Deploiment
-référencement google  + sécurité
-Fix user coderole =[] for event page Jongle en Zik
 
-### Notes 02-08-24
+### Notes 02-08-24 présentation semaine 4 
+***
 
 fire jam: expliquer c'est quoi - mettre synonyme DONE
  Faire une presentaton complète avec titres même si c'est vide dedans pour avoir la structure finale avec le REAC completement checké
@@ -357,6 +345,69 @@ agré passer moin temps dessus
 Maquette référentiel - checklist avec tous mettre tout dans la présentation
  Priorités : diagramm de gantt - un planning pour montrer j'ai fait quoi quand
 
+*** 
+**Semaine 5 Vacances**
+*** 
+
+## Semaine 6  mi-vacances 
+### Mardi 13-08-24 
+Présentation
+### Mercredi 14-08-24 
+CSS formulaire de contact 
+ajuster CSS page d'acceuil 
+### Jeudi 15-08-24 
+CSS Jongle en Zik
+CSS formulaire adhesion 
+CSS formulaire Login 
 
 
+### Vendredi 16-08-24
+**CSS forum** 
+**CSS gallerie agrés**
+
+### Le weekend ? 
+**CSS formulaire bénévole**
+**CSS BackOffice**
+
+***Pour Lundi finir le gros du CSS et bien préparer la présenation*** 
  
+ ***
+
+## Semaine 7 après les vacances
+Finir CSS le gros  
+présentation   
+Impératif commencer rapport  
+
+## Semaine 8
+Coder backend BackOffice   
+faire CSS   
+
+## semaine 9 
+Debugging ( additional functions)  
+Rapport  
+
+## Semaine 10
+sécurité  
+déploiment  
+rapport   
+
+## TO DO :
+Start html CSS for gallerie agrés
+HTML + CSS
+BackOffice formulaires 
+Fix gallerie links towards photo for one agré
+Add a condtion to check if profile is complete
+Need to add a function at Login to check if profile fname last name and avatar are empty or not  
+Show members
+Remove Members
+Commencer rapport 
+Deploiment
+référencement google  + sécurité
+Fix user coderole =[] for event page Jongle en Zik
+A faire: 
+ MCD 
+table volontaire a changer
+MCD MLD sur un slide
+agré passer moin temps dessus
+Maquette référentiel - checklist avec tous mettre tout dans la présentation
+ Priorités : diagramm de gantt - un planning pour montrer j'ai fait quoi quand
