@@ -1,0 +1,37 @@
+#discussion {
+    background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+    color: white;
+
+    #discussion-detail-container {
+        padding: 2em;
+        border: 1px solid #341701;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #comment-container {
+        padding: 2em;
+        border: 1px solid #341701;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+
+    }
+}
+
+@media screen and (min-width:950px) {
+    #discussion {
+        #discussion-detail-container {
+
+            padding: 10em;
+        }
+
+        #text-photo-container {
+            display: flex;
+        }
+    }
+}
