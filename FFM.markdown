@@ -369,7 +369,7 @@ CSS formulaire Login
 
 ### Le weekend ? 
 **CSS formulaire bénévole**
-**CSS BackOffice**
+
 
 ***Pour Lundi finir le gros du CSS et bien préparer la présenation*** 
  
@@ -382,7 +382,7 @@ Impératif commencer rapport
 
 ## Semaine 8
 Coder backend BackOffice   
-faire CSS   
+**CSS BackOffice**
 
 ## semaine 9 
 Debugging ( additional functions)  

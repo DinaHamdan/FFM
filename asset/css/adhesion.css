@@ -9,6 +9,13 @@
 }
 #adhesion #adhesion-title-container {
   padding: 2em;
+  width: 100%;
+  margin: 4em;
+  background-color: #130F0F;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #adhesion #adhesion-title-container #adhesion-title {
   font-size: 2em;
@@ -70,7 +77,16 @@
   font-weight: 100;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 950px) {
+  #adhesion #adhesion-title-container {
+    /*    width: 100%;
+    margin: 4em;
+    background-color: #130F0F;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+  }
   #adhesion #adhesion-title-container #adhesion-title {
     font-size: 3em;
   }
@@ -78,8 +94,8 @@
     font-size: 2em;
   }
   #adhesion #adhesion-form {
-    width: 60%;
-    font-size: 2em;
+    width: 50%;
+    font-size: 1.2em;
   }
   #adhesion #adhesion-form #info-container {
     display: flex;
@@ -87,5 +103,11 @@
     flex-wrap: wrap;
     gap: 2em;
     justify-content: space-between;
+  }
+  #adhesion #adhesion-form #validateAdhesion {
+    width: 150px;
+    border-radius: 20px;
+    font-weight: 200;
+    font-size: 1em;
   }
 }/*# sourceMappingURL=adhesion.css.map */

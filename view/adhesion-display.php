@@ -2,14 +2,14 @@
     <section id="adhesion">
         <div id="adhesion-title-container">
             <h2 id="adhesion-title">Pourquoi devenir adhérant?</h2>
-            <p>Soutenir L’association
-                Participation Fire Jam
-                Accès au kerdane
-                Participation aux prestations
-            </p>
+            <p>Soutenir L’association</p>
+            <p>Accès au Fire Jam</p>
+            <p>Participation pour Kerdane</p>
+            <p>Participation aux prestations</p>
+
         </div>
         <form id="adhesion-form" action="/ctrl/adhesion/adhesion.php" method="post">
-
+            <h3>Adhésion Fire From Mars</h3>
             <div id="info-container">
 
                 <!-- Last Name -->
@@ -37,7 +37,7 @@
 
 
             <!-- Type of juggling props -->
-
+            <h3>Agrés pratiqués</h3>
             <div id="prop-type">
                 <!--         <select name="agreType" id="agreType" multiple>
  -->
@@ -63,7 +63,7 @@
             </div>
             </select>
 
-            <button id="validateAdhesion" type="submit">Envoyer</button>
+            <button id="validateAdhesion" type="submit">S'adhérer</button>
 
 
 
