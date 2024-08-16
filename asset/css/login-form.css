@@ -22,12 +22,16 @@
   gap: 1em;
   padding: 1em;
 }
+#login #login-form label {
+  margin-left: -5em;
+}
 #login #login-form input {
   border-radius: 10px;
 }
 #login #login-form #loginButton {
   border-radius: 10px;
-  width: 100px;
+  width: 70px;
+  height: 25px;
   background-color: white;
   border: none;
   padding: 0.2em;
@@ -42,12 +46,16 @@
     width: 300px;
     height: 300px;
   }
+  #login #login-form label {
+    margin-left: -2em;
+  }
   #login #login-form input {
     height: 20px;
+    width: 180px;
   }
   #login #login-form #loginButton {
     border-radius: 10px;
-    width: 150px;
-    font-weight: 100;
+    width: 100px;
+    height: 25px;
   }
 }/*# sourceMappingURL=login-form.css.map */

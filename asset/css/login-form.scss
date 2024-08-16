@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    //height: 100%;
 
     #login-title {
         margin: 2em;
@@ -23,6 +24,10 @@
         gap: 1em;
         padding: 1em;
 
+        label {
+            margin-left: -5em;
+        }
+
         input {
             border-radius: 10px;
 
@@ -31,7 +36,8 @@
 
         #loginButton {
             border-radius: 10px;
-            width: 100px;
+            width: 70px;
+            height: 25px;
             background-color: white;
             border: none;
             padding: 0.2em;
@@ -54,14 +60,19 @@
             width: 300px;
             height: 300px;
 
+            label {
+                margin-left: -2em;
+            }
+
             input {
                 height: 20px;
+                width: 180px;
             }
 
             #loginButton {
                 border-radius: 10px;
-                width: 150px;
-                font-weight: 100;
+                width: 100px;
+                height: 25px;
             }
         }
 
