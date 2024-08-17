@@ -48,7 +48,7 @@ class LibDiscussion
     //List all posts
     static function getAllDiscussion(): array
     {
-        $query = 'SELECT discussion.id, discussion.title, discussion.content';
+        $query = 'SELECT discussion.id, discussion.title, discussion.idMember, discussion.content';
         $query .= ' FROM discussion ';
         $statement = libDb::connect()->prepare($query);
         $successOrFailure = $statement->execute();
@@ -59,8 +59,9 @@ class LibDiscussion
 
     static function getDiscussion($idDiscussion): array
     {
-        $query = 'SELECT discussion.id, discussion.title, discussion.content, discussion.illustration, discussion.date_time_column';
+        $query = 'SELECT discussion.id, discussion.title, discussion.content, discussion.illustration, discussion.date_time_column, member.firstName, member.lastName';
         $query .= ' FROM discussion ';
+        $query .= ' JOIN member ON member.id = discussion.idMember';
         $query .= ' WHERE discussion.id = :id';
         $statement = libDb::connect()->prepare($query);
         $statement->bindParam(':id', $idDiscussion);

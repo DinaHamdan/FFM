@@ -394,8 +394,8 @@ déploiment
 rapport   
 
 ## TO DO :
+remove useless tables in bdd phpmyadmin
 Start html CSS for gallerie agrés
-HTML + CSS
 BackOffice formulaires 
 Fix gallerie links towards photo for one agré
 Add a condtion to check if profile is complete

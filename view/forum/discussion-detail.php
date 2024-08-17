@@ -10,13 +10,14 @@
                 <img id="discussion-image" src="data:image/png;base64,<?= base64_encode($args['session']['discussion']['illustration']) ?>" alt="">
             </div>
             <p>Publié le: <?= $args['session']['discussion']['time'] ?></p>
+            <p>Par: <?= $args['session']['discussion']['firstName'] ?></p>
 
 
             <?php if (($args['session']['user']['codeRole']) == 'ADM') { ?>
                 <a href="/ctrl/forum/delete-discussion.php?id=<?= $args['session']['discussion']['id'] ?>">Enlever Discussion</a>
             <?php } ?>
 
-            <p>Comments</p>
+            <p>Commentaires</p>
 
             <?php foreach ($args['session']['discussion']['comments'] as $args['session']['discussion']['comment']) { ?>
 

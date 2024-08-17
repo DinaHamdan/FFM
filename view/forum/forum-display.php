@@ -12,7 +12,6 @@
             <textarea id="discussion-content" name="discussion-content"></textarea>
 
             <!-- Blog photo -->
-
             <div id="discussion-photo-container">
                 <label for="discussionPhoto">Possibilité d'ajouter une photo</label>
                 <input type="file" id="discussionPhoto" name="discussionPhoto">

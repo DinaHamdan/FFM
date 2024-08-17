@@ -85,7 +85,7 @@ class LibAgre
         return $category;
     }
 
-    //Add photos to agre table
+    //Add photos to prop db 
     static function AddAgrePhoto($idCategory, $idTypeAgre, $binaryFile, $nameFile): bool
     {
         $query = 'INSERT INTO photoAgre( idCategory, idTypeAgre, illustration, illustration_filename) VALUES ( :idCategory, :idTypeAgre, :illustration, :illustration_filename)';
@@ -162,6 +162,7 @@ class LibAgre
         return $listAgreTypeCategoryWithFormattedInfo; */
     }
 
+    //Get photo of prop
     static function getAgrePhoto($idTypeAgre, $idCategory): array
     {
         $query = ' SELECT typeAgre.name AS agreName, photoAgre.id, photoAgre.idTypeAgre, photoAgre.idCategory, photoAgre.isMain, photoAgre.illustration, photoAgre.illustration_filename';
