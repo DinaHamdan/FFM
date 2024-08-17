@@ -15,7 +15,6 @@ class CreateProfile extends Ctrl
         $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::MEMBER);
 
-
         //Gather data entered by user 
         $user = [];
         $user['fname'] = htmlspecialchars($_POST['firstName']);

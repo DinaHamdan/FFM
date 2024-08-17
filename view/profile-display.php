@@ -5,20 +5,20 @@
         <!-- First Name -->
         <div>
             <label for="lastName">Nom : </label>
-            <input type="text" name="lastName" id="lname">
+            <input type="text" name="lastName" id="lname" value="<?= $args['session']['memberInfo']['lastName'] ?>">
         </div>
         <!-- Last Name -->
 
         <div>
             <label for="firstName">Prénom : </label>
-            <input type="text" name="firstName" id="fname">
+            <input type="text" name="firstName" id="fname" value="<?= $args['session']['memberInfo']['firstName'] ?>">
         </div>
 
 
         <!-- Phone Number-->
         <div>
             <label for="phoneNumber">Numéro de téléphone</label>
-            <input type="" id="phoneNumber" name="phoneNumber">
+            <input type="text" id="phoneNumber" name="phoneNumber" value="<?= $args['session']['memberInfo']['phoneNumber'] ?>">
         </div>
         <!-- Profile photo-->
 

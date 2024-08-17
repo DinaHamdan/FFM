@@ -1,12 +1,16 @@
 <?php
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php';
 
 
 class CompleteProfile extends Ctrl
 {
     function do(): void
     {
+        $memberId = $_SESSION['user']['id'];
+        $memberInfo = LibMember::getMemberById($memberId);
+        $_SESSION['memberInfo'] = $memberInfo;
     }
     function renderView(): void
     {

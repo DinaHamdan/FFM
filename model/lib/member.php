@@ -47,6 +47,25 @@ class LibMember
         };
         return $user;
     }
+
+    //List user with email only
+    static function getMemberById(string $memberId): ?array
+    {
+        $query = 'SELECT member.id, member.firstName, member.lastName, member.phoneNumber';
+        $query .= ' FROM member ';
+        $query .= ' WHERE member.id= :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $memberId);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $user = $statement->fetch(PDO::FETCH_ASSOC);
+        // var_dump($user);
+        if ($user == false) {
+            $user = null;
+        };
+        return $user;
+    }
     //Create a Member
     static function createMember(string $email, string $password, string $passClear, string $idRole): bool
     {
