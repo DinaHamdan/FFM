@@ -48,6 +48,7 @@
 }
 #forum #discussion-container h4 {
   font-size: 1.2em;
+  padding: 1em;
 }
 
 @media screen and (min-width: 950px) {
@@ -64,7 +65,7 @@
   }
   #forum #forum-form {
     width: 60%;
-    font-size: 2em;
+    font-size: 1.3em;
   }
   #forum #forum-form textarea {
     height: 10em;
@@ -80,9 +81,8 @@
   }
   #all-discussion-container {
     width: 60%;
-    font-size: 2em;
   }
-  #all-discussion-container h4 {
-    font-size: 1.4em;
+  #all-discussion-container #discussion-container h4 {
+    font-size: 1.5em;
   }
 }/*# sourceMappingURL=forum.css.map */

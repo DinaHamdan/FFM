@@ -4,7 +4,7 @@
 
 
 
-            <h4 id="discussion-title"><?= $args['session']['discussion']['title'] ?> </h4>
+            <h2 id="discussion-title"><?= $args['session']['discussion']['title'] ?> </h2>
             <div id="text-photo-container">
                 <p> <?= $args['session']['discussion']['content'] ?></p>
                 <img id="discussion-image" src="data:image/png;base64,<?= base64_encode($args['session']['discussion']['illustration']) ?>" alt="">
@@ -17,7 +17,7 @@
                 <a href="/ctrl/forum/delete-discussion.php?id=<?= $args['session']['discussion']['id'] ?>">Enlever Discussion</a>
             <?php } ?>
 
-            <p>Commentaires</p>
+            <h2>Commentaires</h2>
 
             <?php foreach ($args['session']['discussion']['comments'] as $args['session']['discussion']['comment']) { ?>
 
@@ -25,11 +25,8 @@
                     <div id="user-container">
 
                         <div id="comment-content">
-                            <p>Publié par</p>
-                            <p><?= $args['session']['discussion']['comment']['memberInfo']['firstName'] ?></p>
-                            <p><?= $args['session']['discussion']['comment']['memberInfo']['lastName'] ?></p>
+
                             <img src="data:image/png;base64,<?= base64_encode($args['session']['discussion']['comment']['memberInfo']['avatar']) ?>" alt="member-avatar">
-                            <p>content</p>
                             <p><?= $args['session']['discussion']['comment']['content'] ?></p>
 
                             <?php if (($args['session']['user']['codeRole']) == 'ADM') { ?>
@@ -71,9 +68,9 @@
                         <label for="comment">Laissez un commentaire</label>
                         <input type="text" name="comment" id="comment">
                         <button class="submit" type="submit">Envoyer</button>
-
+                    </form>
                 </div>
             <?php } ?>
-            </form>
+
     </section>
 </main>

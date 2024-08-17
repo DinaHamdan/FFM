@@ -3,8 +3,7 @@
     color: white;
 
     #discussion-detail-container {
-        padding: 2em;
-        border: 1px solid #341701;
+        padding: 4em;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
@@ -12,14 +11,43 @@
     }
 
     #comment-container {
-        padding: 2em;
+        //  padding: 2em;
         border: 1px solid #341701;
         border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
+
+        #comment-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
+
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+        }
+
+    }
+
+    #leave-comment-container {
+        padding: 2em;
+        width: 40%;
+        border: 1px solid #341701;
+        border-radius: 20px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1em;
 
 
+            input {
+                width: 100px;
+                height: 50px;
+            }
+        }
     }
 }
 
@@ -28,10 +56,41 @@
         #discussion-detail-container {
 
             padding: 10em;
-        }
 
-        #text-photo-container {
-            display: flex;
+            #discussion-title {
+                font-size: 1.5em;
+            }
+
+            #text-photo-container {
+                display: flex;
+            }
+
+            #comment-container {
+
+                #comment-content {
+
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+
+                    }
+                }
+
+            }
+
+            #leave-comment-container {
+
+                form {
+
+                    input {
+                        width: 300px;
+                        height: 100px;
+                    }
+                }
+            }
+
+
         }
     }
 }

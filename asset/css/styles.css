@@ -1198,6 +1198,7 @@ header {
 }
 #forum #discussion-container h4 {
   font-size: 1.2em;
+  padding: 1em;
 }
 
 @media screen and (min-width: 950px) {
@@ -1214,7 +1215,7 @@ header {
   }
   #forum #forum-form {
     width: 60%;
-    font-size: 2em;
+    font-size: 1.3em;
   }
   #forum #forum-form textarea {
     height: 10em;
@@ -1230,10 +1231,9 @@ header {
   }
   #all-discussion-container {
     width: 60%;
-    font-size: 2em;
   }
-  #all-discussion-container h4 {
-    font-size: 1.4em;
+  #all-discussion-container #discussion-container h4 {
+    font-size: 1.5em;
   }
 }
 #discussion {
@@ -1241,28 +1241,61 @@ header {
   color: white;
 }
 #discussion #discussion-detail-container {
-  padding: 2em;
-  border: 1px solid #341701;
+  padding: 4em;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 #discussion #comment-container {
-  padding: 2em;
   border: 1px solid #341701;
   border-radius: 20px;
+}
+#discussion #comment-container #comment-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+#discussion #comment-container #comment-content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#discussion #leave-comment-container {
+  padding: 2em;
+  width: 40%;
+  border: 1px solid #341701;
+  border-radius: 20px;
+}
+#discussion #leave-comment-container form {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 1em;
+}
+#discussion #leave-comment-container form input {
+  width: 100px;
+  height: 50px;
 }
 
 @media screen and (min-width: 950px) {
   #discussion #discussion-detail-container {
     padding: 10em;
   }
-  #discussion #text-photo-container {
+  #discussion #discussion-detail-container #discussion-title {
+    font-size: 1.5em;
+  }
+  #discussion #discussion-detail-container #text-photo-container {
     display: flex;
+  }
+  #discussion #discussion-detail-container #comment-container #comment-content img {
+    width: 100px;
+    height: 100px;
+  }
+  #discussion #discussion-detail-container #leave-comment-container form input {
+    width: 300px;
+    height: 100px;
   }
 }
 #social-media {
