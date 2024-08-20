@@ -37,7 +37,7 @@
             </p>
             <h2 id="discoverArtist"> Découvrez Nos</h2>
             <div class="center-button">
-                <a href="" id="prop-button">Agrès</a>
+                <a href="/ctrl/agre/agre-display.php" id="prop-button">Agrès</a>
             </div>
         </div>
 

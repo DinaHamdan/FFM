@@ -1,0 +1,17 @@
+#volunteer-form-section {
+
+    background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+    color: white;
+    padding: 1em;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+
+
+    #volunter-form {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+}

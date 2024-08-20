@@ -5,8 +5,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/cfg/config-dev.php';
 class libDb
 {
     /**
-     * 
-     * 
      * @return PDO connects to database
      */
     static function connect(): PDO

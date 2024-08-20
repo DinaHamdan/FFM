@@ -365,22 +365,35 @@ CSS formulaire Login
 
 ### Vendredi 16-08-24
 **CSS forum** 
-**CSS gallerie agrés**
+
 
 ### Le weekend ? 
-**CSS formulaire bénévole**
-
-
+**CSS gallerie agrés**
+Choisir une photo de background pour la gallerie, regarder des exempls pour inspiration
 ***Pour Lundi finir le gros du CSS et bien préparer la présenation*** 
  
  ***
 
 ## Semaine 7 après les vacances
-Finir CSS le gros  
+Lundi 
 présentation   
 Impératif commencer rapport  
 
+Mardi
+**CSS formulaire bénévole**
+fix buttons for section about us
+Finir CSS le gros  
+
+Mercredi
+CSS agrès
+
+Jeudi 
+CSS backoffice
+
 ## Semaine 8
+Lundi
+rapport + 
+déploiement
 Coder backend BackOffice   
 **CSS BackOffice**
 
@@ -413,3 +426,17 @@ MCD MLD sur un slide
 agré passer moin temps dessus
 Maquette référentiel - checklist avec tous mettre tout dans la présentation
  Priorités : diagramm de gantt - un planning pour montrer j'ai fait quoi quand
+RGPD: cookies
+
+
+## Lundi 19/08/24 Notes de la présentation 
+travailler en autonomie en collaboration avec mon tuteur de stages- driver sur les points importants  
+pas de je ne sais pas  
+diagramm de gantt en double le mettre en une fois   
+enlever le diagramm des fonctionalités priorités   
+expliquer fire jam au bon endroit   
+MCD à non informaticiens, enlever?  
+Bien expliquer les fonctions, prendre un exemple avec un JOIN et pourvoir l'expliquer, c'est quoi  static, c'est quoi
+Maquette statique montrer et prendre plus de temps pour faire la demo du site 
+Mettre plus d'exemple de code: développer le 
+
