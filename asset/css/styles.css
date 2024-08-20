@@ -1362,15 +1362,86 @@ header {
   padding: 1em;
   font-weight: 100;
   font-size: 1em;
-  text-align: center;
+  text-align: justify;
+  padding: 2em;
 }
-#volunteer-form-section #volunter-form {
+#volunteer-form-section h2 {
+  font-size: 1.5em;
+  padding: 1em;
+}
+#volunteer-form-section #volunteer-form {
+  padding: 3em;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  border-radius: 20px;
+  align-items: start;
+  gap: 1em;
+  border-width: 5px;
+  border-style: solid;
+  -o-border-image: linear-gradient(to right, rgb(255, 153, 0), rgb(0, 0, 0));
+     border-image: linear-gradient(to right, rgb(255, 153, 0), rgb(0, 0, 0));
+  border-image-slice: 60 30;
+  font-size: 0.7em;
+}
+#volunteer-form-section #volunteer-form .input-box {
+  width: 100px;
+  height: 15px;
+  border-radius: 5px;
+}
+#volunteer-form-section #volunteer-form .basic-answer-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 1em;
+}
+#volunteer-form-section #volunteer-form .basic-answer-options div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#volunteer-form-section #volunteer-form .answer-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 1em;
+}
+#volunteer-form-section #volunteer-form p {
+  padding: 1em;
+  font-weight: 600;
+}
+#volunteer-form-section #volunteer-form #validateVolunteer {
+  border-radius: 10px;
+  width: 100px;
+  background-color: white;
+  border: none;
+  padding: 0.2em;
+  font-weight: 100;
+  display: inline-block;
+  align-self: center;
 }
 
+@media screen and (min-width: 650px) {
+  #volunteer-form-section {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #volunteer-form-section #volunteer-form {
+    font-size: 1em;
+    width: 70%;
+  }
+  #volunteer-form-section #volunteer-form .input-box {
+    width: 200px;
+    height: 20px;
+  }
+  #volunteer-form-section #validateVolunteer {
+    width: 300px;
+    height: 25px;
+    border-radius: 30px;
+  }
+}
 #social-media {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   display: flex;

@@ -5,13 +5,102 @@
     padding: 1em;
     font-weight: 100;
     font-size: 1em;
-    text-align: center;
+    text-align: justify;
+    padding: 2em;
 
+    h2 {
+        font-size: 1.5em;
+        padding: 1em;
+    }
 
-    #volunter-form {
+    #volunteer-form {
+        padding: 3em;
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
-        border-radius: 20px;
+        align-items: start;
+        // justify-content: center;
+        gap: 1em;
+        border-width: 5px;
+        border-style: solid;
+        border-image: linear-gradient(to right, rgb(255, 153, 0), rgb(0, 0, 0));
+        border-image-slice: 60 30;
+        font-size: 0.7em;
+
+        .input-box {
+            width: 100px;
+            height: 15px;
+            border-radius: 5px;
+
+        }
+
+        .basic-answer-options {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            //  border: 1px solid red;
+            gap: 1em;
+
+            div {
+                // border: 1px solid green;
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+
+        .answer-options {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: start;
+            //  border: 1px solid red;
+            gap: 1em;
+
+
+        }
+
+        p {
+            padding: 1em;
+            font-weight: 600;
+        }
+
+        #validateVolunteer {
+            border-radius: 10px;
+            width: 100px;
+            background-color: white;
+            border: none;
+            padding: 0.2em;
+            font-weight: 100;
+            display: inline-block;
+            align-self: center;
+        }
+    }
+}
+
+@media screen and (min-width:650px) {
+    #volunteer-form-section {
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        #volunteer-form {
+            font-size: 1em;
+            width: 70%;
+
+            .input-box {
+                width: 200px;
+                height: 20px;
+            }
+
+        }
+
+        #validateVolunteer {
+            width: 300px;
+            height: 25px;
+            border-radius: 30px;
+        }
     }
 }

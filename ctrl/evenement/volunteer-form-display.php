@@ -6,6 +6,7 @@ class VolunteerFormDisplay extends Ctrl
 {
     function do(): void
     {
+        $_SESSION['user'] = [];
     }
     function renderView(): void
     {
@@ -15,9 +16,10 @@ class VolunteerFormDisplay extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/evenement/volunteer-form-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): string
+    function getPageTitle(): null
     {
-        return 'Devenir Bénévole';
+        return null;
+        //return 'Devenir Bénévole';
     }
 }
 
