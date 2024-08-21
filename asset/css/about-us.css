@@ -22,6 +22,9 @@
   display: flex;
   justify-content: center;
 }
+#about-us .center-button .prop-group-button {
+  display: none;
+}
 #about-us .center-button #prop-button {
   display: inline-block;
   font-size: 1.5em;
@@ -99,7 +102,7 @@
 }
 #about-us #fire-jam .center-button {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 #about-us #fire-jam .center-button #adhesion-button {
   display: inline-block;
@@ -123,7 +126,7 @@
     width: 50%;
   }
   #about-us #fire-team .center-button #prop-button {
-    margin-top: 6em;
+    display: none;
   }
   #about-us #fire-jam {
     width: 50%;
@@ -131,12 +134,50 @@
   #about-us #fire-jam #fire-jam-paragraph-container {
     padding: 2em;
   }
+  #about-us #fire-jam .center-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
   #about-us #fire-jam .center-button #adhesion-button {
-    margin-top: 8em;
+    margin-right: 7em;
+  }
+  #about-us #fire-jam .center-button .prop-group-button {
+    display: inline-block;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    width: 8em;
+    height: 1.5em;
+    background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
+    border-radius: 3em;
+    color: #130F0F;
+    margin-left: -14em;
+    margin-top: 1.4em;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
+  #about-us #fire-jam .center-button .prop-group-button {
+    margin-left: -17em;
+  }
+}
+@media screen and (min-width: 1300px) {
   #about-us #fire-jam .center-button #adhesion-button {
-    margin: 1.1em 0 3em 0;
+    width: 10em;
+    height: 2em;
+    padding-top: 20px;
+    margin-right: 9em;
+  }
+  #about-us #fire-jam .center-button .prop-group-button {
+    padding-top: 20px;
+    width: 10em;
+    height: 2em;
+    margin-left: -19em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #about-us #fire-jam .center-button .prop-group-button {
+    margin-left: -21em;
   }
 }/*# sourceMappingURL=about-us.css.map */

@@ -58,6 +58,7 @@
                 <p id="paragraph-three-two">comme vous êtes</p>
             </div>
             <div class="center-button">
+                <a class="prop-group-button" href="/ctrl/agre/agre-display.php">Agrès</a>
                 <a href='/ctrl/adhesion/adhesion-display.php' id="adhesion-button">Adhésion</a>
             </div>
         </div>
@@ -79,7 +80,7 @@
                 <p>À malmort du</p>
                 <p>Comtat -84</p>
                 <div id="button-container">
-                    <a id="event-button" href='/ctrl/evenement/event-display.php'>Voir l'évènement</a>
+                    <a id="event-button" href='/ctrl/evenement/event.php'>Voir l'évènement</a>
                 </div>
             </div>
         </div>

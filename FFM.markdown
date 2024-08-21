@@ -381,11 +381,12 @@ Impératif commencer rapport
 
 Mardi
 **CSS formulaire bénévole**
-fix buttons for section about us
 Finir CSS le gros  
 
 Mercredi
-CSS agrès
+CSS agrès gallerie
+fix buttons for section about us
+
 
 Jeudi 
 CSS backoffice
