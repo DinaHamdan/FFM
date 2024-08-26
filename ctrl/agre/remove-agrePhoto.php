@@ -18,7 +18,7 @@ class RemoveAgreDisplay extends Ctrl
     {
         $args = $this->viewArgs;
 
-        header('Location: ' . '/ctrl/agre/agre-display.php');
+        header('Location: ' . '/ctrl/agre/list-agre.php');
     }
     function getPageTitle(): null
     {

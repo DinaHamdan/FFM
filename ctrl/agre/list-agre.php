@@ -32,7 +32,7 @@ class AgreDisplay extends Ctrl
         $args = $this->viewArgs;
 
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/header.php';
-        include $_SERVER['DOCUMENT_ROOT'] . '/view/agre/agre-display.php';
+        include $_SERVER['DOCUMENT_ROOT'] . '/view/agre/list-agre.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
     function getPageTitle(): null
