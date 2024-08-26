@@ -393,13 +393,23 @@ CSS backoffice
 
 ## Semaine 8
 Lundi
+Fix user coderole =[] for event page Jongle en Zik Done
+finir CSS gallerie agrès
+
+Mardi
+CSS backOffice pour l'éxistant
+Coder backend BackOffice   
+
+Mercredi
 rapport + 
 déploiement
-Coder backend BackOffice   
+
+Jeudi 
+Css backoffice
 **CSS BackOffice**
 
 ## semaine 9 
-Debugging ( additional functions)  
+Debugging (additional functions)  
 Rapport  
 
 ## Semaine 10
@@ -419,8 +429,8 @@ Remove Members
 Commencer rapport 
 Deploiment
 référencement google  + sécurité
-Fix user coderole =[] for event page Jongle en Zik
-A faire: 
+
+Sides A faire: 
  MCD 
 table volontaire a changer
 MCD MLD sur un slide

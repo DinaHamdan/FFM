@@ -8,6 +8,7 @@ class Homepage extends Ctrl
     function do(): void
     {
         $_SESSION['user'] = [];
+        $_SESSION['user']['codeRole'] = [];
     }
 
     function renderView(): void

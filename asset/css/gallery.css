@@ -4,6 +4,8 @@
 }
 #gallery h2 {
   text-align: center;
+  font-size: 2em;
+  padding: 1em;
 }
 #gallery #fire-prop-container {
   border: 1px solid red;
@@ -22,10 +24,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1em;
 }
 #gallery .prop-photo {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 @media screen and (min-width: 900px) {

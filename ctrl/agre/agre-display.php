@@ -13,6 +13,13 @@ class AgreDisplay extends Ctrl
         $idCategoryLED = 2;
         $_SESSION['typeAgreLED'] = LibAgre::getGallerieTypeAgre($idCategoryLED); */
 
+        $isLogged = $this->isUserLogged();
+        $isGranted = $this->hasRole(Role::ADMIN);
+        if ($isGranted) {
+            $_SESSION['user']['codeRole'] == "ADM";
+        } else {
+            $_SESSION['user']['codeRole'] = [];
+        }
 
         $isMain = 'true';
         $idCategoryFeu = 1;
@@ -28,9 +35,11 @@ class AgreDisplay extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/agre/agre-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): string
+    function getPageTitle(): null
     {
-        return 'Gallerie Agre';
+        return null;
+        /*         return 'Gallerie Agre';
+ */
     }
 }
 

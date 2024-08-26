@@ -1,11 +1,25 @@
 <main>
     <section id="gallery">
-        <h2>Gallerie Agrè</h2>
-        <div> <a href="/ctrl/agre/add-agre-display.php">Ajouter des photos d'agrés</a>
+        <div>
+            <h2>Fire From Mars, où le feu et la lumière enflamment votre imagination</h2>
+            <p>Decouvrez le monde magique de Fire From Mars
+                Grâce a nos agrès divers</p>
         </div>
-        <a href="/ctrl/agre/add-agreType-display.php">Ajouter type d'agrés</a>
+        <div>
+            <div>
+                <h2>Gallerie Agrè</h2>
 
-        <h2 id="fire-prop-title"> Agrès Feu</h2>
+            </div>
+        </div>
+        <!-- Check if the user is an admin -->
+        <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
+            <a href="/ctrl/agre/add-agre-display.php">Ajouter des photos d'agrés</a>
+
+            <a href="/ctrl/agre/add-agreType-display.php">Ajouter type d'agrés</a>
+        <?php  } ?>
+
+
+        <h2 id="fire-prop-title"> Feu</h2>
         <div id="fire-prop-container">
             <?php
             foreach ($args['session']['typeAgreFeu'] as $args['session']['agreFeu']) { ?>
@@ -18,7 +32,7 @@
                 </div>
             <?php } ?>
         </div>
-        <h2>Agrès LED</h2>
+        <h2>Lumineux</h2>
         <div id="led-prop-container">
             <?php
             foreach ($args['session']['typeAgreLED'] as $args['session']['agreLED']) { ?>

@@ -29,7 +29,7 @@
             <ul class="menu">
                 <?php
                 /* Check if user session is not null to show the forum */
-                if ($args['session']['user'] != null) { ?>
+                if ($args['session']['user']['codeRole'] != null) { ?>
                     <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
                     <li><a class="menuItem" href='/ctrl/agre/agre-display.php'>Agrès</a></li>
                     <li><a class="menuItem" href='/ctrl/evenement/event.php'>Evénement</a></li>
