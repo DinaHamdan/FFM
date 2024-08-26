@@ -2,19 +2,66 @@
   background-color: black;
   color: white;
 }
-#gallery h2 {
+#gallery #gallery-title-container {
   text-align: center;
-  font-size: 2em;
+  padding: 3em;
+  width: 70%;
+}
+#gallery #gallery-title-container h2 {
+  font-size: 1.2em;
   padding: 1em;
+  font-weight: 500;
+}
+#gallery #gallery-title-container h2 span {
+  display: block;
+}
+#gallery #gallery-bg-container {
+  width: 100%;
+  background-image: url(../img/gallery-bg-2.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15em;
+  display: flex;
+  align-items: center;
+}
+#gallery .gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  width: 100%;
+  height: 3em;
+  background-color: black;
+  color: white;
+  text-align: center;
+  box-shadow: 10px 5px 5px #FE6B00;
+}
+#gallery #button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5em;
+  height: 10em;
+}
+#gallery #button-container .add-button {
+  display: inline-block;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  width: 8em;
+  height: 3em;
+  background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
+  border-radius: 3em;
+  color: #130F0F;
+  margin: 3em 0 2em 0;
 }
 #gallery #fire-prop-container {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #gallery #led-prop-container {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,17 +84,31 @@
     flex-direction: column;
     align-items: center;
   }
+  #gallery #gallery-title-container {
+    padding: 5em;
+  }
+  #gallery #gallery-title-container h2 {
+    font-size: 1.8em;
+  }
+  #gallery #gallery-bg-container {
+    height: 35em;
+  }
+  #gallery .gallery-container {
+    height: 10em;
+  }
+  #gallery .gallery-container h2 {
+    font-size: 3em;
+    font-weight: 200;
+  }
   #gallery #fire-prop-container {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 1em;
     align-items: center;
     width: 60%;
   }
   #gallery #led-prop-container {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -55,7 +116,7 @@
     align-items: center;
   }
   #gallery .prop-photo {
-    width: 300px;
+    width: 100px;
     height: 300px;
   }
 }/*# sourceMappingURL=gallery.css.map */

@@ -393,7 +393,8 @@ CSS backoffice
 
 ## Semaine 8
 Lundi
-Fix user coderole =[] for event page Jongle en Zik Done
+Fix user coderole =[] for event page Jongle en Zik 
+changer le nom des fichiers ctrl , enlever display des non formulaires
 finir CSS gallerie agrès
 
 Mardi
