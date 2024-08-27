@@ -31,6 +31,7 @@
 
     }
 
+
     .gallery-container {
         display: flex;
         align-items: center;
@@ -66,11 +67,47 @@
         }
     }
 
-    #fire-prop-container {
-        //  border: 1px solid red;
+    .gallery-wrap {
+        border: 1px solid red;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .back-scroll {
+            width: 50px;
+            height: 50px;
+
+        }
+
+        .forward-scroll {
+            width: 50px;
+            height: 50px;
+        }
+
+        #fire-prop-container {
+            /*             display: flex;
+            flex-direction: column;
+            align-items: center; */
+
+            ///
+            /*    border: 1px solid red;
+            grid-template-columns: auto auto auto;
+            display: grid;
+            width: 100%;
+            gap: 20px;
+            padding: 10px;
+            flex: none;
+            overflow-x: scroll; */
+            ///
+            /// 
+            display: flex;
+            overflow-x: scroll;
+            width: 900px;
+            gap: 2em;
+            padding: 1em;
+
+        }
     }
 
     #led-prop-container {
@@ -85,12 +122,29 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1em;
+        gap: 2em;
+
+        /* 
+        border: 1px solid red;
+        grid-template-columns: auto auto auto;
+        display: grid;
+        width: 100%;
+        gap: 20px;
+        padding: 10px;
+        flex: none; */
+
     }
 
     .prop-photo {
         width: 150px;
         height: 150px;
+        border: 1px solid gray;
+        transition: transform 0.5s;
+    }
+
+    .prop-photo:hover {
+        transform: scale(1.1);
+        cursor: pointer;
     }
 }
 
@@ -127,14 +181,14 @@
         }
 
         #fire-prop-container {
-            //  border: 1px solid red;
+            /*      //  border: 1px solid red;
             display: flex;
             flex-direction: row;
             //   flex-wrap: wrap;
             justify-content: space-evenly;
             gap: 1em;
             align-items: center;
-            width: 60%;
+            width: 60%; */
         }
 
         #led-prop-container {
@@ -147,7 +201,7 @@
         }
 
         .prop-photo {
-            width: 100px;
+            width: 300px;
             height: 300px;
         }
     }

@@ -20,18 +20,24 @@
             </div>
         <?php  } ?>
 
+
         <div class="gallery-container">
             <h2 id="fire-prop-title"> Feu</h2>
         </div>
-        <div id="fire-prop-container">
-            <?php
-            foreach ($args['session']['typeAgreFeu'] as $args['session']['agreFeu']) { ?>
 
-                <div class="prop-title-photo-container">
-                    <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>" "> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt="">la </a>
-                    <h3><?= $args['session']['agreFeu']['agreName'] ?></h3>
-                </div>
-            <?php } ?>
+        <div class="gallery-wrap">
+            <img class="back-scroll" src="/asset/img/back.png" alt="">
+            <div id="fire-prop-container">
+                <?php
+                foreach ($args['session']['typeAgreFeu'] as $args['session']['agreFeu']) { ?>
+
+                    <div class="prop-title-photo-container">
+                        <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>" "> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt="">la </a>
+                        <h3><?= $args['session']['agreFeu']['agreName'] ?></h3>
+                    </div>
+                <?php } ?>
+            </div>
+            <img class="forward-scroll" src="/asset/img/front.png" alt="">
         </div>
         <div class="gallery-container">
             <h2>Lumineux</h2>

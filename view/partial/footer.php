@@ -39,8 +39,6 @@
         </div>
     </section>
 </footer>
-
-</body>
 <script>
     /* I might remove this logo 3 changed id*/
     let mybutton = document.getElementById("logo3");
@@ -50,5 +48,8 @@
         console.log("patate");
     });
 </script>
+<script src="/js/gallery.js"></script>
+</body>
+
 
 </html>
