@@ -11,13 +11,13 @@ fireGallery.addEventListener('wheel', (evt) => {
 });
 
 backButton.addEventListener('click', () => {
-    fireGallery.scrollLeft -= 900;
+    fireGallery.scrollLeft -= 100;
     fireGallery.style.scrollBehavior = 'auto';
 
 });
 
 forwardButton.addEventListener('click', () => {
-    fireGallery.scrollLeft += 900;
+    fireGallery.scrollLeft += 100;
     fireGallery.style.scrollBehavior = 'auto';
 
 })
@@ -37,13 +37,13 @@ ledGallery.addEventListener('wheel', (evt) => {
 });
 
 backBtn.addEventListener('click', () => {
-    ledGallery.scrollLeft -= 900;
+    ledGallery.scrollLeft -= 100;
     ledGallery.style.scrollBehavior = 'smooth';
 
 });
 
 forwardBtn.addEventListener('click', () => {
-    ledGallery.scrollLeft += 900;
+    ledGallery.scrollLeft += 100;
     ledGallery.style.scrollBehavior = 'smooth';
 
 })

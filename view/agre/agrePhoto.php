@@ -1,5 +1,5 @@
 <main>
-
+    <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
     <?php
     foreach ($args['session']['listAgrePhoto'] as $args['session']['agrePhoto']) { ?>

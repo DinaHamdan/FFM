@@ -36,7 +36,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1em;
   width: 100%;
   height: 8em;
   background-color: black;
@@ -72,10 +71,14 @@
 #gallery .gallery-wrap .back-scroll {
   width: 20px;
   height: 20px;
+  margin-top: 15em;
+  margin-left: 2em;
 }
 #gallery .gallery-wrap .forward-scroll {
   width: 20px;
   height: 20px;
+  margin-top: 15em;
+  margin-right: 2em;
 }
 #gallery .gallery-wrap #fire-prop-container {
   /*             display: flex;
@@ -109,10 +112,14 @@
 #gallery .gallery-wrap .back-button {
   width: 20px;
   height: 20px;
+  margin-top: 15em;
+  margin-left: 2em;
 }
 #gallery .gallery-wrap .forward-button {
   width: 20px;
   height: 20px;
+  margin-top: 15em;
+  margin-right: 2em;
 }
 #gallery .gallery-wrap #led-prop-container {
   display: flex;
@@ -178,18 +185,22 @@
   #gallery .gallery-wrap .back-button {
     width: 50px;
     height: 50px;
+    margin-top: 0;
   }
   #gallery .gallery-wrap .forward-button {
     width: 50px;
     height: 50px;
+    margin-top: 0;
   }
   #gallery .gallery-wrap .back-scroll {
     width: 50px;
     height: 50px;
+    margin-top: 0;
   }
   #gallery .gallery-wrap .forward-scroll {
     width: 50px;
     height: 50px;
+    margin-top: 0;
   }
   #gallery .gallery-wrap #fire-prop-container {
     /*      //  border: 1px solid red;
