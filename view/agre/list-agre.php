@@ -18,6 +18,8 @@
 
                 <a class="add-button" href="/ctrl/agre/add-agreType-display.php">Ajouter type d'agrés</a>
             </div>
+
+
         <?php  } ?>
 
 
@@ -32,28 +34,34 @@
                 foreach ($args['session']['typeAgreFeu'] as $args['session']['agreFeu']) { ?>
 
                     <div class="prop-title-photo-container">
-                        <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>" "> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt="">la </a>
+                        <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>" "> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt=""></a>
                         <h3><?= $args['session']['agreFeu']['agreName'] ?></h3>
                     </div>
                 <?php } ?>
             </div>
             <img class="forward-scroll" src="/asset/img/front.png" alt="">
         </div>
+
         <div class="gallery-container">
             <h2>Lumineux</h2>
         </div>
 
-        <div id="led-prop-container">
-            <?php
-            foreach ($args['session']['typeAgreLED'] as $args['session']['agreLED']) { ?>
+        <div class="gallery-wrap">
+            <img class="back-button" src="/asset/img/back.png" alt="">
+            <div id="led-prop-container">
+                <?php
+                foreach ($args['session']['typeAgreLED'] as $args['session']['agreLED']) { ?>
 
-                <div class="prop-title-photo-container">
+                    <div class="prop-title-photo-container">
 
 
-                    <h3><?= $args['session']['agreLED']['agreName'] ?></h3>
-                    <a href=" /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['idAgre'] ?>" "> <img  class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreLED']['illustration']) ?>" alt="">la </a>
-                </div>
-            <?php } ?>
+                        <a href=" /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['idAgre'] ?>" "> <img  class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreLED']['illustration']) ?>" alt=""></a>
+                        <h3><?= $args['session']['agreLED']['agreName'] ?></h3>
+
+                    </div>
+                <?php } ?>
+            </div>
+            <img class="forward-button" src="/asset/img/front.png" alt="">
         </div>
     </section>
 </main>

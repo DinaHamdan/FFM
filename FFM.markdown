@@ -395,13 +395,15 @@ CSS backoffice
 Lundi
 Fix user coderole =[] for event page Jongle en Zik 
 changer le nom des fichiers ctrl , enlever display des non formulaires
-finir CSS gallerie agrès
+css gallerie agrès
 
 Mardi
+finir CSS gallerie agrès
 CSS backOffice pour l'éxistant
-Coder backend BackOffice   
+  
 
 Mercredi
+Coder backend BackOffice 
 rapport + 
 déploiement
 

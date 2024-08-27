@@ -1,22 +1,49 @@
-let gallery = document.querySelector('#fire-prop-container');
+//Javascript for Fire Gallery
+let fireGallery = document.querySelector('#fire-prop-container');
 let backButton = document.querySelector('.back-scroll');
 let forwardButton = document.querySelector('.forward-scroll');
 
-gallery.addEventListener('wheel', (event) => {
-    event.preventDefault();
-    gallery.scrollLeft += event.deltaY;
-    gallery.style.scrollBehavior = "auto";
+fireGallery.addEventListener('wheel', (evt) => {
+    evt.preventDefault();
+    fireGallery.scrollLeft += evt.deltaY;
+    fireGallery.style.scrollBehavior = 'auto';
 
 });
 
 backButton.addEventListener('click', () => {
-    gallery.scrollLeft -= 900;
-    gallery.style.scrollBehavior = 'auto';
+    fireGallery.scrollLeft -= 900;
+    fireGallery.style.scrollBehavior = 'auto';
 
 });
 
 forwardButton.addEventListener('click', () => {
-    gallery.scrollLeft += 900;
-    gallery.style.scrollBehavior = 'auto';
+    fireGallery.scrollLeft += 900;
+    fireGallery.style.scrollBehavior = 'auto';
+
+})
+
+
+//Javascript for LED Gallery
+
+let ledGallery = document.querySelector('#led-prop-container');
+let backBtn = document.querySelector('.back-button');
+let forwardBtn = document.querySelector('.forward-button');
+
+ledGallery.addEventListener('wheel', (evt) => {
+    evt.preventDefault();
+    ledGallery.scrollLeft += evt.deltaY;
+    ledGallery.style.scrollBehavior = 'auto';
+
+});
+
+backBtn.addEventListener('click', () => {
+    ledGallery.scrollLeft -= 900;
+    ledGallery.style.scrollBehavior = 'smooth';
+
+});
+
+forwardBtn.addEventListener('click', () => {
+    ledGallery.scrollLeft += 900;
+    ledGallery.style.scrollBehavior = 'smooth';
 
 })

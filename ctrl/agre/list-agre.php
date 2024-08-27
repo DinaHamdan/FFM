@@ -21,6 +21,13 @@ class AgreDisplay extends Ctrl
             $_SESSION['user']['codeRole'] = [];
         }
 
+        //Admin
+        $isNotMain = '';
+        $idCategoryFeu = 1;
+        $_SESSION['adminAgreFeu'] = LibAgre::getGallerieTypeAgre($idCategoryFeu, $isNotMain);
+        $idCategoryLED = 2;
+        $_SESSION['adminAgreLED'] = LibAgre::getGallerieTypeAgre($idCategoryLED, $isNotMain);
+
         $isMain = 'true';
         $idCategoryFeu = 1;
         $_SESSION['typeAgreFeu'] = LibAgre::getGallerieTypeAgre($idCategoryFeu, $isMain);
