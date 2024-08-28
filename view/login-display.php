@@ -1,6 +1,10 @@
 <main>
     <section id="login">
+        <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
+
         <h2 id="login-title"> Formulaire de Login</h2>
+        <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
+
         <form id="login-form" action="/ctrl/login/login.php" method="post">
 
             <!-- Email -->

@@ -24,7 +24,7 @@ class AddAgreDisplay extends Ctrl
     }
     function getPageTitle(): string
     {
-        return 'Ajout de photos  des Agrès';
+        return 'Ajout de photos des Agrès';
     }
 }
 

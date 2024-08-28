@@ -1,34 +1,39 @@
 <main>
-    <form action="/ctrl/agre/add-agre.php" method="post" enctype="multipart/form-data">
+    <section id="add-photo-section">
+        <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
-        <!-- Add photos to agre gallerie -->
+        <form id="add-photo-form" action="/ctrl/agre/add-agre.php" method="post" enctype="multipart/form-data">
 
-        <div id="agrePhoto-container">
+            <!-- Add photos to agre gallerie -->
 
-            <label for="category">Categorie</label>
-            <select name="category" id="">
+            <div>
+                <label for="category">Categorie</label>
+                <select name="category" id="">
 
-                <?php foreach ($args['session']['listCategory'] as $args['session']['category']) { ?>
-                    <option value="<?= $args['session']['category']['id'] ?>"><?= $args['session']['category']['name'] ?></option>
+                    <?php foreach ($args['session']['listCategory'] as $args['session']['category']) { ?>
+                        <option value="<?= $args['session']['category']['id'] ?>"><?= $args['session']['category']['name'] ?></option>
 
-                <?php } ?>
-            </select>
-            <label for="agreType">Type d'agré</label>
-            <select name="agreType" id="">
+                    <?php } ?>
+                </select>
+            </div>
+            <div>
+                <label for="agreType">Type d'agré</label>
+                <select name="agreType" id="">
 
-                <?php foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
+                    <?php foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
 
-                    <option value="<?= $args['session']['agre']['id'] ?>"><?= $args['session']['agre']['name'] ?></option>
-                <?php } ?>
-            </select>
-            <label for="agrePhoto">Ajouter des photos d'agrès</label>
-            <input type="file" id="agrePhoto" name="agrePhoto[]" multiple>
+                        <option value="<?= $args['session']['agre']['id'] ?>"><?= $args['session']['agre']['name'] ?></option>
+                    <?php } ?>
+                </select>
+            </div>
+            <div>
+                <label for="agrePhoto">Ajouter des photos d'agrès</label>
+                <input type="file" id="agrePhoto" name="agrePhoto[]" multiple>
 
+            </div>
 
-        </div>
+            <button id="validatePhoto" type="submit">Valider</button>
 
-        <button class="submit" type="submit">valider</button>
-
-
-    </form>
+        </form>
+    </section>
 </main>

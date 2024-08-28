@@ -1,0 +1,34 @@
+#add-photo-section {
+    background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+    color: white;
+    padding: 1em;
+    font-weight: 100;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    #add-photo-form {
+        width: 70%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        border: 1px solid #341701;
+        border-radius: 20px;
+
+        #validatePhoto {
+            border-radius: 10px;
+            width: 100px;
+            background-color: white;
+            border: none;
+            padding: 0.2em;
+            font-weight: 100;
+        }
+    }
+
+
+}
