@@ -85,4 +85,4 @@
     <?php unset($_SESSION['msg']) ?>
 
     </div>
-    <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
+    <!--     <h1 id="page-title"><?= $args['pageTitle'] ?></h1> -->

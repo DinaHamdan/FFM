@@ -94,7 +94,7 @@
   overflow-x: scroll; */
   display: flex;
   overflow-x: scroll;
-  width: 900px;
+  width: 100%;
   gap: 3em;
   padding: 3em;
   scrollbar-width: none;
@@ -222,7 +222,7 @@
     padding: 5em;
   }
   #gallery .gallery-wrap .prop-photo {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
   }
 }/*# sourceMappingURL=gallery.css.map */

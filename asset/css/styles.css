@@ -1435,7 +1435,7 @@ header {
   overflow-x: scroll; */
   display: flex;
   overflow-x: scroll;
-  width: 900px;
+  width: 100%;
   gap: 3em;
   padding: 3em;
   scrollbar-width: none;
@@ -1563,8 +1563,8 @@ header {
     padding: 5em;
   }
   #gallery .gallery-wrap .prop-photo {
-    width: 200px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
   }
 }
 #volunteer-form-section {
@@ -1651,6 +1651,36 @@ header {
     width: 300px;
     height: 25px;
     border-radius: 30px;
+  }
+}
+#agre-photo-section {
+  padding: 2em;
+  background-color: black;
+  color: white;
+}
+#agre-photo-section #agre-photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+#agre-photo-section #agre-photo-container .prop-photo {
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+}
+
+@media screen and (min-width: 600px) {
+  #agre-photo-section #agre-photo-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2em;
+    margin: 10em;
+  }
+  #agre-photo-section #agre-photo-container .prop-photo {
+    width: 400px;
+    height: 400px;
   }
 }
 #social-media {

@@ -399,10 +399,11 @@ css gallerie agrès
 
 Mardi
 finir CSS gallerie agrès
-CSS backOffice pour l'éxistant
   
 
 Mercredi
+CSS backOffice pour l'éxistant
+
 Coder backend BackOffice 
 rapport + 
 déploiement
@@ -421,6 +422,8 @@ déploiment
 rapport   
 
 ## TO DO :
+            //TODO Need to add algorithm to check for photo width and height and change it accordingly
+
 remove useless tables in bdd phpmyadmin
 Start html CSS for gallerie agrés
 BackOffice formulaires 

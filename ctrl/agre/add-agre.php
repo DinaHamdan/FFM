@@ -58,6 +58,7 @@ class AddAgrePhoto extends Ctrl
             if (true) {
                 if ($fileSize > $acceptedFilesize) {
                     $_SESSION['msg']['error'][] = 'La taille de la photo est trop grand';
+                    echo 'too big';
                 }
             }
 
@@ -78,8 +79,11 @@ class AddAgrePhoto extends Ctrl
             if ($fileType == $jpg) {
                 $imgOriginal = imagecreatefromjpeg($fileTmpName);
             }
+            //TODO Need to add algorithm to check for photo width and height and change it accordingly
+            $img = imagescale($imgOriginal, 800, 800, IMG_BICUBIC);
 
-            $img = imagescale($imgOriginal, 200);
+            $imgSharpened = imagesetinterpolation($img, IMG_SINC);
+
             imagepng($img, $fileTmpName);
 
             // Ajoute un flash-message

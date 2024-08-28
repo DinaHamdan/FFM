@@ -105,7 +105,8 @@
             /// 
             display: flex;
             overflow-x: scroll;
-            width: 900px;
+            width: 100%;
+            // width: 900px;
             gap: 3em;
             padding: 3em;
             //Hide scroll bar for all browsers
@@ -290,8 +291,8 @@
             }
 
             .prop-photo {
-                width: 200px;
-                height: 300px;
+                width: 300px;
+                height: 400px;
             }
         }
 
