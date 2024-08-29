@@ -18,7 +18,7 @@ class ContactMessageDetail extends Ctrl
         } */
         $idContactMessage = $_GET['id'];
         $contactMessage = LibMember::getContactMessage($idContactMessage);
-        $_SESSION['discussion'] = $contactMessage;
+        $_SESSION['contactMessage'] = $contactMessage;
     }
 
     function renderView(): void

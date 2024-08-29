@@ -2,7 +2,7 @@
     <section id="backoffice-contact">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
-        <div id="all-discussion-container">
+        <div>
 
             <?php foreach ($args['session']['listContactMessage'] as $args['session']['contactMessage']) { ?>
                 <div>
