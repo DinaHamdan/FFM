@@ -408,10 +408,10 @@ CSS backOffice pour l'éxistant (inscription - ajout des photos et des types d'a
 
 
 Jeudi 
-CSS backoffice
-Coder backend BackOffice : Formulaire contact
+Coder backend BackOffice : Formulaire contact - Formulaire adhesion - Formulaire bénévole 
 
 Vendredi 
+CSS backoffice
 rapport + 
 déploiement
 

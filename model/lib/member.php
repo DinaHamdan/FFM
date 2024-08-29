@@ -229,4 +229,44 @@ class LibMember
         $adhesion['time'] = date('Y-m-d h:i:s', strtotime($adhesion['date_time_column']));
         return $adhesion;
     }
+
+
+    //List all volunteer forms
+    static function getAllVolunteerForm(): array
+    {
+        $query = 'SELECT volunteerForm.idVolunteer, volunteerForm.firstName, volunteerForm.lastName, volunteerForm.phoneNumber, volunteerForm.email, volunteerForm.birthday, volunteerForm.dateArrival, volunteerForm.dateDepart, volunteerForm.dayOptions, volunteerForm.timeOptions, volunteerForm.workOptions, volunteerForm.extraWorkInfo, volunteerForm.diplomePSC1, volunteerForm.transport, volunteerForm.lodging, volunteerForm.performance, volunteerForm.foodRestrictions, volunteerForm.otherInfo, volunteerForm.date_time_column';
+        $query .= ' FROM volunteerForm ';
+        $statement = libDb::connect()->prepare($query);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $allVolunteerForm = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        // Add a column with formatted time data
+        $listVolunteerFormWithTime = [];
+        foreach ($allVolunteerForm as $volunteerForm) {
+            $volunteerForm['time'] = date('Y-m-d h:i:s', strtotime($volunteerForm['date_time_column']));
+
+            $listVolunteerFormWithTime[] = $volunteerForm;
+        }
+
+        return $listVolunteerFormWithTime;
+    }
+
+    //List a specific volunteer forms
+    static function getVolunteerForm($idVolunteerForm): array
+    {
+        $query = 'SELECT volunteerForm.idVolunteer, volunteerForm.firstName, volunteerForm.lastName, volunteerForm.phoneNumber, volunteerForm.email, volunteerForm.birthday, volunteerForm.dateArrival, volunteerForm.dateDepart, volunteerForm.dayOptions, volunteerForm.timeOptions, volunteerForm.workOptions, volunteerForm.extraWorkInfo, volunteerForm.diplomePSC1, volunteerForm.transport, volunteerForm.lodging, volunteerForm.performance, volunteerForm.foodRestrictions, volunteerForm.otherInfo, volunteerForm.date_time_column';
+        $query .= ' FROM volunteerForm';
+
+        $query .= ' WHERE volunteerForm.idVolunteer = :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idVolunteerForm);
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $volunteerForm = $statement->fetch(PDO::FETCH_ASSOC);
+
+        $volunteerForm['time'] = date('Y-m-d h:i:s', strtotime($volunteerForm['date_time_column']));
+        return $volunteerForm;
+    }
 }
