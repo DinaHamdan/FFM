@@ -36,11 +36,12 @@
                     <li><a class="menuItem" href='/ctrl/agre/list-agre.php'>Agrès</a></li>
                     <li><a class="menuItem" href='/ctrl/evenement/event.php'>Evénement</a></li>
                     <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
-                    <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
                     <li><a class="menuItem" href='/ctrl/forum/forum-display.php'>Forum</a></li>
                     <!-- Check if the user is an admin -->
                     <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
                         <li><a class="menuItem" href="/ctrl/registration/registration-display.php">Inscription</a></li>
+                        <li><a class="menuItem" href="/ctrl/backoffice/backoffice.php">BackOffice</a></li>
+
                     <?php  } ?>
                     <div>
                         <li><a href="/ctrl/profile/profile-display.php"><img id="ffm-man" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></a></li>

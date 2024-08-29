@@ -8,6 +8,9 @@
     gap: 1em;
     padding: 1em;
 
+    .register-title {
+        margin: 2em;
+    }
 
     #registration-form {
         background-color: #000000;
@@ -30,23 +33,23 @@
 
 
         #registerButton {
-            border-radius: 10px;
-            width: 70px;
-            height: 25px;
-            background-color: white;
+            display: inline-block;
             border: none;
-            padding: 0.2em;
-            font-weight: 100;
+            text-decoration: none;
+            text-align: center;
+            width: 8em;
+            height: 1.5em;
+            background-image: linear-gradient(to right, #EECC68, #1D6D9A);
+            border-radius: 3em;
+            margin: 1.5em 0 2em 0;
         }
     }
 }
 
 
 @media screen and (min-width:650px) {
-    #register {
+    #registration {
         font-size: 1.5em;
-
-
 
 
         #registration-form {

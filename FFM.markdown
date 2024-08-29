@@ -402,14 +402,19 @@ finir CSS gallerie agrès
   
 
 Mercredi
-CSS backOffice pour l'éxistant
+finir CSS gallerie agrès
+ajuster la fonction qui change et les dimensions des images
+CSS backOffice pour l'éxistant (inscription - ajout des photos et des types d'agrés)
 
-Coder backend BackOffice 
+
+Jeudi 
+CSS backoffice
+Coder backend BackOffice : Formulaire contact
+
+Vendredi 
 rapport + 
 déploiement
 
-Jeudi 
-Css backoffice
 **CSS BackOffice**
 
 ## semaine 9 
@@ -432,7 +437,7 @@ Add a condtion to check if profile is complete
 Need to add a function at Login to check if profile fname last name and avatar are empty or not  
 Show members
 Remove Members
-Commencer rapport 
+Rapport 
 Deploiment
 référencement google  + sécurité
 

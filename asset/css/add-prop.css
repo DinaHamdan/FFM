@@ -1,4 +1,4 @@
-#add-photo-section {
+#add-prop {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   color: white;
   padding: 1em;
@@ -9,7 +9,10 @@
   align-items: center;
   justify-content: center;
 }
-#add-photo-section #add-photo-form {
+#add-prop .add-prop-title {
+  margin: 2em;
+}
+#add-prop #add-prop-form {
   width: 70%;
   padding: 1em;
   display: flex;
@@ -19,20 +22,26 @@
   gap: 1em;
   border: 1px solid #341701;
   border-radius: 20px;
+  margin: 1em;
 }
-#add-photo-section #add-photo-form input {
+#add-prop #add-prop-form input {
   border-radius: 10px;
 }
-#add-photo-section #add-photo-form #validatePhoto {
+#add-prop #add-prop-form #validateProp {
   display: inline-block;
   border: none;
   text-decoration: none;
   text-align: center;
   width: 8em;
   height: 1.5em;
-  background-image: linear-gradient(to right, #EECC68, #1D6D9A);
+  background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
   border-radius: 3em;
   margin: 1.5em 0 2em 0;
   color: black;
   font-size: 0.7em;
-}/*# sourceMappingURL=add-photo.css.map */
+}
+#add-prop table,
+#add-prop th,
+#add-prop td {
+  border: 1px solid white;
+}/*# sourceMappingURL=add-prop.css.map */

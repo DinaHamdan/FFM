@@ -1,6 +1,6 @@
 <main>
     <section id="registration">
-        <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
+        <h1 class="register-title" id="page-title"><?= $args['pageTitle'] ?></h1>
 
         <form id="registration-form" action="/ctrl/registration/registration.php" method="post">
 
@@ -19,7 +19,7 @@
 
 
 
-            <button id="registerButton" type="submit">Validate</button>
+            <button id="registerButton" type="submit">Valider</button>
         </form>
 
 

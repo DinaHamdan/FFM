@@ -20,7 +20,7 @@ class Createdisplay extends Ctrl
     }
     function getPageTitle(): string
     {
-        return 'Hello Admin, please create members';
+        return 'Incsription des membres actifs';
     }
 }
 

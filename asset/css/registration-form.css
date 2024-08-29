@@ -1,15 +1,17 @@
-#login {
+#registration {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1em;
+  padding: 1em;
 }
-#login #login-title {
+#registration .register-title {
   margin: 2em;
 }
-#login #login-form {
+#registration #registration-form {
   background-color: #000000;
   border: 1px solid #341701;
   width: 200px;
@@ -22,41 +24,39 @@
   gap: 1em;
   padding: 1em;
 }
-#login #login-form label {
-  margin-left: -5em;
-}
-#login #login-form input {
+#registration #registration-form input {
   border-radius: 10px;
 }
-#login #login-form #loginButton {
-  background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
-  border-radius: 10px;
-  width: 70px;
-  height: 25px;
-  background-color: white;
+#registration #registration-form #registerButton {
+  display: inline-block;
   border: none;
-  padding: 0.2em;
-  font-weight: 100;
+  text-decoration: none;
+  text-align: center;
+  width: 8em;
+  height: 1.5em;
+  background-image: linear-gradient(to right, #EECC68, #1D6D9A);
+  border-radius: 3em;
+  margin: 1.5em 0 2em 0;
 }
 
 @media screen and (min-width: 650px) {
-  #login {
+  #registration {
     font-size: 1.5em;
   }
-  #login #login-form {
+  #registration #registration-form {
     width: 300px;
     height: 300px;
   }
-  #login #login-form label {
+  #registration #registration-form label {
     margin-left: -2em;
   }
-  #login #login-form input {
+  #registration #registration-form input {
     height: 20px;
     width: 180px;
   }
-  #login #login-form #loginButton {
+  #registration #registration-form #registerButton {
     border-radius: 10px;
     width: 100px;
     height: 25px;
   }
-}/*# sourceMappingURL=login-form.css.map */
+}/*# sourceMappingURL=registration-form.css.map */
