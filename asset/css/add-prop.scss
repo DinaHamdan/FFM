@@ -31,16 +31,12 @@
         }
 
         #validateProp {
-            display: inline-block;
+            border-radius: 10px;
+            width: 100px;
+            background-color: white;
             border: none;
-            text-decoration: none;
-            text-align: center;
-            width: 8em;
-            height: 1.5em;
-            background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
-            border-radius: 3em;
-            margin: 1.5em 0 2em 0;
-            color: black;
+            padding: 0.2em;
+            font-weight: 100;
             font-size: 0.7em;
         }
     }

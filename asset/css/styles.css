@@ -1159,7 +1159,6 @@ header {
   border-radius: 10px;
 }
 #login #login-form #loginButton {
-  background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
   border-radius: 10px;
   width: 70px;
   height: 25px;
@@ -1394,7 +1393,7 @@ header {
 }
 #gallery #button-container .add-button {
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.2em;
   text-decoration: none;
   text-align: center;
   width: 8em;
@@ -1706,21 +1705,14 @@ header {
   border: 1px solid #341701;
   border-radius: 20px;
 }
-#add-photo-section #add-photo-form input {
-  border-radius: 10px;
-}
 #add-photo-section #add-photo-form #validatePhoto {
-  display: inline-block;
+  border-radius: 10px;
+  width: 100px;
+  background-color: white;
   border: none;
-  text-decoration: none;
-  text-align: center;
-  width: 8em;
-  height: 1.5em;
-  background-image: linear-gradient(to right, #EECC68, #1D6D9A);
-  border-radius: 3em;
-  margin: 1.5em 0 2em 0;
-  color: black;
-  font-size: 0.7em;
+  padding: 0.2em;
+  font-weight: 100;
+  font-size: 1em;
 }
 
 #registration {
@@ -1753,15 +1745,13 @@ header {
   border-radius: 10px;
 }
 #registration #registration-form #registerButton {
-  display: inline-block;
+  border-radius: 10px;
+  width: 70px;
+  height: 25px;
+  background-color: white;
   border: none;
-  text-decoration: none;
-  text-align: center;
-  width: 8em;
-  height: 1.5em;
-  background-image: linear-gradient(to right, #EECC68, #1D6D9A);
-  border-radius: 3em;
-  margin: 1.5em 0 2em 0;
+  padding: 0.2em;
+  font-weight: 100;
 }
 
 @media screen and (min-width: 650px) {
@@ -1815,17 +1805,13 @@ header {
   border-radius: 10px;
 }
 #add-prop #add-prop-form #validateProp {
-  display: inline-block;
+  border-radius: 10px;
+  width: 100px;
+  background-color: white;
   border: none;
-  text-decoration: none;
-  text-align: center;
-  width: 8em;
-  height: 1.5em;
-  background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
-  border-radius: 3em;
-  margin: 1.5em 0 2em 0;
-  color: black;
-  font-size: 0.7em;
+  padding: 0.2em;
+  font-weight: 100;
+  font-size: 1em;
 }
 #add-prop table,
 #add-prop th,

@@ -28,15 +28,13 @@
   border-radius: 10px;
 }
 #registration #registration-form #registerButton {
-  display: inline-block;
+  border-radius: 10px;
+  width: 70px;
+  height: 25px;
+  background-color: white;
   border: none;
-  text-decoration: none;
-  text-align: center;
-  width: 8em;
-  height: 1.5em;
-  background-image: linear-gradient(to right, #EECC68, #1D6D9A);
-  border-radius: 3em;
-  margin: 1.5em 0 2em 0;
+  padding: 0.2em;
+  font-weight: 100;
 }
 
 @media screen and (min-width: 650px) {
