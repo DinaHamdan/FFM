@@ -187,9 +187,46 @@ class LibMember
         $successOrFailure = $statement->execute();
         $contactMessage = $statement->fetch(PDO::FETCH_ASSOC);
 
-
         $contactMessage['time'] = date('Y-m-d h:i:s', strtotime($contactMessage['date_time_column']));
 
         return $contactMessage;
+    }
+
+    //List all adhesion forms
+    static function getAllAdhesion(): array
+    {
+        $query = 'SELECT adhesion.id, adhesion.firstName, adhesion.lastName, adhesion.phoneNumber, adhesion.email, adhesion.typeAgre, adhesion.authorization,adhesion.talents, adhesion.date_time_column';
+        $query .= ' FROM adhesion ';
+        $statement = libDb::connect()->prepare($query);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $allAdhesion = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        // Add a column with formatted time data
+        $listAdhesionWithTime = [];
+        foreach ($allAdhesion as $adhesion) {
+            $adhesion['time'] = date('Y-m-d h:i:s', strtotime($adhesion['date_time_column']));
+
+            $listAdhesionWithTime[] = $adhesion;
+        }
+
+        return $listAdhesionWithTime;
+    }
+
+    //List a specific adhesion form
+    static function getAdhesion($idAdhesion): array
+    {
+        $query = 'SELECT adhesion.id, adhesion.firstName, adhesion.lastName, adhesion.phoneNumber, adhesion.email, adhesion.typeAgre, adhesion.authorization,adhesion.talents, adhesion.date_time_column';
+        $query .= ' FROM adhesion ';
+        $query .= ' WHERE adhesion.id = :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idAdhesion);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $adhesion = $statement->fetch(PDO::FETCH_ASSOC);
+        $adhesion['time'] = date('Y-m-d h:i:s', strtotime($adhesion['date_time_column']));
+        return $adhesion;
     }
 }
