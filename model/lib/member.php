@@ -151,4 +151,45 @@ class LibMember
         $isSuccess = $statement->execute();
         return $isSuccess;
     }
+    //List all contact messages 
+    static function getAllContactMessage(): array
+    {
+        $query = 'SELECT contactMessage.id, contactMessage.type, contactMessage.firstName, contactMessage.lastName, contactMessage.phoneNumber, contactMessage.email, contactMessage.content, contactMessage.date_time_column';
+        $query .= ' FROM contactMessage ';
+        $statement = libDb::connect()->prepare($query);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $allContactMessage = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        // Add a column with formatted time data
+        $listContactMessageWithTime = [];
+        foreach ($allContactMessage as $contactMessage) {
+            $contactMessage['time'] = date('Y-m-d h:i:s', strtotime($contactMessage['date_time_column']));
+
+
+            $listContactMessageWithTime[] = $contactMessage;
+        }
+
+        return $listContactMessageWithTime;
+    }
+
+    //list a specific contact message
+    static function getContactMessage($idContactMessage): array
+    {
+        $query = 'SELECT contactMessage.id, contactMessage.type, contactMessage.firstName, contactMessage.lastName, contactMessage.phoneNumber, contactMessage.email, contactMessage.content, contactMessage.date_time_column';
+        $query .= ' FROM contactMessage ';
+        $query .= ' WHERE contactMessage.id = :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idContactMessage);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $contactMessage = $statement->fetch(PDO::FETCH_ASSOC);
+
+
+        $contactMessage['time'] = date('Y-m-d h:i:s', strtotime($contactMessage['date_time_column']));
+
+        return $contactMessage;
+    }
 }

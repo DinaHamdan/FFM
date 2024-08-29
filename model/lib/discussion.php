@@ -57,6 +57,7 @@ class LibDiscussion
         return $listDiscussion;
     }
 
+    //List a specfific discussion
     static function getDiscussion($idDiscussion): array
     {
         $query = 'SELECT discussion.id, discussion.title, discussion.content, discussion.illustration, discussion.date_time_column, member.firstName, member.lastName';
@@ -72,18 +73,6 @@ class LibDiscussion
         $discussion['comments'] = LibDiscussion::listComment($discussion['id']);
 
         return $discussion;
-        // Ajoute une colonne avec la date de l'article formatée,
-        // et charge les commentaires de chaque article
-        /*  $listDiscussionWithAdditionalInfo = [];
-        foreach ($listDiscussion as $discussion) {
-
-          
-            $post['likes'] = (LibPost::listLike($post['id']));
-            $post['nbLikes'] = count(LibPost::listLike($post['id']));
-            $listPostWithAdditionalInfo[] = $post;
-        }
-
-        return $listPostWithAdditionalInfo; */
     }
 
     //Create a comment
