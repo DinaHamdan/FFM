@@ -269,4 +269,15 @@ class LibMember
         $volunteerForm['time'] = date('Y-m-d h:i:s', strtotime($volunteerForm['date_time_column']));
         return $volunteerForm;
     }
+
+    static function listAllMember(): array
+    {
+        $query = 'SELECT member.id, member.firstName, member.lastName, member.email, member.phoneNumber, member.avatar';
+        $query .= ' FROM member ';
+        $statement = libDb::connect()->prepare($query);
+        $successOrFailure = $statement->execute();
+        $member = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        return $member;
+    }
 }

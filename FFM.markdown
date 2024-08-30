@@ -408,17 +408,24 @@ CSS backOffice pour l'éxistant (inscription - ajout des photos et des types d'a
 
 
 Jeudi 
-Coder backend BackOffice : Formulaire contact - Formulaire adhesion - Formulaire bénévole 
+Coder backend BackOffice : 
+Formulaire contact - Formulaire adhesion - Formulaire bénévole 
 
 Vendredi 
+Show members
+Remove Members
 CSS backoffice
 rapport + 
 déploiement
 
-**CSS BackOffice**
+
 
 ## semaine 9 
 Debugging (additional functions)  
+Fix gallerie links towards photo for one agré
+Add a condtion to check if profile is complete
+Need to add a function at Login to check if profile fname last name and avatar are empty or not  
+**CSS BackOffice**
 Rapport  
 
 ## Semaine 10
@@ -427,21 +434,17 @@ déploiment
 rapport   
 
 ## TO DO :
+
             //TODO Need to add algorithm to check for photo width and height and change it accordingly
 
 remove useless tables in bdd phpmyadmin
-Start html CSS for gallerie agrés
-BackOffice formulaires 
-Fix gallerie links towards photo for one agré
-Add a condtion to check if profile is complete
-Need to add a function at Login to check if profile fname last name and avatar are empty or not  
-Show members
-Remove Members
+
+
 Rapport 
 Deploiment
 référencement google  + sécurité
 
-Sides A faire: 
+Slides A faire: 
  MCD 
 table volontaire a changer
 MCD MLD sur un slide

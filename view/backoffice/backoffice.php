@@ -4,6 +4,8 @@
         <a href="/ctrl/backoffice/contactMessage.php">Messages de contact</a><br>
         <a href="/ctrl/backoffice/adhesion.php">Formulaires Adhésion</a><br>
         <a href="/ctrl/backoffice/volunteer-form.php">Formulaires bénévoles</a><br>
+        <a href="/ctrl/backoffice/list-members.php">Membres actifs</a><br>
+
 
 
     <?php  } ?>
