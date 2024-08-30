@@ -30,7 +30,7 @@
         <nav id="menuBar">
             <ul class="menu">
                 <?php
-                /* Check if user session is not null to show the forum */
+                /* Check if user session is not null to show the specific links */
                 if ($args['session']['user']['codeRole'] != null) { ?>
                     <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
                     <li><a class="menuItem" href='/ctrl/agre/list-agre.php'>Agrès</a></li>

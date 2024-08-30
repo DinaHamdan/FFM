@@ -414,8 +414,9 @@ Formulaire contact - Formulaire adhesion - Formulaire bénévole
 Vendredi 
 Show members
 Remove Members
-Add a condtion to check if profile is complete
-Need to add a function at Login to check if profile fname last name and avatar are empty or not  
+Add a condtion to check if profile is complete : 
+add a function at Login to check if profile fname last name and avatar are empty or not  
+
 
 weekend
 CSS backoffice
@@ -427,8 +428,6 @@ déploiement
 ## semaine 9 
 Debugging (additional functions)  
 Fix gallerie links towards photo for one agré
-Add a condtion to check if profile is complete
-Need to add a function at Login to check if profile fname last name and avatar are empty or not  
 **CSS BackOffice**
 Rapport  
 

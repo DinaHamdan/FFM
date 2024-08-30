@@ -31,7 +31,7 @@ class LibMember
     //List user with email only
     static function getMember(string $email): ?array
     {
-        $query = 'SELECT member.id, member.email, member.pass, role.id AS idRole, role.code AS codeRole, role.label as roleLabel';
+        $query = 'SELECT member.id, member.firstName, member.lastName, member.avatar, member.email, member.pass, role.id AS idRole, role.code AS codeRole, role.label as roleLabel';
         $query .= ' FROM member ';
         $query .= ' JOIN role ON member.idRole = role.id';
         $query .= ' WHERE member.email= :email';
@@ -48,7 +48,7 @@ class LibMember
         return $user;
     }
 
-    //List user with email only
+    //List user with id
     static function getMemberById(string $memberId): ?array
     {
         $query = 'SELECT member.id, member.firstName, member.lastName, member.phoneNumber';
@@ -66,6 +66,7 @@ class LibMember
         };
         return $user;
     }
+
     //Create a Member
     static function createMember(string $email, string $password, string $passClear, string $idRole): bool
     {
