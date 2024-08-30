@@ -280,4 +280,14 @@ class LibMember
 
         return $member;
     }
+
+    //Delete member
+    static function deleteMember(string $idMember): bool
+    {
+        $query = 'DELETE FROM member WHERE  id= :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idMember);
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
 }

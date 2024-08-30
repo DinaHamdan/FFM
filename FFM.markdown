@@ -414,6 +414,10 @@ Formulaire contact - Formulaire adhesion - Formulaire bénévole
 Vendredi 
 Show members
 Remove Members
+Add a condtion to check if profile is complete
+Need to add a function at Login to check if profile fname last name and avatar are empty or not  
+
+weekend
 CSS backoffice
 rapport + 
 déploiement
