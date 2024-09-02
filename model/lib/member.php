@@ -68,13 +68,13 @@ class LibMember
     }
 
     //Create a Member
-    static function createMember(string $email, string $password, string $passClear, string $idRole): bool
+    static function createMember(string $email, string $passHash, string $passClear, string $idRole): bool
     {
         $query = 'INSERT INTO member ( email, pass, passClear, idRole) VALUES ( :email, :pass, :passClear, :idRole)';
         $statement = libDb::connect()->prepare($query);
 
         $statement->bindParam(':email', $email);
-        $statement->bindParam(':pass', $password);
+        $statement->bindParam(':pass', $passHash);
         $statement->bindParam(':passClear', $passClear);
         $statement->bindParam(':idRole', $idRole);
 
@@ -294,11 +294,28 @@ class LibMember
     static function updatePass(string $passClear, string $passHash, string $email): bool
     {
 
-        $query = 'UPDATE member SET  pass = :passHash, passClear = :passClear WHERE email = :email';
+        $query = 'UPDATE member SET pass = :pass, passClear = :passClear WHERE email = :email ';
         $statement = libDb::connect()->prepare($query);
         $statement->bindParam(':passClear', $passClear);
-        $statement->bindParam(':passHash', $passHash);
+        $statement->bindParam(':pass', $passHash);
         $statement->bindParam(':email', $email);
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+
+
+    static function updatePassword(string $passClear, string $passHash, string $memberId): bool
+    {
+
+        $query = 'UPDATE  member SET pass = :pass, passClear = :passClear WHERE id = :id';
+        $statement = libDb::connect()->prepare($query);
+
+        $statement->bindParam(':pass', $passHash);
+        $statement->bindParam(':passClear', $passClear);
+        $statement->bindParam(':id', $memberId);
+
+
         // - Exécute la requête
         $isSuccess = $statement->execute();
         return $isSuccess;

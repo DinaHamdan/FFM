@@ -20,17 +20,19 @@ class UpdatePass extends Ctrl
         $userInfo = [];
         $userInfo['email'] = htmlspecialchars($_POST['email']);
         $userInfo['passClear'] = htmlspecialchars($_POST['pass']);
-        $idMember = $_SESSION['user']['id'];
-
         //limit number of characters verify its not over 500 - 
-        $userInfo['passHash'] = password_hash($userInfo['passClear'], PASSWORD_BCRYPT);
+
+        $password = password_hash($userInfo['passClear'], PASSWORD_BCRYPT);
+        $userInfo['passHash'] = $password;
+
+        $memberId = $_SESSION['user']['id'];
 
 
         $_SESSION['msg']['info'] = [];
         $_SESSION['msg']['error'] = [];
 
 
-        $isSuccess = LibMember::updatePass($idMember, $userInfo['passHash'], $userInfo['passClear']);
+        $isSuccess = LibMember::updatePassword($memberId, $userInfo['passHash'], $userInfo['passClear']);
         //Add a flash message
         if ($isSuccess) {
             $_SESSION['msg']['info'][] = 'Votre mot de passe a été modifié';
