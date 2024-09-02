@@ -7,8 +7,20 @@ class Homepage extends Ctrl
 {
     function do(): void
     {
-        $_SESSION['user'] = [];
-        $_SESSION['user']['codeRole'] = [];
+
+
+        $isLogged = $this->isUserLogged();
+        $isGrantedAdmin = $this->hasRole(Role::ADMIN);
+        $isGrantedMember = $this->hasRole(Role::MEMBER);
+
+        if ($isGrantedAdmin) {
+            $_SESSION['user']['codeRole'] == "ADM";
+        } elseif ($isGrantedMember) {
+            $_SESSION['user']['codeRole'] == "MEM";
+        } else {
+            $_SESSION['user'] = [];
+            $_SESSION['user']['codeRole'] = [];
+        };
     }
 
     function renderView(): void

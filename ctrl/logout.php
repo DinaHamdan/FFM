@@ -12,6 +12,8 @@ class Logout extends Ctrl
         unset($_SESSION['incorrect']);
         unset($_SESSION['specialMessage']);
         unset($_SESSION['userAvatar']);
+        $_SESSION['user'] = [];
+        $_SESSION['user']['codeRole'] = [];
     }
     function renderView(): void
     {
