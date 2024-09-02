@@ -6,37 +6,26 @@
     align-items: center;
     gap: 40px;
 
-    #flash-message-footer {
-        #info-message {
-            font-size: 2em;
-            color: white;
-            font-weight: bold;
-        }
 
-        #error-message {
-            font-size: 2em;
-            color: white;
-            font-weight: bold;
-        }
-    }
+}
 
-    #social-media-logo {
-        height: 150px;
-    }
+#social-media-logo {
+    height: 150px;
+}
 
-    #social-media-photo-container {
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        margin-bottom: 20px;
+#social-media-photo-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-bottom: 20px;
 
-        .social-media-photo {
-            border-radius: 30px;
-            width: 30px;
-            height: 30px;
-        }
+    .social-media-photo {
+        border-radius: 30px;
+        width: 30px;
+        height: 30px;
     }
 }
+
 
 
 

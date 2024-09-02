@@ -4,7 +4,6 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php';
-
 require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
 
@@ -33,7 +32,7 @@ class Login extends Ctrl
             } else {
                 $_SESSION['msg']['incorrect'] = [];
 
-                $_SESSION['msg']['incorrect'][]  = 'Incorrect Login';
+                $_SESSION['msg']['incorrect'][]  = 'Identifiant incorrecte';
                 header('Location: ' .  '/ctrl/login/login-display.php');
                 exit;
             };
@@ -41,7 +40,7 @@ class Login extends Ctrl
 
             $_SESSION['msg']['unexisting'] = [];
 
-            $_SESSION['msg']['unexisting'][] = 'User account not found.';
+            $_SESSION['msg']['unexisting'][] = 'Le compte utilisateur est introuvable.';
 
             header('Location: ' .  '/ctrl/login/login-display.php');
             exit;
@@ -50,10 +49,6 @@ class Login extends Ctrl
     function renderView(): void
     {
         $args = $this->viewArgs;
-
-        // include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/header.php';
-        // include $_SERVER['DOCUMENT_ROOT'] . '/view/login/login-display.php.php';
-        // include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
     function getPageTitle(): null
     {

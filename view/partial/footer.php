@@ -1,32 +1,11 @@
 <footer>
     <article id="social-media">
-        <div id="flash-message-footer">
-            <?php if (!empty($args['session']['msg']['info'])) { ?>
 
-                <div class="info">
-                    <?php foreach ($args['session']['msg']['info'] as $info) { ?>
-                        <p id="info-message"> <?= $info ?></p>
-                    <?php } ?>
-
-                </div>
-            <?php } ?>
-
-            <?php if (!empty($args['session']['msg']['error'])) { ?>
-
-                <div class="error">
-                    <?php foreach ($args['session']['msg']['error'] as $error) { ?>
-                        <p id="error-message"> <?= $error ?> </p>
-                    <?php } ?>
-                </div>
-            <?php } ?>
-        </div>
-
-        <?php unset($_SESSION['msg']) ?>
         <img id="social-media-logo" src="/asset/img/FFM-logo-300x205.png" alt="Fire-From-Mars-logo">
         <div id="social-media-photo-container">
-            <img class="social-media-photo" src="/asset/img/instagram-fotor-bg-remover-20240326164247.png" alt="">
-            <img class="social-media-photo" src="/asset/img/youtube-fotor-bg-remover-20240326164342.png" alt="">
-            <img class="social-media-photo" src="/asset/img/facebook-fotor-bg-remover-20240326164437.png" alt="">
+            <a href="https://www.instagram.com/valerie.vidalmichel/"><img class="social-media-photo" src="/asset/img/instagram-fotor-bg-remover-20240326164247.png" alt=""></a>
+            <a href="https://www.youtube.com/@firefrommars5715"><img class="social-media-photo" src="/asset/img/youtube-fotor-bg-remover-20240326164342.png" alt=""></a>
+            <a href="https://www.facebook.com/firefrommars/"><img class="social-media-photo" src="/asset/img/facebook-fotor-bg-remover-20240326164437.png" alt=""></a>
         </div>
     </article>
 

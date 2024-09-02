@@ -57,33 +57,31 @@
             </ul>
 
 
+
         </nav>
 
+
     </header>
-    <div id="listWarning">
-        <?php if (!empty($args['session']['msg']['incorrect'])) { ?>
+    <div id="flash-message-footer">
+        <?php if (!empty($args['session']['msg']['info'])) { ?>
 
             <div class="info">
-
-                <?php foreach ($args['session']['msg']['incorrect'] as $inco) { ?>
-                    <p><?= $inco ?></p>
+                <?php foreach ($args['session']['msg']['info'] as $info) { ?>
+                    <p id="info-message"> <?= $info ?></p>
                 <?php } ?>
 
             </div>
         <?php } ?>
 
-        <?php if (!empty($args['session']['msg']['unexisting'])) { ?>
+        <?php if (!empty($args['session']['msg']['error'])) { ?>
 
             <div class="error">
-
-                <?php foreach ($args['session']['msg']['unexisting'] as $unexisting) { ?>
-                    <p><?= $unexisting ?></p>
+                <?php foreach ($args['session']['msg']['error'] as $error) { ?>
+                    <p id="error-message"> <?= $error ?> </p>
                 <?php } ?>
-
             </div>
         <?php } ?>
     </div>
-    <?php unset($_SESSION['msg']) ?>
 
-    </div>
+    <?php unset($_SESSION['msg']) ?>
     <!--     <h1 id="page-title"><?= $args['pageTitle'] ?></h1> -->

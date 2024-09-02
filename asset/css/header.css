@@ -57,6 +57,14 @@ header {
   color: white;
   font-size: 1.1em;
 }
+header #flash-message-footer #info-message {
+  color: white;
+  font-weight: bold;
+}
+header #flash-message-footer #error-message {
+  color: white;
+  font-weight: bold;
+}
 
 #full-logo-small {
   margin: 1em;

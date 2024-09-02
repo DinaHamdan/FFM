@@ -6,26 +6,18 @@
   align-items: center;
   gap: 40px;
 }
-#social-media #flash-message-footer #info-message {
-  font-size: 2em;
-  color: white;
-  font-weight: bold;
-}
-#social-media #flash-message-footer #error-message {
-  font-size: 2em;
-  color: white;
-  font-weight: bold;
-}
-#social-media #social-media-logo {
+
+#social-media-logo {
   height: 150px;
 }
-#social-media #social-media-photo-container {
+
+#social-media-photo-container {
   display: flex;
   justify-content: space-between;
   gap: 50px;
   margin-bottom: 20px;
 }
-#social-media #social-media-photo-container .social-media-photo {
+#social-media-photo-container .social-media-photo {
   border-radius: 30px;
   width: 30px;
   height: 30px;

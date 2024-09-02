@@ -1,6 +1,5 @@
 <?php
 
-//Create user - gather data entered by user -redirect towards login page
 
 //establish a connection to database and libray of functions
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/database.php';
@@ -10,38 +9,35 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
 
 
-class Create extends Ctrl
+class UpdatePass extends Ctrl
 {
     function do(): void
     {
-        //Check if user is logged and has admin privileges
+        //Check if user is logged 
         $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::ADMIN);
 
         //Gather data entered by admin
-        $user = [];
-        $user['email'] = htmlspecialchars($_POST['email']);
-        $user['passClear'] = htmlspecialchars($_POST['pass']);
-        $user['idRole'] = 3;
+        $userInfo = [];
+        $userInfo['email'] = htmlspecialchars($_POST['email']);
+        $userInfo['passClear'] = htmlspecialchars($_POST['pass']);
+        $idMember = $_SESSION['user']['id'];
 
         //limit number of characters verify its not over 500 - 
+        $userInfo['passHash'] = password_hash($userInfo['passClear'], PASSWORD_BCRYPT);
 
-        $password = password_hash($user['passClear'], PASSWORD_BCRYPT);
-        $user['passHash'] = $password;
 
         $_SESSION['msg']['info'] = [];
         $_SESSION['msg']['error'] = [];
 
 
-
-        $isSuccess = LibMember::createMember($user['email'], $user['passHash'], $user['passClear'], $user['idRole']);
-        // Ajoute un flash-message a garder?
+        $isSuccess = LibMember::updatePass($idMember, $userInfo['passHash'], $userInfo['passClear']);
+        //Add a flash message
         if ($isSuccess) {
-            $_SESSION['msg']['info'][] = 'Le compte a été crée avec succès.';
+            $_SESSION['msg']['info'][] = 'Votre mot de passe a été modifié';
         }
 
 
-        // Redirige vers la page de login
+        // Redirect towards login
         header('Location: ' . '/ctrl/login/login-display.php');
     }
 
@@ -57,5 +53,5 @@ class Create extends Ctrl
 
 
 
-$ctrl = new Create();
+$ctrl = new UpdatePass();
 $ctrl->execute();

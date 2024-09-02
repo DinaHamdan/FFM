@@ -76,6 +76,18 @@ header {
     background-color: #130F0F;
     color: white;
     font-size: 1.1em;
+
+    #flash-message-footer {
+        #info-message {
+            color: white;
+            font-weight: bold;
+        }
+
+        #error-message {
+            color: white;
+            font-weight: bold;
+        }
+    }
 }
 
 #full-logo-small {

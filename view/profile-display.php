@@ -29,6 +29,8 @@
 
 
         <button class="submit" type="submit">Valider</button>
+
+        <a href="/ctrl/profile/update-pass-display.php">Changer mot de passe</a>
     </form>
 
 

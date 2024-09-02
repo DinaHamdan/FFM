@@ -86,7 +86,7 @@ class LibMember
     static function completeProfile(string $idMember, string $lname, string $fname, string $phoneNumber, $binaryFile, $nameFile): bool
     {
 
-        $query = 'UPDATE  member SET firstName = :firstName , lastName = :lastName , phoneNumber = :phoneNumber, avatar = :avatar, avatar_filename = :avatar_filename WHERE id= :id';
+        $query = 'UPDATE  member SET firstName = :firstName, lastName = :lastName, phoneNumber = :phoneNumber, avatar = :avatar, avatar_filename = :avatar_filename WHERE id = :id';
         $statement = libDb::connect()->prepare($query);
 
         $statement->bindParam(':firstName', $fname);
@@ -288,6 +288,18 @@ class LibMember
         $query = 'DELETE FROM member WHERE  id= :id';
         $statement = libDb::connect()->prepare($query);
         $statement->bindParam(':id', $idMember);
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+    static function updatePass(string $passClear, string $passHash, string $email): bool
+    {
+
+        $query = 'UPDATE member SET  pass = :passHash, passClear = :passClear WHERE email = :email';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':passClear', $passClear);
+        $statement->bindParam(':passHash', $passHash);
+        $statement->bindParam(':email', $email);
+        // - Exécute la requête
         $isSuccess = $statement->execute();
         return $isSuccess;
     }
