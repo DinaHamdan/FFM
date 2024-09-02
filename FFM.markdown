@@ -419,6 +419,7 @@ add a function at Login to check if profile fname last name and avatar are empty
 
 
 weekend
+I did not
 CSS backoffice
 rapport + 
 déploiement
@@ -426,10 +427,20 @@ déploiement
 
 
 ## semaine 9 
-Debugging (additional functions)  
+
+Lundi
 Fix gallerie links towards photo for one agré
+fonctionnalité pour changer mot de pass BUG
+Debugging (additional functions)  
+
+Mardi
 **CSS BackOffice**
+Déploiment
 Rapport  
+
+Mercredi
+rapport
+présentation
 
 ## Semaine 10
 sécurité  
@@ -441,8 +452,6 @@ rapport
             //TODO Need to add algorithm to check for photo width and height and change it accordingly
 
 remove useless tables in bdd phpmyadmin
-
-
 Rapport 
 Deploiment
 référencement google  + sécurité

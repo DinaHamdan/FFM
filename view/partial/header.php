@@ -26,7 +26,26 @@
     <header>
         <img id="full-logo-small" src="/asset/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
         <img id="logo" class="hamburger" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></li>
+        <div id="flash-message-header">
+            <?php if (!empty($args['session']['msg']['info'])) { ?>
 
+
+                <?php foreach ($args['session']['msg']['info'] as $info) { ?>
+                    <p id="info-message"> <?= $info ?></p>
+                <?php } ?>
+
+            <?php } ?>
+
+            <?php if (!empty($args['session']['msg']['error'])) { ?>
+
+                <?php foreach ($args['session']['msg']['error'] as $error) { ?>
+                    <p id="error-message"> <?= $error ?> </p>
+                <?php } ?>
+
+            <?php } ?>
+        </div>
+
+        <?php unset($_SESSION['msg']) ?>
         <nav id="menuBar">
             <ul class="menu">
                 <?php
@@ -62,26 +81,5 @@
 
 
     </header>
-    <div id="flash-message-footer">
-        <?php if (!empty($args['session']['msg']['info'])) { ?>
 
-            <div class="info">
-                <?php foreach ($args['session']['msg']['info'] as $info) { ?>
-                    <p id="info-message"> <?= $info ?></p>
-                <?php } ?>
-
-            </div>
-        <?php } ?>
-
-        <?php if (!empty($args['session']['msg']['error'])) { ?>
-
-            <div class="error">
-                <?php foreach ($args['session']['msg']['error'] as $error) { ?>
-                    <p id="error-message"> <?= $error ?> </p>
-                <?php } ?>
-            </div>
-        <?php } ?>
-    </div>
-
-    <?php unset($_SESSION['msg']) ?>
     <!--     <h1 id="page-title"><?= $args['pageTitle'] ?></h1> -->

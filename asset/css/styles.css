@@ -57,11 +57,16 @@ header {
   color: white;
   font-size: 1.1em;
 }
-header #flash-message-footer #info-message {
+header #flash-message-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #flash-message-header #info-message {
   color: white;
   font-weight: bold;
 }
-header #flash-message-footer #error-message {
+header #flash-message-header #error-message {
   color: white;
   font-weight: bold;
 }

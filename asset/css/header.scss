@@ -77,7 +77,11 @@ header {
     color: white;
     font-size: 1.1em;
 
-    #flash-message-footer {
+    #flash-message-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         #info-message {
             color: white;
             font-weight: bold;
