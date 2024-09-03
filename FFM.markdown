@@ -416,7 +416,7 @@ Show members
 Remove Members
 Add a condtion to check if profile is complete : 
 add a function at Login to check if profile fname last name and avatar are empty or not  
-
+added link page to change password Not complete 
 
 weekend
 I did not

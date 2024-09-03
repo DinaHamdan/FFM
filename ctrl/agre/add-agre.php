@@ -80,7 +80,9 @@ class AddAgrePhoto extends Ctrl
                 $imgOriginal = imagecreatefromjpeg($fileTmpName);
             }
             //TODO Need to add algorithm to check for photo width and height and change it accordingly
-            $img = imagescale($imgOriginal, 800, 800, IMG_BICUBIC);
+            //do not add width and height because it will affect dimension and quality
+            //serveur petit et grand , petit pour la vignette
+            $img = imagescale($imgOriginal, 800, -1, IMG_BICUBIC);
 
             $imgSharpened = imagesetinterpolation($img, IMG_SINC);
 

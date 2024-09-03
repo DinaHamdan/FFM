@@ -305,7 +305,7 @@ class LibMember
     }
 
 
-    static function updatePassword(string $passClear, string $passHash, string $memberId): bool
+    static function updatePassword(string $memberId, string $passHash, string $passClear): bool
     {
 
         $query = 'UPDATE  member SET pass = :pass, passClear = :passClear WHERE id = :id';
