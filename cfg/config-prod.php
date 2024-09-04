@@ -4,9 +4,9 @@
 /**Paramètres de connexion à la BDD */
 class ConfigDB
 {
-    const HOST = 'mysql-dhdev.alwaysdata.net';
+    const HOST = 'mysql-dhadev.alwaysdata.net';
     const PORT = '3306';
-    const DBNAME = 'dhdev_sql';
-    const USER = 'dhdev';
-    const PASSWORD = 'xxxx';
+    const DBNAME = 'dhadev_ffm';
+    const USER = 'dhadev';
+    const PASSWORD = 'xxxxx';
 }

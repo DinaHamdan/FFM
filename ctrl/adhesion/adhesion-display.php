@@ -17,11 +17,9 @@ class AdhereDisplay extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/adhesion-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): null
+    function getPageTitle(): string
     {
-        return null;
-        /*         return 'Devenir Adhérent';
- */
+        return 'Pourquoi devenir adhérent ?';
     }
 }
 

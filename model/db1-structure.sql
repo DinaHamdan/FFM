@@ -163,7 +163,7 @@ CREATE TABLE convention(
   ,secondDate varchar(50) NOT NULL
   ,secondDateContent varchar(2000) NOT NULL
   ,thirdDate varchar(50) NOT NULL
-  ,thridDateContent varchar(2000) NOT NULL
+  ,thirdDateContent varchar(2000) NOT NULL
   ,address varchar(200) NOT NULL
   ,description varchar(2000) NOT NULL
   ,cost varchar(200) NOT NULL
@@ -246,11 +246,6 @@ ALTER TABLE volunteerForm
 ;
 
 
-
-ALTER TABLE conventionPhoto
-   ADD CONSTRAINT `fk_conventionPhoto_convention` FOREIGN KEY(idConvention) REFERENCES convention(id)
-    ,ADD CONSTRAINT `fk_conventionPhoto_photoConvention` FOREIGN KEY(idPhoto) REFERENCES photoConvention(id)
-;
 
 
 ALTER TABLE discussion

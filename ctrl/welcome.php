@@ -10,6 +10,11 @@ class Homepage extends Ctrl
 
 
         $isLogged = $this->isUserLogged();
+        if (!$isLogged) {
+            $_SESSION['user'] = [];
+            $_SESSION['user']['codeRole'] = [];
+        }
+
         $isGrantedAdmin = $this->hasRole(Role::ADMIN);
         $isGrantedMember = $this->hasRole(Role::MEMBER);
 

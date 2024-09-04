@@ -45,11 +45,6 @@ INSERT INTO typeAgre( name, label, description) VALUES
                          ,('Charcoal', 'CHAR','Charbon')
 ;
 
-INSERT INTO memberTypeAgre(idMember, idTypeAgre) VALUES
-     (1, 1)
-        ,(1, 4)
-    
-;
 
 
 /* INSERT INTO photoAgreGallerieFeu ( nameAgre, idTypeAgre, idCategory, illustration, illustration_filename) VALUES

@@ -24,6 +24,7 @@
   align-items: end;
   gap: 1em;
 }
+
 #title-container #FFM {
   -webkit-text-stroke: 1px rgba(243, 102, 0, 0.3843137255);
   font-weight: 300;
@@ -31,6 +32,7 @@
   font-family: "Kantumruy Pro", sans-serif;
   color: #ffa743;
 }
+
 #title-container #title-description {
   -webkit-text-stroke: 1px rgba(243, 102, 0, 0.3843137255);
   font-weight: 300;
@@ -57,15 +59,18 @@ header {
   color: white;
   font-size: 1.1em;
 }
+
 header #flash-message-header {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 header #flash-message-header #info-message {
   color: white;
   font-weight: bold;
 }
+
 header #flash-message-header #error-message {
   color: white;
   font-weight: bold;
@@ -102,48 +107,58 @@ header #flash-message-header #error-message {
     background-repeat: no-repeat;
     background-position: center;
   }
+
   #accueil #full-logo {
     display: inline-block;
     width: 6em;
     height: 4em;
     margin-bottom: 8em;
   }
+
   #accueil #title-container {
     padding: 2em;
   }
+
   #accueil #title-container #FFM {
     /*         margin-top: 5em;
     margin-left: 15em;
     font-size: 2em; */
     font-size: 3em;
   }
+
   #accueil #title-container #title-description {
     /*         margin-left: 13em;
     font-size: 2em; */
     font-size: 2em;
   }
+
   #accueil .arrow {
     margin-top: 46em;
   }
+
   #menuBar ul {
     display: flex;
     justify-content: space-between;
     gap: 1em;
     list-style-type: none;
   }
+
   #menuBar li {
     margin-top: 4em;
     align-items: center;
   }
+
   #ffm-man {
     margin-top: -2em;
     width: 4em;
     height: 5em;
   }
+
   #logo {
     display: none;
   }
 }
+
 /* 
 @media screen and (min-width:1020px) {
 
@@ -194,28 +209,34 @@ header #flash-message-header #error-message {
   margin: 4em 0 2em 0;
   font-weight: 500;
 }
+
 #about-us p {
   font-size: large;
   text-align: justify;
   text-justify: inter-word;
   padding: 0 1em;
 }
+
 #about-us span {
   text-transform: uppercase;
   font-weight: 600;
 }
+
 #about-us #discoverArtist {
   text-align: center;
   margin: 4em 0 1em 0;
   font-weight: 500;
 }
+
 #about-us .center-button {
   display: flex;
   justify-content: center;
 }
+
 #about-us .center-button .prop-group-button {
   display: none;
 }
+
 #about-us .center-button #prop-button {
   display: inline-block;
   font-size: 1.5em;
@@ -228,6 +249,7 @@ header #flash-message-header #error-message {
   color: #130F0F;
   margin-bottom: 2em;
 }
+
 #about-us #fire-jam {
   font-family: "Kanit", sans-serif;
   background-image: url(../img/fire-jam-cropped.jpg);
@@ -240,6 +262,7 @@ header #flash-message-header #error-message {
   color: white;
   font-size: 1em;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-first-container {
   margin-left: -6em;
   margin-top: 3em;
@@ -248,15 +271,19 @@ header #flash-message-header #error-message {
   flex-direction: column;
   align-items: flex-start;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-first-container #paragraph-one {
   margin-left: 1em;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-first-container #paragraph-one-one {
   margin-left: 2em;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-first-container #paragraph-one-two {
   margin-left: 1em;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-second-container {
   margin-top: 20em;
   margin-right: -6em;
@@ -265,15 +292,19 @@ header #flash-message-header #error-message {
   flex-direction: column;
   align-items: flex-end;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two {
   margin-right: 1em;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two-one {
   margin-right: 2em;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two-two {
   margin-right: 1em;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-third-container {
   margin-top: 3em;
   margin-left: -6em;
@@ -282,19 +313,24 @@ header #flash-message-header #error-message {
   flex-direction: column;
   align-items: flex-start;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-third-container #paragraph-three {
   margin-left: 1em;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-third-container #paragraph-three-one {
   margin-left: 2em;
 }
+
 #about-us #fire-jam #fire-jam-paragraph-third-container #paragraph-three-two {
   margin-left: 2em;
 }
+
 #about-us #fire-jam .center-button {
   display: flex;
   justify-content: space-between;
 }
+
 #about-us #fire-jam .center-button #adhesion-button {
   display: inline-block;
   font-size: 1.5em;
@@ -313,27 +349,34 @@ header #flash-message-header #error-message {
     display: flex;
     flex-direction: row;
   }
+
   #about-us #fire-team {
     width: 50%;
   }
+
   #about-us #fire-team .center-button #prop-button {
     display: none;
   }
+
   #about-us #fire-jam {
     width: 50%;
   }
+
   #about-us #fire-jam #fire-jam-paragraph-container {
     padding: 2em;
   }
+
   #about-us #fire-jam .center-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
   }
+
   #about-us #fire-jam .center-button #adhesion-button {
     margin-right: 7em;
   }
+
   #about-us #fire-jam .center-button .prop-group-button {
     display: inline-block;
     font-size: 1.5em;
@@ -348,11 +391,13 @@ header #flash-message-header #error-message {
     margin-top: 1.4em;
   }
 }
+
 @media screen and (min-width: 1100px) {
   #about-us #fire-jam .center-button .prop-group-button {
     margin-left: -17em;
   }
 }
+
 @media screen and (min-width: 1300px) {
   #about-us #fire-jam .center-button #adhesion-button {
     width: 10em;
@@ -360,6 +405,7 @@ header #flash-message-header #error-message {
     padding-top: 20px;
     margin-right: 9em;
   }
+
   #about-us #fire-jam .center-button .prop-group-button {
     padding-top: 20px;
     width: 10em;
@@ -367,15 +413,18 @@ header #flash-message-header #error-message {
     margin-left: -19em;
   }
 }
+
 @media screen and (min-width: 1400px) {
   #about-us #fire-jam .center-button .prop-group-button {
     margin-left: -21em;
   }
 }
+
 #actualite {
   background-color: #130F0F;
   color: #943AAB;
 }
+
 #actualite #actualite-container {
   display: flex;
   flex-direction: column;
@@ -386,39 +435,47 @@ header #flash-message-header #error-message {
   font-weight: 600;
   text-transform: uppercase; */
 }
+
 #actualite #actualite-container #first-title-actualite {
   text-align: center;
   padding: 1em;
   font-weight: 400;
   font-size: 3em;
 }
+
 #actualite #actualite-container #first-poster-img {
   display: block;
   margin: auto;
   width: 70%;
   margin-bottom: 1em;
 }
+
 #actualite #actualite-container #second-poster-img {
   display: none;
 }
+
 #actualite #actualite-container #second-actualite-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 #actualite #actualite-container #second-actualite-container #second-title-actualite {
   display: none;
 }
+
 #actualite #actualite-container #second-actualite-container p {
   text-align: center;
   font-size: 2em;
   font-weight: 600;
   text-transform: uppercase;
 }
+
 #actualite #actualite-container #second-actualite-container #p-actualite {
   padding: 1em;
 }
+
 #actualite #actualite-container #second-actualite-container #event-button {
   padding-top: 10px;
   display: inline-block;
@@ -441,33 +498,40 @@ header #flash-message-header #error-message {
   #actualite {
     padding: 5em;
   }
+
   #actualite #actualite-container {
     display: flex;
     flex-direction: row;
   }
+
   #actualite #actualite-container #first-poster-img {
     display: none;
   }
+
   #actualite #actualite-container #second-poster-img {
     display: block;
     margin: auto;
     width: 70%;
     margin-bottom: 1em;
   }
+
   #actualite #actualite-container #first-title-actualite {
     display: none;
   }
+
   #actualite #actualite-container #second-actualite-container #second-title-actualite {
     display: inline-block;
     padding: 1em;
     font-weight: 400;
     font-size: 3em;
   }
+
   #actualite #actualite-container #second-actualite-container #button-container #event-button {
     width: 10em;
     height: 2em;
   }
 }
+
 #contact-us {
   background-image: url(../../asset/img/fire-background-780-900.avif);
   background-repeat: no-repeat;
@@ -477,6 +541,7 @@ header #flash-message-header #error-message {
   align-items: center;
   height: 400px;
 }
+
 #contact-us #performance {
   padding: 10px;
   background-color: #000000;
@@ -489,9 +554,11 @@ header #flash-message-header #error-message {
   width: 100%;
   font-size: 0.8em;
 }
+
 #contact-us #performance #second-performance-title {
   display: none;
 }
+
 #contact-us #performance #contact-button {
   display: inline-block;
   font-size: 1.2em;
@@ -516,12 +583,14 @@ header #flash-message-header #error-message {
   height: 10em;
   font-size: 0.8em;
 }
+
 #event #event-photo-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 #event #event-photo-container .event-photo {
   /*        width: 30%;
   height: 80%; */
@@ -539,6 +608,7 @@ header #flash-message-header #error-message {
   align-items: center;
   height: 400px;
 }
+
 #street #street-art {
   padding: 20px;
   background-color: #000000;
@@ -550,19 +620,23 @@ header #flash-message-header #error-message {
   font-size: 0.8em;
   width: 100%;
 }
+
 #street #street-art #street-art-photo-container {
   display: flex;
   gap: 20px;
 }
+
 #street #street-art #street-art-photo-container .street-art-photo {
   /*      width: 30%;
   height: 80%; */
   width: 80px;
   height: 80px;
 }
+
 #street #street-art #street-art-paragraph-container {
   padding: 20px;
 }
+
 #street #street-art #street-art-paragraph-container p {
   display: inline-block;
   width: 100px;
@@ -576,43 +650,52 @@ header #flash-message-header #error-message {
     background-position: center;
     height: 800px;
   }
+
   #contact-us #performance {
     height: 400px;
     font-size: 1.5em;
     gap: 2em;
   }
+
   #contact-us #performance #second-performance-title {
     display: inline-block;
     font-size: 2em;
     margin-left: 0;
     font-weight: 300;
   }
+
   #contact-us #performance #performance-container {
     width: 220px;
   }
+
   #contact-us #performance #performance-container #first-performance-title {
     display: none;
     /*          font-size: 2em;
     margin-left: 0;
     font-weight: 300; */
   }
+
   #contact-us #performance #performance-container p {
     width: 500px;
   }
+
   #event {
     height: 400px;
     font-size: 1.5em;
   }
+
   #event #event-paragraph-container {
     margin-left: 2em;
     width: 300px;
   }
+
   #event #event-photo-container .event-photo {
     width: 300px;
     height: 300px;
     /*     width: 40%;
     height: 80%; */
   }
+
   #street {
     background-image: url(../../asset/img/bg-fire-breathing.avif);
     background-repeat: no-repeat;
@@ -620,10 +703,12 @@ header #flash-message-header #error-message {
     height: 800px;
     width: 100%;
   }
+
   #street #street-art {
     height: 400px;
     font-size: 1.5em;
   }
+
   #street #street-art #street-art-photo-container .street-art-photo {
     /*      width: 40%;
                        height: 80%;
@@ -631,9 +716,11 @@ header #flash-message-header #error-message {
     width: 400px;
     height: 400px;
   }
+
   #street #street-art #street-art-paragraph-container {
     margin-right: 2em;
   }
+
   #street #street-art #street-art-paragraph-container p {
     width: 300px;
   }
@@ -662,6 +749,7 @@ header #flash-message-header #error-message {
   justify-content: center;
   align-items: center;
 }
+
 #contact-form #nameContainer {
   display: flex;
   flex-direction: row;
@@ -671,14 +759,17 @@ header #flash-message-header #error-message {
   width: 250px;
   gap: 10px;
 }
+
 #contact-form #nameContainer label {
   width: 100px;
 }
+
 #contact-form #nameContainer input {
   width: 45%;
   height: 20px;
   border-radius: 10px;
 }
+
 #contact-form #emailPhoneContainer {
   display: flex;
   flex-direction: row;
@@ -688,14 +779,17 @@ header #flash-message-header #error-message {
   width: 250px;
   gap: 10px;
 }
+
 #contact-form #emailPhoneContainer label {
   width: 100px;
 }
+
 #contact-form #emailPhoneContainer input {
   width: 45%;
   height: 20px;
   border-radius: 10px;
 }
+
 #contact-form #messageContainer {
   display: flex;
   flex-direction: column;
@@ -703,6 +797,7 @@ header #flash-message-header #error-message {
   gap: 1em;
   margin: 1em;
 }
+
 #contact-form #messageContainer #questionChoice {
   border-radius: 10px;
   text-align: center;
@@ -711,12 +806,14 @@ header #flash-message-header #error-message {
   padding: 0.3em;
   font-weight: 100;
 }
+
 #contact-form #messageContainer #contactMessage {
   width: 200px;
   height: 250px;
   border-radius: 10px;
   text-align: center;
 }
+
 #contact-form #validateContact {
   border-radius: 10px;
   width: 100px;
@@ -730,74 +827,93 @@ header #flash-message-header #error-message {
   #contact-form #nameContainer {
     width: 400px;
   }
+
   #contact-form #nameContainer label {
     width: 150px;
   }
+
   #contact-form #nameContainer input {
     width: 150px;
     height: 30px;
     border-radius: 20px;
   }
+
   #contact-form #emailPhoneContainer {
     width: 400px;
   }
+
   #contact-form #emailPhoneContainer label {
     width: 150px;
   }
+
   #contact-form #emailPhoneContainer input {
     width: 150px;
     height: 30px;
     border-radius: 20px;
   }
+
   #contact-form #messageContainer {
     margin: 1em;
   }
+
   #contact-form #messageContainer #questionChoice {
     width: 200px;
   }
+
   #contact-form #messageContainer #contactMessage {
     border-radius: 20px;
     width: 450px;
     height: 300px;
   }
+
   #validateContact {
     width: 150px;
   }
 }
+
 @media screen and (min-width: 1000px) {
   #contactTitle {
     font-weight: 200;
     font-size: 3em;
   }
+
   #contact-form #nameContainer {
     width: 600px;
   }
+
   #contact-form #nameContainer label {
     width: 200px;
   }
+
   #contact-form #nameContainer input {
     width: 200px;
   }
+
   #contact-form #emailPhoneContainer {
     width: 600px;
   }
+
   #contact-form #emailPhoneContainer label {
     width: 200px;
   }
+
   #contact-form #emailPhoneContainer input {
     width: 200px;
   }
+
   #contact-form #messageContainer #contactMessage {
     border-radius: 20px;
     width: 550px;
     height: 400px;
   }
+
   #contact-form #validateContact {
     width: 200px;
     height: 30px;
     border-radius: 30px;
   }
 }
+
 #convention {
   text-align: center;
   display: flex;
@@ -806,18 +922,21 @@ header #flash-message-header #error-message {
   text-align: center;
   color: white;
 }
+
 #convention #convention-first-title {
   color: #ffa743;
   padding-top: 1em;
   font-size: 2.5em;
   font-weight: 400;
 }
+
 #convention #convention-info {
   color: #ffa743;
   padding: 1em;
   font-size: 1.5em;
   font-weight: 400;
 }
+
 #convention #convention-poster-container {
   display: block;
   display: flex;
@@ -827,12 +946,15 @@ header #flash-message-header #error-message {
   align-items: center;
   padding: 1em;
 }
+
 #convention #convention-poster-container img {
   width: 50%;
 }
+
 #convention #convention-description-container #convention-photo {
   display: none;
 }
+
 #convention #convention-description-container #convention-description {
   margin-top: 2em;
   padding: 1.2em;
@@ -841,14 +963,17 @@ header #flash-message-header #error-message {
   text-align: justify;
   font-family: "Kanit", sans-serif;
 }
+
 #convention #convention-program-title {
   font-size: 2.5em;
   font-weight: 400;
   margin-top: 2em;
 }
+
 #convention #convention-content {
   margin-top: 0.5em;
 }
+
 #convention #convention-content .convention-content-container {
   display: flex;
   flex-direction: column;
@@ -860,24 +985,29 @@ header #flash-message-header #error-message {
   text-align: justify;
   padding: 1em;
 }
+
 #convention #convention-content .convention-content-container h3 {
   font-size: 2em;
   padding: 2em;
 }
+
 #convention #convention-content .convention-content-container p {
   font-size: 1em;
   font-weight: 700;
 }
+
 #convention #convention-participation-title {
   margin-top: 4em;
   color: white;
   font-size: 2em;
 }
+
 #convention #button-container {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 4em;
 }
+
 #convention #button-container #reserve-button {
   padding-bottom: 20px;
   display: inline-block;
@@ -893,6 +1023,7 @@ header #flash-message-header #error-message {
   background-image: linear-gradient(to right, #1D6D9A, #ffa743);
   border-radius: 3em;
 }
+
 #convention #button-container #volunteer-button {
   padding-bottom: 20px;
   display: inline-block;
@@ -908,11 +1039,13 @@ header #flash-message-header #error-message {
   background-image: linear-gradient(to right, #1D6D9A, #ffa743);
   border-radius: 3em;
 }
+
 #convention #convention-address-title {
   font-size: 2.5em;
   font-weight: 400;
   margin-top: 2em;
 }
+
 #convention #convention-map-container {
   margin: 2em 0 2em;
   display: flex;
@@ -923,9 +1056,11 @@ header #flash-message-header #error-message {
   color: white;
   display: flex;
 }
+
 #convention #convention-map-container p {
   font-size: 2em;
 }
+
 #convention #convention-map-container #convention-map {
   padding: 1em;
   width: 80%;
@@ -935,9 +1070,11 @@ header #flash-message-header #error-message {
   #convention #convention-poster-container {
     flex-direction: row;
   }
+
   #convention #convention-poster-container img {
     width: 20%;
   }
+
   #convention #convention-first-title {
     font-size: 3.5em;
     font-weight: 600;
@@ -945,35 +1082,42 @@ header #flash-message-header #error-message {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #ffa743;
   }
+
   #convention #convention-info {
     font-size: 2.7em;
     color: black;
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #ffa743;
   }
+
   #convention #convention-description-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 10em;
   }
+
   #convention #convention-description-container #convention-photo {
     display: inline-block;
     width: 40%;
     height: 50%;
   }
+
   #convention #convention-description-container #convention-description {
     width: 40%;
     font-size: 1.2em;
   }
+
   #convention #convention-participation-title {
     margin-top: 4em;
     color: white;
     font-size: 2em;
   }
+
   #convention #convention-program-title {
     font-size: 4em;
   }
+
   #convention #convention-content {
     display: flex;
     flex-direction: row;
@@ -982,40 +1126,49 @@ header #flash-message-header #error-message {
     gap: 1em;
     margin-top: 5em;
   }
+
   #convention #convention-content .convention-content-container {
     padding: 2em;
     width: 20%;
     height: 400px;
   }
+
   #convention #convention-content .convention-content-container h3 {
     font-size: 2em;
     padding: 2em;
   }
+
   #convention #convention-content .convention-content-container p {
     font-size: 1em;
     font-weight: 500;
   }
+
   #convention #convention-participation-title {
     font-size: 2.7em;
   }
+
   #convention #button-container {
     margin-top: 2em;
     display: flex;
     justify-content: space-evenly;
   }
+
   #convention #button-container #reserve-button {
     padding-top: 20px;
     font-size: 1.5em;
     width: 10em;
   }
+
   #convention #button-container #volunteer-button {
     padding-top: 20px;
     font-size: 1.5em;
     width: 10em;
   }
+
   #convention #convention-address-title {
     font-size: 4em;
   }
+
   #convention #convention-map-container {
     padding: 2em;
     margin-bottom: 5em;
@@ -1023,11 +1176,13 @@ header #flash-message-header #error-message {
     justify-content: space-between;
     align-items: center;
   }
+
   #convention #convention-map-container p {
     font-size: 2.5em;
     width: 50%;
   }
 }
+
 #adhesion {
   text-align: center;
   color: white;
@@ -1037,6 +1192,7 @@ header #flash-message-header #error-message {
   justify-content: center;
   align-items: center;
 }
+
 #adhesion #adhesion-title-container {
   padding: 2em;
   width: 100%;
@@ -1047,13 +1203,16 @@ header #flash-message-header #error-message {
   flex-direction: column;
   align-items: center;
 }
+
 #adhesion #adhesion-title-container #adhesion-title {
   font-size: 2em;
   padding: 1em;
 }
+
 #adhesion #adhesion-title-container p {
   font-size: 1.5em;
 }
+
 #adhesion #adhesion-form {
   border: 1px solid #341701;
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
@@ -1067,6 +1226,7 @@ header #flash-message-header #error-message {
   gap: 1em;
   margin-bottom: 2em;
 }
+
 #adhesion #adhesion-form #info-container {
   display: flex;
   flex-direction: column;
@@ -1074,30 +1234,37 @@ header #flash-message-header #error-message {
   align-items: center;
   gap: 1em;
 }
+
 #adhesion #adhesion-form .input-box {
   width: 45%;
   height: 20px;
   border-radius: 10px;
   margin-left: 1em;
 }
+
 #adhesion #adhesion-form #name-label {
   margin-left: -1.4em;
 }
+
 #adhesion #adhesion-form #phone-label {
   margin-left: -2.1em;
 }
+
 #adhesion #adhesion-form #prop-type {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 1em;
 }
-#adhesion #adhesion-form #prop-type #prop-input {
+
+#adhesion #adhesion-form #prop-type .prop-input {
   margin-left: 0;
 }
+
 #adhesion #adhesion-form #other-label {
   margin-left: -2.2em;
 }
+
 #adhesion #validateAdhesion {
   border-radius: 10px;
   width: 100px;
@@ -1117,16 +1284,20 @@ header #flash-message-header #error-message {
     flex-direction: column;
     align-items: center; */
   }
+
   #adhesion #adhesion-title-container #adhesion-title {
     font-size: 3em;
   }
+
   #adhesion #adhesion-title-container p {
     font-size: 2em;
   }
+
   #adhesion #adhesion-form {
     width: 50%;
     font-size: 1.2em;
   }
+
   #adhesion #adhesion-form #info-container {
     display: flex;
     flex-direction: row;
@@ -1134,6 +1305,7 @@ header #flash-message-header #error-message {
     gap: 2em;
     justify-content: space-between;
   }
+
   #adhesion #adhesion-form #validateAdhesion {
     width: 150px;
     border-radius: 20px;
@@ -1141,6 +1313,7 @@ header #flash-message-header #error-message {
     font-size: 1em;
   }
 }
+
 #login {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   text-align: center;
@@ -1149,13 +1322,16 @@ header #flash-message-header #error-message {
   flex-direction: column;
   align-items: center;
 }
+
 #login #page-title {
   margin: 2em;
 }
+
 #login #list-warning {
   margin: 1em;
   font-weight: 500;
 }
+
 #login #login-form {
   background-color: #000000;
   border: 1px solid #341701;
@@ -1169,12 +1345,15 @@ header #flash-message-header #error-message {
   gap: 1em;
   padding: 1em;
 }
+
 #login #login-form label {
   margin-left: -5em;
 }
+
 #login #login-form input {
   border-radius: 10px;
 }
+
 #login #login-form #loginButton {
   border-radius: 10px;
   width: 70px;
@@ -1189,35 +1368,43 @@ header #flash-message-header #error-message {
   #login {
     font-size: 1.5em;
   }
+
   #login #login-form {
     width: 300px;
     height: 300px;
   }
+
   #login #login-form label {
     margin-left: -2em;
   }
+
   #login #login-form input {
     height: 20px;
     width: 180px;
   }
+
   #login #login-form #loginButton {
     border-radius: 10px;
     width: 100px;
     height: 25px;
   }
 }
+
 #forum {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   color: white;
 }
+
 #forum h1 {
   text-align: center;
   padding: 1em;
 }
+
 #forum h3 {
   text-align: center;
   padding: 1em;
 }
+
 #forum #forum-form {
   padding: 2em;
   border: 1px solid #341701;
@@ -1226,14 +1413,17 @@ header #flash-message-header #error-message {
   flex-direction: column;
   gap: 1em;
 }
+
 #forum #forum-form textarea {
   width: 70%;
   border-radius: 20px;
 }
+
 #forum #forum-form input {
   border-radius: 20px;
   width: 50%;
 }
+
 #forum #forum-form #validateDiscussion {
   border-radius: 10px;
   width: 100px;
@@ -1242,6 +1432,7 @@ header #flash-message-header #error-message {
   padding: 0.2em;
   font-weight: 100;
 }
+
 #forum #all-discussion-container {
   padding: 2em;
   border: 1px solid #341701;
@@ -1250,10 +1441,12 @@ header #flash-message-header #error-message {
   flex-direction: column;
   gap: 1em;
 }
+
 #forum #discussion-container {
   border: 1px solid #341701;
   border-radius: 20px;
 }
+
 #forum #discussion-container h4 {
   font-size: 1.2em;
   padding: 1em;
@@ -1265,39 +1458,49 @@ header #flash-message-header #error-message {
     flex-direction: column;
     align-items: center;
   }
+
   #forum h1 {
     font-size: 3em;
   }
+
   #forum h3 {
     font-size: 2em;
   }
+
   #forum #forum-form {
     width: 60%;
     font-size: 1.3em;
   }
+
   #forum #forum-form textarea {
     height: 10em;
   }
+
   #forum #forum-form input {
     height: 2em;
   }
+
   #forum #forum-form #validateDiscussion {
     border-radius: 10px;
     width: 150px;
     height: 25px;
     padding: 0.3em;
   }
+
   #all-discussion-container {
     width: 60%;
   }
+
   #all-discussion-container #discussion-container h4 {
     font-size: 1.5em;
   }
 }
+
 #discussion {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   color: white;
 }
+
 #discussion #discussion-detail-container {
   padding: 4em;
   border-radius: 20px;
@@ -1305,33 +1508,39 @@ header #flash-message-header #error-message {
   flex-direction: column;
   gap: 1em;
 }
+
 #discussion #comment-container {
   border: 1px solid #341701;
   border-radius: 20px;
 }
+
 #discussion #comment-container #comment-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1em;
 }
+
 #discussion #comment-container #comment-content img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+
 #discussion #leave-comment-container {
   padding: 2em;
   width: 40%;
   border: 1px solid #341701;
   border-radius: 20px;
 }
+
 #discussion #leave-comment-container form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 1em;
 }
+
 #discussion #leave-comment-container form input {
   width: 100px;
   height: 50px;
@@ -1341,21 +1550,26 @@ header #flash-message-header #error-message {
   #discussion #discussion-detail-container {
     padding: 10em;
   }
+
   #discussion #discussion-detail-container #discussion-title {
     font-size: 1.5em;
   }
+
   #discussion #discussion-detail-container #text-photo-container {
     display: flex;
   }
+
   #discussion #discussion-detail-container #comment-container #comment-content img {
     width: 100px;
     height: 100px;
   }
+
   #discussion #discussion-detail-container #leave-comment-container form input {
     width: 300px;
     height: 100px;
   }
 }
+
 #gallery {
   background-color: black;
   color: white;
@@ -1367,19 +1581,23 @@ header #flash-message-header #error-message {
       align-items: center;
   } */
 }
+
 #gallery #gallery-title-container {
   text-align: center;
   padding: 3em;
   width: 70%;
 }
+
 #gallery #gallery-title-container h2 {
   font-size: 1.2em;
   padding: 1em;
   font-weight: 500;
 }
+
 #gallery #gallery-title-container h2 span {
   display: block;
 }
+
 #gallery #gallery-bg-container {
   width: 100%;
   background-image: url(../img/gallery-bg-2.avif);
@@ -1390,6 +1608,7 @@ header #flash-message-header #error-message {
   display: flex;
   align-items: center;
 }
+
 #gallery .gallery-container {
   display: flex;
   align-items: center;
@@ -1401,6 +1620,7 @@ header #flash-message-header #error-message {
   text-align: center;
   box-shadow: 10px 5px 5px #8a3f09;
 }
+
 #gallery #button-container {
   display: flex;
   align-items: center;
@@ -1408,6 +1628,7 @@ header #flash-message-header #error-message {
   gap: 5em;
   height: 10em;
 }
+
 #gallery #button-container .add-button {
   display: inline-block;
   font-size: 1.2em;
@@ -1420,24 +1641,28 @@ header #flash-message-header #error-message {
   color: #130F0F;
   margin: 3em 0 2em 0;
 }
+
 #gallery .gallery-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
+
 #gallery .gallery-wrap .back-scroll {
   width: 20px;
   height: 20px;
   margin-top: 15em;
   margin-left: 2em;
 }
+
 #gallery .gallery-wrap .forward-scroll {
   width: 20px;
   height: 20px;
   margin-top: 15em;
   margin-right: 2em;
 }
+
 #gallery .gallery-wrap #fire-prop-container {
   /*             display: flex;
   flex-direction: column;
@@ -1458,27 +1683,32 @@ header #flash-message-header #error-message {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 #gallery .gallery-wrap #fire-prop-container::-webkit-scrollbar {
   display: none;
 }
+
 #gallery .gallery-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
+
 #gallery .gallery-wrap .back-button {
   width: 20px;
   height: 20px;
   margin-top: 15em;
   margin-left: 2em;
 }
+
 #gallery .gallery-wrap .forward-button {
   width: 20px;
   height: 20px;
   margin-top: 15em;
   margin-right: 2em;
 }
+
 #gallery .gallery-wrap #led-prop-container {
   display: flex;
   overflow-x: scroll;
@@ -1488,9 +1718,11 @@ header #flash-message-header #error-message {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 #gallery .gallery-wrap #led-prop-container::-webkit-scrollbar {
   display: none;
 }
+
 #gallery .prop-title-photo-container {
   display: flex;
   flex-direction: column;
@@ -1506,6 +1738,7 @@ header #flash-message-header #error-message {
   padding: 10px;
   flex: none; */
 }
+
 #gallery .prop-photo {
   width: 150px;
   height: 150px;
@@ -1513,6 +1746,7 @@ header #flash-message-header #error-message {
   transition: transform 0.5s;
   border-radius: 10px;
 }
+
 #gallery .prop-photo:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -1524,42 +1758,52 @@ header #flash-message-header #error-message {
     flex-direction: column;
     align-items: center;
   }
+
   #gallery #gallery-title-container {
     padding: 5em;
   }
+
   #gallery #gallery-title-container h2 {
     font-size: 1.8em;
   }
+
   #gallery #gallery-bg-container {
     height: 35em;
   }
+
   #gallery .gallery-container {
     height: 10em;
   }
+
   #gallery .gallery-container h2 {
     font-size: 3em;
     font-weight: 200;
   }
+
   #gallery .gallery-wrap .back-button {
     width: 50px;
     height: 50px;
     margin-top: 0;
   }
+
   #gallery .gallery-wrap .forward-button {
     width: 50px;
     height: 50px;
     margin-top: 0;
   }
+
   #gallery .gallery-wrap .back-scroll {
     width: 50px;
     height: 50px;
     margin-top: 0;
   }
+
   #gallery .gallery-wrap .forward-scroll {
     width: 50px;
     height: 50px;
     margin-top: 0;
   }
+
   #gallery .gallery-wrap #fire-prop-container {
     /*      //  border: 1px solid red;
     display: flex;
@@ -1571,6 +1815,7 @@ header #flash-message-header #error-message {
     width: 60%; */
     padding: 5em;
   }
+
   #gallery .gallery-wrap #led-prop-container {
     /*       display: flex;
     flex-direction: row;
@@ -1579,10 +1824,12 @@ header #flash-message-header #error-message {
     align-items: center; */
     padding: 5em;
   }
+
   #gallery .gallery-wrap .prop-photo {
     width: 300px;
   }
 }
+
 #volunteer-form-section {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   color: white;
@@ -1592,10 +1839,12 @@ header #flash-message-header #error-message {
   text-align: justify;
   padding: 2em;
 }
+
 #volunteer-form-section h2 {
   font-size: 1.5em;
   padding: 1em;
 }
+
 #volunteer-form-section #volunteer-form {
   padding: 3em;
   display: flex;
@@ -1605,15 +1854,17 @@ header #flash-message-header #error-message {
   border-width: 5px;
   border-style: solid;
   -o-border-image: linear-gradient(to right, rgb(255, 153, 0), rgb(0, 0, 0));
-     border-image: linear-gradient(to right, rgb(255, 153, 0), rgb(0, 0, 0));
+  border-image: linear-gradient(to right, rgb(255, 153, 0), rgb(0, 0, 0));
   border-image-slice: 60 30;
   font-size: 0.7em;
 }
+
 #volunteer-form-section #volunteer-form .input-box {
   width: 100px;
   height: 15px;
   border-radius: 5px;
 }
+
 #volunteer-form-section #volunteer-form .basic-answer-options {
   display: flex;
   flex-direction: column;
@@ -1621,11 +1872,13 @@ header #flash-message-header #error-message {
   align-items: start;
   gap: 1em;
 }
+
 #volunteer-form-section #volunteer-form .basic-answer-options div {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
+
 #volunteer-form-section #volunteer-form .answer-options {
   display: flex;
   flex-direction: column;
@@ -1633,10 +1886,12 @@ header #flash-message-header #error-message {
   align-items: start;
   gap: 1em;
 }
+
 #volunteer-form-section #volunteer-form p {
   padding: 1em;
   font-weight: 600;
 }
+
 #volunteer-form-section #volunteer-form #validateVolunteer {
   border-radius: 10px;
   width: 100px;
@@ -1655,25 +1910,30 @@ header #flash-message-header #error-message {
     flex-direction: column;
     align-items: center;
   }
+
   #volunteer-form-section #volunteer-form {
     font-size: 1em;
     width: 70%;
   }
+
   #volunteer-form-section #volunteer-form .input-box {
     width: 200px;
     height: 20px;
   }
+
   #volunteer-form-section #validateVolunteer {
     width: 300px;
     height: 25px;
     border-radius: 30px;
   }
 }
+
 #agre-photo-section {
   padding: 2em;
   background-color: black;
   color: white;
 }
+
 #agre-photo-section #agre-photo-container {
   display: flex;
   flex-direction: column;
@@ -1681,6 +1941,7 @@ header #flash-message-header #error-message {
   justify-content: center;
   gap: 1em;
 }
+
 #agre-photo-section #agre-photo-container .prop-photo {
   width: 200px;
   height: 200px;
@@ -1694,11 +1955,13 @@ header #flash-message-header #error-message {
     grid-gap: 2em;
     margin: 10em;
   }
+
   #agre-photo-section #agre-photo-container .prop-photo {
     width: 400px;
     height: 400px;
   }
 }
+
 #add-photo-section {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   color: white;
@@ -1710,6 +1973,7 @@ header #flash-message-header #error-message {
   align-items: center;
   justify-content: center;
 }
+
 #add-photo-section #add-photo-form {
   width: 70%;
   padding: 1em;
@@ -1721,6 +1985,7 @@ header #flash-message-header #error-message {
   border: 1px solid #341701;
   border-radius: 20px;
 }
+
 #add-photo-section #add-photo-form #validatePhoto {
   border-radius: 10px;
   width: 100px;
@@ -1741,9 +2006,11 @@ header #flash-message-header #error-message {
   gap: 1em;
   padding: 1em;
 }
+
 #registration .register-title {
   margin: 2em;
 }
+
 #registration #registration-form {
   background-color: #000000;
   border: 1px solid #341701;
@@ -1757,9 +2024,11 @@ header #flash-message-header #error-message {
   gap: 1em;
   padding: 1em;
 }
+
 #registration #registration-form input {
   border-radius: 10px;
 }
+
 #registration #registration-form #registerButton {
   border-radius: 10px;
   width: 70px;
@@ -1774,23 +2043,28 @@ header #flash-message-header #error-message {
   #registration {
     font-size: 1.5em;
   }
+
   #registration #registration-form {
     width: 300px;
     height: 300px;
   }
+
   #registration #registration-form label {
     margin-left: -2em;
   }
+
   #registration #registration-form input {
     height: 20px;
     width: 180px;
   }
+
   #registration #registration-form #registerButton {
     border-radius: 10px;
     width: 100px;
     height: 25px;
   }
 }
+
 #add-prop {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   color: white;
@@ -1802,9 +2076,11 @@ header #flash-message-header #error-message {
   align-items: center;
   justify-content: center;
 }
+
 #add-prop .add-prop-title {
   margin: 2em;
 }
+
 #add-prop #add-prop-form {
   width: 70%;
   padding: 1em;
@@ -1817,9 +2093,11 @@ header #flash-message-header #error-message {
   border-radius: 20px;
   margin: 1em;
 }
+
 #add-prop #add-prop-form input {
   border-radius: 10px;
 }
+
 #add-prop #add-prop-form #validateProp {
   border-radius: 10px;
   width: 100px;
@@ -1829,6 +2107,7 @@ header #flash-message-header #error-message {
   font-weight: 100;
   font-size: 0.7em;
 }
+
 #add-prop table,
 #add-prop th,
 #add-prop td {
@@ -1854,6 +2133,7 @@ header #flash-message-header #error-message {
   gap: 50px;
   margin-bottom: 20px;
 }
+
 #social-media-photo-container .social-media-photo {
   border-radius: 30px;
   width: 30px;
@@ -1867,15 +2147,18 @@ header #flash-message-header #error-message {
   color: white;
   font-size: 0.8em;
 }
+
 #footer #footer-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
 }
+
 #footer #footer-container p {
   margin: auto;
 }
+
 #footer #footer-container .ffm-logo {
   width: 50px;
   height: 50px;
@@ -1893,4 +2176,6 @@ header #flash-message-header #error-message {
 body {
   font-family: "jura", sans-serif;
   overflow-x: hidden;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

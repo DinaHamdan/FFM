@@ -62,7 +62,7 @@
   align-items: flex-start;
   padding: 1em;
 }
-#adhesion #adhesion-form #prop-type #prop-input {
+#adhesion #adhesion-form #prop-type .prop-input {
   margin-left: 0;
 }
 #adhesion #adhesion-form #other-label {

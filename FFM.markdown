@@ -434,6 +434,8 @@ fonctionnalité pour changer mot de pass BUG
 Debugging (additional functions)  
 
 Mardi
+fonctionnalité pour changer mot de pass BUG - fixed
+
 **CSS BackOffice**
 Déploiment
 Rapport  

@@ -1,7 +1,7 @@
 <main>
     <section id="adhesion">
         <div id="adhesion-title-container">
-            <h2 id="adhesion-title">Pourquoi devenir adhérant?</h2>
+            <h2 id="adhesion-title">><?= $args['pageTitle'] ?></h2>
             <p>Soutenir L’association</p>
             <p>Accès au Fire Jam</p>
             <p>Participation pour Kerdane</p>
@@ -43,7 +43,7 @@
  -->
                 <?php foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
                     <div>
-                        <input id="prop-input" type="checkbox" name="agreType[]" value="<?= $args['session']['agre']['name'] ?>" />
+                        <input id="<?= $args['session']['agre']['name'] ?>" class="prop-input" type="checkbox" name="agreType[]" value="<?= $args['session']['agre']['name'] ?>" />
                         <label for="<?= $args['session']['agre']['name'] ?>"><?= $args['session']['agre']['name'] ?></label>
                     </div>
                 <?php } ?>
@@ -58,10 +58,10 @@
             <label for="oui_non">J'autorise Fire From Mars à utiliser mon image</label>
 
             <div>
-                <input type="radio" name="oui_non" checked value="oui">Oui</input>
-                <input type="radio" name="oui_non" value="non">Non</input>
+                <input type="radio" name="oui_non" checked value="Oui">
+                <input type="radio" name="oui_non" value="Non">
             </div>
-            </select>
+
 
             <button id="validateAdhesion" type="submit">S'adhérer</button>
 
