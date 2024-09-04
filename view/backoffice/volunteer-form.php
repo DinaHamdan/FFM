@@ -1,11 +1,11 @@
 <main>
-    <section id="backoffice-volunteerForm">
+    <section class="backoffice-option" id="backoffice-volunteerForm">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
         <div>
 
             <?php foreach ($args['session']['listVolunteerForm'] as $args['session']['volunteerForm']) { ?>
-                <div>
+                <div class="backoffice-option-container">
                     <p> Le : <?= $args['session']['volunteerForm']['time'] ?></p>
                     <p> Par : <?= $args['session']['volunteerForm']['firstName'] ?> <?= $args['session']['volunteerForm']['lastName'] ?></p>
                     <p> Email: <?= $args['session']['volunteerForm']['email'] ?></p>

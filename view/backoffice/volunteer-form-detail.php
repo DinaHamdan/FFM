@@ -1,10 +1,10 @@
 <main>
-    <section id="backoffice-volunteerForm-detail">
+    <section class="backoffice-option" id="backoffice-volunteerForm-detail">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
         <div>
 
-            <div>
+            <div class="backoffice-option-container">
                 <p> Le : <?= $args['session']['volunteerForm']['time'] ?></p>
                 <p> Par : <?= $args['session']['volunteerForm']['firstName'] ?> <?= $args['session']['contactMessage']['lastName'] ?></p>
                 <p> Email: <?= $args['session']['volunteerForm']['email'] ?></p>

@@ -1,5 +1,5 @@
 <main>
-    <section id="backoffice-adhesion-detail">
+    <section class="backoffice-option" id="backoffice-adhesion-detail">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
         <div>

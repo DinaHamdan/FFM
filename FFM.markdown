@@ -436,11 +436,11 @@ Debugging (additional functions)
 Mardi
 fonctionnalité pour changer mot de pass BUG - fixed
 
-**CSS BackOffice**
-Déploiment
-Rapport  
-
 Mercredi
+Commencer CSS BackOffice
+Déploiment
+
+Jeudi
 rapport
 présentation
 

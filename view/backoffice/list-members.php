@@ -1,12 +1,12 @@
 <main>
-    <section id="members">
+    <section class="backoffice-option" id="members">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
         <div>
 
 
             <?php foreach ($args['session']['listMember'] as $args['session']['member']) { ?>
-                <div id="member-container">
+                <div class="backoffice-option-container" id="member-container">
                     <p> Prénom: <?= $args['session']['member']['firstName'] ?> Nom :<?= $args['session']['member']['lastName'] ?></p>
                     <p> Email: <?= $args['session']['member']['email'] ?></p>
                     <p>Téléphone : <?= $args['session']['member']['phoneNumber'] ?></p>

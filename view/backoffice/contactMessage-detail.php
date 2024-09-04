@@ -14,8 +14,6 @@
                 <p> Contenu : <?= $args['session']['contactMessage']['content'] ?></p>
             </div>
 
-            <?php if (($args['session']['user']['codeRole']) == 'ADM') { ?>
-                <a href="/ctrl/forum/delete-discussion.php?id=<?= $args['session']['discussion']['id'] ?>">Enlever Discussion</a>
-            <?php } ?>
+
     </section>
 </main>

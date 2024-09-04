@@ -1,0 +1,23 @@
+.backoffice-option {
+    background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+    color: white;
+    /*     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em; */
+    padding: 1em;
+
+    #page-title {
+        padding: 1em;
+    }
+
+    .backoffice-option-container {
+        width: 70%;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1em;
+    }
+}

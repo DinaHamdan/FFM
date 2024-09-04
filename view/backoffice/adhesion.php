@@ -1,11 +1,11 @@
 <main>
-    <section id="backoffice-adhesion">
+    <section class="backoffice-option" id="backoffice-adhesion">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
         <div>
 
             <?php foreach ($args['session']['listAdhesion'] as $args['session']['adhesion']) { ?>
-                <div>
+                <div class="backoffice-option-container">
                     <p> Par : <?= $args['session']['adhesion']['firstName'] ?> <?= $args['session']['adhesion']['lastName'] ?></p>
                     <p> Email: <?= $args['session']['adhesion']['email'] ?></p>
                     <p>Téléphone : <?= $args['session']['adhesion']['phoneNumber'] ?></p>
