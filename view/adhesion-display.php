@@ -1,7 +1,7 @@
 <main>
     <section id="adhesion">
         <div id="adhesion-title-container">
-            <h2 id="adhesion-title">><?= $args['pageTitle'] ?></h2>
+            <h2 id="adhesion-title"><?= $args['pageTitle'] ?></h2>
             <p>Soutenir L’association</p>
             <p>Accès au Fire Jam</p>
             <p>Participation pour Kerdane</p>
