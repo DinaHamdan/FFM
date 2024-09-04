@@ -18,7 +18,6 @@ class UpdatePass extends Ctrl
 
         //Gather data entered by admin
         $userInfo = [];
-        $userInfo['email'] = htmlspecialchars($_POST['email']);
         $userInfo['passClear'] = htmlspecialchars($_POST['pass']);
         //limit number of characters verify its not over 500 - 
 

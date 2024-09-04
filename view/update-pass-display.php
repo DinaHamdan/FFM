@@ -1,19 +1,13 @@
 <main>
-    <section id="login">
+    <section id="update-password">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
 
         <form id="update-pass-form" action="/ctrl/profile/update-pass.php" method="post">
 
-            <!-- Email -->
-
-            <label for="email">Email</label>
-            <input type="text" name="email">
-
-
             <!-- password -->
 
-            <label for="pass">Password</label>
+            <label for="pass">Nouveau mot de passe</label>
             <input type="password" name="pass">
 
 
