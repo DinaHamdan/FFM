@@ -91,6 +91,13 @@ header #flash-message-header #error-message {
   list-style-type: none;
 }
 
+#menuBar a {
+  text-decoration: none;
+  color: white;
+}
+#menuBar a::after {
+  color: whites;
+}
 #menuBar ul {
   display: none;
 }

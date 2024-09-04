@@ -3,7 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/member.php';
 
 
-class Homepage extends Ctrl
+class Backoffice extends Ctrl
 {
     function do(): void
     {
@@ -25,11 +25,11 @@ class Homepage extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/backoffice/backoffice.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): null
+    function getPageTitle(): string
     {
-        return null;
+        return "Backoffice";
     }
 }
 
-$ctrl = new Homepage();
+$ctrl = new Backoffice();
 $ctrl->execute();
