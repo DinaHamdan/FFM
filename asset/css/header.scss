@@ -126,13 +126,24 @@ header {
     }
 
     a::after {
-        color: whites;
+        color: white;
     }
 
     ul {
 
         display: none;
     }
+
+}
+
+
+.sticky {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    // border: 1px solid red;
+    width: 100%;
+
 }
 
 

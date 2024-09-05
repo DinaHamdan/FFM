@@ -96,10 +96,17 @@ header #flash-message-header #error-message {
   color: white;
 }
 #menuBar a::after {
-  color: whites;
+  color: white;
 }
 #menuBar ul {
   display: none;
+}
+
+.sticky {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 600px) {

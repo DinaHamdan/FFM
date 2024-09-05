@@ -6,20 +6,51 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
+    padding: 1em;
 
-    a {
-        text-decoration: none;
-        border-radius: 10px;
-        width: 100px;
-        height: 35px;
-        background-color: white;
-        border: none;
-        padding: 0.2em;
-        font-weight: 100;
-        color: black;
+    #page-title {
+        padding: 2em;
     }
 
-    a::after {
-        color: white;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+
+        a {
+            text-decoration: none;
+            border-radius: 20px;
+            width: 100px;
+            height: 35px;
+            background-color: white;
+            border: none;
+            font-weight: 500;
+            padding: 0.2em;
+            color: black;
+            text-align: center;
+        }
+
+        a::after {
+            color: white;
+        }
+    }
+}
+
+@media screen and (min-width:900px) {
+    #backoffice {
+
+
+        #page-title {
+            font-size: 3em;
+        }
+
+        div {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 2em;
+            margin-bottom: 2em;
+        }
     }
 }

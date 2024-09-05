@@ -96,10 +96,17 @@ header #flash-message-header #error-message {
   color: white;
 }
 #menuBar a::after {
-  color: whites;
+  color: white;
 }
 #menuBar ul {
   display: none;
+}
+
+.sticky {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 600px) {
@@ -1934,22 +1941,45 @@ header #flash-message-header #error-message {
   align-items: center;
   justify-content: center;
   gap: 1em;
+  padding: 1em;
 }
-#backoffice a {
+#backoffice #page-title {
+  padding: 2em;
+}
+#backoffice div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+#backoffice div a {
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 100px;
   height: 35px;
   background-color: white;
   border: none;
+  font-weight: 500;
   padding: 0.2em;
-  font-weight: 100;
   color: black;
+  text-align: center;
 }
-#backoffice a::after {
+#backoffice div a::after {
   color: white;
 }
 
+@media screen and (min-width: 900px) {
+  #backoffice #page-title {
+    font-size: 3em;
+  }
+  #backoffice div {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    margin-bottom: 2em;
+  }
+}
 .backoffice-option {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   color: white;

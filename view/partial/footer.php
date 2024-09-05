@@ -28,6 +28,7 @@
     });
 </script>
 <script src="/js/gallery.js"></script>
+<script src="/js/sticky.js"></script>
 </body>
 
 
