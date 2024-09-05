@@ -1,7 +1,8 @@
 window.onscroll = function () { myFunction() };
-
 var menuBar = document.querySelector("header");
-var sticky = menuBar.offsetTop;
+
+//var menuBar = document.getElementById("menuBar");
+var sticky = menuBar.offsetHeight;
 
 function myFunction() {
     if (window.scrollY >= sticky) {

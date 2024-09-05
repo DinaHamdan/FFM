@@ -119,6 +119,12 @@ header {
 }
 
 #menuBar {
+    //display: flex;
+    // justify-content: end;
+    color: white;
+    font-size: 1.1em;
+    // background-color: #130F0F;
+
     a {
         text-decoration: none;
         color: white;
@@ -138,12 +144,11 @@ header {
 
 
 .sticky {
-    margin: 0;
     position: fixed;
     top: 0;
-    // border: 1px solid red;
     width: 100%;
-
+    // border: 1px solid green;
+    margin: 0;
 }
 
 
