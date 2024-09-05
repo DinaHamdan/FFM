@@ -33,8 +33,5 @@
         </div>
         <button id="validateContact" class="submit" type="submit">Valider</button>
 
-
-
-
     </form>
 </main>

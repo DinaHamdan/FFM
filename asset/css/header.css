@@ -105,12 +105,29 @@ header #flash-message-header #error-message {
 #menuBar ul {
   display: none;
 }
+#menuBar #avatar-container {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+#menuBar #avatar-container .logout {
+  width: 50%;
+}
+#menuBar #avatar-container #ffm-man {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-bottom: 0;
+}
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
   margin: 0;
+  height: 150px;
 }
 
 @media screen and (min-width: 600px) {

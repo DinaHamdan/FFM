@@ -62,9 +62,9 @@
                         <li><a class="menuItem" href="/ctrl/backoffice/backoffice.php">BackOffice</a></li>
 
                     <?php  } ?>
-                    <div>
-                        <li><a href="/ctrl/profile/profile-display.php"><img id="ffm-man" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></a></li>
-                        <li><a href='/ctrl/logout.php'>Logout</a></li>
+                    <div id="avatar-container">
+                        <a href="/ctrl/profile/profile-display.php"><img id="ffm-man" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></a>
+                        <a class="logout" href='/ctrl/logout.php'>Logout</a>
                     </div>
                 <?php } else { ?>
                     <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>

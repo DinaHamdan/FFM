@@ -441,8 +441,14 @@ Commencer CSS BackOffice
 Déploiment
 
 Jeudi
-rapport
+css backoffice 
+sticky menu
+navbar css
 présentation
+
+Vendredi 
+présentation
+rapports
 
 ## Semaine 10
 sécurité  
