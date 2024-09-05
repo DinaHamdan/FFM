@@ -1,5 +1,5 @@
 <main>
-    <section id="adhesion">
+    <section id="adhesion-section">
         <div id="adhesion-title-container">
             <h2 id="adhesion-title"><?= $args['pageTitle'] ?></h2>
             <p>Soutenir L’association</p>

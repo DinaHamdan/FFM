@@ -1035,7 +1035,7 @@ header #flash-message-header #error-message {
     width: 50%;
   }
 }
-#adhesion {
+#adhesion-section {
   text-align: center;
   color: white;
   background-color: black;
@@ -1044,7 +1044,7 @@ header #flash-message-header #error-message {
   justify-content: center;
   align-items: center;
 }
-#adhesion #adhesion-title-container {
+#adhesion-section #adhesion-title-container {
   padding: 2em;
   width: 100%;
   margin: 4em;
@@ -1054,14 +1054,14 @@ header #flash-message-header #error-message {
   flex-direction: column;
   align-items: center;
 }
-#adhesion #adhesion-title-container #adhesion-title {
+#adhesion-section #adhesion-title-container #adhesion-title {
   font-size: 2em;
   padding: 1em;
 }
-#adhesion #adhesion-title-container p {
+#adhesion-section #adhesion-title-container p {
   font-size: 1.5em;
 }
-#adhesion #adhesion-form {
+#adhesion-section #adhesion-form {
   border: 1px solid #341701;
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   width: 200px;
@@ -1074,38 +1074,38 @@ header #flash-message-header #error-message {
   gap: 1em;
   margin-bottom: 2em;
 }
-#adhesion #adhesion-form #info-container {
+#adhesion-section #adhesion-form #info-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
 }
-#adhesion #adhesion-form .input-box {
+#adhesion-section #adhesion-form .input-box {
   width: 45%;
   height: 20px;
   border-radius: 10px;
   margin-left: 1em;
 }
-#adhesion #adhesion-form #name-label {
+#adhesion-section #adhesion-form #name-label {
   margin-left: -1.4em;
 }
-#adhesion #adhesion-form #phone-label {
+#adhesion-section #adhesion-form #phone-label {
   margin-left: -2.1em;
 }
-#adhesion #adhesion-form #prop-type {
+#adhesion-section #adhesion-form #prop-type {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 1em;
 }
-#adhesion #adhesion-form #prop-type .prop-input {
+#adhesion-section #adhesion-form #prop-type .prop-input {
   margin-left: 0;
 }
-#adhesion #adhesion-form #other-label {
+#adhesion-section #adhesion-form #other-label {
   margin-left: -2.2em;
 }
-#adhesion #validateAdhesion {
+#adhesion-section #validateAdhesion {
   border-radius: 10px;
   width: 100px;
   background-color: white;
@@ -1115,7 +1115,7 @@ header #flash-message-header #error-message {
 }
 
 @media screen and (min-width: 950px) {
-  #adhesion #adhesion-title-container {
+  #adhesion-section #adhesion-title-container {
     /*    width: 100%;
     margin: 4em;
     background-color: #130F0F;
@@ -1124,24 +1124,24 @@ header #flash-message-header #error-message {
     flex-direction: column;
     align-items: center; */
   }
-  #adhesion #adhesion-title-container #adhesion-title {
+  #adhesion-section #adhesion-title-container #adhesion-title {
     font-size: 3em;
   }
-  #adhesion #adhesion-title-container p {
+  #adhesion-section #adhesion-title-container p {
     font-size: 2em;
   }
-  #adhesion #adhesion-form {
+  #adhesion-section #adhesion-form {
     width: 50%;
     font-size: 1.2em;
   }
-  #adhesion #adhesion-form #info-container {
+  #adhesion-section #adhesion-form #info-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
     justify-content: space-between;
   }
-  #adhesion #adhesion-form #validateAdhesion {
+  #adhesion-section #adhesion-form #validateAdhesion {
     width: 150px;
     border-radius: 20px;
     font-weight: 200;
