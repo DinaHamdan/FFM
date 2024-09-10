@@ -63,7 +63,12 @@
 
                     <?php  } ?>
                     <div id="avatar-container">
-                        <a href="/ctrl/profile/profile-display.php"><img id="ffm-man" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></a>
+                        <?php if ($args['session']['user']['avatar'] == null) { ?>
+                            <a href="/ctrl/profile/profile-display.php"><img id="ffm-man" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></a>
+
+                        <?php } else {  ?>
+                            <a href=""><img id="ffm-man" src="data:image/png;base64,<?= base64_encode($args['session']['user']['avatar']) ?>" alt=""></a>
+                        <?php } ?>
                         <a class="logout" href='/ctrl/logout.php'>Logout</a>
                     </div>
                 <?php } else { ?>

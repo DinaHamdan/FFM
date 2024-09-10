@@ -460,18 +460,32 @@ Pattern password et email ne pas oublier
 ## weekend 
 Rapport
 
+
+
 ## Semaine 10
 sécurité  
-déploiment  
 rapport   
+## Lundi 
+Rapport
+
+## Mardi 
+getAvatar icon on top left side
+router
+cssback office
+
+report
+
 
 ## TO DO :
 
             //TODO Need to add algorithm to check for photo width and height and change it accordingly
 
 remove useless tables in bdd phpmyadmin
-Rapport 
+CSS BackOffice
+Resize photos
 référencement google  + sécurité
+RGPD: cookies
+
 
 Slides A faire: 
  MCD 
@@ -480,7 +494,6 @@ MCD MLD sur un slide
 agré passer moin temps dessus
 Maquette référentiel - checklist avec tous mettre tout dans la présentation
  Priorités : diagramm de gantt - un planning pour montrer j'ai fait quoi quand
-RGPD: cookies
 
 
 ## Lundi 19/08/24 Notes de la présentation 

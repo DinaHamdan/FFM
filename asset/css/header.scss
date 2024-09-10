@@ -167,10 +167,12 @@ header {
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
-    // border: 1px solid green;
-    margin: 0;
+    width: 98%;
+    //border: 1px solid red;
+    // margin: 0;
     height: 150px;
+    padding: 1em;
+
 }
 
 
