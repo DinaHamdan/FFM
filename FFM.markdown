@@ -448,7 +448,17 @@ présentation
 
 Vendredi 
 présentation
-rapports
+notes: 
+Requête SQL avec Join IMPORTANT!!!
+Présenter plus de sécurité 
+margin important navigation
+Difference entre jpeg et png 
+Juridiquement cocher une case ?  c'est assez ou pas
+Pattern password et email ne pas oublier
+
+
+## weekend 
+Rapport
 
 ## Semaine 10
 sécurité  
@@ -461,7 +471,6 @@ rapport
 
 remove useless tables in bdd phpmyadmin
 Rapport 
-Deploiment
 référencement google  + sécurité
 
 Slides A faire: 
