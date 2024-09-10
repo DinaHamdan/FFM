@@ -1,0 +1,61 @@
+.backoffice-option {
+    // background-color: #000000;
+    background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+
+    #page-title {
+        padding: 1em;
+        font-size: 2em;
+    }
+
+    .backoffice-option-container {
+        //  overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        //  align-items: center;
+        //  justify-content: center;
+        justify-content: flex-start;
+        width: 70%;
+        border: 1px solid black;
+        // background-color: white;
+        //  background-color: #eae2b7;
+
+        background-color: #ffecd1;
+        color: black;
+        border-radius: 10px;
+        gap: 1em;
+        padding: 1em;
+        margin: 1em;
+
+        a {
+            text-decoration: none;
+        }
+
+        .contact-message {
+            //border: 1px solid red;
+
+            overflow-wrap: break-word;
+        }
+    }
+}
+
+@media screen and (min-width:900px) {
+    .backoffice-option {
+
+        #page-title {
+            font-size: 3em;
+        }
+
+        .backoffice-option-container {
+            width: 70%;
+            font-size: 1.5em;
+            font-weight: 600;
+
+        }
+    }
+}
