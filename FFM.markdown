@@ -477,6 +477,9 @@ cssback office
 CSS Back office
 report
 
+## jedui 12-09
+Resize photos
+
 
 ## TO DO :
 
