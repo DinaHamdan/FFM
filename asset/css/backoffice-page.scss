@@ -1,5 +1,6 @@
 .backoffice-option {
     // background-color: #000000;
+
     background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
     color: white;
     display: flex;
@@ -14,11 +15,9 @@
     }
 
     .backoffice-option-container {
-        //  overflow: hidden;
+        font-family: "Kanit", sans-serif;
         display: flex;
         flex-direction: column;
-        //  align-items: center;
-        //  justify-content: center;
         justify-content: flex-start;
         width: 70%;
         border: 1px solid black;
@@ -37,9 +36,11 @@
         }
 
         .contact-message {
-            //border: 1px solid red;
-
             overflow-wrap: break-word;
+        }
+
+        span {
+            font-weight: 600;
         }
     }
 }
@@ -54,7 +55,7 @@
         .backoffice-option-container {
             width: 70%;
             font-size: 1.5em;
-            font-weight: 600;
+            font-weight: 400;
 
         }
     }

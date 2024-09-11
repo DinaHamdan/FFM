@@ -6,16 +6,17 @@
 
             <?php foreach ($args['session']['listAdhesion'] as $args['session']['adhesion']) { ?>
                 <div class="backoffice-option-container">
-                    <p> Par : <?= $args['session']['adhesion']['firstName'] ?> <?= $args['session']['adhesion']['lastName'] ?></p>
-                    <p> Email: <?= $args['session']['adhesion']['email'] ?></p>
-                    <p>Téléphone : <?= $args['session']['adhesion']['phoneNumber'] ?></p>
-                    <p> Type de message : <?= $args['session']['adhesion']['typeAgre'] ?> </p>
-                    <p> Contenu : <?= $args['session']['adhesion']['talents'] ?></p>
-                    <p> Contenu : <?= $args['session']['adhesion']['authorization'] ?></p>
+                    <p><span> Prénom :</span> <?= $args['session']['adhesion']['firstName'] ?> <span> Nom : </span><?= $args['session']['adhesion']['lastName'] ?></p>
+                    <p> <span> Email :</span> <?= $args['session']['adhesion']['email'] ?></p>
+                    <p><span> Téléphone :</span> <?= $args['session']['adhesion']['phoneNumber'] ?></p>
+                    <p><span> Type d'agrès pratiqués :</span> <?= $args['session']['adhesion']['typeAgre'] ?> </p>
+                    <p><span> Autre talents : </span> <?= $args['session']['adhesion']['talents'] ?></p>
+                    <p> <span> Authorization à l'image :</span> <?= $args['session']['adhesion']['authorization'] ?></p>
 
-                    <p> Le : <?= $args['session']['adhesion']['time'] ?></p>
+                    <p> <span> Le :</span> <?= $args['session']['adhesion']['time'] ?></p>
 
-                    <a href="/ctrl/backoffice/adhesion-detail.php?id=<?= ($args['session']['adhesion']['id']) ?>">Voir Détails</a>
+                    <!--                     <a href="/ctrl/backoffice/adhesion-detail.php?id=<?= ($args['session']['adhesion']['id']) ?>">Voir Détails</a>
+ -->
                 </div>
             <?php } ?>
 

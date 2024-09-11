@@ -2017,6 +2017,7 @@ header #flash-message-header #error-message {
   font-size: 2em;
 }
 .backoffice-option .backoffice-option-container {
+  font-family: "Kanit", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2035,6 +2036,9 @@ header #flash-message-header #error-message {
 .backoffice-option .backoffice-option-container .contact-message {
   overflow-wrap: break-word;
 }
+.backoffice-option .backoffice-option-container span {
+  font-weight: 600;
+}
 
 @media screen and (min-width: 900px) {
   .backoffice-option #page-title {
@@ -2043,7 +2047,7 @@ header #flash-message-header #error-message {
   .backoffice-option .backoffice-option-container {
     width: 70%;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
   }
 }
 #social-media {

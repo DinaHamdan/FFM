@@ -465,20 +465,21 @@ Rapport
 ## Semaine 10
 sécurité  
 rapport   
-## Lundi 
+## Lundi 09-09
 Rapport
 
-## Mardi 
+## Mardi 10-09
 getAvatar icon on top left side
 router
 cssback office
 
+## Mercredi 11-09
+CSS Back office
 report
 
 
 ## TO DO :
 
-            //TODO Need to add algorithm to check for photo width and height and change it accordingly
 
 remove useless tables in bdd phpmyadmin
 CSS BackOffice
@@ -486,6 +487,7 @@ Resize photos
 référencement google  + sécurité
 RGPD: cookies
 
+            //TODO Need to add algorithm to check for photo width and height and change it accordingly
 
 Slides A faire: 
  MCD 
