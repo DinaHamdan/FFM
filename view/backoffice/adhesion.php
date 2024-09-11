@@ -6,7 +6,8 @@
 
             <?php foreach ($args['session']['listAdhesion'] as $args['session']['adhesion']) { ?>
                 <div class="backoffice-option-container">
-                    <p><span> Prénom :</span> <?= $args['session']['adhesion']['firstName'] ?> <span> Nom : </span><?= $args['session']['adhesion']['lastName'] ?></p>
+                    <p> <span> Prénom : </span> <?= $args['session']['adhesion']['firstName'] ?></p>
+                    <p> <span> Nom : </span> <?= $args['session']['adhesion']['lastName'] ?></p>
                     <p> <span> Email :</span> <?= $args['session']['adhesion']['email'] ?></p>
                     <p><span> Téléphone :</span> <?= $args['session']['adhesion']['phoneNumber'] ?></p>
                     <p><span> Type d'agrès pratiqués :</span> <?= $args['session']['adhesion']['typeAgre'] ?> </p>
@@ -15,8 +16,8 @@
 
                     <p> <span> Le :</span> <?= $args['session']['adhesion']['time'] ?></p>
 
-                    <!--                     <a href="/ctrl/backoffice/adhesion-detail.php?id=<?= ($args['session']['adhesion']['id']) ?>">Voir Détails</a>
- -->
+                    <a href="/ctrl/backoffice/adhesion-detail.php?id=<?= ($args['session']['adhesion']['id']) ?>">Voir Détails</a>
+
                 </div>
             <?php } ?>
 

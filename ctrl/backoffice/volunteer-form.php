@@ -23,7 +23,7 @@ class ListVolunteerForm extends Ctrl
     }
     function getPageTitle(): string
     {
-        return 'Tous les formulaires Bénévoles';
+        return 'Formulaires Bénévoles';
     }
 }
 

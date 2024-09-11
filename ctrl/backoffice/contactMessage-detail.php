@@ -33,7 +33,7 @@ class ContactMessageDetail extends Ctrl
 
     function getPageTitle(): string
     {
-        return 'Détails du message';
+        return 'Message de';
     }
 }
 

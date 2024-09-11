@@ -11,6 +11,9 @@
   padding: 1em;
   font-size: 2em;
 }
+.backoffice-option .participant-name {
+  text-align: center;
+}
 .backoffice-option .backoffice-option-container {
   font-family: "Kanit", sans-serif;
   display: flex;

@@ -17,8 +17,7 @@
                     </div>
                     <p> <span>Le : </span> <?= $args['session']['contactMessage']['time'] ?></p>
 
-                    <!--                     <a href="/ctrl/backoffice/contactMessage-detail.php?id=<?= ($args['session']['contactMessage']['id']) ?>">Voir Détails</a>
- -->
+                    <a href="/ctrl/backoffice/contactMessage-detail.php?id=<?= ($args['session']['contactMessage']['id']) ?>">Voir Détails</a>
                 </div>
             <?php } ?>
 
