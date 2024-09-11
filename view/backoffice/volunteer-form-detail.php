@@ -19,8 +19,9 @@
 
                 <p><span> Options de travail choisis : </span> <?= $args['session']['volunteerForm']['workOptions'] ?></p>
                 <p><span> Informations supplémentaires sur le travail : </span> <?= $args['session']['volunteerForm']['extraWorkInfo'] ?></p>
-                <p><span> diplôme PSC1 : </span><?= $args['session']['volunteerForm']['diplomePSC1'] ?></p>
-                <p> <span> transport : </span> <?= $args['session']['volunteerForm']['transport'] ?></p>
+                <p><span> Diplôme PSC1 : </span><?= $args['session']['volunteerForm']['diplomePSC1'] ?></p>
+                <p> <span> Transport : </span> <?= $args['session']['volunteerForm']['transport'] ?></p>
+                <p> <span> Autre transport : </span> <?= $args['session']['volunteerForm']['otherTransport'] ?></p>
                 <p> <span> Logement : </span> <?= $args['session']['volunteerForm']['lodging'] ?></p>
                 <p> <span> Participation performance : </span><?= $args['session']['volunteerForm']['performance'] ?></p>
                 <p><span> Resctrictions de nourriture : </span> <?= $args['session']['volunteerForm']['foodRestrictions'] ?></p>

@@ -145,6 +145,7 @@ CREATE TABLE volunteerForm(
   ,extraWorkInfo varchar(200) NOT NULL
   ,diplomePSC1 varchar(100) NOT NULL
   ,transport varchar(50) NOT NULL
+  ,otherTransport varchar(50) NOT NULL
   ,lodging varchar(50) NOT NULL
   ,performance varchar(50) NOT NULL
   ,foodRestrictions varchar(200) NOT NULL

@@ -1,11 +1,12 @@
 .backoffice-option {
-    // background-color: #000000;
+    background-color: #000000;
 
-    background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+    //background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    //  justify-content: center;
+    //align-items: center;
     gap: 1em;
     padding: 1em;
 
@@ -16,7 +17,10 @@
 
     .participant-name {
         text-align: center;
+        font-size: 4em;
+
     }
+
 
     .backoffice-option-container {
         font-family: "Kanit", sans-serif;
@@ -30,13 +34,17 @@
 
         background-color: #ffecd1;
         color: black;
-        border-radius: 10px;
+        border-radius: 20px;
         gap: 1em;
         padding: 1em;
         margin: 1em;
 
         a {
             text-decoration: none;
+        }
+
+        a {
+            color: blue;
         }
 
         .contact-message {
@@ -50,17 +58,27 @@
 }
 
 @media screen and (min-width:900px) {
+
+
     .backoffice-option {
+
 
         #page-title {
             font-size: 3em;
         }
 
-        .backoffice-option-container {
-            width: 70%;
-            font-size: 1.5em;
-            font-weight: 400;
+        #backoffice-volunteerForm {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
 
+
+            .backoffice-option-container {
+                width: 30%;
+                font-size: 1.5em;
+                font-weight: 400;
+
+            }
         }
     }
 }

@@ -235,7 +235,7 @@ class LibMember
     //List all volunteer forms
     static function getAllVolunteerForm(): array
     {
-        $query = 'SELECT volunteerForm.idVolunteer, volunteerForm.firstName, volunteerForm.lastName, volunteerForm.phoneNumber, volunteerForm.email, volunteerForm.birthday, volunteerForm.dateArrival, volunteerForm.dateDepart, volunteerForm.dayOptions, volunteerForm.timeOptions, volunteerForm.workOptions, volunteerForm.extraWorkInfo, volunteerForm.diplomePSC1, volunteerForm.transport, volunteerForm.lodging, volunteerForm.performance, volunteerForm.foodRestrictions, volunteerForm.otherInfo, volunteerForm.date_time_column';
+        $query = 'SELECT volunteerForm.idVolunteer, volunteerForm.firstName, volunteerForm.lastName, volunteerForm.phoneNumber, volunteerForm.email, volunteerForm.birthday, volunteerForm.dateArrival, volunteerForm.dateDepart, volunteerForm.dayOptions, volunteerForm.timeOptions, volunteerForm.workOptions, volunteerForm.extraWorkInfo, volunteerForm.diplomePSC1, volunteerForm.transport, volunteerForm.otherTransport, volunteerForm.lodging, volunteerForm.performance, volunteerForm.foodRestrictions, volunteerForm.otherInfo, volunteerForm.date_time_column';
         $query .= ' FROM volunteerForm ';
         $statement = libDb::connect()->prepare($query);
 
@@ -257,7 +257,7 @@ class LibMember
     //List a specific volunteer forms
     static function getVolunteerForm($idVolunteerForm): array
     {
-        $query = 'SELECT volunteerForm.idVolunteer, volunteerForm.firstName, volunteerForm.lastName, volunteerForm.phoneNumber, volunteerForm.email, volunteerForm.birthday, volunteerForm.dateArrival, volunteerForm.dateDepart, volunteerForm.dayOptions, volunteerForm.timeOptions, volunteerForm.workOptions, volunteerForm.extraWorkInfo, volunteerForm.diplomePSC1, volunteerForm.transport, volunteerForm.lodging, volunteerForm.performance, volunteerForm.foodRestrictions, volunteerForm.otherInfo, volunteerForm.date_time_column';
+        $query = 'SELECT volunteerForm.idVolunteer, volunteerForm.firstName, volunteerForm.lastName, volunteerForm.phoneNumber, volunteerForm.email, volunteerForm.birthday, volunteerForm.dateArrival, volunteerForm.dateDepart, volunteerForm.dayOptions, volunteerForm.timeOptions, volunteerForm.workOptions, volunteerForm.extraWorkInfo, volunteerForm.diplomePSC1, volunteerForm.transport, volunteerForm.otherTransport, volunteerForm.lodging, volunteerForm.performance, volunteerForm.foodRestrictions, volunteerForm.otherInfo, volunteerForm.date_time_column';
         $query .= ' FROM volunteerForm';
 
         $query .= ' WHERE volunteerForm.idVolunteer = :id';

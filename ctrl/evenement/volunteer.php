@@ -34,6 +34,8 @@ class GetVolunteerForm extends Ctrl
         $volunteerForm['diplomePSC1'] = htmlspecialchars($_POST['psc1']);
 
         $volunteerForm['transport'] = htmlspecialchars($_POST['transport']);
+        $volunteerForm['otherTransport'] = htmlspecialchars($_POST['otherTransport']);
+
         $volunteerForm['lodging'] = htmlspecialchars($_POST['lodging']);
 
 
@@ -59,6 +61,7 @@ class GetVolunteerForm extends Ctrl
             $volunteerForm['extraWorkInfo'],
             $volunteerForm['diplomePSC1'],
             $volunteerForm['transport'],
+            $volunteerForm['otherTransport'],
             $volunteerForm['lodging'],
             $volunteerForm['performance'],
             $volunteerForm['foodRestrictions'],
@@ -70,7 +73,7 @@ class GetVolunteerForm extends Ctrl
     {
         $args = $this->viewArgs;
 
-        header('Location: ' . '/ctrl/evenement/event-display.php');
+        header('Location: ' . '/ctrl/evenement/event.php');
     }
     function getPageTitle(): null
     {

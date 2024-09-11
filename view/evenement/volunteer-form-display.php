@@ -4,16 +4,16 @@
         <form id="volunteer-form" action="/ctrl/evenement/volunteer.php" method="post">
 
             <div class="basic-answer-options">
-                <!-- Last Name -->
-                <div>
-                    <label for="firstName">Nom : </label>
-                    <input class="input-box" type="text" name="firstName" id="volunteerLastName" required>
-                </div>
-
                 <!-- First Name -->
                 <div>
-                    <label for="lastName">Prénom : </label>
-                    <input class="input-box" type="text" id="lastName" name="volunteerFirstName" required>
+                    <label for="firstName">Prénom : </label>
+                    <input class="input-box" type="text" name="firstName" id="firstName" required>
+                </div>
+
+                <!-- Last Name -->
+                <div>
+                    <label for="lastName">Nom : </label>
+                    <input class="input-box" type="text" id="lastName" name="lastName" required>
                 </div>
 
                 <!-- Date of Birth -->
@@ -51,8 +51,8 @@
             <p>Sur quelle partie de la conv souhaites tu être bénévole? (plusieurs réponses possibles) </p>
 
             <div class="answer-options">
-                <div> <input type="checkbox" name="dayOptions[]" value="avant" /> <label for="before"> Avant la conv pour le montage (la semaine précédant la conv, à partir de ta date d'arrivée)</label></div>
-                <div> <input type="checkbox" name="dayOptions[]" value="pendant"><label for="during"> Pendant la conv (du vendredi après midi au dimanche midi)</label></div>
+                <div> <input type="checkbox" name="dayOptions[]" value="avant" /> <label for="avant"> Avant la conv pour le montage (la semaine précédant la conv, à partir de ta date d'arrivée)</label></div>
+                <div> <input type="checkbox" name="dayOptions[]" value="pendant"><label for="pendant"> Pendant la conv (du vendredi après midi au dimanche midi)</label></div>
                 <div> <input type="checkbox" name="dayOptions[]" value="apres"><label for="apres">Après la conv pour le démontage jusqu'au lund</label></div>
             </div>
 
@@ -61,11 +61,11 @@
             <p> Pendant la conv, le ou les moments de la journée où tu préfères être en poste :</p>
 
             <div class="answer-options">
-                <div> <input type="checkbox" name="timeOptions[]" value="morning" id=""><label for="morning">Matin</label> </div>
-                <div> <input type="checkbox" name="timeOptions[]" value="afteernoon" id=""><label for="afteernoon">Après-midi</label> </div>
+                <div> <input type="checkbox" name="timeOptions[]" value="matin" id=""><label for="matin">Matin</label> </div>
+                <div> <input type="checkbox" name="timeOptions[]" value="apres-midi" id=""><label for="apres-midi">Après-midi</label> </div>
 
-                <div> <input type="checkbox" name="timeOptions[]" value="evening" id=""><label for="evening">Soir</label> </div>
-                <div> <input type="checkbox" name="timeOptions[]" value="night" id=""><label for="night">Nuit</label> </div>
+                <div> <input type="checkbox" name="timeOptions[]" value="soir" id=""><label for="soir">Soir</label> </div>
+                <div> <input type="checkbox" name="timeOptions[]" value="nuit" id=""><label for="night">Nuit</label> </div>
 
             </div>
 
@@ -77,12 +77,12 @@
             </p>
 
             <div class="answer-options">
-                <div> <input type="checkbox" name="workOptions[]" value="restaurant" id=""> <label for="restaurant">Restaurant/ cuisine</label> </div>
+                <div> <input type="checkbox" name="workOptions[]" value="restaurant-cuisine" id=""> <label for="restaurant">Restaurant/ cuisine</label> </div>
                 <div><input type="checkbox" name="workOptions[]" value="bar" id=""> <label for="bar">Bar</label></div>
-                <div><input type="checkbox" name="workOptions[]" value="technical" id=""> <label for="technical">Technique</label></div>
-                <div><input type="checkbox" name="workOptions[]" value="fire" id=""> <label for="fire">Espace feu</label></div>
-                <div><input type="checkbox" name="workOptions[]" value="welcome" id=""> <label for="welcome">Acceuil </label></div>
-                <div><input type="checkbox" name="workOptions[]" value="driver" id=""> <label for="driver">Conducteur (permis B classique)</label>
+                <div><input type="checkbox" name="workOptions[]" value="technique" id=""> <label for="technique">Technique</label></div>
+                <div><input type="checkbox" name="workOptions[]" value="fire" id=""> <label for="espace-feu">Espace feu</label></div>
+                <div><input type="checkbox" name="workOptions[]" value="acceuil" id=""> <label for="acceuil">Acceuil </label></div>
+                <div><input type="checkbox" name="workOptions[]" value="conducteur" id=""> <label for="conducteur">Conducteur (permis B classique)</label>
                 </div>
             </div>
             <!-- extra information -->
@@ -99,15 +99,15 @@
 
             <div class="answer-options">
                 <div> <input type="radio" name="transport" value="train" id=""><label for="train">Train</label> </div>
-                <div> <input type="radio" name="transport" value="car" id=""><label for="car">Voiture</label> </div>
-                <label for="other">Autre: </label><input name="transport" type="text">
+                <div> <input type="radio" name="transport" value="voiture" id=""><label for="voiture">voiture</label> </div>
+                <label for="otherTransport">Autre: </label><input name="otherTransport" type="text">
             </div>
             <!-- Sleeping situation  -->
             <p>Ton mode d'hébergement:*</p>
             <div class="answer-options">
-                <div> <input type="radio" name="lodging" value="camp" id=""> <label for="camp">Camping</label> </div>
-                <div> <input type="radio" name="lodging" value="van" id=""><label for="van">Camion</label> </div>
-                <div> <input type="radio" name="lodging" value="external" id=""><label for="external">Hors site</label> </div>
+                <div> <input type="radio" name="lodging" value="camping" id=""> <label for="camping">Camping</label> </div>
+                <div> <input type="radio" name="lodging" value="camion" id=""><label for="camion">Camion</label> </div>
+                <div> <input type="radio" name="lodging" value="hors-site" id=""><label for="hors-site">Hors site</label> </div>
 
 
             </div>
@@ -115,9 +115,10 @@
             <p>Souhaites-tu participer à un spectacle</p>
 
             <div class="answer-options">
-                <div> <input type="checkbox" name="show[]" value="fireShow" id=""><label for="fireShow">spectacle feu</label> </div>
-                <div> <input type="checkbox" name="show[]" value="openScene" id=""><label for="openScene">scène ouverte(intérieur)</label> </div>
-                <div> <input type="checkbox" name="show[]" value="hallShow" id=""><label for="hallShow">spectacle à la salle des fêtes</label> </div>
+                <div> <input type="checkbox" name="show[]" value="spectacle-feu" id=""><label for="spectacle-feu">spectacle feu</label> </div>
+                <div> <input type="checkbox" name="show[]" value="scene-ouverte" id=""><label for="scene-ouverte">scène ouverte(intérieur)</label> </div>
+                <div> <input type="checkbox" name="show[]" value="salle-des-fetes" id=""><label for="salle-des-fetes">spectacle à la salle des fêtes</label> </div>
+                <div> <input type="checkbox" name="show[]" value="Aucun" id=""><label for="sAucun">Aucun</label> </div>
 
             </div>
             <!-- food restrictions -->

@@ -54,9 +54,9 @@ class LibEvent
         return $conventionInfo;
     }
 
-    static function getVolunteerForm($firstName, $lastName, $birthday, $phoneNumber, $email, $dateArrival, $dateDepart, $dayOptions, $timeOptions, $workOptions, $extraWorkInfo, $diplomePSC1, $transport, $lodging, $performance, $foodRestrictions, $otherInfo, $dateTime): bool
+    static function getVolunteerForm($firstName, $lastName, $birthday, $email, $phoneNumber, $dateArrival, $dateDepart, $dayOptions, $timeOptions, $workOptions, $extraWorkInfo, $diplomePSC1, $transport, $otherTransport, $lodging, $performance, $foodRestrictions, $otherInfo, $dateTime): bool
     {
-        $query = ' INSERT INTO volunteerForm (firstName, lastName, birthday, phoneNumber, email, dateArrival, dateDepart, dayOptions, timeOptions, workOptions, extraWorkInfo, diplomePSC1, transport, lodging, performance, foodRestrictions, otherInfo, date_time_column) VALUES (:firstName, :lastName, :birthday, :phoneNumber, :email, :dateArrival, :dateDepart, :dayOptions, :timeOptions, :workOptions, :extraWorkInfo, :diplomePSC1, :transport, :lodging, :performance,:foodRestrictions, :otherInfo, :date_time_column)';
+        $query = ' INSERT INTO volunteerForm (firstName, lastName, birthday, email , phoneNumber, dateArrival, dateDepart, dayOptions, timeOptions, workOptions, extraWorkInfo, diplomePSC1, transport, otherTransport, lodging, performance, foodRestrictions, otherInfo, date_time_column) VALUES (:firstName, :lastName, :birthday, :email, :phoneNumber, :dateArrival, :dateDepart, :dayOptions, :timeOptions, :workOptions, :extraWorkInfo, :diplomePSC1, :transport, :otherTransport, :lodging, :performance,:foodRestrictions, :otherInfo, :date_time_column)';
         $statement = libDb::connect()->prepare($query);
 
         $statement->bindParam(':firstName', $firstName);
@@ -72,6 +72,7 @@ class LibEvent
         $statement->bindParam(':extraWorkInfo', $extraWorkInfo);
         $statement->bindParam(':diplomePSC1', $diplomePSC1);
         $statement->bindParam(':transport', $transport);
+        $statement->bindParam(':otherTransport', $otherTransport);
         $statement->bindParam(':lodging', $lodging);
         $statement->bindParam(':performance', $performance);
         $statement->bindParam(':foodRestrictions', $foodRestrictions);
