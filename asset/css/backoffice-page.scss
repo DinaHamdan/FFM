@@ -39,6 +39,11 @@
         padding: 1em;
         margin: 1em;
 
+        img {
+            width: 200px;
+            border-radius: 50px;
+        }
+
         a {
             text-decoration: none;
         }
@@ -79,6 +84,34 @@
                 font-weight: 400;
 
             }
+        }
+
+        #backoffice-member {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+
+            .backoffice-option-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 30%;
+                font-size: 1.5em;
+                font-weight: 400;
+
+                img {
+                    width: 200px;
+                }
+
+            }
+        }
+
+        .backoffice-option-container {
+            width: 30%;
+            font-size: 1.5em;
+            font-weight: 400;
+
         }
     }
 }
