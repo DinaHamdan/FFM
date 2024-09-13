@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fire From Mars</title>
     <link rel="stylesheet" href="/asset/css/styles.css">
-
+    <meta name="google-site-verification" content="jZ3Hv3d-HTEMSZ2l86UmtZihHftr4Z59937gEqtjEsk" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
