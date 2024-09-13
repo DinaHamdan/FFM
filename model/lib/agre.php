@@ -231,7 +231,7 @@ class LibAgre
         return $isSuccess;
     }
 
-    static function checkMainPhoto($idPhotoTypeAgre, $idPhotoCategory, $isMain): array
+    static function checkMainPhoto($idPhotoTypeAgre, $idPhotoCategory, $isMain): ?array
 
     {
         $query = ' SELECT photoAgre.id, photoAgre.idTypeAgre, photoAgre.idCategory';
@@ -245,6 +245,9 @@ class LibAgre
         $successOrFailure = $statement->execute();
         $listMainPhoto = $statement->fetch(PDO::FETCH_ASSOC);
 
+        if ($listMainPhoto == false) {
+            $listMainPhoto = null;
+        };
         return $listMainPhoto;
     }
 }
