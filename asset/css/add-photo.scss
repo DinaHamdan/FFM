@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: center;
 
+    #page-title {
+        padding: 1em;
+    }
+
     #add-photo-form {
         width: 70%;
         padding: 1em;
@@ -19,6 +23,12 @@
         gap: 1em;
         border: 1px solid #341701;
         border-radius: 20px;
+
+        select {
+            border-radius: 10px;
+            padding: 2px;
+
+        }
 
         #validatePhoto {
             border-radius: 10px;

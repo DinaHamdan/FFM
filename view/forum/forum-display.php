@@ -41,8 +41,8 @@
             </div>
 
         <?php } else { ?>
-            <p> Pour pouvoir accéder au forum, </p>
-            <a href="/ctrl/profile/profile-display.php">s'il vous plait compléter votre profil</a>
+            <h3 id="complete-profile-title"> Pour pouvoir accéder au forum </h3>
+            <p> s'il vous plait, </p> <a id="complete-profile-link" href="/ctrl/profile/profile-display.php">complétez votre profil</a>
         <?php } ?>
 
     </section>

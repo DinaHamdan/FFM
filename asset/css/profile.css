@@ -23,6 +23,13 @@
   gap: 1em;
   padding: 1em;
 }
+#profile #profile-form a {
+  text-decoration: none;
+  color: white;
+}
+#profile #profile-form a::after {
+  color: white;
+}
 #profile #profile-form input {
   border-radius: 10px;
 }

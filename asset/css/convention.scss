@@ -6,6 +6,22 @@
     text-align: center;
     color: white;
 
+    #modify-event-button {
+        align-self: center;
+        padding-top: 10px;
+        display: inline-block;
+        font-weight: 450;
+        text-decoration: none;
+        text-align: center;
+        width: 10em;
+        height: 2em;
+        background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
+        border-radius: 3em;
+        color: #130F0F;
+        margin: 1em;
+
+    }
+
     #convention-first-title {
         color: #ffa743;
         padding-top: 1em;

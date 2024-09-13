@@ -10,6 +10,21 @@
   text-align: center;
   padding: 1em;
 }
+#forum #complete-profile-title {
+  display: block;
+  padding: 1em;
+}
+#forum p {
+  align-self: center;
+  font-size: 2em;
+}
+#forum #complete-profile-link {
+  align-self: center;
+  font-weight: 500;
+  color: white;
+  padding: 1em;
+  font-size: 2em;
+}
 #forum #forum-form {
   padding: 2em;
   border: 1px solid #341701;

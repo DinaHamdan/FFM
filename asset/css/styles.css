@@ -842,6 +842,20 @@ header #flash-message-header #error-message {
   text-align: center;
   color: white;
 }
+#convention #modify-event-button {
+  align-self: center;
+  padding-top: 10px;
+  display: inline-block;
+  font-weight: 450;
+  text-decoration: none;
+  text-align: center;
+  width: 10em;
+  height: 2em;
+  background-image: linear-gradient(to right, #EECC68, #FE6B00, #943AAB);
+  border-radius: 3em;
+  color: #130F0F;
+  margin: 1em;
+}
 #convention #convention-first-title {
   color: #ffa743;
   padding-top: 1em;
@@ -1253,6 +1267,21 @@ header #flash-message-header #error-message {
 #forum h3 {
   text-align: center;
   padding: 1em;
+}
+#forum #complete-profile-title {
+  display: block;
+  padding: 1em;
+}
+#forum p {
+  align-self: center;
+  font-size: 2em;
+}
+#forum #complete-profile-link {
+  align-self: center;
+  font-weight: 500;
+  color: white;
+  padding: 1em;
+  font-size: 2em;
 }
 #forum #forum-form {
   padding: 2em;
@@ -1747,6 +1776,9 @@ header #flash-message-header #error-message {
   align-items: center;
   justify-content: center;
 }
+#add-photo-section #page-title {
+  padding: 1em;
+}
 #add-photo-section #add-photo-form {
   width: 70%;
   padding: 1em;
@@ -1757,6 +1789,10 @@ header #flash-message-header #error-message {
   gap: 1em;
   border: 1px solid #341701;
   border-radius: 20px;
+}
+#add-photo-section #add-photo-form select {
+  border-radius: 10px;
+  padding: 2px;
 }
 #add-photo-section #add-photo-form #validatePhoto {
   border-radius: 10px;
@@ -1896,6 +1932,13 @@ header #flash-message-header #error-message {
   align-items: center;
   gap: 1em;
   padding: 1em;
+}
+#profile #profile-form a {
+  text-decoration: none;
+  color: white;
+}
+#profile #profile-form a::after {
+  color: white;
 }
 #profile #profile-form input {
   border-radius: 10px;
@@ -2084,6 +2127,53 @@ header #flash-message-header #error-message {
     width: 70%;
     font-size: 1.5em;
     font-weight: 400;
+  }
+}
+#update-event-section {
+  background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+#update-event-section #page-title {
+  margin: 2em;
+}
+#update-event-section #update-event-form {
+  background-color: #000000;
+  border: 1px solid #341701;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+#update-event-section #update-event-form input {
+  border-radius: 10px;
+}
+#update-event-section #update-event-form .submit {
+  border-radius: 10px;
+  width: 70px;
+  height: 25px;
+  background-color: white;
+  border: none;
+  padding: 0.2em;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 650px) {
+  #update-event-section #page-title {
+    margin: 2em;
+    font-size: 3em;
+  }
+  #update-event-section #update-event-form {
+    font-size: 2em;
   }
 }
 #social-media {

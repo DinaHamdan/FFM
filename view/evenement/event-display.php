@@ -4,7 +4,7 @@
         <h4 id="convention-info"><?= $args['session']['convention']['cost'] ?></h4>
 
         <?php if ($args['session']['user']['codeRole'] == 'ADM') { ?>
-            <a href="/ctrl/evenement/update-event-display.php">Modifier l'évenement</a>
+            <a id="modify-event-button" href="/ctrl/evenement/update-event-display.php">Modifier l'évenement</a>
         <?php  } ?>
 
         <div id="convention-poster-container">
