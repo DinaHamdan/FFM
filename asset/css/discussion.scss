@@ -1,13 +1,30 @@
 #discussion {
     background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+
+    a {
+        font-size: 1em;
+        text-decoration: none;
+        color: lightblue;
+        margin: 1em;
+    }
+
+    a::after {
+        color: lightblue;
+    }
 
     #discussion-detail-container {
-        padding: 4em;
+        background-color: black;
+        padding: 2em;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
         gap: 1em;
+
     }
 
     #comment-container {
@@ -53,9 +70,12 @@
 
 @media screen and (min-width:950px) {
     #discussion {
-        #discussion-detail-container {
+        padding: 4em;
 
-            padding: 10em;
+        #discussion-detail-container {
+            font-size: 1.5em;
+            padding: 5em;
+
 
             #discussion-title {
                 font-size: 1.5em;
@@ -64,33 +84,35 @@
             #text-photo-container {
                 display: flex;
             }
+        }
 
-            #comment-container {
+        #comment-container {
+            width: 50%;
+            font-size: 1em;
 
-                #comment-content {
+            #comment-content {
 
 
-                    img {
-                        width: 100px;
-                        height: 100px;
+                img {
+                    width: 100px;
+                    height: 100px;
 
-                    }
-                }
-
-            }
-
-            #leave-comment-container {
-
-                form {
-
-                    input {
-                        width: 300px;
-                        height: 100px;
-                    }
                 }
             }
-
 
         }
+
+        #leave-comment-container {
+
+            form {
+
+                input {
+                    width: 300px;
+                    height: 100px;
+                }
+            }
+        }
+
+
     }
 }

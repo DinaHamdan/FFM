@@ -14,7 +14,7 @@
   display: block;
   padding: 1em;
 }
-#forum p {
+#forum .change-profile-paragraph {
   align-self: center;
   font-size: 2em;
 }
@@ -59,11 +59,22 @@
 }
 #forum #discussion-container {
   border: 1px solid #341701;
+  background-color: black;
+  padding: 1em;
   border-radius: 20px;
 }
 #forum #discussion-container h4 {
   font-size: 1.2em;
   padding: 1em;
+}
+#forum #discussion-container a {
+  font-size: 1em;
+  text-decoration: none;
+  color: lightblue;
+  margin: 1em;
+}
+#forum #discussion-container a::after {
+  color: lightblue;
 }
 
 @media screen and (min-width: 950px) {
@@ -96,6 +107,9 @@
   }
   #all-discussion-container {
     width: 60%;
+  }
+  #all-discussion-container #discussion-container {
+    font-size: 1.5em;
   }
   #all-discussion-container #discussion-container h4 {
     font-size: 1.5em;

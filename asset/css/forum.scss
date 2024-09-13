@@ -19,7 +19,7 @@
         padding: 1em;
     }
 
-    p {
+    .change-profile-paragraph {
         align-self: center;
         font-size: 2em;
     }
@@ -73,11 +73,24 @@
 
     #discussion-container {
         border: 1px solid #341701;
+        background-color: black;
+        padding: 1em;
         border-radius: 20px;
 
         h4 {
             font-size: 1.2em;
             padding: 1em;
+        }
+
+        a {
+            font-size: 1em;
+            text-decoration: none;
+            color: lightblue;
+            margin: 1em;
+        }
+
+        a::after {
+            color: lightblue;
         }
     }
 }
@@ -123,6 +136,8 @@
         width: 60%;
 
         #discussion-container {
+            font-size: 1.5em;
+
             h4 {
                 font-size: 1.5em;
             }

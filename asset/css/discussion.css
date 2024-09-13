@@ -1,9 +1,23 @@
 #discussion {
   background-image: linear-gradient(to right, #000000, #000000, #341701, #903E02, #FE6B00);
   color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+}
+#discussion a {
+  font-size: 1em;
+  text-decoration: none;
+  color: lightblue;
+  margin: 1em;
+}
+#discussion a::after {
+  color: lightblue;
 }
 #discussion #discussion-detail-container {
-  padding: 4em;
+  background-color: black;
+  padding: 2em;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -42,8 +56,12 @@
 }
 
 @media screen and (min-width: 950px) {
+  #discussion {
+    padding: 4em;
+  }
   #discussion #discussion-detail-container {
-    padding: 10em;
+    font-size: 1.5em;
+    padding: 5em;
   }
   #discussion #discussion-detail-container #discussion-title {
     font-size: 1.5em;
@@ -51,11 +69,15 @@
   #discussion #discussion-detail-container #text-photo-container {
     display: flex;
   }
-  #discussion #discussion-detail-container #comment-container #comment-content img {
+  #discussion #comment-container {
+    width: 50%;
+    font-size: 1em;
+  }
+  #discussion #comment-container #comment-content img {
     width: 100px;
     height: 100px;
   }
-  #discussion #discussion-detail-container #leave-comment-container form input {
+  #discussion #leave-comment-container form input {
     width: 300px;
     height: 100px;
   }
