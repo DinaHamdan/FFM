@@ -26,21 +26,25 @@
         <div class="gallery-container">
             <h2 id="fire-prop-title"> Feu</h2>
         </div>
-        <?php
-        foreach ($args['session']['adminAgreFeu'] as $args['session']['agreFeu']) { ?>
+        <div class="admin-prop-button-container">
+            <?php
+            foreach ($args['session']['adminAgreFeu'] as $args['session']['agreFeu']) { ?>
 
-            <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['id'] ?>" "> <?= $args['session']['agreFeu']['name'] ?></a>
+                <a class="admin-prop-button" href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['id'] ?>" "> <?= $args['session']['agreFeu']['name'] ?></a>
                         <?php } ?>  
-
+                        </div>
 
         <div class=" gallery-container">
-                <h2>Lumineux</h2>
-                </div>
-                <?php
-                foreach ($args['session']['adminAgreLED'] as $args['session']['agreLED']) { ?>
+                    <h2>Lumineux</h2>
+        </div>
+        <div class="admin-prop-button-container">
+            <?php
 
-                    <a href="/ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['id'] ?>" "> <?= $args['session']['agreLED']['name'] ?></a>
-                        <?php } ?>  
+            foreach ($args['session']['adminAgreLED'] as $args['session']['agreLED']) { ?>
+
+                <a class="admin-prop-button" href="/ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['id'] ?>" "> <?= $args['session']['agreLED']['name'] ?></a>
+                    <?php } ?>  </div>
+                  
 
               
                 

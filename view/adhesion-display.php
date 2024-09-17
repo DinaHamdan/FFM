@@ -59,7 +59,10 @@
 
             <div>
                 <input type="radio" name="oui_non" checked value="Oui">
+                <label for="oui_non">Oui</label>
+
                 <input type="radio" name="oui_non" value="Non">
+                <label for="oui_non">Non</label>
             </div>
 
 

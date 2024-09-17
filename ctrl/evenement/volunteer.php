@@ -47,7 +47,7 @@ class GetVolunteerForm extends Ctrl
 
         $dateTime = date('Y-m-d h:i:s');
 
-        $isSucces = LibEvent::getVolunteerForm(
+        $isSuccess = LibEvent::getVolunteerForm(
             $volunteerForm['firstName'],
             $volunteerForm['lastName'],
             $volunteerForm['birthday'],
@@ -68,6 +68,11 @@ class GetVolunteerForm extends Ctrl
             $volunteerForm['otherInfo'],
             $dateTime
         );
+
+        // Ajoute un flash-message a garder
+        if ($isSuccess) {
+            $_SESSION['msg']['info'][] = 'Votre formulaire bénévole a été envoyé';
+        }
     }
     function renderView(): void
     {

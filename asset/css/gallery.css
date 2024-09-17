@@ -9,6 +9,23 @@
       align-items: center;
   } */
 }
+#gallery .admin-prop-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gallery .admin-prop-button-container .admin-prop-button {
+  text-decoration: none;
+  margin: 1em;
+  border-radius: 20px;
+  width: 100px;
+  height: 35px;
+  background-color: #FB7616;
+  border: none;
+  padding: 0.2em;
+  color: black;
+  text-align: center;
+}
 #gallery #gallery-title-container {
   text-align: center;
   padding: 3em;
@@ -165,6 +182,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  #gallery .admin-prop-button-container {
+    justify-content: center;
+    width: 70%;
+    padding: 2em;
   }
   #gallery #gallery-title-container {
     padding: 5em;
