@@ -12,13 +12,7 @@
 
 } */
 
-#full-logo {
-    display: none;
-    width: 6em;
-    height: 4em;
-    margin-bottom: 8em;
 
-}
 
 #title-container {
     padding: 4em 1em 0 0;
@@ -37,7 +31,8 @@
         font-size: 1.5em;
         font-family: "Kantumruy Pro", sans-serif;
         color: #ffa743;
-
+        //    padding-right: 2em;
+        padding: 4em 2em 0 0;
 
     }
 
@@ -50,6 +45,7 @@
         font-size: 0.9em;
         font-family: "Kantumruy Pro", sans-serif;
         color: #ffa743;
+        padding-right: 2em;
 
     }
 }
@@ -168,9 +164,9 @@ header {
     position: fixed;
     top: 0;
     width: 98%;
-    //border: 1px solid red;
+    border: 1px solid rgb(49, 48, 48);
     // margin: 0;
-    height: 150px;
+    height: 110px;
     padding: 1em;
 
 }

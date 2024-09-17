@@ -462,7 +462,7 @@ Rapport
 
 
 
-## Semaine 10
+# Semaine 10
 sécurité  
 rapport   
 ## Lundi 09-09
@@ -479,11 +479,18 @@ report
 
 ## jedui 12-09
 
-## Vendredi
+## Vendredi 13-09
 Report
 référencement
 Resize photos
 
+# Semaine 11
+
+## Lundi 16-09
+Rapport 
+
+## Mardi 17-09 
+Rapport
 
 ## TO DO :
 

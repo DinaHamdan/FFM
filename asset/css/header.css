@@ -10,13 +10,6 @@
     height:600px;
 
 } */
-#full-logo {
-  display: none;
-  width: 6em;
-  height: 4em;
-  margin-bottom: 8em;
-}
-
 #title-container {
   padding: 4em 1em 0 0;
   display: flex;
@@ -30,6 +23,7 @@
   font-size: 1.5em;
   font-family: "Kantumruy Pro", sans-serif;
   color: #ffa743;
+  padding: 4em 2em 0 0;
 }
 #title-container #title-description {
   -webkit-text-stroke: 1px rgba(243, 102, 0, 0.3843137255);
@@ -37,6 +31,7 @@
   font-size: 0.9em;
   font-family: "Kantumruy Pro", sans-serif;
   color: #ffa743;
+  padding-right: 2em;
 }
 
 .arrow {
@@ -127,7 +122,8 @@ header #flash-message-header #error-message {
   position: fixed;
   top: 0;
   width: 98%;
-  height: 150px;
+  border: 1px solid rgb(49, 48, 48);
+  height: 110px;
   padding: 1em;
 }
 

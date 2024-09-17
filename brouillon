@@ -259,3 +259,59 @@ return $listPhotoType;
 } */
 
 SELECT typeAgre.id, typeAgre.name AS agreName, typeAgre.label, category.id, category.name AS categoryName, typeAgreCategory.idAgre, typeAgreCategory.idCategory, photoAgre.illustration  FROM typeAgre JOIN typeAgreCategory ON typeAgre.id = typeAgreCategory.idAgre  JOIN category ON category.id = typeAgreCategory.idCategory  AND category.id = 1  JOIN photoAgre ON photoAgre.idTypeAgre = typeAgre.id  WHERE photoAgre.idCategory = 1
+
+
+
+let pair = [];
+const fetchEvenAndAdd1 = (intArray) => {
+  for (let i = 0 ; i < 9; i ++){ 
+  if (intArray[i] % 2 == 0)
+    pair.push(intArray[i]);
+    console.error('this is pair' + pair);
+    let even = pair.map(function(impair){
+      console.error('this is impair' + impair + 1);
+    });
+}
+
+
+
+}
+
+
+/** 
+* @param {number[]} intArray
+* @return {number[]}
+*/// Declaring empty Even array
+let intArray = [2,3,4,7,8];
+let even = [];
+
+intArray.forEach(i => {
+    if( i % 2 == 0 )  
+      even.push(i); });
+       console.error(even);
+  
+ 
+
+       /** 
+* @param {number[]} tab
+* @return {number[]}
+*/
+ let tab = [5,7,9,1]
+ const sortAlgo = (tab) => {
+   for (i = 0; i < tab.length ; i++) {
+    // console.error(tab[i]);
+     for (j = tab.length - 1; j-1 > i; j--) {
+      // console.error(tab[j]);
+       if (tab[j] > tab[i]) {
+         tmp = tab[j];
+        console.error(tmp)
+       }
+       if(tab[j] < tab[i]) {
+         tmp = tab[i];
+         console.error(tmp)
+       }
+     }
+   }
+ 
+   return tab;
+ }

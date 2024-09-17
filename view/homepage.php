@@ -4,8 +4,6 @@
     <section id="accueil">
         <!-- Mettre la photo du background en dur -->
         <!-- <img id="image-accueil" src="/img/photo-accueil -cropped.jpg" alt=""> -->
-        <!-- Big Logo -->
-        <img id="full-logo" src="/asset/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
         <!-- Title -->
         <div id="title-container">
             <h1 id="FFM">Fire From Mars</h1>
