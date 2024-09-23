@@ -35,7 +35,7 @@
             </p>
             <h2 id="discoverArtist"> Découvrez Nos</h2>
             <div class="center-button">
-                <a href="/ctrl/agre/list-agre.php" id="prop-button">Agrès</a>
+                <a href="/agre/list-agre" id="prop-button">Agrès</a>
             </div>
         </div>
 
@@ -56,8 +56,8 @@
                 <p id="paragraph-three-two">comme vous êtes</p>
             </div>
             <div class="center-button">
-                <a class="prop-group-button" href="/ctrl/agre/list-agre.php">Agrès</a>
-                <a href='/ctrl/adhesion/adhesion-display.php' id="adhesion-button">Adhésion</a>
+                <a class="prop-group-button" href="/agre/list-agre">Agrès</a>
+                <a href='/adhesion/adhesion-display' id="adhesion-button">Adhésion</a>
             </div>
         </div>
 

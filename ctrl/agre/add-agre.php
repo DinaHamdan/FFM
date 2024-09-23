@@ -114,7 +114,7 @@ class AddAgrePhoto extends Ctrl
         $args = $this->viewArgs;
         //add redirection
 
-        header('Location: ' . '/ctrl/agre/list-agre.php');
+        header('Location: ' . '/agre/list-agre');
     }
 
 

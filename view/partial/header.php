@@ -52,7 +52,7 @@
                 /* Check if user session is not null to show the specific links */
                 if ($args['session']['user']['codeRole'] != null) { ?>
                     <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
-                    <li><a class="menuItem" href='/ctrl/agre/list-agre.php'>Agrès</a></li>
+                    <li><a class="menuItem" href='/agre/list-agre'>Agrès</a></li>
                     <li><a class="menuItem" href='/ctrl/evenement/event.php'>Evénement</a></li>
                     <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
                     <li><a class="menuItem" href='/ctrl/forum/forum-display.php'>Forum</a></li>
@@ -73,7 +73,7 @@
                     </div>
                 <?php } else { ?>
                     <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
-                    <li><a class="menuItem" href='/ctrl/agre/list-agre.php'>Agrès</a></li>
+                    <li><a class="menuItem" href='/agre/list-agre'>Agrès</a></li>
                     <li><a class="menuItem" href='/ctrl/evenement/event.php'>Evénement</a></li>
                     <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
                     <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>

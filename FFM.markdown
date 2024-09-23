@@ -539,5 +539,17 @@ CSS BackOffice details
 
 
 # Retour au GRETA 
+
+
+## documents à faire
+Résumé Projet
+Dossier Projet -> 14 Octobre version éléctrique obligatoire
+Diaporama
+Dossier Professionnel 
+
+### Questions Pour Guillaume 
+error undefined array key
+questions about router 
+
 ## Lundi 23/09/24
 Rapport

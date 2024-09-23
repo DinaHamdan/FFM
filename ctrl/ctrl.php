@@ -21,7 +21,8 @@ abstract class Ctrl implements CtrlI
 
     public function isUserLogged(): bool
     {
-        return $_SESSION['user'] != null;
+
+        return isset($_SESSION['user']) && $_SESSION['user']  != null;
     }
     public function hasRole(string $role)
     {
