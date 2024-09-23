@@ -70,7 +70,7 @@ class UpdateEvent extends Ctrl
 
         $hasErrors = !empty($_SESSION['msg']['error']);
         if ($hasErrors) {
-            header('Location: ' . '/ctrl/evenement/event-display.php');
+            header('Location: ' . '/ctrl/evenement/event.php');
             exit();
         }
 
@@ -87,7 +87,7 @@ class UpdateEvent extends Ctrl
 
         $hasErrors = !empty($_SESSION['msg']['error']);
         if ($hasErrors) {
-            header('Location: ' . '/ctrl/evenement/event-display.php');
+            header('Location: ' . '/ctrl/evenement/event.php');
             exit();
         }
         //Poster

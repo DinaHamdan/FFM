@@ -4,7 +4,6 @@ INSERT INTO role(id, code, label) VALUES
      (1, 'ADM','Admin')
     ,(2, 'MOD', 'Moderator')
     ,(3, 'MEM', 'Member')
-    ,(4, 'VIS', 'Visitor')
    
 ;
 
@@ -22,7 +21,7 @@ INSERT INTO category(name)VALUES
 INSERT INTO memberTypeAgre(idMember, idTypeAgre) VALUES
      (1, 1)
         ,(1, 4)
-    
+  
 ;
 --TILL HERE
 -- test for table of type of agre

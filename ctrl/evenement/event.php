@@ -23,7 +23,7 @@ class EventDisplay extends Ctrl
         $args = $this->viewArgs;
 
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/header.php';
-        include $_SERVER['DOCUMENT_ROOT'] . '/view/evenement/event-display.php';
+        include $_SERVER['DOCUMENT_ROOT'] . '/view/evenement/event.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
     function getPageTitle(): null

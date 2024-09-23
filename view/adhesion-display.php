@@ -54,8 +54,19 @@
                 <label id="other-label" for="talents">Autre talents: </label>
                 <input class="input-box" type="text" name="talents" id="talents">
             </div>
+            <div>
+                <p>Soutenez l'asso avec votre participation.
+                    En premier lieu la participation est encouragé pour les fire jam.
+                    La participation des membres actifs est réservés aux anciens qui souhaitent renouveler leur adhésion.</p>
+                <div> <input type="radio" name="participation" checked value="fire-jam-3">
+                    <label for="participation">Adéhsion Fire Jam 3€</label>
+                </div>
 
-            <label for="oui_non">J'autorise Fire From Mars à utiliser mon image</label>
+                <input type="radio" name="participation" value="membre-actif-20">
+                <label for="participation">Adéhsion membre actif 20€</label>
+            </div>
+
+            <p>J'autorise Fire From Mars à utiliser mon image</p>
 
             <div>
                 <input type="radio" name="oui_non" checked value="Oui">
@@ -64,6 +75,7 @@
                 <input type="radio" name="oui_non" value="Non">
                 <label for="oui_non">Non</label>
             </div>
+
 
 
             <button id="validateAdhesion" type="submit">S'adhérer</button>

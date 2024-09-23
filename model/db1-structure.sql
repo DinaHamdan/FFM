@@ -80,34 +80,6 @@ CREATE TABLE adhesion(
 )
 ;
 
-CREATE TABLE artist(
-   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
-  ,email varchar(50) NOT NULL
-  ,firstName varchar(50) NOT NULL
-  ,lastName varchar(50) NOT NULL
-  ,phoneNumber bigint(100) NOT NULL
-
-)
-;
-
-CREATE TABLE photoArtist(
-   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
-  ,title varchar(50) NOT NULL
-  ,idArtist bigint(100) NOT NULL
-  ,illustration longblob NOT NULL
-  ,illustration_filename varchar(255) NOT NULL
-
-)
-;
-CREATE TABLE artistTypeAgre(
-  idArtist bigint(20) NOT NULL
-  ,idTypeAgre bigint(50) NOT NULL
-
-)
-;
-
-
-
 CREATE TABLE contactMessage(
    id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
   ,type varchar(50) NOT NULL
@@ -118,15 +90,6 @@ CREATE TABLE contactMessage(
   ,phoneNumber bigint(100) NOT NULL
   ,content varchar(2000) NOT NULL
   ,date_time_column timestamp(6) NOT NULL
-)
-;
-CREATE TABLE volunteer (
-   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
-  ,email varchar(50) NOT NULL
-  ,firstName varchar(50) NOT NULL
-  ,lastName varchar(50) NOT NULL
-  ,phoneNumber bigint(100) NOT NULL
-
 )
 ;
 
@@ -154,9 +117,6 @@ CREATE TABLE volunteerForm(
 )
 ;
 
-
-
-
 CREATE TABLE convention(
    id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
   ,firstDate varchar(50) NOT NULL
@@ -175,8 +135,6 @@ CREATE TABLE convention(
 
 )
 ;
-
-
 
 
 CREATE TABLE discussion(
@@ -212,28 +170,10 @@ ALTER TABLE role
    ADD CONSTRAINT `u_role_code` UNIQUE(code)
   
 ;
-ALTER TABLE memberTypeAgre
-   ADD CONSTRAINT `fk_memberTypeAgre_member` FOREIGN KEY(idMember) REFERENCES member(id)
-    ,ADD CONSTRAINT `fk_memberTypeAgre_typeAgre` FOREIGN KEY(idTypeAgre) REFERENCES typeAgre(id)
-;
 
 ALTER TABLE typeAgre
    ADD CONSTRAINT `u_typeAgre_name` UNIQUE(name)
    ;
-
-
-ALTER TABLE photoArtist
-   ADD CONSTRAINT `fk_photoArtist_artist` FOREIGN KEY(idArtist) REFERENCES artist(id)
-;
-ALTER TABLE artistTypeAgre
-   ADD CONSTRAINT `fk_artistTypeAgre_artist` FOREIGN KEY(idArtist) REFERENCES artist(id)
-    ,ADD CONSTRAINT `fk_artistTypeAgre_typeAgre` FOREIGN KEY(idTypeAgre) REFERENCES typeAgre(id)
-;
-
-ALTER TABLE volunteerForm
-   ADD CONSTRAINT `fk_volunteerForm_volunteer` FOREIGN KEY(idVolunteer) REFERENCES volunteer(id)
-;
-
 
  ALTER TABLE typeAgreCategory
     ADD CONSTRAINT `fk_typeAgreCategory_typeAgre` FOREIGN KEY(idAgre) REFERENCES typeAgre(id)
@@ -247,8 +187,6 @@ ALTER TABLE volunteerForm
 ;
 
 
-
-
 ALTER TABLE discussion
    ADD CONSTRAINT `fk_discussion_member` FOREIGN KEY(idMember) REFERENCES member(id)
 ;
@@ -256,4 +194,57 @@ ALTER TABLE discussion
 ALTER TABLE comment
    ADD CONSTRAINT `fk_comment_member` FOREIGN KEY(idMember) REFERENCES member(id)
     ,ADD CONSTRAINT `fk_comment_discussion` FOREIGN KEY(idDiscussion) REFERENCES discussion(id)
+;
+
+
+
+
+CREATE TABLE artist(
+   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
+  ,email varchar(50) NOT NULL
+  ,firstName varchar(50) NOT NULL
+  ,lastName varchar(50) NOT NULL
+  ,phoneNumber bigint(100) NOT NULL
+
+)
+;
+
+CREATE TABLE photoArtist(
+   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
+  ,title varchar(50) NOT NULL
+  ,idArtist bigint(100) NOT NULL
+  ,illustration longblob NOT NULL
+  ,illustration_filename varchar(255) NOT NULL
+
+)
+;
+CREATE TABLE artistTypeAgre(
+  idArtist bigint(20) NOT NULL
+  ,idTypeAgre bigint(50) NOT NULL
+
+)
+;
+CREATE TABLE volunteer (
+   id bigint(20) NOT NULL AUTO_INCREMENT PRIMARY KEY
+  ,email varchar(50) NOT NULL
+  ,firstName varchar(50) NOT NULL
+  ,lastName varchar(50) NOT NULL
+  ,phoneNumber bigint(100) NOT NULL
+
+)
+;
+
+ALTER TABLE photoArtist
+   ADD CONSTRAINT `fk_photoArtist_artist` FOREIGN KEY(idArtist) REFERENCES artist(id)
+;
+ALTER TABLE artistTypeAgre
+   ADD CONSTRAINT `fk_artistTypeAgre_artist` FOREIGN KEY(idArtist) REFERENCES artist(id)
+    ,ADD CONSTRAINT `fk_artistTypeAgre_typeAgre` FOREIGN KEY(idTypeAgre) REFERENCES typeAgre(id)
+;
+ALTER TABLE memberTypeAgre
+   ADD CONSTRAINT `fk_memberTypeAgre_member` FOREIGN KEY(idMember) REFERENCES member(id)
+    ,ADD CONSTRAINT `fk_memberTypeAgre_typeAgre` FOREIGN KEY(idTypeAgre) REFERENCES typeAgre(id)
+;
+ALTER TABLE volunteerForm
+   ADD CONSTRAINT `fk_volunteerForm_volunteer` FOREIGN KEY(idVolunteer) REFERENCES volunteer(id)
 ;

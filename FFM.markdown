@@ -428,25 +428,25 @@ déploiement
 
 ## semaine 9 
 
-Lundi
+## Lundi 02-09
 Fix gallerie links towards photo for one agré
 fonctionnalité pour changer mot de pass BUG
 Debugging (additional functions)  
 
-Mardi
+## Mardi 03-09
 fonctionnalité pour changer mot de pass BUG - fixed
 
-Mercredi
+## Mercredi 04-09 
 Commencer CSS BackOffice
 Déploiment
 
-Jeudi
+## Jeudi 05-09
 css backoffice 
 sticky menu
 navbar css
 présentation
 
-Vendredi 
+## Vendredi 06/09
 présentation
 notes: 
 Requête SQL avec Join IMPORTANT!!!
@@ -492,17 +492,9 @@ Rapport
 ## Mardi 17-09 
 Rapport
 
-## TO DO :
 
 
-remove useless tables in bdd phpmyadmin
-CSS BackOffice
-Resize photos
-référencement google  + sécurité
-RGPD: cookies
-
-            //TODO Need to add algorithm to check for photo width and height and change it accordingly
-
+# Notes présentation 
 Slides A faire: 
  MCD 
 table volontaire a changer
@@ -511,6 +503,15 @@ agré passer moin temps dessus
 Maquette référentiel - checklist avec tous mettre tout dans la présentation
  Priorités : diagramm de gantt - un planning pour montrer j'ai fait quoi quand
 
+## Vendredi 06/09
+présentation
+notes: 
+Requête SQL avec Join IMPORTANT!!!
+Présenter plus de sécurité 
+margin important navigation
+Difference entre jpeg et png 
+Juridiquement cocher une case ?  c'est assez ou pas
+Pattern password et email ne pas oublier
 
 ## Lundi 19/08/24 Notes de la présentation 
 travailler en autonomie en collaboration avec mon tuteur de stages- driver sur les points importants  
@@ -523,3 +524,20 @@ Bien expliquer les fonctions, prendre un exemple avec un JOIN et pourvoir l'expl
 Maquette statique montrer et prendre plus de temps pour faire la demo du site 
 Mettre plus d'exemple de code: développer le 
 
+
+## End of stage 
+
+## TO DO :
+remove useless tables in bdd phpmyadmin
+Resize photos
+référencement google  + sécurité
+RGPD: cookies 
+CSS BackOffice details 
+
+
+            //TODO Need to add algorithm to check for photo width and height and change it accordingly
+
+
+# Retour au GRETA 
+## Lundi 23/09/24
+Rapport
