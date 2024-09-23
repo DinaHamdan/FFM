@@ -19,7 +19,7 @@ class Logout extends Ctrl
     {
         $args = $this->viewArgs;
 
-        header('Location: ' . '/ctrl/welcome.php');
+        header('Location: ' . '/');
     }
     function getPageTitle(): null
     {

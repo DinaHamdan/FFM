@@ -51,7 +51,7 @@
                 <?php
                 /* Check if user session is not null to show the specific links */
                 if ($args['session']['user']['codeRole'] != null) { ?>
-                    <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
+                    <li><a class="menuItem" href='/'>FFM</a></li>
                     <li><a class="menuItem" href='/agre/list-agre'>Agrès</a></li>
                     <li><a class="menuItem" href='/ctrl/evenement/event.php'>Evénement</a></li>
                     <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
@@ -59,7 +59,7 @@
                     <!-- Check if the user is an admin -->
                     <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
                         <li><a class="menuItem" href="/ctrl/registration/registration-display.php">Inscription</a></li>
-                        <li><a class="menuItem" href="/ctrl/backoffice/backoffice.php">BackOffice</a></li>
+                        <li><a class="menuItem" href="/backoffice/backoffice">BackOffice</a></li>
 
                     <?php  } ?>
                     <div id="avatar-container">
@@ -72,7 +72,7 @@
                         <a class="logout" href='/ctrl/logout.php'>Logout</a>
                     </div>
                 <?php } else { ?>
-                    <li><a class="menuItem" href='/ctrl/welcome.php'>FFM</a></li>
+                    <li><a class="menuItem" href='/'>FFM</a></li>
                     <li><a class="menuItem" href='/agre/list-agre'>Agrès</a></li>
                     <li><a class="menuItem" href='/ctrl/evenement/event.php'>Evénement</a></li>
                     <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>

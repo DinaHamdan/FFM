@@ -16,9 +16,9 @@
         <!-- Check if the user is an admin -->
         <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
             <div id="button-container">
-                <a class="add-button" href="/ctrl/agre/add-agre-display.php">Ajouter des photos d'agrés</a>
+                <a class="add-button" href="/agre/add-agre-display">Ajouter des photos d'agrés</a>
 
-                <a class="add-button" href="/ctrl/agre/add-agreType-display.php">Ajouter type d'agrés</a>
+                <a class="add-button" href="/agre/add-agreType-display">Ajouter type d'agrés</a>
             </div>
 
 

@@ -13,7 +13,7 @@
                     <p>Téléphone : <?= $args['session']['member']['phoneNumber'] ?></p>
                     <img id="profile-photo" src="data:image/png;base64,<?= base64_encode($args['session']['member']['avatar']) ?>" alt="member-Avatar">
                     <?php if ($args['session']['user']['codeRole'] == 'ADM') { ?>
-                        <p> <a href="/ctrl/backoffice/delete-member.php?id=<?= $args['session']['member']['id'] ?>">Enlever</a></p>
+                        <p> <a href="/backoffice/delete-member?id=<?= $args['session']['member']['id'] ?>">Enlever</a></p>
 
                     <?php  } ?>
                 </div>

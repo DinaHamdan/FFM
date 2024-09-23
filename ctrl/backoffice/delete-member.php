@@ -21,7 +21,7 @@ class DeleteMember extends Ctrl
     function renderView(): void
     {
         $args = $this->viewArgs;
-        header('Location: ' . '/ctrl/backoffice/list-members.php');
+        header('Location: ' . '/backoffice/list-member');
     }
 
 

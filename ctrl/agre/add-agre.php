@@ -65,7 +65,7 @@ class AddAgrePhoto extends Ctrl
             $hasErrors = !empty($_SESSION['msg']['error']);
             if ($hasErrors) {
                 // Redirect towards the form to correct the photo upload
-                header('Location: ' . '/ctrl/agre/add-agre-display.php');
+                header('Location: ' . '/agre/add-agre-display');
                 exit();
             }
 

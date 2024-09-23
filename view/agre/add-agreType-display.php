@@ -2,7 +2,7 @@
     <section id="add-prop">
         <h1 class="add-prop-title" id="page-title"><?= $args['pageTitle'] ?></h1>
 
-        <form id="add-prop-form" action="/ctrl/agre/add-agreType.php" method="post" enctype="multipart/form-data">
+        <form id="add-prop-form" action="/agre/add-agreType" method="post" enctype="multipart/form-data">
 
             <!-- Add photos to agre gallerie -->
             <label for="category">Categorie</label>

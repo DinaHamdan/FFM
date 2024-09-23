@@ -14,9 +14,9 @@
         <!-- Check if the user is an admin -->
         <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
             <div id="button-container">
-                <a class="add-button" href="/ctrl/agre/add-agre-display.php">Ajouter des photos d'agrés</a>
+                <a class="add-button" href="/agre/add-agre-display">Ajouter des photos d'agrés</a>
 
-                <a class="add-button" href="/ctrl/agre/add-agreType-display.php">Ajouter type d'agrés</a>
+                <a class="add-button" href="/agre/add-agreType-display">Ajouter type d'agrés</a>
             </div>
 
 
@@ -34,7 +34,7 @@
                 foreach ($args['session']['typeAgreFeu'] as $args['session']['agreFeu']) { ?>
 
                     <div class="prop-title-photo-container">
-                        <a href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>" "> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt=""></a>
+                        <a href=" /ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>" "> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt=""></a>
                         <h3><?= $args['session']['agreFeu']['agreName'] ?></h3>
                     </div>
                 <?php } ?>
@@ -55,7 +55,7 @@
                     <div class="prop-title-photo-container">
 
 
-                        <a href=" /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['idAgre'] ?>" "> <img  class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreLED']['illustration']) ?>" alt=""></a>
+                        <a href="  /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['idAgre'] ?>" "> <img  class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreLED']['illustration']) ?>" alt=""></a>
                         <h3><?= $args['session']['agreLED']['agreName'] ?></h3>
 
                     </div>

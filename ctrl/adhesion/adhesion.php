@@ -44,7 +44,7 @@ class CreateAdhesion extends Ctrl
 
 
         // Redirige vers la page d'acceuil
-        header('Location: ' . '/ctrl/welcome.php');
+        header('Location: ' . '/');
     }
 
     function renderView(): void

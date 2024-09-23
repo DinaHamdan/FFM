@@ -2,7 +2,7 @@
     <section id="add-photo-section">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
-        <form id="add-photo-form" action="/ctrl/agre/add-agre.php" method="post" enctype="multipart/form-data">
+        <form id="add-photo-form" action="/agre/add-agre" method="post" enctype="multipart/form-data">
 
             <!-- Add photos to agre gallerie -->
 

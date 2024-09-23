@@ -40,7 +40,7 @@ class Create extends Ctrl
 
 
         // Redirige vers la page de login
-        header('Location: ' . '/ctrl/welcome.php');
+        header('Location: ' . '/');
     }
 
     function renderView(): void

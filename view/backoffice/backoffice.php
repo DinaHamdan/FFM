@@ -4,11 +4,11 @@
 
          <div>
              <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
-                 <a href="/ctrl/backoffice/contactMessage.php">Messages de contact</a><br>
-                 <a href="/ctrl/backoffice/adhesion.php">Formulaires Adhésion</a><br>
-                 <a href="/ctrl/backoffice/volunteer-form.php">Formulaires bénévoles</a><br>
-                 <a href="/ctrl/backoffice/list-members.php">Membres actifs</a><br>
-                 <a href="/ctrl/backoffice/list-photo-agre.php">Gallerie agrés</a><br>
+                 <a href="/backoffice/contactMessage">Messages de contact</a><br>
+                 <a href="/backoffice/adhesion">Formulaires Adhésion</a><br>
+                 <a href="/backoffice/volunteer-form">Formulaires bénévoles</a><br>
+                 <a href="/backoffice/list-member">Membres actifs</a><br>
+                 <a href="/backoffice/list-photo-agre">Gallerie agrés</a><br>
 
 
 

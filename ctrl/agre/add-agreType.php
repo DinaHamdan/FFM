@@ -45,7 +45,7 @@ class AddAgreType extends Ctrl
         $args = $this->viewArgs;
         //add redirection
 
-        header('Location: ' . '/ctrl/agre/add-agreType-display.php');
+        header('Location: ' . '/agre/add-agreType-display');
     }
 
 

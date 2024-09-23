@@ -2,7 +2,7 @@
     <section class="backoffice-option">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
-        <h2 class="participant-name"> <?= $args['session']['volunteerForm']['firstName'] ?> <?= $args['session']['contactMessage']['lastName'] ?> </h2>
+        <h2 class="participant-name"> <?= $args['session']['contactMessage']['firstName'] ?> <?= $args['session']['contactMessage']['lastName'] ?> </h2>
 
 
 
