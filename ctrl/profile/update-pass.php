@@ -39,7 +39,7 @@ class UpdatePass extends Ctrl
 
 
         // Redirect towards login
-        header('Location: ' . '/ctrl/login/login-display.php');
+        header('Location: ' . '/login/login-display');
     }
 
     function renderView(): void

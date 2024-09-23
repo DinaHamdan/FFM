@@ -78,7 +78,7 @@ class CreateDiscussion extends Ctrl
             if ($hasErrors) {
                 echo 'has errors.';
                 // Redirect towards the form to correct the photo upload
-                header('Location: ' . '/ctrl/forum/forum-display.php');
+                header('Location: ' . '/forum/forum-display');
                 exit();
             }
 
@@ -131,7 +131,7 @@ class CreateDiscussion extends Ctrl
         $args = $this->viewArgs;
         //add redirection
 
-        header('Location: ' . '/ctrl/forum/forum-display.php');
+        header('Location: ' . '/forum/forum-display');
     }
 
 

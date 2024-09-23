@@ -73,7 +73,7 @@ class CreateProfile extends Ctrl
         if ($hasErrors) {
             echo 'has errors.';
             // Redirect towards the form to correct the photo upload
-            header('Location: ' . '/ctrl/profile/create-profile.php');
+            header('Location: ' . '/profile/create-profile');
             exit();
         }
 
@@ -117,7 +117,7 @@ class CreateProfile extends Ctrl
         $args = $this->viewArgs;
         //add redirection
 
-        header('Location: ' . '/ctrl/forum/forum-display.php');
+        header('Location: ' . '/forum/forum-display');
     }
 
 

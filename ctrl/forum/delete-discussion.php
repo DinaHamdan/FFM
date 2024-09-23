@@ -20,7 +20,7 @@ class DeleteDiscussion extends Ctrl
     function renderView(): void
     {
         $args = $this->viewArgs;
-        header('Location: ' . '/ctrl/forum/forum-display.php');
+        header('Location: ' . '/forum/forum-display');
     }
 
 

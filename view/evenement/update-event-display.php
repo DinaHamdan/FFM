@@ -2,7 +2,7 @@
     <section id="update-event-section">
         <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
 
-        <form id="update-event-form" action="/ctrl/evenement/update-event.php" method="post" enctype="multipart/form-data">
+        <form id="update-event-form" action="/evenement/update-event" method="post" enctype="multipart/form-data">
 
             <!-- Update poster photo -->
 

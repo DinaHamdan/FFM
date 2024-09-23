@@ -27,13 +27,13 @@ class Login extends Ctrl
             if (password_verify($password, $user['pass'])) {
                 $_SESSION['user'] = $user;
 
-                header('Location: ' . '/ctrl/forum/forum-display.php');
+                header('Location: ' . '/forum/forum-display');
                 exit;
             } else {
                 $_SESSION['msg']['incorrect'] = [];
 
                 $_SESSION['msg']['incorrect'][]  = 'Identifiant incorrecte';
-                header('Location: ' .  '/ctrl/login/login-display.php');
+                header('Location: ' .  '/login/login-display');
                 exit;
             };
         } else {
@@ -42,7 +42,7 @@ class Login extends Ctrl
 
             $_SESSION['msg']['unexisting'][] = 'Le compte utilisateur est introuvable.';
 
-            header('Location: ' .  '/ctrl/login/login-display.php');
+            header('Location: ' .  '/login/login-display');
             exit;
         };
     }

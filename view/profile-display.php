@@ -2,7 +2,7 @@
     <section id="profile">
         <h1 id="profile-title"><?= $args['pageTitle'] ?></h1>
 
-        <form id="profile-form" action="/ctrl/profile/create-profile.php" method="post" enctype="multipart/form-data">
+        <form id="profile-form" action="/profile/create-profile" method="post" enctype="multipart/form-data">
 
             <!-- First Name -->
 
@@ -32,7 +32,7 @@
 
             <button class="submit" type="submit">Valider</button>
 
-            <a href="/ctrl/profile/update-pass-display.php">Changer mot de passe</a>
+            <a href="/profile/update-pass-display">Changer mot de passe</a>
         </form>
 
     </section>

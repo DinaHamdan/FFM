@@ -78,7 +78,7 @@
                 <p>À malmort du</p>
                 <p>Comtat -84</p>
                 <div id="button-container">
-                    <a id="event-button" href='/ctrl/evenement/event.php'>Voir l'évènement</a>
+                    <a id="event-button" href='/evenement/event'>Voir l'évènement</a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
                 <p>renseigner, </p>
                 <p>demander un devis?</p>
             </div>
-            <div> <a id="contact-button" href="/ctrl/contact/contact-display.php">Contactez-nous</a></div>
+            <div> <a id="contact-button" href="/contact/contact-display">Contactez-nous</a></div>
         </article>
 
     </section>

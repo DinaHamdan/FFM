@@ -78,7 +78,7 @@ class GetVolunteerForm extends Ctrl
     {
         $args = $this->viewArgs;
 
-        header('Location: ' . '/ctrl/evenement/event.php');
+        header('Location: ' . '/evenement/event');
     }
     function getPageTitle(): null
     {

@@ -1,7 +1,7 @@
 <main>
     <section id="volunteer-form-section">
         <h2>Formulaire Bénévole</h2>
-        <form id="volunteer-form" action="/ctrl/evenement/volunteer.php" method="post">
+        <form id="volunteer-form" action="/evenement/volunteer" method="post">
 
             <div class="basic-answer-options">
                 <!-- First Name -->

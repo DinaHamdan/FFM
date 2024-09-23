@@ -4,7 +4,7 @@
         <h4 id="convention-info"><?= $args['session']['convention']['cost'] ?></h4>
 
         <?php if ($args['session']['user']['codeRole'] == 'ADM') { ?>
-            <a id="modify-event-button" href="/ctrl/evenement/update-event-display.php">Modifier l'évenement</a>
+            <a id="modify-event-button" href="/evenement/update-event-display">Modifier l'évenement</a>
         <?php  } ?>
 
         <div id="convention-poster-container">
@@ -41,7 +41,7 @@
 
         <div id="button-container">
             <a id="reserve-button" href="">Réserver ma place</a>
-            <a id="volunteer-button" href="/ctrl/evenement/volunteer-form-display.php">Devenir Bénévole</a>
+            <a id="volunteer-button" href="/evenement/volunteer-form-display">Devenir Bénévole</a>
         </div>
         <h3 id="convention-address-title"> Adresse </h3>
         <div id="convention-map-container">

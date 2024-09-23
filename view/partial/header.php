@@ -53,30 +53,30 @@
                 if ($args['session']['user']['codeRole'] != null) { ?>
                     <li><a class="menuItem" href='/'>FFM</a></li>
                     <li><a class="menuItem" href='/agre/list-agre'>Agrès</a></li>
-                    <li><a class="menuItem" href='/ctrl/evenement/event.php'>Evénement</a></li>
-                    <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
-                    <li><a class="menuItem" href='/ctrl/forum/forum-display.php'>Forum</a></li>
+                    <li><a class="menuItem" href='/evenement/event'>Evénement</a></li>
+                    <li><a class="menuItem" href='/contact/contact-display'>Contact</a></li>
+                    <li><a class="menuItem" href='/forum/forum-display'>Forum</a></li>
                     <!-- Check if the user is an admin -->
                     <?php if (($args)['session']['user']['codeRole'] == 'ADM') { ?>
-                        <li><a class="menuItem" href="/ctrl/registration/registration-display.php">Inscription</a></li>
+                        <li><a class="menuItem" href="/registration/registration-display">Inscription</a></li>
                         <li><a class="menuItem" href="/backoffice/backoffice">BackOffice</a></li>
 
                     <?php  } ?>
                     <div id="avatar-container">
                         <?php if ($args['session']['user']['avatar'] == null) { ?>
-                            <a href="/ctrl/profile/profile-display.php"><img id="ffm-man" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></a>
+                            <a href="/profile/profile-display"><img id="ffm-man" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo"></a>
 
                         <?php } else {  ?>
-                            <a href="/ctrl/profile/profile-display.php"><img id="ffm-man" src="data:image/png;base64,<?= base64_encode($args['session']['user']['avatar']) ?>" alt=""></a>
+                            <a href="/profile/profile-display"><img id="ffm-man" src="data:image/png;base64,<?= base64_encode($args['session']['user']['avatar']) ?>" alt=""></a>
                         <?php } ?>
                         <a class="logout" href='/ctrl/logout.php'>Logout</a>
                     </div>
                 <?php } else { ?>
                     <li><a class="menuItem" href='/'>FFM</a></li>
                     <li><a class="menuItem" href='/agre/list-agre'>Agrès</a></li>
-                    <li><a class="menuItem" href='/ctrl/evenement/event.php'>Evénement</a></li>
-                    <li><a class="menuItem" href='/ctrl/contact/contact-display.php'>Contact</a></li>
-                    <li><a class="menuItem" href='/ctrl/login/login-display.php'>Login</a></li>
+                    <li><a class="menuItem" href='/evenement/event'>Evénement</a></li>
+                    <li><a class="menuItem" href='/contact/contact-display'>Contact</a></li>
+                    <li><a class="menuItem" href='/login/login-display'>Login</a></li>
                 <?php } ?>
             </ul>
 

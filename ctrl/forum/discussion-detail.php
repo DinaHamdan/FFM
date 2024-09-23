@@ -15,7 +15,7 @@ class DiscussionDetail extends Ctrl
         $isGranted = $this->hasRole(Role::ADMIN);
         /* 
         if (!$isGranted) {
-            header('Location: ' . '/ctrl/forum/forum-display.php');
+            header('Location: ' . '/forum/forum-display');
         } */
         $idDiscussion = $_GET['id'];
         $discussion = LibDiscussion::getDiscussion($idDiscussion);

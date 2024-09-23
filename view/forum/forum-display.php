@@ -42,7 +42,7 @@
 
         <?php } else { ?>
             <h3 id="complete-profile-title"> Pour pouvoir accéder au forum </h3>
-            <p class="change-profile-paragraph"> s'il vous plait, </p> <a id="complete-profile-link" href="/ctrl/profile/profile-display.php">complétez votre profil</a>
+            <p class="change-profile-paragraph"> s'il vous plait, </p> <a id="complete-profile-link" href="/profile/profile-display">complétez votre profil</a>
         <?php } ?>
 
     </section>

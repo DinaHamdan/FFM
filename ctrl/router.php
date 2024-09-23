@@ -47,7 +47,7 @@ $routes['/contact/contact'] = '/ctrl/contact/contact.php';
 
 //Event
 $routes['/evenement/event'] = '/ctrl/evenement/event.php';
-$routes['/evenement/update-event-display'] = '/ctrl/evenement/update-event-displays.php';
+$routes['/evenement/update-event-display'] = '/ctrl/evenement/update-event-display.php';
 $routes['/evenement/update-event'] = '/ctrl/evenement/update-event.php';
 $routes['/evenement/volunteer-form-display'] = '/ctrl/evenement/volunteer-form-display.php';
 $routes['/evenement/volunteer'] = '/ctrl/evenement/volunteer.php';

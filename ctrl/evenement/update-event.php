@@ -61,7 +61,7 @@ class UpdateEvent extends Ctrl
             $_SESSION['msg']['error'][] = 'Les seuls formats de fichier acceptés sont : ' . implode(',', $listAcceptedFileTypes);
         }
         if (true) {
-            echo 'all good';
+            // echo 'all good';
             if ($posterFileSize > $acceptedFilesize) {
                 $_SESSION['msg']['error'][] = 'Le taille de la photo est trop grand';
                 //Add redirection
@@ -70,7 +70,7 @@ class UpdateEvent extends Ctrl
 
         $hasErrors = !empty($_SESSION['msg']['error']);
         if ($hasErrors) {
-            header('Location: ' . '/ctrl/evenement/event.php');
+            header('Location: ' . '/evenement/event');
             exit();
         }
 
@@ -78,7 +78,7 @@ class UpdateEvent extends Ctrl
             $_SESSION['msg']['error'][] = 'Les seuls formats de fichier acceptés sont : ' . implode(',', $listAcceptedFileTypes);
         }
         if (true) {
-            echo 'all good';
+            // echo 'all good';
             if ($programFileSize > $acceptedFilesize) {
                 $_SESSION['msg']['error'][] = 'Le taille de la photo est trop grand';
                 //Add redirection
@@ -87,7 +87,7 @@ class UpdateEvent extends Ctrl
 
         $hasErrors = !empty($_SESSION['msg']['error']);
         if ($hasErrors) {
-            header('Location: ' . '/ctrl/evenement/event.php');
+            header('Location: ' . '/evenement/event');
             exit();
         }
         //Poster

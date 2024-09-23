@@ -14,7 +14,7 @@ class ContactMessageDetail extends Ctrl
         $isGranted = $this->hasRole(Role::ADMIN);
         /* 
         if (!$isGranted) {
-            header('Location: ' . '/ctrl/forum/forum-display.php');
+            header('Location: ' . '/forum/forum-display');
         } */
         $idContactMessage = $_GET['id'];
         $contactMessage = LibMember::getContactMessage($idContactMessage);

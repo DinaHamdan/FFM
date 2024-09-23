@@ -13,7 +13,7 @@ class Backoffice extends Ctrl
         $isGranted = $this->hasRole(Role::ADMIN);
         /* 
         if (!$isGranted) {
-            header('Location: ' . '/ctrl/forum/forum-display.php');
+            header('Location: ' . '/forum/forum-display');
         } */
     }
 
