@@ -12,3 +12,4 @@ function myFunction() {
         menuBar.classList.remove("sticky");
     }
 }
+

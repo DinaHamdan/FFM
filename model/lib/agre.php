@@ -148,11 +148,8 @@ class LibAgre
         $query .= ' WHERE typeAgre.name = :name';
         $statement = libDb::connect()->prepare($query);
         $statement->bindParam(':name', $nameTypeagre);
-
-        // - Exécute la requête
         $successOrFailure = $statement->execute();
         $idAgreType = $statement->fetchAll(PDO::FETCH_ASSOC);
-
         return $idAgreType;
     }
     static function getIdTypeIdCategory(): array

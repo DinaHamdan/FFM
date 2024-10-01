@@ -7,14 +7,9 @@ class Homepage extends Ctrl
 {
     function do(): void
     {
-        // $_SESSION['user'] = [];
 
-        /* 
         $isLogged = $this->isUserLogged();
-        if (!$isLogged) {
-            $_SESSION['user'] = [];
-            $_SESSION['user']['codeRole'] = [];
-        } */
+
 
         $isGrantedAdmin = $this->hasRole(Role::ADMIN);
         $isGrantedMember = $this->hasRole(Role::MEMBER);

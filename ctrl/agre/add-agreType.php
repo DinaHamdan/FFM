@@ -20,20 +20,15 @@ class AddAgreType extends Ctrl
             $categoryTypeAgre['category'] = implode(',', $category);
 
         //  $categoryTypeAgre  = $_POST['category'];
-
         $nameTypeAgre = htmlspecialchars($_POST['name']);
         $labelTypeAgre = htmlspecialchars($_POST['label']);
-
-
         //add an agre Type
-
         $isSuccess = LibAgre::AddAgreType($nameTypeAgre, $labelTypeAgre, $categoryTypeAgre['category']);
+
         //get Agre id 
         $getAgre = LibAgre::getIdType($nameTypeAgre);
-
         $idAgre = $getAgre[0]['id'];
         foreach ($_POST['category'] as $category) {
-
 
             $isAdded = LibAgre::addAgreCategory($idAgre, $category);
         }

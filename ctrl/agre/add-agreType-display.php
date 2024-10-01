@@ -7,10 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/agre.php';
 class AddAgreDisplay extends Ctrl
 {
     function do(): void
-    {  //Check if user is logged and has admin privileges
-        $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::ADMIN);
-
+    {
         $_SESSION['listCategory'] = LibAgre::getCategory();
 
         //get agreType Id and category Id
@@ -35,3 +32,6 @@ class AddAgreDisplay extends Ctrl
 
 $ctrl = new AddAgreDisplay();
 $ctrl->execute();
+//Check if user is logged and has admin privileges
+$isLogged = $this->isUserLogged();
+$isGranted = $this->hasRole(Role::ADMIN);

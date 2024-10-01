@@ -1,5 +1,4 @@
 <?php
-
 // Read the path of the requested URL 
 $url = parse_url($_SERVER['REQUEST_URI'])['path'];
 
@@ -73,11 +72,12 @@ $routes['/profile/update-pass'] = '/ctrl/profile/update-pass.php';
 
 //registration
 $routes['/registration/registration-display'] = '/ctrl/registration/registration-display.php';
-$routes['/registration/registration'] = '/ctrl/registration/v.php';
+$routes['/registration/registration'] = '/ctrl/registration/registration.php';
 
 // search for requested route
 $route = $routes[$url];
-
+//var_dump($route);
+//die();
 // Eventually redirect the user towards a personnalized error 404 page
 // when the requested route is not referenced  
 // WARN ça manque de log... ?

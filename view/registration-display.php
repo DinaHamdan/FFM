@@ -2,7 +2,7 @@
     <section id="registration">
         <h1 class="register-title" id="page-title"><?= $args['pageTitle'] ?></h1>
 
-        <form id="registration-form" action="/ctrl/registration/registration.php" method="post">
+        <form id="registration-form" action="/registration/registration" method="post">
 
             <!-- Email  that must be in the following order: characters@characters.domain (characters followed by an @ sign, followed by more characters, and then a "."
          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"-->

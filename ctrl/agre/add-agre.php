@@ -36,32 +36,24 @@ class AddAgrePhoto extends Ctrl
             $fileType = $fileTypes[$key];
 
 
-
-
-
             $png = Type::MY_IMG_PNG;
             $jpg = Type::MY_IMG_JPG;
-
             $listAcceptedFileTypes = [$png, $jpg];
-
             $acceptedFilesize = Type::FILE_MAX_SIZE;
-
-
             // Put in place several tests on the the uploaded photo to check if it has the right file type
             $isSupportedFileType = in_array($fileType, $listAcceptedFileTypes);
 
             if (!$isSupportedFileType) {
-                echo 'is not accepted files';
                 // Add a flash message
                 $_SESSION['msg']['error'][] = 'Les seuls formats de fichier acceptés sont : ' . implode(',', $listAcceptedFileTypes);
             }
             if (true) {
                 if ($fileSize > $acceptedFilesize) {
                     $_SESSION['msg']['error'][] = 'La taille de la photo est trop grand';
-                    echo 'too big';
+                    header('Location: ' . '/agre/add-agre-display');
+                    exit();
                 }
             }
-
             $hasErrors = !empty($_SESSION['msg']['error']);
             if ($hasErrors) {
                 // Redirect towards the form to correct the photo upload
@@ -88,20 +80,18 @@ class AddAgrePhoto extends Ctrl
 
             imagepng($img, $fileTmpName);
 
-            // Ajoute un flash-message
+            // Add a flash message
             $_SESSION['msg']['info'][] = 'La photo a été ajouté';
 
             //open binary image file and rb to make sure it's read by all operating systems
             $binaryFile = fopen($fileTmpName, 'rb');
             $nameFile = basename($fileName);
-
             $dateTime = date('Y-m-d h:i:s');
             // ("Y-m-d h:i:s")
 
-            //Add photo
+            //Add photo to database 
             $isSuccess = LibAgre::AddAgrePhoto($idCategory, $idTypeagre, $binaryFile, $nameFile, $dateTime);
             //Create a directory to save uploaded photos
-
             $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/upload/';
             // Copy the image file into the photo directory
             $uploadPath = $uploadDirectory . basename($fileName);

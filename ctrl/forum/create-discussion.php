@@ -61,13 +61,11 @@ class CreateDiscussion extends Ctrl
             $isSupportedFileType = in_array($fileType, $listAcceptedFileTypes);
 
             if (!$isSupportedFileType) {
-                echo 'is not accepted files';
 
                 // Add a flash message
                 $_SESSION['msg']['error'][] = 'Les seuls formats de fichier acceptés sont : ' . implode(',', $listAcceptedFileTypes);
             }
             if (true) {
-                echo 'all good';
                 if ($fileSize > $acceptedFilesize) {
                     echo 'photo too big';
                     $_SESSION['msg']['error'][] = 'Le taille de la photo est trop grand';
@@ -76,7 +74,6 @@ class CreateDiscussion extends Ctrl
 
             $hasErrors = !empty($_SESSION['msg']['error']);
             if ($hasErrors) {
-                echo 'has errors.';
                 // Redirect towards the form to correct the photo upload
                 header('Location: ' . '/forum/forum-display');
                 exit();
@@ -105,14 +102,14 @@ class CreateDiscussion extends Ctrl
             $nameFile = basename($fileName);
 
 
-
+            /* 
             if ($fileType == $null) {
                 // $imgOriginal = imageCreateFromAny($fileTmpName);
 
                 $binaryFile = 'NA';
                 $nameFile = 'NA';
             }
-
+ */
             //Create Post
             $isSuccess = LibDiscussion::createDiscussionWithPhoto($discussionTitle, $discussionContent, $idMember, $binaryFile, $nameFile, $dateTime);
             //Create a directory to save uploaded photos

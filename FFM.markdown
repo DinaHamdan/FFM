@@ -527,16 +527,17 @@ Mettre plus d'exemple de code: développer le
 
 ## End of stage 
 
-## TO DO :
+## CODE TO DO :
 remove useless tables in bdd phpmyadmin
-Resize photos
-référencement google  + sécurité
-RGPD: cookies 
+add constraints for unique codes
+Resize photos-upload to website - share link
+add javascript or animation for gallery
+add javascript for hamburger menu
 CSS BackOffice details 
-
-
-            //TODO Need to add algorithm to check for photo width and height and change it accordingly
-
+Adjuste about us section buttons for screens bigger than 2000px
+Add php function to get agrè titles 
+add adhésion type of adhesion (membre actif or adh"sion normal)
+//TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
 
 # Retour au GRETA 
 
@@ -547,9 +548,41 @@ Dossier Projet -> 14 Octobre version éléctrique obligatoire
 Diaporama
 Dossier Professionnel 
 
-### Questions Pour Guillaume 
-error undefined array key
-questions about router 
 
-## Lundi 23/09/24
+## Lundi 23-09-24
+error undefined array key
+router redirection
+Résumé projet 
+
+### Mardi 24-09-24
+rapport - MVC + exemple de code
+
+### Mercredi 25-09-24
 Rapport
+reprendre structure
+dictionnaire de données
+
+
+### Jeudi 26-09-24
+Rapport
+Changer MCD Done
+
+POO
+
+### Vendredi 27-09-24
+POO
+exemple de code ajout des types d'agrès 
+
+
+### Lundi 30-09-24
+exemple de code upload de photo 
+
+Réalisation front end html css
+
+
+# Rapport todo
+html design front end
+  sécurité (login + inscription )
+ projection : référencement google résultats - axes d'amélioration 
+ déploiment
+RGPD: cookies 
