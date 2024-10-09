@@ -533,13 +533,12 @@ add constraints for unique codes
 Resize photos-upload to website - share link
 add javascript or animation for gallery
 add javascript for hamburger menu
-CSS BackOffice details 
 Adjuste about us section buttons for screens bigger than 2000px
 Add php function to get agrè titles 
 add adhésion type of adhesion (membre actif or adhésion normal)
-Change comment size
 change order of contact us maybe? 
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
+CSS BackOffice details 
 
 # Retour au GRETA 
 

@@ -1429,7 +1429,7 @@ header #flash-message-header #error-message {
 }
 #discussion #leave-comment-container {
   padding: 2em;
-  width: 40%;
+  width: 60%;
   border: 1px solid #341701;
   border-radius: 20px;
 }
@@ -1458,13 +1458,24 @@ header #flash-message-header #error-message {
   #discussion #discussion-detail-container #text-photo-container {
     display: flex;
   }
+  #discussion h2 {
+    font-size: 3em;
+    text-align: center;
+    padding: 1em;
+  }
   #discussion #comment-container {
+    margin-left: 5em;
     width: 50%;
-    font-size: 1em;
+    font-size: 1.5em;
   }
   #discussion #comment-container #comment-content img {
     width: 100px;
     height: 100px;
+  }
+  #discussion #leave-comment-container {
+    margin-left: 5em;
+    font-size: 1.5em;
+    width: 40%;
   }
   #discussion #leave-comment-container form input {
     width: 300px;

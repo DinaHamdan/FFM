@@ -32,6 +32,7 @@
         border: 1px solid #341701;
         border-radius: 20px;
 
+
         #comment-content {
             display: flex;
             flex-direction: row;
@@ -49,7 +50,7 @@
 
     #leave-comment-container {
         padding: 2em;
-        width: 40%;
+        width: 60%;
         border: 1px solid #341701;
         border-radius: 20px;
 
@@ -86,9 +87,16 @@
             }
         }
 
+        h2 {
+            font-size: 3em;
+            text-align: center;
+            padding: 1em;
+        }
+
         #comment-container {
+            margin-left: 5em;
             width: 50%;
-            font-size: 1em;
+            font-size: 1.5em;
 
             #comment-content {
 
@@ -103,6 +111,9 @@
         }
 
         #leave-comment-container {
+            margin-left: 5em;
+            font-size: 1.5em;
+            width: 40%;
 
             form {
 

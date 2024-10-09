@@ -1,5 +1,6 @@
 <main>
-    <h1 id="contactTitle"> Formulaire de Contact</h1>
+    <h1 id="contactTitle"><?= $args['pageTitle'] ?></h1>
+
     <form id="contact-form" action="/ctrl/contact/contact.php" method="post">
 
         <!-- Last Name -->

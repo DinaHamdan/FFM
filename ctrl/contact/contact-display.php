@@ -3,9 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
 class ContactDisplay extends Ctrl
 {
-    function do(): void
-    {
-    }
+    function do(): void {}
     function renderView(): void
     {
         $args = $this->viewArgs;
@@ -14,11 +12,9 @@ class ContactDisplay extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/contact-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): null
+    function getPageTitle(): string
     {
-        return null;
-        /*         return 'Page de contact';
- */
+        return "Formulaire de Contact";
     }
 }
 
