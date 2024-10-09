@@ -26,12 +26,10 @@ class Login extends Ctrl
 
             if (password_verify($password, $user['pass'])) {
                 $_SESSION['user'] = $user;
-
                 header('Location: ' . '/forum/forum-display');
                 exit;
             } else {
                 $_SESSION['msg']['incorrect'] = [];
-
                 $_SESSION['msg']['incorrect'][]  = 'Identifiant incorrecte';
                 header('Location: ' .  '/login/login-display');
                 exit;
@@ -39,7 +37,6 @@ class Login extends Ctrl
         } else {
 
             $_SESSION['msg']['unexisting'] = [];
-
             $_SESSION['msg']['unexisting'][] = 'Le compte utilisateur est introuvable.';
 
             header('Location: ' .  '/login/login-display');
@@ -55,6 +52,6 @@ class Login extends Ctrl
         return null;
     }
 }
-
+// constuctor 
 $ctrl = new Login();
 $ctrl->execute();

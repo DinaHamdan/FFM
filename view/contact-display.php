@@ -25,7 +25,7 @@
         </div>
         <div id="messageContainer">
             <!-- Type of contact message -->
-            <select name="questionType" id="questionChoice">
+            <select aria-label="type-de-question" name="questionType" id="questionChoice">
                 <option value="Devis">Demande de devis</option>
                 <option value="Question">Autre Question</option>
             </select>

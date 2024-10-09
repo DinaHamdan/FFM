@@ -55,15 +55,14 @@
                 <input class="input-box" type="text" name="talents" id="talents">
             </div>
             <div>
-                <p>Soutenez l'asso avec votre participation.
-                    En premier lieu la participation est encouragé pour les fire jam.
-                    La participation des membres actifs est réservés aux anciens qui souhaitent renouveler leur adhésion.</p>
+                <p>Soutenez l'asso avec votre participation. La participation au Kerdane est reservé aux membres actifs.
+                </p>
                 <div> <input type="radio" name="participation" checked value="fire-jam-3">
-                    <label for="participation">Adéhsion Fire Jam 3€</label>
+                    <label for="participation">Adhésion 3€</label>
                 </div>
 
                 <input type="radio" name="participation" value="membre-actif-20">
-                <label for="participation">Adéhsion membre actif 20€</label>
+                <label for="participation">Adhésion membre actif 20€ </label>
             </div>
 
             <p>J'autorise Fire From Mars à utiliser mon image</p>
@@ -76,9 +75,13 @@
                 <label for="oui_non">Non</label>
             </div>
 
-
-
-            <button id="validateAdhesion" type="submit">S'adhérer</button>
+            <div class="legal-rights">
+                <p>En cliquant sur Adhérer vous acceptez les <span class="conditions"> conditions générales d'utilisation</span></p>
+                <div class="legal-rights-info">
+                    <p>Fire From Mars traite vos données personnelles de manière sécurisée afin de gérer votre adhésion et de vous contacter si nécessaire. L'accès à ces données est strictement réservé aux membres du bureau.</p>
+                </div>
+            </div>
+            <button id="validateAdhesion" type="submit">Adhérer</button>
 
 
 

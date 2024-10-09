@@ -536,7 +536,9 @@ add javascript for hamburger menu
 CSS BackOffice details 
 Adjuste about us section buttons for screens bigger than 2000px
 Add php function to get agrè titles 
-add adhésion type of adhesion (membre actif or adh"sion normal)
+add adhésion type of adhesion (membre actif or adhésion normal)
+Change comment size
+change order of contact us maybe? 
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
 
 # Retour au GRETA 
@@ -576,13 +578,47 @@ exemple de code ajout des types d'agrès
 
 ### Lundi 30-09-24
 exemple de code upload de photo 
-
 Réalisation front end html css
 
+### Mardi 01-10-24
+sass
+html
 
+### Mercredi 02-10-24
+finish partie css
+
+### jeudi 03-10-24
+déploiement sécurité
+
+## Semaine prochaine
+modification code - reprendre le rapport 
+
+
+### Lundi 07-10-24
+Sécurite 
+algorithm pour insciription si le compte existe deja 
+
+
+### Mardi 08-10-24
+Sécurité rapport
+Projection rapport 
+Javascript rapport 
+
+### Mercredi 09-10-24
+RGPD
+Relire rapport 
+
+### Jeudi 10-10-24
+Code
+Relire rapport   
+
+### Vendredi 11-10-24
+Dossier professionel
+présentation 
+
+ 
 # Rapport todo
-html design front end
+Javascript
   sécurité (login + inscription )
  projection : référencement google résultats - axes d'amélioration 
- déploiment
-RGPD: cookies 
+RGPD

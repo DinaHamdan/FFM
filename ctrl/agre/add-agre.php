@@ -42,7 +42,6 @@ class AddAgrePhoto extends Ctrl
             $acceptedFilesize = Type::FILE_MAX_SIZE;
             // Put in place several tests on the the uploaded photo to check if it has the right file type
             $isSupportedFileType = in_array($fileType, $listAcceptedFileTypes);
-
             if (!$isSupportedFileType) {
                 // Add a flash message
                 $_SESSION['msg']['error'][] = 'Les seuls formats de fichier acceptés sont : ' . implode(',', $listAcceptedFileTypes);

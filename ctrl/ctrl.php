@@ -6,6 +6,9 @@ abstract class Ctrl implements CtrlI
 {
     protected array $viewArgs = [];
 
+    /**
+     * executes the treatment specific to the child controler 
+     */
     protected abstract function do(): void;
 
     public function execute(): void

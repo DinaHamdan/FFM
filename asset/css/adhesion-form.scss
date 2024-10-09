@@ -79,6 +79,11 @@
         }
     }
 
+    p {
+        font-weight: 900;
+        padding: 1em;
+    }
+
     #validateAdhesion {
         border-radius: 10px;
         width: 100px;
@@ -86,6 +91,32 @@
         border: none;
         padding: 0.2em;
         font-weight: 100;
+    }
+}
+
+.legal-rights {
+
+    .conditions {
+        text-decoration: underline;
+
+    }
+
+    .legal-rights-info {
+        display: none;
+
+    }
+
+
+}
+
+.legal-rights:hover {
+
+    .legal-rights-info {
+        display: block;
+        border: 2px solid black;
+        background-color: antiquewhite;
+        color: #000000;
+
     }
 }
 

@@ -17,27 +17,41 @@ class Create extends Ctrl
         //Check if user is logged and has admin privileges
         $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
-
+        if (!$isGranted) {
+            header('Location: ' . '/login/login-display');
+            exit;
+        }
         //Gather data entered by admin
-        $user = [];
         $user['email'] = htmlspecialchars($_POST['email']);
-        $user['passClear'] = htmlspecialchars($_POST['pass']);
-        $user['idRole'] = 3;
 
-        //limit number of characters verify its not over 500 - 
 
-        $password = password_hash($user['passClear'], PASSWORD_BCRYPT);
-        $user['passHash'] = $password;
+
 
         $_SESSION['msg']['info'] = [];
         $_SESSION['msg']['error'] = [];
 
+        $user = LibMember::getMember($user['email']);
 
+        if ($user != null) {
+            $_SESSION['msg']['incorrect'] = [];
+            $_SESSION['msg']['incorrect'][]  = 'Le compte existe déjà';
+            header('Location: ' . '/registration/registration-display');
+            exit;
+        } else {
+            $user = [];
+            //Gather data entered by admin
+            $user['email'] = htmlspecialchars($_POST['email']);
+            $user['passClear'] = htmlspecialchars($_POST['pass']);
+            $user['idRole'] = 3;
 
-        $isSuccess = LibMember::createMember($user['email'], $user['passHash'], $user['passClear'], $user['idRole']);
-        // Ajoute un flash-message a garder?
-        if ($isSuccess) {
-            $_SESSION['msg']['info'][] = 'Le compte a été crée avec succès.';
+            //limit number of characters verify its not over 500 - 
+            $password = password_hash($user['passClear'], PASSWORD_BCRYPT);
+            $user['passHash'] = $password;
+            $isSuccess = LibMember::createMember($user['email'], $user['passHash'], $user['passClear'], $user['idRole']);
+            // Ajoute un flash-message a garder?
+            if ($isSuccess) {
+                $_SESSION['msg']['info'][] = 'Le compte a été crée avec succès.';
+            }
         }
 
 

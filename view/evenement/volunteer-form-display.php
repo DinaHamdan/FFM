@@ -132,7 +132,12 @@
                 <input class="input-box" type="text" name="otherInfo" id="">
             </div>
             <p>En finissant de remplir ce formulaire, tu t'engages à être dispo aux dates prévues ou à nous signaler si ça change. La conv compte sur toi !</p>
-
+            <div class="legal-rights">
+                <p>En cliquant sur Envoyer vous acceptez les <span class="conditions"> conditions générales d'utilisation</span></p>
+                <div class="legal-rights-info">
+                    <p>Fire From Mars traite vos données personnelles de manière sécurisée afin de gérer les bénévoles et de vous contacter si nécessaire. L'accès à ces données est strictement réservé aux membres du bureau.</p>
+                </div>
+            </div>
             <button id="validateVolunteer" type="submit">Envoyer</button>
 
         </form>
