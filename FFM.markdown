@@ -528,17 +528,30 @@ Mettre plus d'exemple de code: développer le
 ## End of stage 
 
 ## CODE TO DO :
-remove useless tables in bdd phpmyadmin
+
 add constraints for unique codes
 Resize photos-upload to website - share link
 add javascript or animation for gallery
 add javascript for hamburger menu
-Adjuste about us section buttons for screens bigger than 2000px
 Add php function to get agrè titles 
+
 add adhésion type of adhesion (membre actif or adhésion normal)
-change order of contact us maybe? 
+
+try to increase font of titles 
+fix nav html tags 
+
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
+
 CSS BackOffice details 
+
+
+## DONE 
+remove useless tables in bdd phpmyadmin
+Change comment size
+change order of contact us maybe? 
+
+Adjuste about us section buttons for screens bigger than 2000px
+font bigger
 
 # Retour au GRETA 
 

@@ -4,14 +4,15 @@
   font-weight: 500;
 }
 #about-us p {
-  font-size: large;
+  font-size: 1em;
   text-align: justify;
   text-justify: inter-word;
   padding: 0 1em;
+  font-weight: 700;
 }
-#about-us span {
+#about-us p span {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
 }
 #about-us #discoverArtist {
   text-align: center;
@@ -64,7 +65,7 @@
   margin-left: 2em;
 }
 #about-us #fire-jam #fire-jam-paragraph-first-container #paragraph-one-two {
-  margin-left: 1em;
+  margin-left: 1.5em;
 }
 #about-us #fire-jam #fire-jam-paragraph-second-container {
   margin-top: 20em;
@@ -78,10 +79,10 @@
   margin-right: 1em;
 }
 #about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two-one {
-  margin-right: 2em;
+  margin-right: 1em;
 }
 #about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two-two {
-  margin-right: 1em;
+  margin-left: 1em;
 }
 #about-us #fire-jam #fire-jam-paragraph-third-container {
   margin-top: 3em;
@@ -122,8 +123,19 @@
     display: flex;
     flex-direction: row;
   }
+  #about-us p {
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+  #about-us p span {
+    font-weight: 900;
+  }
   #about-us #fire-team {
     width: 50%;
+  }
+  #about-us #fire-team #title-team {
+    font-size: 1.5em;
+    font-weight: 700;
   }
   #about-us #fire-team .center-button #prop-button {
     display: none;
@@ -158,11 +170,48 @@
   }
 }
 @media screen and (min-width: 1100px) {
+  #about-us #discoverArtist {
+    margin-top: 0.7em;
+  }
+  #about-us #fire-jam #fire-jam-paragraph-second-container {
+    margin-top: 11em;
+  }
+  #about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two {
+    margin-right: -0.7em;
+  }
+  #about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two-one {
+    margin-right: -1em;
+  }
+  #about-us #fire-jam #fire-jam-paragraph-second-container #paragraph-two-two {
+    margin-right: -2em;
+  }
+  #about-us #fire-jam #fire-jam-paragraph-third-container {
+    margin-top: 0;
+  }
+  #about-us #fire-jam #fire-jam-paragraph-third-container #paragraph-three {
+    margin-left: -1em;
+  }
+  #about-us #fire-jam #fire-jam-paragraph-third-container #paragraph-three-one {
+    margin-left: -1em;
+  }
+  #about-us #fire-jam #fire-jam-paragraph-third-container #paragraph-three-two {
+    margin-left: -2em;
+  }
   #about-us #fire-jam .center-button .prop-group-button {
     margin-left: -17em;
   }
 }
 @media screen and (min-width: 1300px) {
+  #about-us {
+    height: 700px;
+  }
+  #about-us #title-team {
+    font-size: 2em;
+  }
+  #about-us #discoverArtist {
+    margin-top: 1em;
+    font-size: 2em;
+  }
   #about-us #fire-jam .center-button #adhesion-button {
     width: 10em;
     height: 2em;
@@ -179,5 +228,10 @@
 @media screen and (min-width: 1400px) {
   #about-us #fire-jam .center-button .prop-group-button {
     margin-left: -21em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  #about-us #fire-jam .center-button .prop-group-button {
+    margin-left: -28em;
   }
 }/*# sourceMappingURL=about-us.css.map */

@@ -27,10 +27,7 @@
                 à Marseille et ses environs. En complément de <span>l’association Extrême Jonglerie</span>, plus axée sur les arts du
                 cirque sans feu, nous proposons des rassemblements et des<span> initiations au flowart et la jongle enflammée.</span>
                 On trouve donc des jongleurs de tous niveaux dans l’association, qui pratiquent en amateur ou de manière
-                professionnelle.<span> Fire From Mars </span>c’est donc avant tout du rassemblement et de la pratique, mais c’est
-                aussi de la création. Lors de ces rencontres, nos artistes ont monté un spectacle et des mises en scène
-                adaptées à différentes prestations. Nous avons déja eu le plaisir de les présenter lors de plusieurs
-                évènements
+                professionnelle.
 
             </p>
             <h2 id="discoverArtist"> Découvrez Nos</h2>
@@ -83,21 +80,7 @@
             </div>
         </div>
     </section>
-    <section id="contact-us">
-        <article id="performance">
-            <div>
-                <h2 id="second-performance-title">Nos préstations</h2>
-            </div>
-            <div id="performance-container">
-                <h2 id="first-performance-title">Nos préstations</h2>
-                <p>Envie de vous</p>
-                <p>renseigner, </p>
-                <p>demander un devis?</p>
-            </div>
-            <div> <a id="contact-button" href="/contact/contact-display">Contactez-nous</a></div>
-        </article>
 
-    </section>
 
     <section id="event">
         <div id="event-paragraph-container">
@@ -122,4 +105,20 @@
                 <p>Initiez vous à l'art de la jonglerie, les mardis soirs au pied de la cathédrale la Major.</p>
             </div>
         </article>
+    </section>
+
+    <section id="contact-us">
+        <article id="performance">
+            <div>
+                <h2 id="second-performance-title">Nos préstations</h2>
+            </div>
+            <div id="performance-container">
+                <h2 id="first-performance-title">Nos préstations</h2>
+                <p>Envie de vous</p>
+                <p>renseigner, </p>
+                <p>demander un devis?</p>
+            </div>
+            <div> <a id="contact-button" href="/contact/contact-display">Contactez-nous</a></div>
+        </article>
+
     </section>

@@ -6,16 +6,16 @@
     }
 
     p {
-        font-size: large;
+        font-size: 1em;
         text-align: justify;
         text-justify: inter-word;
         padding: 0 1em;
+        font-weight: 700;
 
-    }
-
-    span {
-        text-transform: uppercase;
-        font-weight: 600;
+        span {
+            text-transform: uppercase;
+            font-weight: 800;
+        }
     }
 
     #discoverArtist {
@@ -29,10 +29,12 @@
         display: flex;
         justify-content: center;
 
+        //Button for props in group is hidden first
         .prop-group-button {
             display: none;
         }
 
+        //Button for props on its own is shown 
         #prop-button {
             display: inline-block;
             font-size: 1.5em;
@@ -79,7 +81,7 @@
             }
 
             #paragraph-one-two {
-                margin-left: 1em;
+                margin-left: 1.5em;
             }
         }
 
@@ -97,11 +99,11 @@
             }
 
             #paragraph-two-one {
-                margin-right: 2em;
+                margin-right: 1em;
             }
 
             #paragraph-two-two {
-                margin-right: 1em;
+                margin-left: 1em;
             }
 
         }
@@ -157,20 +159,41 @@
     #about-us {
         display: flex;
         flex-direction: row;
+        // height: 700px;
+
+
+
+        p {
+            font-weight: 800;
+            font-size: 1.5em;
+
+            span {
+                font-weight: 900;
+            }
+        }
+
 
         #fire-team {
             width: 50%;
 
+            #title-team {
+                font-size: 1.5em;
+                font-weight: 700;
+            }
+
             .center-button {
+
+                //single prop button hidden
                 #prop-button {
                     display: none;
-                    //margin-top: 6em;
                 }
             }
         }
 
         #fire-jam {
             width: 50%;
+            // height: 70%;
+
 
             #fire-jam-paragraph-container {
                 padding: 2em;
@@ -186,6 +209,7 @@
                     margin-right: 7em;
                 }
 
+                //prop button in group appears 
                 .prop-group-button {
                     display: inline-block;
                     font-size: 1.5em;
@@ -211,7 +235,50 @@
 
 @media screen and (min-width:1100px) {
     #about-us {
+        #discoverArtist {
+            margin-top: 0.7em;
+        }
+
         #fire-jam {
+
+            //
+            p {
+                // font-size: 2em;
+            }
+
+            #fire-jam-paragraph-second-container {
+                margin-top: 11em;
+
+                #paragraph-two {
+                    margin-right: -0.7em;
+                }
+
+                #paragraph-two-one {
+                    margin-right: -1em;
+                }
+
+                #paragraph-two-two {
+                    margin-right: -2em;
+                }
+
+            }
+
+            #fire-jam-paragraph-third-container {
+                margin-top: 0;
+
+                #paragraph-three {
+                    margin-left: -1em;
+                }
+
+                #paragraph-three-one {
+                    margin-left: -1em;
+                }
+
+                #paragraph-three-two {
+                    margin-left: -2em;
+                }
+            }
+
             .center-button {
                 .prop-group-button {
                     margin-left: -17em;
@@ -225,6 +292,17 @@
 
 @media screen and (min-width:1300px) {
     #about-us {
+        height: 700px;
+
+        #title-team {
+            font-size: 2em;
+        }
+
+        #discoverArtist {
+            margin-top: 1em;
+            font-size: 2em;
+        }
+
         #fire-jam {
             .center-button {
 
@@ -257,6 +335,23 @@
 
                 .prop-group-button {
                     margin-left: -21em;
+
+                }
+
+            }
+        }
+    }
+}
+
+// TO CHECK ON BIG SCREEN
+@media screen and (min-width:1800px) {
+    #about-us {
+        #fire-jam {
+            .center-button {
+
+
+                .prop-group-button {
+                    margin-left: -28em;
 
                 }
 
