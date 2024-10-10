@@ -1,6 +1,6 @@
 <main>
     <section id="agre-photo-section">
-        <h1 id="page-title"><?= $args['pageTitle'] ?></h1>
+        <h1 id="page-title"><?= $args['session']['agreName'] ?></h1>
         <div id="agre-photo-container">
             <?php
             foreach ($args['session']['listAgrePhoto'] as $args['session']['agrePhoto']) { ?>
@@ -21,4 +21,3 @@
             <?php } ?>
         </div>
     </section>
-</main>

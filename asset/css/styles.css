@@ -1897,6 +1897,9 @@ header #flash-message-header #error-message {
   background-color: black;
   color: white;
 }
+#agre-photo-section #page-title {
+  font-family: "Kanit", sans-serif;
+}
 #agre-photo-section #agre-photo-container {
   display: flex;
   flex-direction: column;
@@ -1911,6 +1914,11 @@ header #flash-message-header #error-message {
 }
 
 @media screen and (min-width: 600px) {
+  #agre-photo-section #page-title {
+    font-family: "Kanit", sans-serif;
+    font-size: 5em;
+    margin: 1em;
+  }
   #agre-photo-section #agre-photo-container {
     display: grid;
     grid-template-columns: auto auto auto;

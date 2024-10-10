@@ -191,7 +191,18 @@ class LibAgre
 
         return $listPhotoAgre;
     }
-
+    static function getAgreName($idAgre): array
+    {
+        $query = ' SELECT typeAgre.name';
+        $query .= ' FROM typeAgre ';
+        $query .= ' WHERE typeAgre.id= :idAgre';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':idAgre', $idAgre);
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $agreName = $statement->fetch(PDO::FETCH_ASSOC);
+        return $agreName;
+    }
     static function chooseMainPhoto($idPhotoAgre, $isMain): bool
 
     {

@@ -530,7 +530,6 @@ Mettre plus d'exemple de code: développer le
 ## CODE TO DO :
 
 
-Add php function to get agrè titles 
 
 Resize photos-upload to website - share link
 
@@ -559,6 +558,7 @@ Increase font of titles login and contact
 fix adhesion table in always data server 
 fix nav html tags (w3c no errors)
 toggle legal rights with javascript instead of hover
+Add php function to get agrè titles 
 
 # Retour au GRETA 
 

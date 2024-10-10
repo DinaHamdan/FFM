@@ -23,6 +23,10 @@ class DisplayAgrePhotoFire extends Ctrl
         $idCategory = 1;
         $idAgre = $_GET['id'];
         $_SESSION['listAgrePhoto'] = LibAgre::getAgrePhoto($idAgre, $idCategory);
+
+        $agreName = LibAgre::getAgreName($idAgre);
+
+        $_SESSION['agreName'] = $agreName['name'];
     }
 
     function renderView(): void
