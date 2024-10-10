@@ -528,18 +528,22 @@ Mettre plus d'exemple de code: développer le
 ## End of stage 
 
 ## CODE TO DO :
-
-add constraints for unique codes
-Resize photos-upload to website - share link
-add javascript or animation for gallery
-add javascript for hamburger menu
+fix nav html tags 
+toggle legal rights with javascript instead of hover
 Add php function to get agrè titles 
 
+Resize photos-upload to website - share link
 
-try to increase font of titles 
-fix nav html tags 
+
+deploiement again: check if error messages are still here - test adhesion
+
+
+
 
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
+add constraints for unique codes
+add javascript or animation for gallery
+add javascript for hamburger menu
 
 CSS BackOffice details 
 
@@ -553,6 +557,10 @@ add adhésion type of adhesion (membre actif or adhésion normal)
 Adjuste about us section buttons for screens bigger than 2000px
 font bigger
 
+Increase font of titles login and contact
+
+
+fix adhesion table in always data server 
 # Retour au GRETA 
 
 

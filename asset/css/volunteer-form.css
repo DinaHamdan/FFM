@@ -90,9 +90,10 @@
     width: 200px;
     height: 20px;
   }
-  #volunteer-form-section #validateVolunteer {
-    width: 300px;
+  #volunteer-form-section #volunteer-form #validateVolunteer {
+    width: 200px;
     height: 25px;
     border-radius: 30px;
+    font-weight: 400;
   }
 }/*# sourceMappingURL=volunteer-form.css.map */
