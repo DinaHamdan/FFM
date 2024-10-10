@@ -81,15 +81,19 @@
 .legal-rights .conditions {
   text-decoration: underline;
 }
-.legal-rights .legal-rights-info {
+.legal-rights #legal-rights-info {
   display: none;
 }
 
-.legal-rights:hover .legal-rights-info {
+.showLegalRight {
   display: block;
   border: 2px solid black;
   background-color: antiquewhite;
   color: #000000;
+}
+
+.conditions:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 950px) {

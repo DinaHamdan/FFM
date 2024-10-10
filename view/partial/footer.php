@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="legal-rights">
+    <div class="footer-legal-rights">
         <p> <span class="conditions">Mentions légales</span></p>
         <div class="legal-rights-info">
             <p>Ce site est publié en 2024. Hébéregeur: alwaysdata.net. Il est gére par Fire From Mars, une association légalement enregistré a Marseille. Si vous souhaitez nous contacter envoyer un email sur firefrommars@gmail.com. Quand vous utilisez le site et remplissez les formulaires vous acceptez d'avoir vos données traité d'une façon sécurisé par l'association.</p>

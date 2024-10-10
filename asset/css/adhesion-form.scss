@@ -99,7 +99,8 @@
 
     }
 
-    .legal-rights-info {
+
+    #legal-rights-info {
         display: none;
 
     }
@@ -107,16 +108,19 @@
 
 }
 
-.legal-rights:hover {
-
-    .legal-rights-info {
-        display: block;
-        border: 2px solid black;
-        background-color: antiquewhite;
-        color: #000000;
-
-    }
+.showLegalRight {
+    display: block;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    color: #000000;
 }
+
+.conditions:hover {
+    cursor: pointer;
+}
+
+
+
 
 @media screen and (min-width:950px) {
     #adhesion-section {

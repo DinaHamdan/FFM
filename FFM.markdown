@@ -529,12 +529,12 @@ Mettre plus d'exemple de code: développer le
 
 ## CODE TO DO :
 
-fix header css 
 
-toggle legal rights with javascript instead of hover
 Add php function to get agrè titles 
 
 Resize photos-upload to website - share link
+
+fix header css 
 
 
 deploiement again: check if error messages are still here - test adhesion
@@ -553,15 +553,13 @@ remove useless tables in bdd phpmyadmin
 Change comment size
 change order of contact us maybe? 
 add adhésion type of adhesion (membre actif or adhésion normal)
-
 Adjuste about us section buttons for screens bigger than 2000px
 font bigger
-
 Increase font of titles login and contact
-fix nav html tags (w3c no errors)
-
-
 fix adhesion table in always data server 
+fix nav html tags (w3c no errors)
+toggle legal rights with javascript instead of hover
+
 # Retour au GRETA 
 
 

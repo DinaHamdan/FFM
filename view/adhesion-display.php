@@ -76,16 +76,13 @@
             </div>
 
             <div class="legal-rights">
-                <p class="adhesion-paragraph">En cliquant sur Adhérer vous acceptez les <span class="conditions"> conditions générales d'utilisation</span></p>
-                <div class="legal-rights-info">
-                    <p class="adhesion-paragraph">Fire From Mars traite vos données personnelles de manière sécurisée afin de gérer votre adhésion et de vous contacter si nécessaire. L'accès à ces données est strictement réservé aux membres du bureau.</p>
+                <p class="adhesion-paragraph">En cliquant sur Adhérer vous acceptez les <span onclick="show()" class="conditions"> conditions générales d'utilisation</span></p>
+                <div id="legal-rights-info">
+                    <p>Fire From Mars traite vos données personnelles de manière sécurisée afin de gérer votre adhésion et de vous contacter si nécessaire. L'accès à ces données est strictement réservé aux membres du bureau.</p>
                 </div>
             </div>
             <button id="validateAdhesion" type="submit">Adhérer</button>
 
 
-
-
         </form>
     </section>
-    </

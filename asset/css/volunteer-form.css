@@ -55,14 +55,16 @@
 #volunteer-form-section #volunteer-form .legal-rights .conditions {
   text-decoration: underline;
 }
-#volunteer-form-section #volunteer-form .legal-rights .legal-rights-info {
+#volunteer-form-section #volunteer-form .legal-rights #legal-rights-info {
   display: none;
 }
-#volunteer-form-section #volunteer-form .legal-rights:hover .legal-rights-info {
-  display: block;
+#volunteer-form-section #volunteer-form .showLegalRight {
   border: 2px solid black;
   background-color: antiquewhite;
   color: #000000;
+}
+#volunteer-form-section #volunteer-form .conditions:hover {
+  cursor: pointer;
 }
 #volunteer-form-section #volunteer-form #validateVolunteer {
   border-radius: 10px;
