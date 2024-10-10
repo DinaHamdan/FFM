@@ -134,9 +134,9 @@ class LibMember
 
  */
     //Create contact message 
-    static function CreateAdhesion(string $firstName, string $lastName, string $email, string $phoneNumber, string  $agreType, string $talents, string $authorization, string $dateTime): bool
+    static function CreateAdhesion(string $firstName, string $lastName, string $email, string $phoneNumber, string  $agreType, string  $typeAdhesion, string $talents, string $authorization, string $dateTime): bool
     {
-        $query = 'INSERT INTO adhesion ( firstName, lastName, email, phoneNumber, typeAgre, talents, authorization, date_time_column) VALUES (  :firstName, :lastName, :email, :phoneNumber, :typeAgre, :talents, :authorization, :date_time_column)';
+        $query = 'INSERT INTO adhesion ( firstName, lastName, email, phoneNumber, typeAgre, typeAdhesion, talents, authorization, date_time_column) VALUES (  :firstName, :lastName, :email, :phoneNumber, :typeAgre, :typeAdhesion, :talents, :authorization, :date_time_column)';
         $statement = libDb::connect()->prepare($query);
 
         $statement->bindParam(':firstName', $firstName);
@@ -144,6 +144,7 @@ class LibMember
         $statement->bindParam(':email', $email);
         $statement->bindParam(':phoneNumber', $phoneNumber);
         $statement->bindParam(':typeAgre', $agreType);
+        $statement->bindParam(':typeAdhesion', $typeAdhesion);
         $statement->bindParam(':talents', $talents);
         $statement->bindParam(':authorization', $authorization);
         $statement->bindParam(':date_time_column', $dateTime);

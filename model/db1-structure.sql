@@ -74,8 +74,9 @@ CREATE TABLE adhesion(
   ,lastName varchar(50) NOT NULL
   ,phoneNumber bigint(100) NOT NULL
   ,typeAgre varchar(2000) NOT NULL
+  ,typeAdhesion varchar(2000) NOT NULL
   ,authorization varchar(20) NOT NULL
-   ,talents varchar(500) NOT NULL
+  ,talents varchar(500) NOT NULL
   ,date_time_column timestamp(6) NOT NULL
 )
 ;

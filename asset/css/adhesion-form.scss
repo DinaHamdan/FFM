@@ -22,9 +22,7 @@
             padding: 1em;
         }
 
-        p {
-            font-size: 1.5em;
-        }
+
     }
 
     #adhesion-form {
@@ -123,6 +121,7 @@
 @media screen and (min-width:950px) {
     #adhesion-section {
         #adhesion-title-container {
+
             /*    width: 100%;
             margin: 4em;
             background-color: #130F0F;
@@ -130,12 +129,15 @@
             display: flex;
             flex-direction: column;
             align-items: center; */
+            p {
+                font-size: 1.5em;
+            }
 
             #adhesion-title {
                 font-size: 3em;
             }
 
-            p {
+            .adhesion-paragraph {
                 //width: 50%;
                 font-size: 2em;
             }

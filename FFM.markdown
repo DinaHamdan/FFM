@@ -535,7 +535,6 @@ add javascript or animation for gallery
 add javascript for hamburger menu
 Add php function to get agrè titles 
 
-add adhésion type of adhesion (membre actif or adhésion normal)
 
 try to increase font of titles 
 fix nav html tags 
@@ -549,6 +548,7 @@ CSS BackOffice details
 remove useless tables in bdd phpmyadmin
 Change comment size
 change order of contact us maybe? 
+add adhésion type of adhesion (membre actif or adhésion normal)
 
 Adjuste about us section buttons for screens bigger than 2000px
 font bigger

@@ -27,6 +27,8 @@ class CreateAdhesion extends Ctrl
         foreach ($_POST['agreType'] as $agre[]);
 
         $adherent['agreType'] = implode(',', $agre);
+        $adherent['typeAdhesion'] =  htmlspecialchars($_POST['participation']);
+
         $adherent['talents'] = htmlspecialchars($_POST['talents']);
         $adherent['authorization'] =  htmlspecialchars($_POST['oui_non']);
         $dateTime = date('Y-m-d h:i:s');
@@ -36,7 +38,7 @@ class CreateAdhesion extends Ctrl
 
 
 
-        $isSuccess = LibMember::CreateAdhesion($adherent['firstName'], $adherent['lastName'], $adherent['email'], $adherent['phoneNumber'],  $adherent['agreType'], $adherent['talents'], $adherent['authorization'], $dateTime);
+        $isSuccess = LibMember::CreateAdhesion($adherent['firstName'], $adherent['lastName'], $adherent['email'], $adherent['phoneNumber'],  $adherent['agreType'], $adherent['typeAdhesion'], $adherent['talents'], $adherent['authorization'], $dateTime);
         // Ajoute un flash-message a garder
         if ($isSuccess) {
             $_SESSION['msg']['info'][] = 'Votre adhésion a été effectué';
