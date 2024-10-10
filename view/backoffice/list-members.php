@@ -6,12 +6,12 @@
 
 
             <?php foreach ($args['session']['listMember'] as $args['session']['member']) { ?>
-                <div class="backoffice-option-container" id="member-container">
+                <div class="backoffice-option-container">
                     <p> Prénom: <?= $args['session']['member']['firstName'] ?> </p>
                     <p> Nom :<?= $args['session']['member']['lastName'] ?></p>
                     <p> Email: <?= $args['session']['member']['email'] ?></p>
                     <p>Téléphone : <?= $args['session']['member']['phoneNumber'] ?></p>
-                    <img id="profile-photo" src="data:image/png;base64,<?= base64_encode($args['session']['member']['avatar']) ?>" alt="member-Avatar">
+                    <img class="profile-photo" src="data:image/png;base64,<?= base64_encode($args['session']['member']['avatar']) ?>" alt="member-Avatar">
                     <?php if ($args['session']['user']['codeRole'] == 'ADM') { ?>
                         <p> <a href="/backoffice/delete-member?id=<?= $args['session']['member']['id'] ?>">Enlever</a></p>
 
@@ -22,4 +22,3 @@
         </div>
 
     </section>
-</main>

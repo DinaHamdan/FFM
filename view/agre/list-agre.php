@@ -4,7 +4,6 @@
             <h2>Fire From Mars, où le feu et la lumière enflamment votre imagination
                 <span> Decouvrez notre monde magique grâce a nos divers agrès</span>
             </h2>
-            <h2> </h2>
         </div>
         <div id="gallery-bg-container">
             <div class="gallery-container">
@@ -34,7 +33,7 @@
                 foreach ($args['session']['typeAgreFeu'] as $args['session']['agreFeu']) { ?>
 
                     <div class="prop-title-photo-container">
-                        <a href=" /ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>" "> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt=""></a>
+                        <a href=" /ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt=""></a>
                         <h3><?= $args['session']['agreFeu']['agreName'] ?></h3>
                     </div>
                 <?php } ?>
@@ -55,7 +54,7 @@
                     <div class="prop-title-photo-container">
 
 
-                        <a href="  /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['idAgre'] ?>" "> <img  class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreLED']['illustration']) ?>" alt=""></a>
+                        <a href="  /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreLED']['illustration']) ?>" alt=""></a>
                         <h3><?= $args['session']['agreLED']['agreName'] ?></h3>
 
                     </div>
@@ -64,4 +63,3 @@
             <img class="forward-button" src="/asset/img/front.png" alt="">
         </div>
     </section>
-</main>

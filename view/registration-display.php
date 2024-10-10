@@ -20,7 +20,6 @@
 
 
             <button id="registerButton" type="submit">Valider</button>
+
         </form>
-
-
-</main>
+    </section>

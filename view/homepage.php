@@ -94,7 +94,7 @@
     </section>
 
 
-    <section id="street">
+    <div id="street">
         <article id="street-art">
             <div id="street-art-photo-container">
                 <img class="street-art-photo" src="/asset/img/street-art.avif" alt="">
@@ -105,9 +105,9 @@
                 <p>Initiez vous à l'art de la jonglerie, les mardis soirs au pied de la cathédrale la Major.</p>
             </div>
         </article>
-    </section>
+    </div>
 
-    <section id="contact-us">
+    <div id="contact-us">
         <article id="performance">
             <div>
                 <h2 id="second-performance-title">Nos préstations</h2>
@@ -121,4 +121,4 @@
             <div> <a id="contact-button" href="/contact/contact-display">Contactez-nous</a></div>
         </article>
 
-    </section>
+    </div>

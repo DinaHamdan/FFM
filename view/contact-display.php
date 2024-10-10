@@ -12,7 +12,6 @@
                 <!-- First Name -->
                 <input type="text" id="visitorFirstName" name="visitorFirstName" required>
             </div>
-            </div>
             <!-- Email  that must be in the following order: characters@characters.domain (characters followed by an @ sign, followed by more characters, and then a "."
          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"-->
             <div id="emailPhoneContainer">
@@ -37,4 +36,3 @@
 
         </form>
     </section>
-</main>

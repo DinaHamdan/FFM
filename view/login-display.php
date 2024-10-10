@@ -28,14 +28,12 @@
         </div>
         <?php unset($_SESSION['msg']) ?>
 
-        </div>
         <form id="login-form" action="/ctrl/login/login.php" method="post">
 
             <!-- Email -->
 
             <label for="email">Email</label>
             <input type="text" name="email" id="email">
-            </div>
 
             <!-- password -->
 
@@ -52,4 +50,3 @@
         </form>
 
     </section>
-</main>

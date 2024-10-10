@@ -528,7 +528,9 @@ Mettre plus d'exemple de code: développer le
 ## End of stage 
 
 ## CODE TO DO :
-fix nav html tags 
+
+fix header css 
+
 toggle legal rights with javascript instead of hover
 Add php function to get agrè titles 
 
@@ -536,8 +538,6 @@ Resize photos-upload to website - share link
 
 
 deploiement again: check if error messages are still here - test adhesion
-
-
 
 
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
@@ -558,6 +558,7 @@ Adjuste about us section buttons for screens bigger than 2000px
 font bigger
 
 Increase font of titles login and contact
+fix nav html tags (w3c no errors)
 
 
 fix adhesion table in always data server 

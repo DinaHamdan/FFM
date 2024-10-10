@@ -102,7 +102,6 @@ header #flash-message-header #error-message {
   display: none;
 }
 #menuBar #avatar-container {
-  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1968,6 +1967,7 @@ header #flash-message-header #error-message {
 }
 #registration .register-title {
   margin: 2em;
+  font-family: "Kanit", sans-serif;
 }
 #registration #registration-form {
   background-color: #000000;
@@ -2071,6 +2071,7 @@ header #flash-message-header #error-message {
 }
 #profile #profile-title {
   margin: 2em;
+  font-family: "Kanit", sans-serif;
 }
 #profile #profile-form {
   background-color: #000000;
@@ -2115,6 +2116,7 @@ header #flash-message-header #error-message {
 }
 #update-password #page-title {
   margin: 2em;
+  font-family: "Kanit", sans-serif;
 }
 #update-password #update-pass-form {
   background-color: #000000;
@@ -2293,6 +2295,7 @@ header #flash-message-header #error-message {
 }
 #update-event-section #page-title {
   margin: 2em;
+  font-family: "Kanit", sans-serif;
 }
 #update-event-section #update-event-form {
   background-color: #000000;

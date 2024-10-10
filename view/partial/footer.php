@@ -1,5 +1,6 @@
+</main>
 <footer>
-    <article id="social-media">
+    <div id="social-media">
 
         <img id="social-media-logo" src="/asset/img/FFM-logo-300x205.png" alt="Fire-From-Mars-logo">
         <div id="social-media-photo-container">
@@ -7,7 +8,7 @@
             <a href="https://www.youtube.com/@firefrommars5715"><img class="social-media-photo" src="/asset/img/youtube-fotor-bg-remover-20240326164342.png" alt="lien-youtube"></a>
             <a href="https://www.facebook.com/firefrommars/"><img class="social-media-photo" src="/asset/img/facebook-fotor-bg-remover-20240326164437.png" alt="lien-facebook"></a>
         </div>
-    </article>
+    </div>
 
     <div class="legal-rights">
         <p> <span class="conditions">Mentions légales</span></p>
@@ -16,13 +17,13 @@
         </div>
     </div>
 
-    <section id="footer">
+    <div id="footer">
 
         <div id="footer-container">
             <img class="ffm-logo" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="">
             <p>2024 FireFromMars © Tous droits réservés </p>
         </div>
-    </section>
+    </div>
 </footer>
 <script>
     /* I might remove this logo 3 changed id*/

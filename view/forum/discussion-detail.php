@@ -73,4 +73,3 @@
         <?php } ?>
 
     </section>
-</main>
