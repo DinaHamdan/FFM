@@ -3,7 +3,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 
 class ContactDisplay extends Ctrl
 {
-    function do(): void {}
+    function do(): void
+    {
+        $isLogged = $this->isUserLogged();
+    }
     function renderView(): void
     {
         $args = $this->viewArgs;

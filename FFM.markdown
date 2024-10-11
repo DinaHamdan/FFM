@@ -530,6 +530,7 @@ Mettre plus d'exemple de code: développer le
 ## CODE TO DO :
 
 
+add javascript for hamburger menu
 
 Resize photos-upload to website - share link
 
@@ -542,7 +543,7 @@ deploiement again: check if error messages are still here - test adhesion
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
 add constraints for unique codes
 add javascript or animation for gallery
-add javascript for hamburger menu
+
 
 CSS BackOffice details 
 

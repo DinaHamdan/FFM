@@ -73,7 +73,7 @@ class AddAgrePhoto extends Ctrl
             //TODO Need to add algorithm to check for photo width and height and change it accordingly
             //do not add width and height because it will affect dimension and quality
             //serveur petit et grand , petit pour la vignette
-            $img = imagescale($imgOriginal, 800, -1, IMG_BICUBIC);
+            $img = imagescale($imgOriginal, 800, -1);
 
             $imgSharpened = imagesetinterpolation($img, IMG_SINC);
 

@@ -8,5 +8,5 @@ class ConfigDB
     const PORT = '3306';
     const DBNAME = 'dhadev_ffm';
     const USER = 'dhadev';
-    const PASSWORD = 'xxxxx';
+    const PASSWORD = 'dh_dev_always_24!';
 }
