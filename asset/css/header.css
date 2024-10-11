@@ -25,30 +25,32 @@ header #full-logo-small {
   height: 4em;
 }
 header #logo {
+  display: none;
   margin: 1.5em 0 0 10em;
   width: 5em;
   height: 3.5em;
 }
-header .menuColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1em;
-  list-style-type: none;
-}
 header #menuBar {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
   color: white;
   font-size: 1.1em;
 }
-header #menuBar a {
+header #menuBar #menu {
+  font-size: 0.7em;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+header #menuBar #menu a {
   text-decoration: none;
   color: white;
 }
-header #menuBar a::after {
+header #menuBar #menu a::after {
   color: white;
-}
-header #menuBar ul {
-  display: none;
 }
 header #menuBar #avatar-container {
   display: flex;
@@ -64,6 +66,20 @@ header #menuBar #avatar-container #ffm-man {
   height: 50px;
   border-radius: 50px;
   margin-bottom: 0;
+}
+
+.menuColumn {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  list-style-type: none;
+  height: 200px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 300px;
+  background-color: #000000;
 }
 
 .sticky {
@@ -116,11 +132,15 @@ header #menuBar #avatar-container #ffm-man {
 }
 
 @media screen and (min-width: 600px) {
-  header #menuBar ul {
+  header #menuBar {
+    flex-direction: row;
+  }
+  header #menuBar #menu {
     display: flex;
     justify-content: space-between;
     gap: 1em;
     list-style-type: none;
+    font-size: 1em;
   }
   header #menuBar li {
     margin-top: 4em;

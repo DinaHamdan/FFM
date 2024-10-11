@@ -25,15 +25,7 @@
         </div>
     </div>
 </footer>
-<script>
-    /* I might remove this logo 3 changed id*/
-    let mybutton = document.getElementById("logo3");
-    mybutton.addEventListener('click', () => {
-        mybutton.style.display = "none";
-        document.getElementById("menuBar").style.display = "block";
-        console.log("patate");
-    });
-</script>
+<script src="/js/hamburger-menu.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/sticky.js"></script>
 </body>

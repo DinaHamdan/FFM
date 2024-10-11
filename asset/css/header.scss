@@ -31,43 +31,44 @@ header {
     }
 
     #logo {
+        display: none;
         margin: 1.5em 0 0 10em;
         width: 5em;
         height: 3.5em;
 
     }
 
-    .menuColumn {
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 1em;
-        list-style-type: none;
-
-    }
 
     #menuBar {
-        //display: flex;
-        // justify-content: end;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
         color: white;
         font-size: 1.1em;
-        // background-color: #130F0F;
 
-        a {
-            text-decoration: none;
-            color: white;
+
+        #menu {
+            //display: none;
+            font-size: 0.7em;
+            display: flex;
+            //  gap: 1em;
+            list-style-type: none;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 0.5em;
+
+            a {
+                text-decoration: none;
+                color: white;
+
+            }
+
+            a::after {
+                color: white;
+            }
 
         }
 
-        a::after {
-            color: white;
-        }
-
-        ul {
-
-            display: none;
-        }
 
         #avatar-container {
             // height: 150px;
@@ -90,6 +91,23 @@ header {
         }
 
     }
+
+
+}
+
+.menuColumn {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    list-style-type: none;
+    height: 200px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 300px;
+    background-color: #000000;
+
 }
 
 .sticky {
@@ -162,13 +180,16 @@ header {
 @media screen and (min-width:600px) {
 
     header {
-        #menuBar ul {
+        #menuBar {
+            flex-direction: row;
 
-            display: flex;
-            justify-content: space-between;
-            gap: 1em;
-            list-style-type: none;
-
+            #menu {
+                display: flex;
+                justify-content: space-between;
+                gap: 1em;
+                list-style-type: none;
+                font-size: 1em;
+            }
         }
 
         #menuBar li {

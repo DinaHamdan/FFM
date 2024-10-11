@@ -330,11 +330,11 @@
     #about-us {
         #fire-jam {
             .center-button {
-
+                margin-right: 15em;
 
 
                 .prop-group-button {
-                    margin-left: -21em;
+                    margin-left: -25em;
 
                 }
 
@@ -344,14 +344,34 @@
 }
 
 // TO CHECK ON BIG SCREEN
+@media screen and (min-width:1650px) {
+    #about-us {
+        #fire-jam {
+            .center-button {
+                margin-right: 17em;
+                border: 1px solid red;
+
+
+                .prop-group-button {
+                    margin-left: -35em;
+                    border: 1px solid red;
+
+                }
+
+            }
+        }
+    }
+}
+
 @media screen and (min-width:1800px) {
     #about-us {
         #fire-jam {
             .center-button {
+                margin-right: 20em;
 
 
                 .prop-group-button {
-                    margin-left: -28em;
+                    margin-left: -40em;
 
                 }
 

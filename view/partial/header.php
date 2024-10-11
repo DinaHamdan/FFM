@@ -27,7 +27,7 @@
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v21.0"></script>
     <header>
         <img id="full-logo-small" src="/asset/img/FFM-logo-300x205.png" alt="Fire-from-Mars-Logo">
-        <img id="logo" class="hamburger" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo">
+        <img id="logo" src="/asset/img/fire-LOGOFFM-1-223x300.png" alt="Fire-from-Mars-Logo">
         <div id="flash-message-header">
             <?php if (!empty($args['session']['msg']['info'])) { ?>
 
@@ -49,7 +49,7 @@
 
         <?php unset($_SESSION['msg']) ?>
         <nav id="menuBar">
-            <ul class="menu">
+            <ul id="menu">
                 <?php
                 /* Check if user session is not null to show the specific links */
                 if ($args['session']['user']['codeRole'] != null) { ?>
@@ -82,11 +82,7 @@
                 <?php } ?>
             </ul>
 
-
-
         </nav>
 
 
     </header>
-
-    <!--     <h1 id="page-title"><?= $args['pageTitle'] ?></h1> -->
