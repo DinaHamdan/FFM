@@ -418,11 +418,8 @@ header #menuBar #avatar-container #ffm-man {
   }
 }
 @media screen and (min-width: 1400px) {
-  #about-us #fire-jam .center-button {
-    margin-right: 15em;
-  }
   #about-us #fire-jam .center-button .prop-group-button {
-    margin-left: -25em;
+    margin-left: -21em;
   }
 }
 @media screen and (min-width: 1650px) {
