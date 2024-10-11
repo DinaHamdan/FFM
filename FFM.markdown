@@ -531,18 +531,22 @@ Mettre plus d'exemple de code: développer le
 
 
 add javascript for hamburger menu
+add constraints for unique codes
+add javascript or animation for gallery
+
+
+
+fix deploiement again: check if error messages are still here - test adhesion
 
 Resize photos-upload to website - share link
 
-fix header css 
 
 
-deploiement again: check if error messages are still here - test adhesion
+
 
 
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
-add constraints for unique codes
-add javascript or animation for gallery
+
 
 
 CSS BackOffice details 
@@ -560,6 +564,9 @@ fix adhesion table in always data server
 fix nav html tags (w3c no errors)
 toggle legal rights with javascript instead of hover
 Add php function to get agrè titles 
+
+fix header css 
+fix main oage title for mobile
 
 # Retour au GRETA 
 
