@@ -169,13 +169,19 @@ ALTER TABLE member
 
 ALTER TABLE role
    ADD CONSTRAINT `u_role_code` UNIQUE(code)
-  
+      ADD CONSTRAINT `u_role_label` UNIQUE(label)
 ;
-
+ALTER TABLE category
+   ADD CONSTRAINT `u_category_name` UNIQUE(name)
+;
 ALTER TABLE typeAgre
    ADD CONSTRAINT `u_typeAgre_name` UNIQUE(name)
    ;
 
+   ALTER TABLE member
+   ADD CONSTRAINT `u_member_email` UNIQUE(email)
+;
+/* maybe add phone number unique constraint */
  ALTER TABLE typeAgreCategory
     ADD CONSTRAINT `fk_typeAgreCategory_typeAgre` FOREIGN KEY(idAgre) REFERENCES typeAgre(id)
     ,ADD CONSTRAINT `fk_typeAgreCategory_category` FOREIGN KEY(idCategory) REFERENCES category(id)

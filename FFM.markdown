@@ -530,8 +530,8 @@ Mettre plus d'exemple de code: développer le
 ## CODE TO DO :
 
 
-add javascript for hamburger menu
-add constraints for unique codes
+add javascript for hamburger menu failed
+
 add javascript or animation for gallery
 
 
@@ -566,7 +566,9 @@ toggle legal rights with javascript instead of hover
 Add php function to get agrè titles 
 
 fix header css 
-fix main oage title for mobile
+fix main oage title for mobilex
+add constraints for unique codes (added to db structure in code not in server)
+
 
 # Retour au GRETA 
 
