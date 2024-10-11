@@ -18,6 +18,9 @@
   height: 200px;
   border: 1px solid gray;
 }
+#agre-photo-section #agre-photo-container .prop-photo:hover {
+  transform: scale(1.1);
+}
 
 @media screen and (min-width: 600px) {
   #agre-photo-section #page-title {

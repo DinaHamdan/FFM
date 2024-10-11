@@ -19,6 +19,10 @@
             height: 200px;
             border: 1px solid gray;
         }
+
+        .prop-photo:hover {
+            transform: scale(1.1);
+        }
     }
 }
 

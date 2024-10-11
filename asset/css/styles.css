@@ -38,7 +38,7 @@ header #menuBar {
   font-size: 1.1em;
 }
 header #menuBar #menu {
-  font-size: 0.5em;
+  font-size: 0.7em;
   display: flex;
   list-style-type: none;
   justify-content: space-between;
@@ -1897,6 +1897,9 @@ header #menuBar #avatar-container #ffm-man {
   width: 200px;
   height: 200px;
   border: 1px solid gray;
+}
+#agre-photo-section #agre-photo-container .prop-photo:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 600px) {
