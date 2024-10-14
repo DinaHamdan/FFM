@@ -620,6 +620,7 @@ Sécruité en javascript
 Limiter les requêttes vers le serveur
 Regex 
 Pas assez de Update
+Parler de JS en pptx
 Boutton modifier pour les agrès
 charte graphique mon choix 
 OOP en parler

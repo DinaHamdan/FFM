@@ -31,12 +31,17 @@ header {
     }
 
     #logo {
-        display: none;
-        margin: 1.5em 0 0 10em;
+        padding: 1em;
+        margin-right: -15em;
+        right: 0;
         width: 5em;
         height: 3.5em;
-
     }
+
+
+
+
+
 
 
     #menuBar {
@@ -48,9 +53,9 @@ header {
 
 
         #menu {
-            //display: none;
+            display: none;
             font-size: 0.7em;
-            display: flex;
+            // display: flex;
             //  gap: 1em;
             list-style-type: none;
             justify-content: space-between;
@@ -69,8 +74,36 @@ header {
 
         }
 
+
+
         #menu-mobile {
+            //  display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            gap: 1em;
+            padding: 1em;
+            list-style: none;
+            background-color: #000000;
             display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 100vh;
+            z-index: 1000;
+            transition: right 0.5s ease;
+
+            a {
+                text-align: center;
+                text-decoration: none;
+                color: white;
+
+            }
+
+            a::after {
+                color: white;
+            }
         }
 
 
@@ -99,6 +132,12 @@ header {
 
 }
 
+.active {
+
+    margin-left: -40px;
+
+}
+
 .menuColumn {
     border: 1px solid red;
     display: flex;
@@ -113,6 +152,8 @@ header {
     background-color: #000000;
 
 }
+
+
 
 .sticky {
     position: fixed;

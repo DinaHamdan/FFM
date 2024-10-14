@@ -8,7 +8,7 @@
 
                 <?php if ($args['session']['user']['codeRole'] == 'ADM') { ?>
                     <div id="">
-                        <a href="/agre/remove-agrePhoto?id=<?= $args['session']['agrePhoto']['id'] ?>" onclick="return confirm('are you sure you want to remove?');">Enlever la photo</a>
+                        <a href="/agre/remove-agrePhoto?id=<?= $args['session']['agrePhoto']['id'] ?>" onclick="return confirm('Vous êtes sûr vous voulez enlever la photo?');">Enlever la photo</a>
                     </div>
                     <form action="/agre/mainAgrePhoto " method="post">
                         <input type="hidden" name="typeAgreOfPhoto" value="<?= $args['session']['agrePhoto']['idTypeAgre'] ?>">
