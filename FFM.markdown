@@ -627,15 +627,17 @@ OOP en parler
 
 
 ## CODE TO DO :
-fix deploiement again: check if error messages are still here 
-add javascript for hamburger menu retry 
-fix sticky menu
-try photo upload like yamin 
-Resize photos-upload to website - share link
 
+rapport
+pptx 
+try photo upload like yamin 
+add javascript for animation for elements and gallery fir elements to appear  in homepage
+
+Resize photos-upload to website - share link
+fix deploiement again: check if error messages are still here 
+If it doesnt work try hostinger? 
 
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
-add javascript for animation for elements and gallery fir elements to appear  in homepage
 
 
 ## DONE 
@@ -656,3 +658,6 @@ fix main oage title for mobilex
 add constraints for unique codes (added to db structure in code not in server)
 add javascript or animation for gallery kinda did 
 test adhesion i deployed website
+add javascript for hamburger menu retry 
+
+fix sticky menu

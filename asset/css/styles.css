@@ -97,20 +97,6 @@ header #menuBar #avatar-container #ffm-man {
   margin-left: -40px;
 }
 
-.menuColumn {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1em;
-  list-style-type: none;
-  height: 200px;
-  position: relative;
-  margin-top: 100px;
-  margin-left: 300px;
-  background-color: #000000;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -118,6 +104,8 @@ header #menuBar #avatar-container #ffm-man {
   border: 1px solid rgb(49, 48, 48);
   height: 110px;
   padding: 1em;
+  z-index: 500;
+  /* Ensure the navbar is above other content */
 }
 
 #accueil {

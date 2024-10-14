@@ -138,20 +138,6 @@ header {
 
 }
 
-.menuColumn {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1em;
-    list-style-type: none;
-    height: 200px;
-    position: relative;
-    margin-top: 100px;
-    margin-left: 300px;
-    background-color: #000000;
-
-}
 
 
 
@@ -162,6 +148,9 @@ header {
     border: 1px solid rgb(49, 48, 48);
     height: 110px;
     padding: 1em;
+    //position: sticky;
+    z-index: 500;
+    /* Ensure the navbar is above other content */
 
 }
 

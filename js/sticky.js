@@ -19,15 +19,16 @@ let prevScrollPos = window.scrollY;
 window.addEventListener('scroll', function () {
     // current scroll position
     const currentScrollPos = window.scrollY;
-    console.log('test');
     if (prevScrollPos > currentScrollPos) {
         // user has scrolled up
-        menuBar.classList.add('stikcy');
+        console.log('up');
+        menuBar.classList.add('sticky');
     } else {
-        // user has scrolled down
-        menuBar.classList.remove('stikcy');
-    }
+        console.log('down');
 
+        // user has scrolled down
+        menuBar.classList.remove('sticky');
+    }
     // update previous scroll position
     prevScrollPos = currentScrollPos;
 });
