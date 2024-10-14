@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/cfg/config-prod.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/cfg/config-dev.php';
 
 class libDb
 {

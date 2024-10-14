@@ -15,8 +15,6 @@ class AddAgreDisplay extends Ctrl
 
         //get agreType Id and category Id
         $categoryType = LibAgre::getIdTypeIdCategory();
-
-
         $_SESSION['listAgreTypeCategory'] = $categoryType;
     }
     function renderView(): void

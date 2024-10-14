@@ -3,8 +3,8 @@
         <div id="adhesion-title-container">
             <h2 id="adhesion-title"><?= $args['pageTitle'] ?></h2>
             <p>Soutenir L’association</p>
-            <p>Accès au Fire Jam</p>
-            <p>Participation pour Kerdane</p>
+            <p>Accès aux Fire Jam et partage de connaissances</p>
+            <p>Pratique encadrée</p>
             <p>Participation aux prestations</p>
 
         </div>
@@ -55,7 +55,7 @@
                 <input class="input-box" type="text" name="talents" id="talents">
             </div>
             <div>
-                <p class="adhesion-paragraph">Soutenez l'asso avec votre participation. La participation au Kerdane est reservé aux membres actifs.
+                <p class="adhesion-paragraph">Soutenez l'asso avec votre participation.
                 </p>
                 <div> <input type="radio" name="participation" checked value="fire-jam-3">
                     <label for="participation">Adhésion 3€</label>

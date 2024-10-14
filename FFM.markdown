@@ -527,48 +527,6 @@ Mettre plus d'exemple de code: développer le
 
 ## End of stage 
 
-## CODE TO DO :
-
-
-
-
-add javascript or animation for gallery
-
-
-
-fix deploiement again: check if error messages are still here - test adhesion
-
-Resize photos-upload to website - share link
-
-
-
-
-add javascript for hamburger menu failed
-//TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
-
-
-
-CSS BackOffice details 
-
-
-## DONE 
-remove useless tables in bdd phpmyadmin
-Change comment size
-change order of contact us maybe? 
-add adhésion type of adhesion (membre actif or adhésion normal)
-Adjuste about us section buttons for screens bigger than 2000px
-font bigger
-Increase font of titles login and contact
-fix adhesion table in always data server 
-fix nav html tags (w3c no errors)
-toggle legal rights with javascript instead of hover
-Add php function to get agrè titles 
-
-fix header css 
-fix main oage title for mobilex
-add constraints for unique codes (added to db structure in code not in server)
-
-
 # Retour au GRETA 
 
 
@@ -650,3 +608,50 @@ Javascript
   sécurité (login + inscription )
  projection : référencement google résultats - axes d'amélioration 
 RGPD
+
+
+# Notes diaporama
+
+presentation forme: 
+Numéroter Slides plus grand
+Waterfall diagramm de ganntt
+Métodologie en cascade - agile =\= 
+Sécruité en javascript
+Limiter les requêttes vers le serveur
+Regex 
+Pas assez de Update
+Boutton modifier pour les agrès
+charte graphique mon choix 
+OOP en parler
+
+
+## CODE TO DO :
+fix deploiement again: check if error messages are still here 
+add javascript for hamburger menu retry 
+fix sticky menu
+try photo upload like yamin 
+Resize photos-upload to website - share link
+
+
+//TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
+add javascript for animation for elements and gallery fir elements to appear  in homepage
+
+
+## DONE 
+remove useless tables in bdd phpmyadmin
+Change comment size
+change order of contact us maybe? 
+add adhésion type of adhesion (membre actif or adhésion normal)
+Adjuste about us section buttons for screens bigger than 2000px
+font bigger
+Increase font of titles login and contact
+fix adhesion table in always data server 
+fix nav html tags (w3c no errors)
+toggle legal rights with javascript instead of hover
+Add php function to get agrè titles 
+
+fix header css 
+fix main oage title for mobilex
+add constraints for unique codes (added to db structure in code not in server)
+add javascript or animation for gallery kinda did 
+test adhesion i deployed website

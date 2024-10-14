@@ -52,6 +52,9 @@ header #menuBar #menu a {
 header #menuBar #menu a::after {
   color: white;
 }
+header #menuBar #menu-mobile {
+  display: none;
+}
 header #menuBar #avatar-container {
   display: flex;
   flex-direction: column;

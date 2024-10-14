@@ -1,4 +1,4 @@
-window.onscroll = function () { myFunction() };
+/* window.onscroll = function () { myFunction() };
 let menuBar = document.querySelector("header");
 
 //let menuBar = document.getElementById("menuBar");
@@ -11,6 +11,29 @@ function myFunction() {
         menuBar.classList.remove("sticky");
     }
 }
+ */
+let menuBar = document.querySelector("header");
+
+let prevScrollPos = window.scrollY;
+
+window.addEventListener('scroll', function () {
+    // current scroll position
+    const currentScrollPos = window.scrollY;
+    console.log('test');
+    if (prevScrollPos > currentScrollPos) {
+        // user has scrolled up
+        menuBar.classList.add('stikcy');
+    } else {
+        // user has scrolled down
+        menuBar.classList.remove('stikcy');
+    }
+
+    // update previous scroll position
+    prevScrollPos = currentScrollPos;
+});
+
+
+
 
 
 //Legal mentions
