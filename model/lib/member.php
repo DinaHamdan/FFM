@@ -48,6 +48,25 @@ class LibMember
         return $user;
     }
 
+    //List user with email only
+    static function getMemberByNumber(string $phoneNumber): ?array
+    {
+        $query = 'SELECT member.id, member.firstName, member.lastName, member.avatar, member.email, member.pass, role.id AS idRole, role.code AS codeRole, role.label as roleLabel';
+        $query .= ' FROM member ';
+        $query .= ' JOIN role ON member.idRole = role.id';
+        $query .= ' WHERE member.phoneNumber= :phoneNumber';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':phoneNumber', $phoneNumber);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $user = $statement->fetch(PDO::FETCH_ASSOC);
+        // var_dump($user);
+        if ($user == false) {
+            $user = null;
+        };
+        return $user;
+    }
     //List user with id
     static function getMemberById(string $memberId): ?array
     {

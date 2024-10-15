@@ -98,14 +98,12 @@ header #menuBar #avatar-container #ffm-man {
 }
 
 .sticky {
-  position: fixed;
   top: 0;
   width: 98%;
   border: 1px solid rgb(49, 48, 48);
   height: 110px;
   padding: 1em;
-  z-index: 500;
-  /* Ensure the navbar is above other content */
+  position: sticky;
 }
 
 #accueil {

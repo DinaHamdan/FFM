@@ -98,14 +98,12 @@ header #menuBar #avatar-container #ffm-man {
 }
 
 .sticky {
-  position: fixed;
   top: 0;
   width: 98%;
   border: 1px solid rgb(49, 48, 48);
   height: 110px;
   padding: 1em;
-  z-index: 500;
-  /* Ensure the navbar is above other content */
+  position: sticky;
 }
 
 #accueil {
@@ -584,7 +582,7 @@ header #menuBar #avatar-container #ffm-man {
   text-align: center;
   width: 8em;
   height: 1.5em;
-  background-image: linear-gradient(to right, #1D6D9A, #EECC68);
+  background-image: linear-gradient(to right, #E19F3C, #FB7616, #FE6B00);
   border-radius: 3em;
   color: #130F0F;
   margin: 1.5em 0 2em 0;
@@ -1336,6 +1334,7 @@ header #menuBar #avatar-container #ffm-man {
 #forum h1 {
   text-align: center;
   padding: 1em;
+  font-family: "Kanit", sans-serif;
 }
 #forum h3 {
   text-align: center;
@@ -1415,7 +1414,7 @@ header #menuBar #avatar-container #ffm-man {
     align-items: center;
   }
   #forum h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
   #forum h3 {
     font-size: 2em;
@@ -1714,6 +1713,8 @@ header #menuBar #avatar-container #ffm-man {
   border: 1px solid gray;
   transition: transform 0.5s;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #gallery .prop-photo:hover {
   transform: scale(1.1);
@@ -1789,6 +1790,8 @@ header #menuBar #avatar-container #ffm-man {
   #gallery .gallery-wrap .prop-photo {
     width: 300px;
     height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 #volunteer-form-section {
@@ -1911,6 +1914,8 @@ header #menuBar #avatar-container #ffm-man {
   width: 200px;
   height: 200px;
   border: 1px solid gray;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #agre-photo-section #agre-photo-container .prop-photo:hover {
   transform: scale(1.1);
@@ -1930,6 +1935,8 @@ header #menuBar #avatar-container #ffm-man {
   #agre-photo-section #agre-photo-container .prop-photo {
     width: 400px;
     height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 #add-photo-section {
@@ -2181,6 +2188,7 @@ header #menuBar #avatar-container #ffm-man {
 }
 #backoffice #page-title {
   padding: 2em;
+  font-family: "Kanit", sans-serif;
 }
 #backoffice div {
   display: flex;
@@ -2207,7 +2215,7 @@ header #menuBar #avatar-container #ffm-man {
 
 @media screen and (min-width: 900px) {
   #backoffice #page-title {
-    font-size: 3em;
+    font-size: 4em;
   }
   #backoffice div {
     flex-direction: row;
@@ -2227,6 +2235,7 @@ header #menuBar #avatar-container #ffm-man {
 .backoffice-option #page-title {
   padding: 1em;
   font-size: 2em;
+  font-family: "Kanit", sans-serif;
 }
 .backoffice-option .participant-name {
   text-align: center;

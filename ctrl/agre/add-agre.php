@@ -59,7 +59,29 @@ class AddAgrePhoto extends Ctrl
                 header('Location: ' . '/agre/add-agre-display');
                 exit();
             }
+            // Add a flash message
+            $_SESSION['msg']['info'][] = 'La photo a été ajouté';
 
+            //open binary image file and rb to make sure it's read by all operating systems
+            $binaryFile = fopen($fileTmpName, 'rb');
+            $nameFile = basename($fileName);
+            $dateTime = date('Y-m-d h:i:s');
+            // ("Y-m-d h:i:s")
+
+            //Add photo to database 
+            $isSuccess = LibAgre::AddAgrePhoto($idCategory, $idTypeagre, $binaryFile, $nameFile, $dateTime);
+            //Create a directory to save uploaded photos
+            $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/upload/';
+            // Copy the image file into the photo directory
+            $uploadPath = $uploadDirectory . basename($fileName);
+            $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
+
+
+
+
+
+
+            /* 
             // Resize the photo
             // WARN! sudo apt install php-gd
             // $imgOriginal;
@@ -94,7 +116,7 @@ class AddAgrePhoto extends Ctrl
             $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/upload/';
             // Copy the image file into the photo directory
             $uploadPath = $uploadDirectory . basename($fileName);
-            $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
+            $didUpload = move_uploaded_file($fileTmpName, $uploadPath); */
         }
     }
 

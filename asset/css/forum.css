@@ -5,6 +5,7 @@
 #forum h1 {
   text-align: center;
   padding: 1em;
+  font-family: "Kanit", sans-serif;
 }
 #forum h3 {
   text-align: center;
@@ -84,7 +85,7 @@
     align-items: center;
   }
   #forum h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
   #forum h3 {
     font-size: 2em;

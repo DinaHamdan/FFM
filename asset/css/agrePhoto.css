@@ -17,6 +17,8 @@
   width: 200px;
   height: 200px;
   border: 1px solid gray;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #agre-photo-section #agre-photo-container .prop-photo:hover {
   transform: scale(1.1);
@@ -36,5 +38,7 @@
   #agre-photo-section #agre-photo-container .prop-photo {
     width: 400px;
     height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }/*# sourceMappingURL=agrePhoto.css.map */

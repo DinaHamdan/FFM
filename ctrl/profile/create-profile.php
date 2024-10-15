@@ -104,7 +104,8 @@ class CreateProfile extends Ctrl
 
         //Complete Profile 
         $isSuccess =  LibMember::completeProfile($idMember, $user['fname'], $user['lname'],  $user['phoneNumber'], $binaryFile, $nameFile);
-
+        $user = LibMember::getMemberByNumber($user['phoneNumber']);
+        $_SESSION['user'] = $user;
         //Create a directory to save uploaded photos
         $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/upload/';
         // Copy the image file into the photo directory

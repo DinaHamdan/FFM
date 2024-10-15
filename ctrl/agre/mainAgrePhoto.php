@@ -28,7 +28,7 @@ class ChooseMainPhoto extends Ctrl
     function renderView(): void
     {
         $args = $this->viewArgs;
-        header('Location: ' . '/agre/list-agre');
+        header('Location: ' . '/backoffice/list-photo-agre');
     }
 
 

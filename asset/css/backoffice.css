@@ -10,6 +10,7 @@
 }
 #backoffice #page-title {
   padding: 2em;
+  font-family: "Kanit", sans-serif;
 }
 #backoffice div {
   display: flex;
@@ -36,7 +37,7 @@
 
 @media screen and (min-width: 900px) {
   #backoffice #page-title {
-    font-size: 3em;
+    font-size: 4em;
   }
   #backoffice div {
     flex-direction: row;
