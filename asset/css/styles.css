@@ -1952,6 +1952,7 @@ header #menuBar #avatar-container #ffm-man {
 }
 #add-photo-section #page-title {
   padding: 1em;
+  font-family: "Kanit", sans-serif;
 }
 #add-photo-section #add-photo-form {
   width: 70%;
@@ -2052,6 +2053,7 @@ header #menuBar #avatar-container #ffm-man {
 }
 #add-prop .add-prop-title {
   margin: 2em;
+  font-family: "Kanit", sans-serif;
 }
 #add-prop #add-prop-form {
   width: 70%;

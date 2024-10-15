@@ -226,6 +226,32 @@ class LibAgre
         return $isSuccess;
     }
 
+    static function deleteAgrePhotoById(string $idAgre): bool
+    {
+        $query = 'DELETE FROM photoAgre WHERE photoAgre.idTypeAgre= :idAgre';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':idAgre', $idAgre);
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+
+    static function deleteAgreCategory(string $idAgre): bool
+    {
+        $query = 'DELETE FROM typeAgreCategory WHERE typeAgreCategory.idAgre= :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idAgre);
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+    static function deleteAgre(string $idAgre): bool
+    {
+        $query = 'DELETE FROM typeAgre WHERE typeAgre.id= :id';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':id', $idAgre);
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+
     static function removeMainPhoto($idMainPhotoAgre, $isNotMain): bool
 
     {

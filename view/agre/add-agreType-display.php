@@ -86,7 +86,10 @@
                                 <?php } ?>
                             </td>
 
-
+                            <td> <a href="/ctrl/agre/agre-update.php?id=<?= $args['session']['agreTypeCategory']['id'] ?>">Modifier</a>
+                            </td>
+                            <td> <a href="/ctrl/agre/agre-delete.php?id=<?= $args['session']['agreTypeCategory']['id'] ?>" onclick="return confirm('Vous êtes sûr vous voulez enlever?');">Enlever</a>
+                            </td>
                         </tr>
                     <?php } ?>
 

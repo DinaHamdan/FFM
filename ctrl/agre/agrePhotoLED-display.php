@@ -23,6 +23,9 @@ class DisplayAgrePhotoLED extends Ctrl
         $idCategory = 2;
         $idAgre = $_GET['id'];
         $_SESSION['listAgrePhoto'] = LibAgre::getAgrePhoto($idAgre, $idCategory);
+        $agreName = LibAgre::getAgreName($idAgre);
+
+        $_SESSION['agreName'] = $agreName['name'];
     }
 
     function renderView(): void

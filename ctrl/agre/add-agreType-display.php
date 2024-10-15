@@ -33,6 +33,3 @@ class AddAgreDisplay extends Ctrl
 
 $ctrl = new AddAgreDisplay();
 $ctrl->execute();
-//Check if user is logged and has admin privileges
-$isLogged = $this->isUserLogged();
-$isGranted = $this->hasRole(Role::ADMIN);

@@ -28,8 +28,10 @@
         <div class="admin-prop-button-container">
             <?php
             foreach ($args['session']['adminAgreFeu'] as $args['session']['agreFeu']) { ?>
-
                 <a class="admin-prop-button" href="/ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['id'] ?>"> <?= $args['session']['agreFeu']['name'] ?></a>
+                <!--  <a class="admin-prop-button" href="/ctrl/agre/agrePhotoFire-update.php?id=<?= $args['session']['agreFeu']['id'] ?>">Modifier</a>
+                    <a class="admin-prop-button" href="/ctrl/agre/agreFire-delete.php?id=<?= $args['session']['agreFeu']['id'] ?>" onclick="return confirm('Vous êtes sûr vous voulez enlever?');">Enlever</a> -->
+
             <?php } ?>
         </div>
 
@@ -40,8 +42,9 @@
             <?php
 
             foreach ($args['session']['adminAgreLED'] as $args['session']['agreLED']) { ?>
-
                 <a class="admin-prop-button" href="/ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['id'] ?>"> <?= $args['session']['agreLED']['name'] ?></a>
+
+
             <?php } ?>
         </div>
 

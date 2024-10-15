@@ -4,15 +4,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/agre.php';
 
 
 
-class RemoveAgrePhoto extends Ctrl
+class RemoveAgre extends Ctrl
 {
     function do(): void
     {  //Check if user is logged and has admin privileges
         $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
-        $idPhotoAgre = $_GET['id'];
 
-        LibAgre::deleteAgrePhoto($idPhotoAgre);
+        $idAgre = $_GET['id'];
+        LibAgre::deleteAgrePhotoById($idAgre);
+        LibAgre::deleteAgreCategory($idAgre);
+        LibAgre::deleteAgre($idAgre);
     }
     function renderView(): void
     {
@@ -26,5 +28,5 @@ class RemoveAgrePhoto extends Ctrl
     }
 }
 
-$ctrl = new RemoveAgrePhoto();
+$ctrl = new RemoveAgre();
 $ctrl->execute();
