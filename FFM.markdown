@@ -616,32 +616,35 @@ presentation forme:
 Numéroter Slides plus grand
 Waterfall diagramm de ganntt
 Métodologie en cascade - agile =\= 
-Sécruité en javascript
-Limiter les requêttes vers le serveur
-Regex 
-Pas assez de Update
+Sécruité en javascript: Limiter les requêttes vers le serveur - Regex 
+Pas assez de Update (fixing this) - Boutton modifier pour les agrès
 Parler de JS en pptx
-Boutton modifier pour les agrès
 charte graphique mon choix 
-OOP en parler
+OOP en parler ? 
 
 
-## CODE TO DO :
 
-add change agrè function 
-add javascript for animation for elements and gallery fir elements to appear  in homepage
-_________________________________________________________________________________
+## Raport :
+
 Refaire diagramm du MVC et de POO pour rapport et pour pptx
 rapport
 pptx 
 prepare demo scenario with forms filled
+Print report
+_________________________________________________________________________________
 
 
+## CODE TO DO :
+
+finish change agrè function 
+add javascript for animation for elements and gallery fir elements to appear  in homepage
+fix $_SESSION and remove unacessary functions 
 Resize photos-upload to website - share link
-fix deploiement again: check if error messages are still here 
-If it doesnt work try hostinger? 
-
+Hostinger deploiment 
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
+convert to webp php 
+
+ 
 
 
 ## DONE 
@@ -666,4 +669,5 @@ add javascript for hamburger menu retry
 fix sticky menu
 try photo upload like yamin DONE 
 fix redirections
-
+fix deploiement again: check if error messages are still here with guillaulme
+added favicon 

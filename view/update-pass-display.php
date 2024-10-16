@@ -10,12 +10,7 @@
             <label for="pass">Nouveau mot de passe</label>
             <input type="password" name="pass">
 
-
-
             <button id="update-pass-button" type="submit">Modifier</button>
-
-
-
 
         </form>
     </section>

@@ -8,12 +8,7 @@ class AgreAdminDisplay extends Ctrl
     function do(): void
     {
 
-        /*  $idCategoryFeu = 1;
-        $_SESSION['typeAgreFeu'] = LibAgre::getGallerieTypeAgre($idCategoryFeu);
-        $idCategoryLED = 2;
-        $_SESSION['typeAgreLED'] = LibAgre::getGallerieTypeAgre($idCategoryLED); */
 
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
         if ($isGranted) {
             $_SESSION['user']['codeRole'] == "ADM";
@@ -42,8 +37,6 @@ class AgreAdminDisplay extends Ctrl
     function getPageTitle(): null
     {
         return null;
-        /*         return 'Gallerie Agre';
- */
     }
 }
 

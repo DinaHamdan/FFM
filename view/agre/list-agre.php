@@ -30,11 +30,11 @@
             <img class="back-scroll" src="/asset/img/back.png" alt="">
             <div id="fire-prop-container">
                 <?php
-                foreach ($args['session']['typeAgreFeu'] as $args['session']['agreFeu']) { ?>
+                foreach ($args['typeAgreFeu'] as $typeAgreFeu) { ?>
 
                     <div class="prop-title-photo-container">
-                        <a href=" /ctrl/agre/agrePhotoFire-display.php?id=<?= $args['session']['agreFeu']['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreFeu']['illustration']) ?>" alt=""></a>
-                        <h3><?= $args['session']['agreFeu']['agreName'] ?></h3>
+                        <a href=" /ctrl/agre/agrePhotoFire-display.php?id=<?= $typeAgreFeu['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($typeAgreFeu['illustration']) ?>" alt=""></a>
+                        <h3><?= $typeAgreFeu['agreName'] ?></h3>
                     </div>
                 <?php } ?>
             </div>
@@ -49,14 +49,13 @@
             <img class="back-button" src="/asset/img/back.png" alt="">
             <div id="led-prop-container">
                 <?php
-                foreach ($args['session']['typeAgreLED'] as $args['session']['agreLED']) { ?>
+                foreach ($args['typeAgreLED'] as $typeAgreLED) { ?>
 
                     <div class="prop-title-photo-container">
 
 
-                        <a href="  /ctrl/agre/agrePhotoLED-display.php?id=<?= $args['session']['agreLED']['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($args['session']['agreLED']['illustration']) ?>" alt=""></a>
-                        <h3><?= $args['session']['agreLED']['agreName'] ?></h3>
-
+                        <a href="  /ctrl/agre/agrePhotoLED-display.php?id=<?= $typeAgreLED['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($typeAgreLED['illustration']) ?>" alt=""></a>
+                        <h3><?= $typeAgreLED['agreName'] ?></h3>
                     </div>
                 <?php } ?>
             </div>

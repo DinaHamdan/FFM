@@ -41,6 +41,10 @@
                     <th>Catégorie feu</th>
                     <th>Catégorie lumineux</th>
                     <th>Categorie agré Jour</th>
+                    <th>Modifier</th>
+                    <th>Enlever</th>
+
+
                 </thead>
                 <tbody>
                     <?php foreach ($args['session']['listAgreTypeCategory'] as $args['session']['agreTypeCategory']) { ?>
@@ -86,7 +90,7 @@
                                 <?php } ?>
                             </td>
 
-                            <td> <a href="/ctrl/agre/agre-update.php?id=<?= $args['session']['agreTypeCategory']['id'] ?>">Modifier</a>
+                            <td> <a href="/ctrl/agre/agre-update-display.php?id=<?= $args['session']['agreTypeCategory']['id'] ?>">Modifier</a>
                             </td>
                             <td> <a href="/ctrl/agre/agre-delete.php?id=<?= $args['session']['agreTypeCategory']['id'] ?>" onclick="return confirm('Vous êtes sûr vous voulez enlever?');">Enlever</a>
                             </td>

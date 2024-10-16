@@ -157,7 +157,7 @@ header #menuBar #avatar-container #ffm-man {
     list-style-type: none;
     font-size: 1em;
   }
-  header #menuBar li {
+  header #menuBar #menu li {
     margin-top: 4em;
     align-items: center;
   }
@@ -167,6 +167,9 @@ header #menuBar #avatar-container #ffm-man {
     height: 5em;
   }
   header #logo {
+    display: none;
+  }
+  #menu-mobile {
     display: none;
   }
   #accueil {
@@ -2083,6 +2086,18 @@ header #menuBar #avatar-container #ffm-man {
 #add-prop th,
 #add-prop td {
   border: 1px solid white;
+}
+#add-prop table a,
+#add-prop th a,
+#add-prop td a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+#add-prop table a::after,
+#add-prop th a::after,
+#add-prop td a::after {
+  color: white;
 }
 
 #profile {

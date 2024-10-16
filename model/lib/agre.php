@@ -27,6 +27,20 @@ class LibAgre
         $typeAgre = $statement->fetchAll(PDO::FETCH_ASSOC);
         return $typeAgre;
     }
+
+
+    //List type of juggling props
+    static function getAgrebyId($idAgre): array
+    {
+        $query = 'SELECT typeAgre.id, typeAgre.name, typeAgre.label';
+        $query .= ' FROM typeAgre';
+        $query .= ' WHERE typeAgre.id = :idAgre';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':idAgre', $idAgre);
+        $successOrFailure = $statement->execute();
+        $agreById = $statement->fetch(PDO::FETCH_ASSOC);
+        return $agreById;
+    }
     //List type of juggling props
     static function getAdminTypeAgre($idCategory): array
     {

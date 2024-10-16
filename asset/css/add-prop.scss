@@ -47,5 +47,15 @@
     th,
     td {
         border: 1px solid white;
+
+        a {
+            color: white;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        a::after {
+            color: white;
+        }
     }
 }
