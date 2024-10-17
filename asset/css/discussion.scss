@@ -25,6 +25,13 @@
         flex-direction: column;
         gap: 1em;
 
+        #text-photo-container {
+            p {
+                padding: 1em;
+            }
+        }
+
+
     }
 
     #comment-container {

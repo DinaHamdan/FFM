@@ -32,7 +32,7 @@
             </p>
             <h2 id="discoverArtist"> Découvrez Nos</h2>
             <div class="center-button">
-                <a href="/agre/list-agre" id="prop-button">Agrès</a>
+                <a target="_blank" href="/agre/list-agre" id="prop-button">Agrès</a>
             </div>
         </div>
 
@@ -53,8 +53,8 @@
                 <p id="paragraph-three-two">comme vous êtes</p>
             </div>
             <div class="center-button">
-                <a class="prop-group-button" href="/agre/list-agre">Agrès</a>
-                <a href='/adhesion/adhesion-display' id="adhesion-button">Adhésion</a>
+                <a target="_blank" class="prop-group-button" href="/agre/list-agre">Agrès</a>
+                <a target="_blank" href='/adhesion/adhesion-display' id="adhesion-button">Adhésion</a>
             </div>
         </div>
 
@@ -75,7 +75,7 @@
                 <p>À malmort du</p>
                 <p>Comtat -84</p>
                 <div id="button-container">
-                    <a id="event-button" href='/evenement/event'>Voir l'évènement</a>
+                    <a target="_blank" id="event-button" href='/evenement/event'>Voir l'évènement</a>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
                 <p>renseigner, </p>
                 <p>demander un devis?</p>
             </div>
-            <div> <a id="contact-button" href="/contact/contact-display">Contactez-nous</a></div>
+            <div> <a target="_blank" id="contact-button" href="/contact/contact-display">Contactez-nous</a></div>
         </article>
 
     </div>

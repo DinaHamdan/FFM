@@ -34,7 +34,7 @@
                     <div id="discussion-container">
                         <h4 id="discussion-title"><?= $args['session']['discussion']['title'] ?> </h4>
                         <p> <?= $args['session']['discussion']['content'] ?></p>
-                        <a href="/ctrl/forum/discussion-detail.php?id=<?= ($args['session']['discussion']['id']) ?>">Voir Détails</a>
+                        <a target="_blank" href="/ctrl/forum/discussion-detail.php?id=<?= ($args['session']['discussion']['id']) ?>">Voir Détails</a>
                     </div>
                 <?php } ?>
 

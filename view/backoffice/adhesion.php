@@ -16,7 +16,7 @@
 
                     <p> <span> Le :</span> <?= $args['session']['adhesion']['time'] ?></p>
 
-                    <a href="/ctrl/backoffice/adhesion-detail.php?id=<?= ($args['session']['adhesion']['id']) ?>">Voir Détails</a>
+                    <a target="_blank" href="/ctrl/backoffice/adhesion-detail.php?id=<?= ($args['session']['adhesion']['id']) ?>">Voir Détails</a>
 
                 </div>
             <?php } ?>

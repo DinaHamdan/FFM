@@ -1368,6 +1368,7 @@ header #menuBar #avatar-container #ffm-man {
 }
 #forum #forum-form textarea {
   width: 70%;
+  height: 100px;
   border-radius: 20px;
 }
 #forum #forum-form input {
@@ -1472,6 +1473,9 @@ header #menuBar #avatar-container #ffm-man {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+#discussion #discussion-detail-container #text-photo-container p {
+  padding: 1em;
 }
 #discussion #comment-container {
   border: 1px solid #341701;

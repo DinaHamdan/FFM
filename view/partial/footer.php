@@ -4,9 +4,9 @@
 
         <img id="social-media-logo" src="/asset/img/FFM-logo-300x205.png" alt="Fire-From-Mars-logo">
         <div id="social-media-photo-container">
-            <a href="https://www.instagram.com/valerie.vidalmichel/"> <img class="social-media-photo" src="/asset/img/instagram-fotor-bg-remover-20240326164247.png" alt="lien-instagram"></a>
-            <a href="https://www.youtube.com/@firefrommars5715"><img class="social-media-photo" src="/asset/img/youtube-fotor-bg-remover-20240326164342.png" alt="lien-youtube"></a>
-            <a href="https://www.facebook.com/firefrommars/"><img class="social-media-photo" src="/asset/img/facebook-fotor-bg-remover-20240326164437.png" alt="lien-facebook"></a>
+            <a target="_blank" href="https://www.instagram.com/valerie.vidalmichel/"> <img class="social-media-photo" src="/asset/img/instagram-fotor-bg-remover-20240326164247.png" alt="lien-instagram"></a>
+            <a target="_blank" href="https://www.youtube.com/@firefrommars5715"><img class="social-media-photo" src="/asset/img/youtube-fotor-bg-remover-20240326164342.png" alt="lien-youtube"></a>
+            <a target="_blank" href="https://www.facebook.com/firefrommars/"><img class="social-media-photo" src="/asset/img/facebook-fotor-bg-remover-20240326164437.png" alt="lien-facebook"></a>
         </div>
     </div>
 

@@ -33,7 +33,7 @@
                 foreach ($args['typeAgreFeu'] as $typeAgreFeu) { ?>
 
                     <div class="prop-title-photo-container">
-                        <a href=" /ctrl/agre/agrePhotoFire-display.php?id=<?= $typeAgreFeu['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($typeAgreFeu['illustration']) ?>" alt=""></a>
+                        <a target="_blank" href=" /ctrl/agre/agrePhotoFire-display.php?id=<?= $typeAgreFeu['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($typeAgreFeu['illustration']) ?>" alt=""></a>
                         <h3><?= $typeAgreFeu['agreName'] ?></h3>
                     </div>
                 <?php } ?>
@@ -54,7 +54,7 @@
                     <div class="prop-title-photo-container">
 
 
-                        <a href="  /ctrl/agre/agrePhotoLED-display.php?id=<?= $typeAgreLED['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($typeAgreLED['illustration']) ?>" alt=""></a>
+                        <a target="_blank" href="  /ctrl/agre/agrePhotoLED-display.php?id=<?= $typeAgreLED['idAgre'] ?>"> <img class=" prop-photo" src=" data:image/png;base64,<?= base64_encode($typeAgreLED['illustration']) ?>" alt=""></a>
                         <h3><?= $typeAgreLED['agreName'] ?></h3>
                     </div>
                 <?php } ?>

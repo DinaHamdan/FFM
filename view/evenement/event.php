@@ -4,7 +4,7 @@
         <h2 id="convention-info"><?= $args['session']['convention']['cost'] ?></h2>
 
         <?php if ($args['session']['user']['codeRole'] == 'ADM') { ?>
-            <a id="modify-event-button" href="/evenement/update-event-display">Modifier l'évenement</a>
+            <a target="_blank" id="modify-event-button" href="/evenement/update-event-display">Modifier l'évenement</a>
         <?php  } ?>
 
         <div id="convention-poster-container">
@@ -40,8 +40,8 @@
         <h3 id="convention-participation-title">Envie de Participer?</h3>
 
         <div id="button-container">
-            <a id="reserve-button" href="https://www.helloasso.com/associations/fire-from-mars/evenements/jongle-en-zik-2024">Réserver ma place</a>
-            <a id="volunteer-button" href="/evenement/volunteer-form-display">Devenir Bénévole</a>
+            <a target="_blank" id="reserve-button" href="https://www.helloasso.com/associations/fire-from-mars/evenements/jongle-en-zik-2024">Réserver ma place</a>
+            <a target="_blank" id="volunteer-button" href="/evenement/volunteer-form-display">Devenir Bénévole</a>
         </div>
         <h3 id="convention-address-title"> Adresse </h3>
         <div id="convention-map-container">

@@ -12,7 +12,7 @@
                     <p> <span> Téléphone : </span><?= $args['session']['volunteerForm']['phoneNumber'] ?></p>
                     <p> <span> Candidature envoyé le :</span> <?= $args['session']['volunteerForm']['time'] ?></p>
 
-                    <a href="/ctrl/backoffice/volunteer-form-detail.php?id=<?= ($args['session']['volunteerForm']['idVolunteer']) ?>">Voir Détails</a>
+                    <a target="_blank" href="/ctrl/backoffice/volunteer-form-detail.php?id=<?= ($args['session']['volunteerForm']['idVolunteer']) ?>">Voir Détails</a>
                 </div>
             <?php } ?>
 
