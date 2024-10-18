@@ -603,7 +603,7 @@ Dossier professionel
 présentation 
 
  
-# Rapport todo
+# Rapport done
 Javascript
   sécurité (login + inscription )
  projection : référencement google résultats - axes d'amélioration 
@@ -622,21 +622,21 @@ Parler de JS en pptx
 charte graphique mon choix 
 OOP en parler ? 
 
+prepare folder of resized photos
+
+
 
 
 ## Raport :
+Refaire diagramm du MVC et de POO pour pour pptx
 
-Refaire diagramm du MVC et de POO pour rapport et pour pptx
-rapport
 pptx 
 prepare demo scenario with forms filled
-Print report
 _________________________________________________________________________________
 
 
 ## CODE TO DO :
 
-finish change agrè function 
 add javascript for animation for elements and gallery fir elements to appear  in homepage
 fix $_SESSION and remove unacessary functions 
 Resize photos-upload to website - share link
@@ -645,8 +645,6 @@ Hostinger deploiment
 convert to webp php 
 
  
-
-
 ## DONE 
 remove useless tables in bdd phpmyadmin
 Change comment size
@@ -671,3 +669,4 @@ try photo upload like yamin DONE
 fix redirections
 fix deploiement again: check if error messages are still here with guillaulme
 added favicon 
+finish change agrè function 

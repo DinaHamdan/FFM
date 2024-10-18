@@ -37,20 +37,29 @@
   font-weight: 100;
   font-size: 0.7em;
 }
-#add-prop table,
-#add-prop th,
-#add-prop td {
+#add-prop #table-container {
+  padding: 1em;
+  overflow-x: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#add-prop #table-container table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#add-prop #table-container table th,
+#add-prop #table-container table td {
   border: 1px solid white;
 }
-#add-prop table a,
-#add-prop th a,
-#add-prop td a {
+#add-prop #table-container table th a,
+#add-prop #table-container table td a {
   color: white;
   font-weight: 500;
   text-decoration: none;
 }
-#add-prop table a::after,
-#add-prop th a::after,
-#add-prop td a::after {
+#add-prop #table-container table th a::after,
+#add-prop #table-container table td a::after {
   color: white;
 }/*# sourceMappingURL=add-prop.css.map */

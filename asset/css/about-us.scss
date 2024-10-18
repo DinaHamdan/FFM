@@ -343,18 +343,18 @@
     }
 }
 
-// TO CHECK ON BIG SCREEN
+// TO CHECK ON BIG SCREEN test 1 
 @media screen and (min-width:1650px) {
     #about-us {
         #fire-jam {
             .center-button {
-                margin-right: 17em;
-                border: 1px solid red;
+                margin-right: 15em;
+                border: 1px solid green;
 
 
                 .prop-group-button {
-                    margin-left: -35em;
-                    border: 1px solid red;
+                    margin-left: -15em;
+                    border: 1px solid green;
 
                 }
 
@@ -367,11 +367,11 @@
     #about-us {
         #fire-jam {
             .center-button {
-                margin-right: 20em;
+                //margin-right: 20em;
 
 
                 .prop-group-button {
-                    margin-left: -40em;
+                    // margin-left: -40em;
 
                 }
 

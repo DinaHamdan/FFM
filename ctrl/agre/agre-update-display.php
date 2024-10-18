@@ -10,6 +10,7 @@ class UpdatePropDisplay extends Ctrl
     {
         $idAgre = $_GET['id'];
 
+        $_SESSION['idAgre'] = $idAgre;
         $_SESSION['agreById'] = LibAgre::getAgrebyId($idAgre);
         LibAgre::deleteAgreCategory($idAgre);
 

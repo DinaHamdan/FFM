@@ -32,7 +32,7 @@
 
         </form>
 
-        <div>
+        <div id="table-container">
 
             <table>
                 <thead>
@@ -41,8 +41,9 @@
                     <th>Catégorie feu</th>
                     <th>Catégorie lumineux</th>
                     <th>Categorie agré Jour</th>
-                    <th>Modifier</th>
-                    <th>Enlever</th>
+                    <th>Mise à jour</th>
+                    <th>Supprimer</th>
+
 
 
                 </thead>

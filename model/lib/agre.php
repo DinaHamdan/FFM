@@ -143,6 +143,23 @@ class LibAgre
         return $isSuccess;
     }
 
+    static function UpdateAgreType($idAgre, $agreName, $agreLabel, $categoryTypeAgre): bool
+
+    {
+        $query = ' UPDATE typeAgre SET name = :name, label = :label, category = :category';
+        $query .= ' WHERE typeAgre.id = :idAgre ';
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':idAgre', $idAgre);
+        $statement->bindParam(':name', $agreName);
+        $statement->bindParam(':label', $agreLabel);
+        $statement->bindParam(':category', $categoryTypeAgre);
+
+
+        // - Exécute la requête
+        $isSuccess = $statement->execute();
+        return $isSuccess;
+    }
+
     static function addAgreCategory($idAgre, $idCategory): bool
     {
         $query = 'INSERT INTO typeAgreCategory( idAgre, idCategory) VALUES ( :idAgre, :idCategory)';
