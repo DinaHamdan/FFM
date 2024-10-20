@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="site-web-de-l-association-fire-from-mars">
-    <title>Fire From Mars</title>
+    <title><?= $args['pageTitle'] ?></title>
     <link rel="stylesheet" href="/asset/css/styles.css">
     <meta name="google-site-verification" content="jZ3Hv3d-HTEMSZ2l86UmtZihHftr4Z59937gEqtjEsk">
     <link rel="icon" type="image/x-icon" href="/asset/img/fire-LOGOFFM-1-223x300.png">

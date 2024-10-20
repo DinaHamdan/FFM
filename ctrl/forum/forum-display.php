@@ -28,10 +28,9 @@ class Forum extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/forum/forum-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): null
+    function getPageTitle(): string
     {
-        return null;
-        //return 'Forum!';
+        return 'Forum';
     }
 }
 

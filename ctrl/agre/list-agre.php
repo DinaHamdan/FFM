@@ -36,9 +36,9 @@ class AgreDisplay extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/agre/list-agre.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): null
+    function getPageTitle(): string
     {
-        return null;
+        return 'Galerie Agrè';
     }
 }
 

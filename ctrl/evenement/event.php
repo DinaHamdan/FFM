@@ -19,11 +19,10 @@ class EventDisplay extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/evenement/event.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): null
+    function getPageTitle(): string
     {
-        return null;
-        /*         return 'Jongle En Zik';
- */
+
+        return 'Jongle En Zik';
     }
 }
 

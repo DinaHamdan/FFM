@@ -30,9 +30,9 @@ class Homepage extends Ctrl
         include $_SERVER['DOCUMENT_ROOT'] . '/view/homepage.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
     }
-    function getPageTitle(): null
+    function getPageTitle(): string
     {
-        return null;
+        return 'Fire From Mars';
     }
 }
 

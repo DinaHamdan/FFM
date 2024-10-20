@@ -30,10 +30,9 @@ class DiscussionDetail extends Ctrl
     }
 
 
-    function getPageTitle(): null
+    function getPageTitle(): string
     {
-        return null;
-        // return 'Discussion details';
+        return 'Discussion details';
     }
 }
 
