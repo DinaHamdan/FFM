@@ -4,21 +4,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/event.php';
 
 class VolunteerFormDisplay extends Ctrl
 {
-    function do(): void
-    {
-
-        $isGrantedAdmin = $this->hasRole(Role::ADMIN);
-        $isGrantedMember = $this->hasRole(Role::MEMBER);
-
-        if ($isGrantedAdmin) {
-            $_SESSION['user']['codeRole'] == "ADM";
-        } elseif ($isGrantedMember) {
-            $_SESSION['user']['codeRole'] == "MEM";
-        } else {
-            $_SESSION['user'] = [];
-            $_SESSION['user']['codeRole'] = [];
-        };
-    }
+    function do(): void {}
     function renderView(): void
     {
         $args = $this->viewArgs;

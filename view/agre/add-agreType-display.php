@@ -61,7 +61,7 @@
 
 
                                 <?php
-                                if (!($agreTypeCategory['category'][0])) { ?>
+                                if (empty($agreTypeCategory['category'][0])) { ?>
                                     Non
                                 <?php } else { ?>
                                     Oui

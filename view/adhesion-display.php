@@ -41,10 +41,10 @@
             <div id="prop-type">
                 <!--         <select name="agreType" id="agreType" multiple>
  -->
-                <?php foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
+                <?php foreach ($args['typeAgre'] as $agre) { ?>
                     <div>
-                        <input id="<?= $args['session']['agre']['name'] ?>" class="prop-input" type="checkbox" name="agreType[]" value="<?= $args['session']['agre']['name'] ?>" />
-                        <label for="<?= $args['session']['agre']['name'] ?>"><?= $args['session']['agre']['name'] ?></label>
+                        <input id="<?= $agre['name'] ?>" class="prop-input" type="checkbox" name="agreType[]" value="<?= $agre['name'] ?>" />
+                        <label for="<?= $agre['name'] ?>"><?= $agre['name'] ?></label>
                     </div>
                 <?php } ?>
 

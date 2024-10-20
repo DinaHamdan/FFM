@@ -10,9 +10,8 @@ class AddAgreDisplay extends Ctrl
     {  //Check if user is logged and has admin privileges
         $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
-
-        $_SESSION['typeAgre'] = LibAgre::getTypeAgre();
-        $_SESSION['listCategory'] = LibAgre::getCategory();
+        $this->viewArgs['typeAgre'] = LibAgre::getTypeAgre();
+        $this->viewArgs['listCategory'] = LibAgre::getCategory();
     }
     function renderView(): void
     {

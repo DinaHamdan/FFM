@@ -10,8 +10,7 @@ class DeleteMember extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::ADMIN);
+
 
         $idMember = $_GET['id'];
 

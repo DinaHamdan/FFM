@@ -8,10 +8,13 @@ class ListAdhesion extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
+
+        if (!$isGranted) {
+            header('Location: ' . '/forum/forum-display');
+        }
         $listAdhesion = LibMember::getAllAdhesion();
-        $_SESSION['listAdhesion'] = $listAdhesion;
+        $this->viewArgs['listAdhesion'] = $listAdhesion;
     }
 
     function renderView(): void

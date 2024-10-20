@@ -8,11 +8,14 @@ class volutneerFormDetail extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
+
+        if (!$isGranted) {
+            header('Location: ' . '/forum/forum-display');
+        }
         $idVolunteerForm = $_GET['id'];
         $volunteerForm = LibMember::getVolunteerForm($idVolunteerForm);
-        $_SESSION['volunteerForm'] = $volunteerForm;
+        $this->viewArgs['volunteerForm'] = $volunteerForm;
     }
 
     function renderView(): void

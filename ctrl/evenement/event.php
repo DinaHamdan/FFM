@@ -7,16 +7,9 @@ class EventDisplay extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::ADMIN);
-        if ($isGranted) {
-            $_SESSION['user']['codeRole'] == "ADM";
-        } else {
-            $_SESSION['user']['codeRole'] = [];
-        }
 
         $conventionInfo = LibEvent::getEvent();
-        $_SESSION['convention'] = $conventionInfo;
+        $this->viewArgs['convention'] = $conventionInfo;
     }
     function renderView(): void
     {

@@ -13,7 +13,7 @@
                     <form action="/agre/mainAgrePhoto " method="post">
                         <input type="hidden" name="typeAgreOfPhoto" value="<?= $agrePhoto['idTypeAgre'] ?>">
                         <input type="hidden" name="categoryOfPhoto" value="<?= $agrePhoto['idCategory'] ?> ">
-                        <label for="mainPhoto">Choisir Cette photo comme photo de la gallerie</label> <input value="<?= $args['session']['agrePhoto']['id'] ?>" name="mainPhoto" type="checkbox">
+                        <label for="mainPhoto">Choisir Cette photo comme photo de la gallerie</label> <input value="<?= $agrePhoto['id'] ?>" name="mainPhoto" type="checkbox">
                         <input type="submit" value="Valider">
                     </form>
                 <?php  } ?>

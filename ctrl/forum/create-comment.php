@@ -10,9 +10,7 @@ class CreateComment extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::MEMBER);
-        $isGranted = $this->hasRole(Role::ADMIN);
+
 
         $idDiscussion = $_POST['hidden_discussion_id'];
         $idMember = $_SESSION['user']['id'];

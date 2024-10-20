@@ -10,8 +10,7 @@ class DeleteComment extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::ADMIN);
+
         $idComment = $_GET['id'];
         $isSucces = LibDiscussion::deleteComment($idComment);
     }

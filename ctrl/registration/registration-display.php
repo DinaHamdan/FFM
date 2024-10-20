@@ -7,8 +7,11 @@ class Createdisplay extends Ctrl
 {
     function do(): void
     {  //Check if user is logged and has admin privileges
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
+        if (!$isGranted) {
+            header('Location: ' . '/login/login-display');
+            exit;
+        }
     }
     function renderView(): void
     {

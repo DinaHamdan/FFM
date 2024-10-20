@@ -6,8 +6,13 @@ class UpdateEventDisplay extends Ctrl
 {
     function do(): void
     {
+        $isGranted = $this->hasRole(Role::ADMIN);
+
+        if (!$isGranted) {
+            header('Location: ' . '/');
+        }
         $conventionInfo = LibEvent::getEvent();
-        $_SESSION['convention'] = $conventionInfo;
+        $this->viewArgs['convention'] = $conventionInfo;
     }
     function renderView(): void
     {

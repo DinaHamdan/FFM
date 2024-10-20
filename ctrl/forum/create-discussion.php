@@ -12,9 +12,7 @@ class CreateDiscussion extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::MEMBER);
-        $isGranted = $this->hasRole(Role::ADMIN);
+
 
         // Read blog contententered by user
         //Post content from formulaire

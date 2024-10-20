@@ -4,19 +4,19 @@
 
         <div>
 
-            <?php foreach ($args['session']['listAdhesion'] as $args['session']['adhesion']) { ?>
+            <?php foreach ($args['listAdhesion'] as $adhesion) { ?>
                 <div class="backoffice-option-container">
-                    <p> <span> Prénom : </span> <?= $args['session']['adhesion']['firstName'] ?></p>
-                    <p> <span> Nom : </span> <?= $args['session']['adhesion']['lastName'] ?></p>
-                    <p> <span> Email :</span> <?= $args['session']['adhesion']['email'] ?></p>
-                    <p><span> Téléphone :</span> <?= $args['session']['adhesion']['phoneNumber'] ?></p>
-                    <p><span> Type d'agrès pratiqués :</span> <?= $args['session']['adhesion']['typeAgre'] ?> </p>
-                    <p><span> Autre talents : </span> <?= $args['session']['adhesion']['talents'] ?></p>
-                    <p> <span> Authorization à l'image :</span> <?= $args['session']['adhesion']['authorization'] ?></p>
+                    <p> <span> Prénom : </span> <?= $adhesion['firstName'] ?></p>
+                    <p> <span> Nom : </span> <?= $adhesion['lastName'] ?></p>
+                    <p> <span> Email :</span> <?= $adhesion['email'] ?></p>
+                    <p><span> Téléphone :</span> <?= $adhesion['phoneNumber'] ?></p>
+                    <p><span> Type d'agrès pratiqués :</span> <?= $adhesion['typeAgre'] ?> </p>
+                    <p><span> Autre talents : </span> <?= $adhesion['talents'] ?></p>
+                    <p> <span> Authorization à l'image :</span> <?= $adhesion['authorization'] ?></p>
 
-                    <p> <span> Le :</span> <?= $args['session']['adhesion']['time'] ?></p>
+                    <p> <span> Le :</span> <?= $adhesion['time'] ?></p>
 
-                    <a target="_blank" href="/ctrl/backoffice/adhesion-detail.php?id=<?= ($args['session']['adhesion']['id']) ?>">Voir Détails</a>
+                    <a target="_blank" href="/ctrl/backoffice/adhesion-detail.php?id=<?= ($adhesion['id']) ?>">Voir Détails</a>
 
                 </div>
             <?php } ?>

@@ -10,11 +10,14 @@ class listMember extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
 
+        if (!$isGranted) {
+            header('Location: ' . '/forum/forum-display');
+        }
+
         $listMember = LibMember::listAllMember();
-        $_SESSION['listMember'] = $listMember;
+        $this->viewArgs['listMember'] = $listMember;
 
         /*  $idMember = $_GET['id'];
 

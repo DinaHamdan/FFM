@@ -10,15 +10,14 @@ class ContactMessageDetail extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
-        /* 
+
         if (!$isGranted) {
             header('Location: ' . '/forum/forum-display');
-        } */
+        }
         $idContactMessage = $_GET['id'];
         $contactMessage = LibMember::getContactMessage($idContactMessage);
-        $_SESSION['contactMessage'] = $contactMessage;
+        $this->viewArgs['contactMessage'] = $contactMessage;
     }
 
     function renderView(): void

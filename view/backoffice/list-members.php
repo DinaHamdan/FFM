@@ -5,15 +5,15 @@
         <div id="backoffice-member">
 
 
-            <?php foreach ($args['session']['listMember'] as $args['session']['member']) { ?>
+            <?php foreach ($args['listMember'] as $member) { ?>
                 <div class="backoffice-option-container">
-                    <p> Prénom: <?= $args['session']['member']['firstName'] ?> </p>
-                    <p> Nom :<?= $args['session']['member']['lastName'] ?></p>
-                    <p> Email: <?= $args['session']['member']['email'] ?></p>
-                    <p>Téléphone : <?= $args['session']['member']['phoneNumber'] ?></p>
-                    <img class="profile-photo" src="data:image/png;base64,<?= base64_encode($args['session']['member']['avatar']) ?>" alt="member-Avatar">
+                    <p> Prénom: <?= $member['firstName'] ?> </p>
+                    <p> Nom :<?= $member['lastName'] ?></p>
+                    <p> Email: <?= $member['email'] ?></p>
+                    <p>Téléphone : <?= $member['phoneNumber'] ?></p>
+                    <img class="profile-photo" src="data:image/png;base64,<?= base64_encode($member['avatar']) ?>" alt="member-Avatar">
                     <?php if ($args['session']['user']['codeRole'] == 'ADM') { ?>
-                        <p> <a href="/backoffice/delete-member?id=<?= $args['session']['member']['id'] ?>">Enlever</a></p>
+                        <p> <a href="/backoffice/delete-member?id=<?= $member['id'] ?>">Enlever</a></p>
 
                     <?php  } ?>
                 </div>

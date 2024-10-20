@@ -10,8 +10,8 @@
                 <label for="category">Categorie</label>
                 <select name="category" id="">
 
-                    <?php foreach ($args['session']['listCategory'] as $args['session']['category']) { ?>
-                        <option value="<?= $args['session']['category']['id'] ?>"><?= $args['session']['category']['name'] ?></option>
+                    <?php foreach ($args['listCategory'] as $category) { ?>
+                        <option value="<?= $category['id'] ?>"><?= $category['name'] ?></option>
 
                     <?php } ?>
                 </select>
@@ -20,9 +20,9 @@
                 <label for="agreType">Type d'agré</label>
                 <select name="agreType" id="">
 
-                    <?php foreach ($args['session']['typeAgre'] as $args['session']['agre']) { ?>
+                    <?php foreach ($args['typeAgre'] as $agre) { ?>
 
-                        <option value="<?= $args['session']['agre']['id'] ?>"><?= $args['session']['agre']['name'] ?></option>
+                        <option value="<?= $agre['id'] ?>"><?= $agre['name'] ?></option>
                     <?php } ?>
                 </select>
             </div>

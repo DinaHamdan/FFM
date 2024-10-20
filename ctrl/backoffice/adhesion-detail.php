@@ -8,11 +8,14 @@ class AdhesionDetail extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
+
+        if (!$isGranted) {
+            header('Location: ' . '/forum/forum-display');
+        }
         $idAdhesion = $_GET['id'];
         $adhesion = LibMember::getAdhesion($idAdhesion);
-        $_SESSION['adhesion'] = $adhesion;
+        $this->viewArgs['adhesion'] = $adhesion;
     }
 
     function renderView(): void

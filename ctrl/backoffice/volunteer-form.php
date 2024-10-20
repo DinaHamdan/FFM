@@ -8,10 +8,13 @@ class ListVolunteerForm extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
+
+        if (!$isGranted) {
+            header('Location: ' . '/forum/forum-display');
+        }
         $listVolunteerForm = LibMember::getAllVolunteerForm();
-        $_SESSION['listVolunteerForm'] = $listVolunteerForm;
+        $this->viewArgs['listVolunteerForm'] = $listVolunteerForm;
     }
 
     function renderView(): void

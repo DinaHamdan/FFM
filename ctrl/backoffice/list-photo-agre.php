@@ -10,21 +10,20 @@ class AgreAdminDisplay extends Ctrl
 
 
         $isGranted = $this->hasRole(Role::ADMIN);
-        if ($isGranted) {
-            $_SESSION['user']['codeRole'] == "ADM";
-        } else {
-            $_SESSION['user']['codeRole'] = [];
+
+        if (!$isGranted) {
+            header('Location: ' . '/forum/forum-display');
         }
 
         //Admin
         $isNotMain = '';
         $idCategoryFeu = 1;
         //   $_SESSION['adminAgreFeu'] = LibAgre::getGallerieTypeAgre($idCategoryFeu, $isNotMain);
-        $_SESSION['adminAgreFeu'] = LibAgre::getAdminTypeAgre($idCategoryFeu);
+        $this->viewArgs['adminAgreFeu'] = LibAgre::getAdminTypeAgre($idCategoryFeu);
 
         $idCategoryLED = 2;
         //  $_SESSION['adminAgreLED'] = LibAgre::getGallerieTypeAgre($idCategoryLED, $isNotMain);
-        $_SESSION['adminAgreLED'] = LibAgre::getAdminTypeAgre($idCategoryLED);
+        $this->viewArgs['adminAgreLED'] = LibAgre::getAdminTypeAgre($idCategoryLED);
     }
     function renderView(): void
     {

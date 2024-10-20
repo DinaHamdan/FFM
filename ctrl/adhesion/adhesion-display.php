@@ -7,7 +7,7 @@ class AdhereDisplay extends Ctrl
 {
     function do(): void
     {
-        $_SESSION['typeAgre'] = LibAgre::getTypeAgre();
+        $this->viewArgs['typeAgre'] = LibAgre::getTypeAgre();
     }
     function renderView(): void
     {

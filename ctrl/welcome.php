@@ -9,8 +9,6 @@ class Homepage extends Ctrl
     {
 
         $isLogged = $this->isUserLogged();
-
-
         $isGrantedAdmin = $this->hasRole(Role::ADMIN);
         $isGrantedMember = $this->hasRole(Role::MEMBER);
 

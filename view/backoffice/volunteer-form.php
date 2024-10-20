@@ -4,15 +4,15 @@
 
         <div id="backoffice-volunteerForm">
 
-            <?php foreach ($args['session']['listVolunteerForm'] as $args['session']['volunteerForm']) { ?>
+            <?php foreach ($args['listVolunteerForm'] as $volunteerForm) { ?>
                 <div class="backoffice-option-container">
-                    <p> <span> Prénom : </span> <?= $args['session']['volunteerForm']['firstName'] ?></p>
-                    <p> <span> Nom : </span> <?= $args['session']['volunteerForm']['lastName'] ?></p>
-                    <p> <span> Email : </span> <?= $args['session']['volunteerForm']['email'] ?></p>
-                    <p> <span> Téléphone : </span><?= $args['session']['volunteerForm']['phoneNumber'] ?></p>
-                    <p> <span> Candidature envoyé le :</span> <?= $args['session']['volunteerForm']['time'] ?></p>
+                    <p> <span> Prénom : </span> <?= $volunteerForm['firstName'] ?></p>
+                    <p> <span> Nom : </span> <?= $volunteerForm['lastName'] ?></p>
+                    <p> <span> Email : </span> <?= $volunteerForm['email'] ?></p>
+                    <p> <span> Téléphone : </span><?= $volunteerForm['phoneNumber'] ?></p>
+                    <p> <span> Candidature envoyé le :</span> <?= $volunteerForm['time'] ?></p>
 
-                    <a target="_blank" href="/ctrl/backoffice/volunteer-form-detail.php?id=<?= ($args['session']['volunteerForm']['idVolunteer']) ?>">Voir Détails</a>
+                    <a target="_blank" href="/ctrl/backoffice/volunteer-form-detail.php?id=<?= ($volunteerForm['idVolunteer']) ?>">Voir Détails</a>
                 </div>
             <?php } ?>
 
