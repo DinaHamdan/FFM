@@ -12,21 +12,25 @@ class DisplayAgrePhotoFire extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
+        //Check if user has a role
         $isGranted = $this->hasRole(Role::ADMIN);
         if ($isGranted) {
             $_SESSION['user']['codeRole'] == "ADM";
         } else {
             $_SESSION['user']['codeRole'] = [];
         }
-
+        //define the id of the fire category
         $idCategory = 1;
+
+        //get the id of the prop clicked on from the gallery
         $idAgre = $_GET['id'];
-        $_SESSION['listAgrePhoto'] = LibAgre::getAgrePhoto($idAgre, $idCategory);
 
+        //get photos from db and save them in the viewArgs array
+        $this->viewArgs['listAgrePhoto'] = LibAgre::getAgrePhoto($idAgre, $idCategory);
+
+        //get prop name from db and save them in the viewArgs array
         $agreName = LibAgre::getAgreName($idAgre);
-
-        $_SESSION['agreName'] = $agreName['name'];
+        $this->viewArgs['agreName'] = $agreName['name'];
     }
 
     function renderView(): void

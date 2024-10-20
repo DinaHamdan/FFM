@@ -11,8 +11,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 class DisplayAgrePhotoLED extends Ctrl
 {
     function do(): void
-    {
-        $isLogged = $this->isUserLogged();
+    { //Check if user has a role
         $isGranted = $this->hasRole(Role::ADMIN);
         $isGranted = $this->hasRole(Role::ADMIN);
         if ($isGranted) {
@@ -20,12 +19,21 @@ class DisplayAgrePhotoLED extends Ctrl
         } else {
             $_SESSION['user']['codeRole'] = [];
         }
-        $idCategory = 2;
-        $idAgre = $_GET['id'];
-        $_SESSION['listAgrePhoto'] = LibAgre::getAgrePhoto($idAgre, $idCategory);
-        $agreName = LibAgre::getAgreName($idAgre);
 
-        $_SESSION['agreName'] = $agreName['name'];
+        //define the id of the LED category
+        $idCategory = 2;
+        //get the id of the prop clicked on from the gallery
+        $idAgre = $_GET['id'];
+
+
+        // OLD code  $_SESSION['listAgrePhoto']= LibAgre::getAgrePhoto($idAgre, $idCategory);
+        //get photos from db and save them in the viewArgs array
+        $this->viewArgs['listAgrePhoto'] = LibAgre::getAgrePhoto($idAgre, $idCategory);
+
+        // Old code $_SESSION['agreName'] = $agreName['name'];
+        //get prop name from db and save them in the viewArgs array
+        $agreName = LibAgre::getAgreName($idAgre);
+        $this->viewArgs['agreName'] = $agreName['name'];
     }
 
     function renderView(): void

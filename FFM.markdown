@@ -621,7 +621,6 @@ Pas assez de Update (fixing this) - Boutton modifier pour les agrès
 Parler de JS en pptx
 charte graphique mon choix 
 OOP en parler ? 
-
 prepare folder of resized photos
 
 
@@ -629,17 +628,20 @@ prepare folder of resized photos
 
 ## Raport :
 Refaire diagramm du MVC et de POO pour pour pptx
-
 pptx 
-prepare demo scenario with forms filled
+prepare demo scenario with photo upload and wtih member posting a discussion
+refaire deploiement
+Add comments in english
+add html email restriction
 _________________________________________________________________________________
 
 
 ## CODE TO DO :
-
-add javascript for animation for elements and gallery fir elements to appear  in homepage
 fix $_SESSION and remove unacessary functions 
+
+
 Resize photos-upload to website - share link
+add javascript for animation for elements and gallery fir elements to appear  in homepage
 Hostinger deploiment 
 //TODO Need to add algorithm to check for photo width and height and change it accordingly , imagick
 convert to webp php 
