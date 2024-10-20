@@ -11,11 +11,14 @@ class AddAgreDisplay extends Ctrl
         $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
 
-        $_SESSION['listCategory'] = LibAgre::getCategory();
+
+        $this->viewArgs['listCategory'] = LibAgre::getCategory();
+        // old code   $_SESSION['listCategory'] = LibAgre::getCategory();
 
         //get agreType Id and category Id
-        $categoryType = LibAgre::getIdTypeIdCategory();
-        $_SESSION['listAgreTypeCategory'] = $categoryType;
+
+        $this->viewArgs['listAgreTypeCategory'] = LibAgre::getIdTypeIdCategory();
+        // old code $_SESSION['listAgreTypeCategory'] = LibAgre::getIdTypeIdCategory();
     }
     function renderView(): void
     {

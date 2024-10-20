@@ -4,33 +4,33 @@
 
 
 
-            <h2 id="discussion-title"><?= $args['session']['discussion']['title'] ?> </h2>
+            <h2 id="discussion-title"><?= $args['discussion']['title'] ?> </h2>
             <div id="text-photo-container">
-                <p> <?= $args['session']['discussion']['content'] ?></p>
-                <img id="discussion-image" src="data:image/png;base64,<?= base64_encode($args['session']['discussion']['illustration']) ?>" alt="">
+                <p> <?= $args['discussion']['content'] ?></p>
+                <img id="discussion-image" src="data:image/png;base64,<?= base64_encode($args['discussion']['illustration']) ?>" alt="">
             </div>
-            <p>Publié le: <?= $args['session']['discussion']['time'] ?></p>
-            <p>Par: <?= $args['session']['discussion']['firstName'] ?></p>
+            <p>Publié le: <?= $args['discussion']['time'] ?></p>
+            <p>Par: <?= $args['discussion']['firstName'] ?></p>
 
 
             <?php if (($args['session']['user']['codeRole']) == 'ADM') { ?>
-                <a href="/ctrl/forum/delete-discussion.php?id=<?= $args['session']['discussion']['id'] ?>">Enlever Discussion</a>
+                <a href="/ctrl/forum/delete-discussion.php?id=<?= $args['discussion']['id'] ?>">Enlever Discussion</a>
             <?php } ?>
         </div>
         <h2>Commentaires</h2>
 
-        <?php foreach ($args['session']['discussion']['comments'] as $args['session']['discussion']['comment']) { ?>
+        <?php foreach ($args['discussion']['comments'] as $comment) { ?>
 
             <div id="comment-container">
                 <div id="user-container">
 
                     <div id="comment-content">
 
-                        <img src="data:image/png;base64,<?= base64_encode($args['session']['discussion']['comment']['memberInfo']['avatar']) ?>" alt="member-avatar">
-                        <p><?= $args['session']['discussion']['comment']['content'] ?></p>
+                        <img src="data:image/png;base64,<?= base64_encode($comment['memberInfo']['avatar']) ?>" alt="member-avatar">
+                        <p><?= $comment['content'] ?></p>
 
                         <?php if (($args['session']['user']['codeRole']) == 'ADM') { ?>
-                            <a href="/ctrl/forum/delete-comment.php?id=<?= $args['session']['discussion']['comment']['id'] ?>">Enlever commentaire</a>
+                            <a href="/ctrl/forum/delete-comment.php?id=<?= $comment['id'] ?>">Enlever commentaire</a>
                         <?php } ?>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                 <form action="/ctrl/forum/create-comment.php" method="post">
 
 
-                    <input type="hidden" name="hidden_discussion_id" value="<?= ($args['session']['discussion']['id']) ?>">
+                    <input type="hidden" name="hidden_discussion_id" value="<?= ($args['discussion']['id']) ?>">
 
                     <label for="comment">Laissez un commentaire</label>
                     <input type="text" name="comment" id="comment">

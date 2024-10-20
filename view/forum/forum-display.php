@@ -30,11 +30,11 @@
             <h3>Discussions Précédentes</h3>
             <div id="all-discussion-container">
 
-                <?php foreach ($args['session']['listDiscussion'] as $args['session']['discussion']) { ?>
+                <?php foreach ($args['listDiscussion'] as $discussion) { ?>
                     <div id="discussion-container">
-                        <h4 id="discussion-title"><?= $args['session']['discussion']['title'] ?> </h4>
-                        <p> <?= $args['session']['discussion']['content'] ?></p>
-                        <a target="_blank" href="/ctrl/forum/discussion-detail.php?id=<?= ($args['session']['discussion']['id']) ?>">Voir Détails</a>
+                        <h4 id="discussion-title"><?= $discussion['title'] ?> </h4>
+                        <p> <?= $discussion['content'] ?></p>
+                        <a target="_blank" href="/ctrl/forum/discussion-detail.php?id=<?= ($discussion['id']) ?>">Voir Détails</a>
                     </div>
                 <?php } ?>
 

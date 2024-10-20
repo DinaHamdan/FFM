@@ -8,9 +8,9 @@
             <label for="category">Categorie</label>
             <div>
 
-                <?php foreach ($args['session']['listCategory'] as $args['session']['category']) { ?>
-                    <input type="checkbox" name="category[]" value="<?= $args['session']['category']['id'] ?>" />
-                    <label for="<?= $args['session']['category']['name'] ?>"><?= $args['session']['category']['name'] ?></label>
+                <?php foreach ($args['listCategory'] as $category) { ?>
+                    <input type="checkbox" name="category[]" value="<?= $category['id'] ?>" />
+                    <label for="<?= $category['name'] ?>"><?= $category['name'] ?></label>
 
 
                 <?php } ?>
@@ -48,20 +48,20 @@
 
                 </thead>
                 <tbody>
-                    <?php foreach ($args['session']['listAgreTypeCategory'] as $args['session']['agreTypeCategory']) { ?>
+                    <?php foreach ($args['listAgreTypeCategory'] as $agreTypeCategory) { ?>
 
 
                         <tr>
                             <td>
-                                <input name="listIdAgre[]" type="hidden" value="<?= $args['session']['agreTypeCategory']['id'] ?> ">
-                                <?= $args['session']['agreTypeCategory']['id'] ?>
+                                <input name="listIdAgre[]" type="hidden" value="<?= $agreTypeCategory['id'] ?> ">
+                                <?= $agreTypeCategory['id'] ?>
                             </td>
-                            <td><?= $args['session']['agreTypeCategory']['name'] ?> </td>
+                            <td><?= $agreTypeCategory['name'] ?> </td>
                             <td>
 
 
                                 <?php
-                                if (!($args['session']['agreTypeCategory']['category'][0])) { ?>
+                                if (!($agreTypeCategory['category'][0])) { ?>
                                     Non
                                 <?php } else { ?>
                                     Oui
@@ -72,7 +72,7 @@
 
 
                                 <?php
-                                if (empty($args['session']['agreTypeCategory']['category'][2])) { ?>
+                                if (empty($agreTypeCategory['category'][2])) { ?>
                                     Non
                                 <?php } else { ?>
                                     Oui
@@ -83,7 +83,7 @@
 
 
                                 <?php
-                                if (empty($args['session']['agreTypeCategory']['category'][4])) { ?>
+                                if (empty($agreTypeCategory['category'][4])) { ?>
                                     Non
                                 <?php } else { ?>
                                     Oui
@@ -91,9 +91,9 @@
                                 <?php } ?>
                             </td>
 
-                            <td> <a href="/ctrl/agre/agre-update-display.php?id=<?= $args['session']['agreTypeCategory']['id'] ?>">Modifier</a>
+                            <td> <a href="/ctrl/agre/agre-update-display.php?id=<?= $agreTypeCategory['id'] ?>">Modifier</a>
                             </td>
-                            <td> <a href="/ctrl/agre/agre-delete.php?id=<?= $args['session']['agreTypeCategory']['id'] ?>" onclick="return confirm('Vous êtes sûr vous voulez enlever?');">Enlever</a>
+                            <td> <a href="/ctrl/agre/agre-delete.php?id=<?= $agreTypeCategory['id'] ?>" onclick="return confirm('Vous êtes sûr vous voulez enlever?');">Enlever</a>
                             </td>
                         </tr>
                     <?php } ?>

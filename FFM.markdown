@@ -638,7 +638,7 @@ ________________________________________________________________________________
 
 ## CODE TO DO :
 fix $_SESSION and remove unacessary functions 
-
+change table category function
 
 Resize photos-upload to website - share link
 add javascript for animation for elements and gallery fir elements to appear  in homepage

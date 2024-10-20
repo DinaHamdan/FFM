@@ -11,10 +11,10 @@ class Backoffice extends Ctrl
 
         $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
-        /* 
+
         if (!$isGranted) {
             header('Location: ' . '/forum/forum-display');
-        } */
+        }
     }
 
     function renderView(): void

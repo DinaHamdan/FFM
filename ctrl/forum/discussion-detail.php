@@ -10,16 +10,14 @@ class DiscussionDetail extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::MEMBER);
         $isGranted = $this->hasRole(Role::ADMIN);
-        /* 
         if (!$isGranted) {
-            header('Location: ' . '/forum/forum-display');
-        } */
+            header('Location: ' . '/');
+        }
         $idDiscussion = $_GET['id'];
         $discussion = LibDiscussion::getDiscussion($idDiscussion);
-        $_SESSION['discussion'] = $discussion;
+        $this->viewArgs['discussion'] = $discussion;
     }
 
     function renderView(): void

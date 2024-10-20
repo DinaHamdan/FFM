@@ -10,13 +10,13 @@ class UpdatePropDisplay extends Ctrl
     {
         $idAgre = $_GET['id'];
 
-        $_SESSION['idAgre'] = $idAgre;
-        $_SESSION['agreById'] = LibAgre::getAgrebyId($idAgre);
-        LibAgre::deleteAgreCategory($idAgre);
+        $this->viewArgs['idAgre'] = $idAgre;
+        $this->viewArgs['agreById'] = LibAgre::getAgrebyId($idAgre);
 
+        LibAgre::deleteAgreCategory($idAgre);
         //get agreType Id and category Id
-        $categoryType = LibAgre::getIdTypeIdCategory();
-        $_SESSION['listAgreTypeCategory'] = $categoryType;
+        $this->viewArgs['listCategory'] = LibAgre::getCategory();
+        $this->viewArgs['listAgreTypeCategory'] = LibAgre::getIdTypeIdCategory();
     }
     function renderView(): void
     {
