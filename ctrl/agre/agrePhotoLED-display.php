@@ -11,15 +11,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/ctrl/ctrl.php';
 class DisplayAgrePhotoLED extends Ctrl
 {
     function do(): void
-    { //Check if user has a role
-        $isGranted = $this->hasRole(Role::ADMIN);
-        $isGranted = $this->hasRole(Role::ADMIN);
-        if ($isGranted) {
-            $_SESSION['user']['codeRole'] == "ADM";
-        } else {
-            $_SESSION['user']['codeRole'] = [];
-        }
-
+    {
         //define the id of the LED category
         $idCategory = 2;
         //get the id of the prop clicked on from the gallery

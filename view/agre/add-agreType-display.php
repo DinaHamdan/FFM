@@ -7,12 +7,9 @@
             <!-- Add photos to agre gallerie -->
             <label for="category">Categorie</label>
             <div>
-
                 <?php foreach ($args['listCategory'] as $category) { ?>
                     <input type="checkbox" name="category[]" value="<?= $category['id'] ?>" />
                     <label for="<?= $category['name'] ?>"><?= $category['name'] ?></label>
-
-
                 <?php } ?>
             </div>
             <div>

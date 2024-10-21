@@ -12,8 +12,6 @@ class AddAgrePhoto extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::ADMIN);
 
         //Initier une session  d'un objet msg avec info et erreur comme objet
         $_SESSION['msg']['info'] = [];

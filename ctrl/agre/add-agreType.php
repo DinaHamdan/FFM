@@ -12,8 +12,7 @@ class AddAgreType extends Ctrl
 {
     function do(): void
     {
-        $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::ADMIN);
+
 
         //Read information entered by admin
         foreach ($_POST['category'] as $category[])

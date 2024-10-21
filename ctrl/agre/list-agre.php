@@ -13,13 +13,6 @@ class AgreDisplay extends Ctrl
         $idCategoryLED = 2;
         $_SESSION['typeAgreLED'] = LibAgre::getGallerieTypeAgre($idCategoryLED); */
 
-        $isLogged = $this->isUserLogged();
-        $isGranted = $this->hasRole(Role::ADMIN);
-        if ($isGranted) {
-            $_SESSION['user']['codeRole'] == "ADM";
-        } else {
-            $_SESSION['user']['codeRole'] = [];
-        }
 
 
         $isMain = 'true';

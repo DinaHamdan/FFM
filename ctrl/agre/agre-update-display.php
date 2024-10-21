@@ -7,7 +7,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/model/lib/agre.php';
 class UpdatePropDisplay extends Ctrl
 {
     function do(): void
-    {
+    { //Check if user is logged and has admin privileges
+        $isGranted = $this->hasRole(Role::ADMIN);
+        if (!$isGranted) {
+            header('Location: ' . '/agre/list-agre');
+        }
         $idAgre = $_GET['id'];
 
         $this->viewArgs['idAgre'] = $idAgre;

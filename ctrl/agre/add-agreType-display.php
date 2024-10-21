@@ -8,29 +8,21 @@ class AddAgreDisplay extends Ctrl
 {
     function do(): void
     {  //Check if user is logged and has admin privileges
-        $isLogged = $this->isUserLogged();
         $isGranted = $this->hasRole(Role::ADMIN);
+        if (!$isGranted) {
+            header('Location: ' . '/agre/list-agre');
+        }
 
-
+        //Get category to show as options to add props
         $this->viewArgs['listCategory'] = LibAgre::getCategory();
-        // old code   $_SESSION['listCategory'] = LibAgre::getCategory();
 
-        //get agreType Id and category Id
+        //get agre type and respective category to show in table
         $listAgre =  LibAgre::getIdTypeIdCategory();
-
         $this->viewArgs['listAgreTypeCategory'] = $listAgre;
-        // $this->viewArgs['listCategoryById'] = LibAgre::getCategoryByIdAgre();
-
-
-
-
-
-        // old code $_SESSION['listAgreTypeCategory'] = LibAgre::getIdTypeIdCategory();
     }
     function renderView(): void
     {
         $args = $this->viewArgs;
-
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/header.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/agre/add-agreType-display.php';
         include $_SERVER['DOCUMENT_ROOT'] . '/view/partial/footer.php';
