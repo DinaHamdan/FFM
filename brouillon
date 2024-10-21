@@ -540,3 +540,28 @@ class AddAgrePhoto extends Ctrl
 
 $ctrl = new AddAgrePhoto();
 $ctrl->execute();
+
+//////////////////////////////////:
+<table>
+<thead>
+    <th>agre Id</th>
+    <th>agre Name</th>
+    <th>cat Id</th>
+    <th>cat Name</th>
+
+</thead>
+<tbody>
+    <?php foreach ($args['listCategoryById'] as $agreTypeCategory) { ?>
+
+        <tr>
+            <td>
+                <?= $agreTypeCategory['agreId'] ?>
+            </td>
+            <td><?= $agreTypeCategory['agreName'] ?> </td>
+            <td><?= $agreTypeCategory['categoryId'] ?> </td>
+            <td><?= $agreTypeCategory['categoryName'] ?> </td>
+
+        </tr>
+    <?php } ?>
+
+</tbody>

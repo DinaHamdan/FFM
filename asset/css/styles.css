@@ -2087,6 +2087,10 @@ header #menuBar #avatar-container #ffm-man {
 #add-prop #table-container table {
   border-collapse: collapse;
   border-spacing: 0;
+  border: 1px solid white;
+}
+#add-prop #table-container table tr {
+  border: 1px solid white;
 }
 #add-prop #table-container table th,
 #add-prop #table-container table td {
@@ -2094,13 +2098,12 @@ header #menuBar #avatar-container #ffm-man {
 }
 #add-prop #table-container table th a,
 #add-prop #table-container table td a {
-  color: white;
   font-weight: 500;
   text-decoration: none;
 }
 #add-prop #table-container table th a::after,
 #add-prop #table-container table td a::after {
-  color: white;
+  color: rgb(89, 89, 249);
 }
 
 #profile {

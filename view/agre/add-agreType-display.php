@@ -32,7 +32,7 @@
 
         </form>
 
-        <div id="table-container">
+        <!--         <div id="table-container">
 
             <table>
                 <thead>
@@ -102,5 +102,45 @@
             </table>
 
         </div>
+        -->
 
+
+        <div id="table-container">
+
+            <table>
+                <thead>
+
+
+                </thead>
+
+                <tbody>
+                    <?php foreach ($args['listAgreTypeCategory'] as $agreTypeCategory) { ?>
+                        <tr>
+                            <td>
+                                <?= $agreTypeCategory['id'] ?>
+                            </td>
+                            <td><?= $agreTypeCategory['agreName'] ?> </td>
+
+
+                            <?php foreach ($agreTypeCategory['category'] as $category) { ?>
+
+
+                                <td>
+                                    <?= $category['categoryName'] ?>
+                                </td>
+
+
+                            <?php } ?>
+
+                            <td> <a href="/ctrl/agre/agre-update-display.php?id=<?= $agreTypeCategory['id'] ?>">Modifier</a>
+                            </td>
+                            <td> <a href="/ctrl/agre/agre-delete.php?id=<?= $agreTypeCategory['id'] ?>" onclick="return confirm('Vous êtes sûr vous voulez enlever?');">Enlever</a>
+                            </td>
+                        </tr>
+                    <?php } ?>
+
+                </tbody>
+            </table>
+
+        </div>
     </section>

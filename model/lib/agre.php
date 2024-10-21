@@ -185,26 +185,65 @@ class LibAgre
     }
     static function getIdTypeIdCategory(): array
     {
-        $query = 'SELECT typeAgre.name, typeAgre.id, typeAgre.category';
+        $query = 'SELECT typeAgre.name AS agreName, typeAgre.id, typeAgre.category';
         $query .= ' FROM typeAgre';
         $statement = libDb::connect()->prepare($query);
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+
+        $listAgreCategory = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        $listAgreCategoryWithAdditionalInfo = [];
+        foreach ($listAgreCategory as $AgreTypeCategory) {
+            $AgreTypeCategory['category'] = LibAgre::getTest($AgreTypeCategory['id']);
+            $listAgreCategoryWithAdditionalInfo[] = $AgreTypeCategory;
+        };
+        // $listAgreTypeCategory['category'] = LibAgre::getTest($listAgreTypeCategory['id']);
+        return $listAgreCategoryWithAdditionalInfo;
+
+
+        // return $listAgreTypeCategory;
+    }
+    //SO FAR NOT USED 
+    static function getCategoryByIdAgre(): array
+    {
+        $query = 'SELECT typeAgre.id AS agreId, typeAgre.name AS agreName, category.id AS categoryId, category.name AS categoryName, typeAgreCategory.idAgre, typeAgreCategory.idCategory ';
+        $query .= ' FROM typeAgre';
+        $query .= ' JOIN typeAgreCategory ON typeAgreCategory.idAgre = typeAgre.id ';
+        $query .= ' JOIN category ON category.id = typeAgreCategory.idCategory ';
+        $query .= 'GROUP BY agreName';
+
+        //   $query .= ' WHERE typeAgreCategory.idAgre = :idAgre ';
+
+        /*   $query = 'SELECT category.id, category.name, typeAgre.name, typeAgre.id, typeAgre.category';
+        $query .= ' FROM category';
+        $query .= ' JOIN typeAgreCategory ON category.id = typeAgreCategory.idCategory ';
+        $query .= ' WHERE typeAgreCategory.idAgre = :idAgre'; */
+
+        $statement = libDb::connect()->prepare($query);
+        //   $statement->bindParam(':idAgre', $idAgre);
 
         // - Exécute la requête
         $successOrFailure = $statement->execute();
-        $listAgreTypeCategory = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-        return $listAgreTypeCategory;
-
-        /* 
-        $listAgreTypeCategoryWithFormattedInfo = [];
-        foreach ($listAgreTypeCategory as $agreTypeCategory) {
-            $agreTypeCategory['cat'] = explode(',', $agreTypeCategory['category']);
-
-            $listAgreTypeCategoryWithFormattedInfo[] = $agreTypeCategory;
-        }
-        return $listAgreTypeCategoryWithFormattedInfo; */
+        $category = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $category;
     }
 
+    static function getTest($idAgre): array
+    {
+        $query = 'SELECT category.id, category.name AS categoryName, typeAgreCategory.idAgre, typeAgreCategory.idCategory ';
+        $query .= ' FROM category';
+        $query .= ' JOIN typeAgreCategory ON typeAgreCategory.idCategory = category.id ';
+        $query .= ' WHERE typeAgreCategory.idAgre = :idAgre ';
+
+        $statement = libDb::connect()->prepare($query);
+        $statement->bindParam(':idAgre', $idAgre);
+
+        // - Exécute la requête
+        $successOrFailure = $statement->execute();
+        $listCategory = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $listCategory;
+    }
     //Get photo of prop
     static function getAgrePhoto($idTypeAgre, $idCategory): array
     {
