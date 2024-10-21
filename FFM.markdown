@@ -626,7 +626,11 @@ prepare folder of resized photos
 
 
 
-## Raport :
+## Things to do:
+Write script word by word 
+remove sentences - add photos
+fix function - change table category function
+add POO
 Refaire diagramm du MVC et de POO pour pour pptx
 pptx 
 prepare demo scenario with photo upload and wtih member posting a discussion
@@ -637,9 +641,6 @@ ________________________________________________________________________________
 
 
 ## CODE TO DO :
-fix $_SESSION and remove unacessary functions 
-change table category function
-
 Resize photos-upload to website - share link
 add javascript for animation for elements and gallery fir elements to appear  in homepage
 Hostinger deploiment 
@@ -672,3 +673,5 @@ fix redirections
 fix deploiement again: check if error messages are still here with guillaulme
 added favicon 
 finish change agrè function 
+fix $_SESSION and remove unacessary functions 
+Redo arborescence 

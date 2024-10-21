@@ -232,11 +232,7 @@
 }
 @media screen and (min-width: 1650px) {
   #about-us #fire-jam .center-button {
-    margin-right: 15em;
-    border: 1px solid green;
-  }
-  #about-us #fire-jam .center-button .prop-group-button {
-    margin-left: -15em;
-    border: 1px solid green;
+    margin-right: 14em;
+    border: 1px solid red;
   }
 }/*# sourceMappingURL=about-us.css.map */
