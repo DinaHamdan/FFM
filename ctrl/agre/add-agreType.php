@@ -13,7 +13,6 @@ class AddAgreType extends Ctrl
     function do(): void
     {
 
-
         //Read information entered by admin
         foreach ($_POST['category'] as $category[])
             $categoryTypeAgre['category'] = implode(',', $category);
@@ -22,14 +21,20 @@ class AddAgreType extends Ctrl
         $nameTypeAgre = htmlspecialchars($_POST['name']);
         $labelTypeAgre = htmlspecialchars($_POST['label']);
         //add an agre Type
-        $isSuccess = LibAgre::AddAgreType($nameTypeAgre, $labelTypeAgre, $categoryTypeAgre['category']);
-
-        //get Agre id 
         $getAgre = LibAgre::getIdType($nameTypeAgre);
-        $idAgre = $getAgre[0]['id'];
-        foreach ($_POST['category'] as $category) {
+        if ($getAgre != null) {
+            $_SESSION['msg']['error'][] = 'Cet agrè existe déjà ';
+            header('Location: ' . '/agre/add-agreType-display');
+            exit;
+        } else {
+            $isSuccess = LibAgre::AddAgreType($nameTypeAgre, $labelTypeAgre, $categoryTypeAgre['category']);
+            //get Agre id 
+            $getAgre = LibAgre::getIdType($nameTypeAgre);
+            $idAgre = $getAgre[0]['id'];
+            foreach ($_POST['category'] as $category) {
 
-            $isAdded = LibAgre::addAgreCategory($idAgre, $category);
+                $isAdded = LibAgre::addAgreCategory($idAgre, $category);
+            }
         }
     }
 

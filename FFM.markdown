@@ -630,9 +630,9 @@ prepare folder of resized photos
 Write script word by word 
 remove sentences - add photos
 fix function - change table category function
-add POO
+a dd POO
 Refaire diagramm du MVC et de POO pour pour pptx
-pptx 
+pptx
 prepare demo scenario with photo upload and wtih member posting a discussion
 refaire deploiement
 Add comments in english

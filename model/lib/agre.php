@@ -172,7 +172,7 @@ class LibAgre
         return $isSuccess;
     }
 
-    static function getIdType($nameTypeagre): array
+    static function getIdType($nameTypeagre): ?array
     {
         $query = 'SELECT typeAgre.name, typeAgre.id';
         $query .= ' FROM typeAgre';
@@ -181,6 +181,11 @@ class LibAgre
         $statement->bindParam(':name', $nameTypeagre);
         $successOrFailure = $statement->execute();
         $idAgreType = $statement->fetchAll(PDO::FETCH_ASSOC);
+        return $idAgreType;
+
+        if ($idAgreType == false) {
+            $idAgreType = null;
+        };
         return $idAgreType;
     }
     static function getIdTypeIdCategory(): array
