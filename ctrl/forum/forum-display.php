@@ -10,11 +10,6 @@ class Forum extends Ctrl
 {
     function do(): void
     {
-        $isGranted = $this->hasRole(Role::MEMBER);
-        $isGranted = $this->hasRole(Role::ADMIN);
-        if (!$isGranted) {
-            header('Location: ' . '/');
-        }
         $listDiscussion = LibDiscussion::getAllDiscussion();
         $this->viewArgs['listDiscussion'] = $listDiscussion;
         //var_dump($listPost);

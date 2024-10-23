@@ -113,9 +113,7 @@
                 <tbody>
                     <?php foreach ($args['listAgreTypeCategory'] as $agreTypeCategory) { ?>
                         <tr>
-                            <td>
-                                <?= $agreTypeCategory['id'] ?>
-                            </td>
+
                             <td><?= $agreTypeCategory['agreName'] ?> </td>
 
 
